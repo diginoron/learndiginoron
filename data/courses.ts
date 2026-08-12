@@ -63,9 +63,9 @@ export const COURSES: Course[] = [
     ],
     prerequisites: "آشنایی مقدماتی با کار با کامپیوتر",
     instructor: {
-      name: "مهندس سارا رضایی",
+      name: "دکتر مهران شیرزاد",
       role: "متخصص آموزش فناوری‌های نوین به کودکان",
-      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
+      avatar: ""
     },
     features: [
       "گواهی‌نامه رسمی دیجی نورون",
@@ -235,9 +235,9 @@ export const COURSES: Course[] = [
     ],
     prerequisites: "آشنایی اولیه با کار با کامپیوتر و اینترنت",
     instructor: {
-      name: "مهندس سارا رضایی",
+      name: "دکتر مهران شیرزاد",
       role: "متخصص آموزش کارآفرینی و فناوری به کودکان",
-      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
+      avatar: ""
     },
     features: [
       "قابلیت شرکت در کارگاه ۱ روزه یا دوره کامل ۷ جلسه‌ای",

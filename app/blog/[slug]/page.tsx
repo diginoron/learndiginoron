@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { BLOG_POSTS } from "@/data/blog";
-import { Calendar, Clock, ArrowLeft, Share2, Tag, BookOpen, Phone } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, Share2, Tag, BookOpen, Phone, User } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -37,14 +37,20 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
 
         <div className="flex flex-wrap items-center justify-between gap-4 pt-2 pb-6 border-b border-slate-200 text-xs text-slate-500">
           <div className="flex items-center gap-3">
-            <Image
-              src={post.author.avatar}
-              alt={post.author.name}
-              width={40}
-              height={40}
-              className="rounded-full object-cover"
-              unoptimized
-            />
+            {post.author.avatar ? (
+              <Image
+                src={post.author.avatar}
+                alt={post.author.name}
+                width={40}
+                height={40}
+                className="rounded-full object-cover"
+                unoptimized
+              />
+            ) : (
+              <div className="w-10 h-10 rounded-full bg-cyan-100 border border-cyan-300 flex items-center justify-center text-cyan-800 shrink-0">
+                <User className="w-5 h-5" />
+              </div>
+            )}
             <div>
               <div className="font-bold text-slate-900 text-sm">{post.author.name}</div>
               <div className="text-[11px] text-slate-500">{post.author.role}</div>

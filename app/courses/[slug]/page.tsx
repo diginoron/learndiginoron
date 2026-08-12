@@ -125,14 +125,20 @@ export default async function CourseDetailPage({ params }: PageProps) {
 
             {/* Instructor Box */}
             <div className="p-4 bg-slate-50 rounded-2xl border border-slate-200 flex items-center gap-3">
-              <Image
-                src={course.instructor.avatar}
-                alt={course.instructor.name}
-                width={48}
-                height={48}
-                className="rounded-full object-cover"
-                unoptimized
-              />
+              {course.instructor.avatar ? (
+                <Image
+                  src={course.instructor.avatar}
+                  alt={course.instructor.name}
+                  width={48}
+                  height={48}
+                  className="rounded-full object-cover"
+                  unoptimized
+                />
+              ) : (
+                <div className="w-12 h-12 rounded-full bg-cyan-100 border border-cyan-300 flex items-center justify-center text-cyan-700 shrink-0">
+                  <User className="w-6 h-6" />
+                </div>
+              )}
               <div>
                 <div className="font-bold text-xs text-slate-900">{course.instructor.name}</div>
                 <div className="text-[11px] text-slate-500">{course.instructor.role}</div>

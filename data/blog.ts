@@ -49,9 +49,9 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "kids-ai",
     categoryName: "هوش مصنوعی کودکان",
     author: {
-      name: "سارا رضایی",
+      name: "دکتر مهران شیرزاد",
       role: "مدیر بخش آموزش کودکان دیجی نورون",
-      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
+      avatar: ""
     },
     date: "۲۲ مرداد ۱۴۰۵",
     readTime: "۶ دقیقه",
