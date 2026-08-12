@@ -116,46 +116,48 @@ export default function Navbar() {
                 <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${servicesDropdownOpen ? "rotate-180 text-cyan-600" : ""}`} />
               </Link>
 
-              {/* Dropdown Menu */}
+              {/* Dropdown Menu with Seamless Hover Bridge */}
               {servicesDropdownOpen && (
-                <div className="absolute top-full right-0 w-72 mt-1 py-2 bg-white border border-slate-200 rounded-2xl shadow-2xl backdrop-blur-xl animate-in fade-in slide-in-from-top-2 duration-200 z-50">
-                  <div className="px-3 py-1.5 text-xs font-semibold text-cyan-700 uppercase tracking-wider border-b border-slate-100 mb-1">
-                    دسته بندی سطوح آموزشی
-                  </div>
-                  
-                  <Link
-                    href="/services/kids-and-teens"
-                    className="flex items-start gap-3 p-3 hover:bg-cyan-50 transition-colors rounded-xl mx-1 group"
-                  >
-                    <div className="p-2 rounded-lg bg-cyan-100 text-cyan-700 group-hover:bg-cyan-600 group-hover:text-white transition-colors">
-                      <GraduationCap className="w-5 h-5" />
+                <div className="absolute top-full right-0 pt-1.5 w-72 z-50">
+                  <div className="py-2 bg-white border border-slate-200 rounded-2xl shadow-2xl backdrop-blur-xl">
+                    <div className="px-3 py-1.5 text-xs font-semibold text-cyan-700 uppercase tracking-wider border-b border-slate-100 mb-1">
+                      دسته بندی سطوح آموزشی
                     </div>
-                    <div>
-                      <div className="font-bold text-sm text-slate-900 group-hover:text-cyan-700">
-                        کودکان و نوجوانان
+                    
+                    <Link
+                      href="/services/kids-and-teens"
+                      className="flex items-start gap-3 p-3 hover:bg-cyan-50 transition-colors rounded-xl mx-1 group"
+                    >
+                      <div className="p-2 rounded-lg bg-cyan-100 text-cyan-700 group-hover:bg-cyan-600 group-hover:text-white transition-colors shrink-0">
+                        <GraduationCap className="w-5 h-5" />
                       </div>
-                      <div className="text-xs text-slate-500 mt-0.5">
-                        آموزش هوش مصنوعی، پایتون، تفکر الگوریتمی و رباتیک
+                      <div>
+                        <div className="font-bold text-sm text-slate-900 group-hover:text-cyan-700">
+                          کودکان و نوجوانان
+                        </div>
+                        <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                          آموزش هوش مصنوعی، پایتون، تفکر الگوریتمی و رباتیک
+                        </div>
                       </div>
-                    </div>
-                  </Link>
+                    </Link>
 
-                  <Link
-                    href="/services/corporate"
-                    className="flex items-start gap-3 p-3 hover:bg-purple-50 transition-colors rounded-xl mx-1 group"
-                  >
-                    <div className="p-2 rounded-lg bg-purple-100 text-purple-700 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                      <Building2 className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <div className="font-bold text-sm text-slate-900 group-hover:text-purple-700">
-                        آموزش‌های سازمانی
+                    <Link
+                      href="/services/corporate"
+                      className="flex items-start gap-3 p-3 hover:bg-purple-50 transition-colors rounded-xl mx-1 group"
+                    >
+                      <div className="p-2 rounded-lg bg-purple-100 text-purple-700 group-hover:bg-purple-600 group-hover:text-white transition-colors shrink-0">
+                        <Building2 className="w-5 h-5" />
                       </div>
-                      <div className="text-xs text-slate-500 mt-0.5">
-                        هوش مصنوعی مولد، اتوماسیون فرایندها و مشاوره مدیران
+                      <div>
+                        <div className="font-bold text-sm text-slate-900 group-hover:text-purple-700">
+                          آموزش‌های سازمانی
+                        </div>
+                        <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+                          هوش مصنوعی مولد، اتوماسیون فرایندها و مشاوره مدیران
+                        </div>
                       </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
                 </div>
               )}
             </div>
