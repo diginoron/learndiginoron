@@ -31,24 +31,24 @@ export default async function CourseDetailPage({ params }: PageProps) {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <span className={`px-3 py-1 rounded-full text-xs font-bold ${
-                isKids ? "bg-cyan-500/20 text-cyan-400 border border-cyan-500/30" : "bg-purple-500/20 text-purple-400 border border-purple-500/30"
+                isKids ? "bg-cyan-100 text-cyan-800 border border-cyan-300" : "bg-purple-100 text-purple-800 border border-purple-300"
               }`}>
                 {course.categoryName}
               </span>
-              <span className="text-xs text-gray-400">مخاطبین: {course.targetAudience}</span>
+              <span className="text-xs text-slate-500">مخاطبین: {course.targetAudience}</span>
             </div>
 
-            <h1 className="text-2xl sm:text-4xl font-black text-white leading-tight">
+            <h1 className="text-2xl sm:text-4xl font-black text-slate-900 leading-tight">
               {course.title}
             </h1>
 
-            <p className="text-sm text-gray-300 leading-relaxed">
+            <p className="text-sm text-slate-600 leading-relaxed">
               {course.fullDesc}
             </p>
           </div>
 
           {/* Banner Image */}
-          <div className="relative h-72 sm:h-96 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
+          <div className="relative h-72 sm:h-96 rounded-3xl overflow-hidden border border-slate-200 shadow-lg">
             <Image
               src={course.image}
               alt={course.title}
@@ -59,29 +59,29 @@ export default async function CourseDetailPage({ params }: PageProps) {
           </div>
 
           {/* Syllabus Topics */}
-          <div className="glass-panel p-8 rounded-3xl border border-slate-800 space-y-6">
-            <h2 className="text-xl font-bold text-white flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-cyan-400" />
+          <div className="glass-panel bg-white p-8 rounded-3xl border border-slate-200 space-y-6 shadow-sm">
+            <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+              <Sparkles className="w-5 h-5 text-cyan-600" />
               <span>سرفصل‌های آموزشی دوره</span>
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {course.topics.map((topic, idx) => (
-                <div key={idx} className="p-4 bg-slate-900/80 rounded-2xl border border-slate-800 flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
-                  <span className="text-xs font-semibold text-gray-200 leading-relaxed">{topic}</span>
+                <div key={idx} className="p-4 bg-slate-50 rounded-2xl border border-slate-200 flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-cyan-600 shrink-0 mt-0.5" />
+                  <span className="text-xs font-semibold text-slate-800 leading-relaxed">{topic}</span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Features & Guarantees */}
-          <div className="glass-panel p-8 rounded-3xl border border-slate-800 space-y-4">
-            <h3 className="text-lg font-bold text-white">ویژگی‌ها و مزایای دوره دیجی نورون</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-gray-300">
+          <div className="glass-panel bg-white p-8 rounded-3xl border border-slate-200 space-y-4 shadow-sm">
+            <h3 className="text-lg font-bold text-slate-900">ویژگی‌ها و مزایای دوره دیجی نورون</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-600">
               {course.features.map((feat, idx) => (
                 <div key={idx} className="flex items-center gap-2">
-                  <Award className="w-4 h-4 text-amber-400 shrink-0" />
+                  <Award className="w-4 h-4 text-amber-600 shrink-0" />
                   <span>{feat}</span>
                 </div>
               ))}
@@ -92,33 +92,33 @@ export default async function CourseDetailPage({ params }: PageProps) {
 
         {/* Right 1 col: Sticky Enrollment Box */}
         <div className="space-y-6">
-          <div className="glass-panel p-8 rounded-3xl border border-cyan-500/30 sticky top-28 space-y-6 shadow-2xl">
-            <div className="space-y-2 border-b border-slate-800 pb-4">
-              <span className="text-xs text-gray-400">شهریه و قیمت دوره:</span>
-              <div className="text-2xl font-black text-cyan-300">{course.price}</div>
+          <div className="glass-panel bg-white p-8 rounded-3xl border border-cyan-300 sticky top-28 space-y-6 shadow-xl text-slate-900">
+            <div className="space-y-2 border-b border-slate-100 pb-4">
+              <span className="text-xs text-slate-500">شهریه و قیمت دوره:</span>
+              <div className="text-2xl font-black text-cyan-800">{course.price}</div>
             </div>
 
-            <div className="space-y-3 text-xs text-gray-300">
-              <div className="flex items-center justify-between py-1 border-b border-slate-800/60">
-                <span className="text-gray-400">طول دوره:</span>
-                <span className="font-bold text-white">{course.duration}</span>
+            <div className="space-y-3 text-xs text-slate-600">
+              <div className="flex items-center justify-between py-1 border-b border-slate-100">
+                <span className="text-slate-500">طول دوره:</span>
+                <span className="font-bold text-slate-900">{course.duration}</span>
               </div>
-              <div className="flex items-center justify-between py-1 border-b border-slate-800/60">
-                <span className="text-gray-400">تعداد جلسات:</span>
-                <span className="font-bold text-white">{course.sessionsCount} جلسه</span>
+              <div className="flex items-center justify-between py-1 border-b border-slate-100">
+                <span className="text-slate-500">تعداد جلسات:</span>
+                <span className="font-bold text-slate-900">{course.sessionsCount} جلسه</span>
               </div>
-              <div className="flex items-center justify-between py-1 border-b border-slate-800/60">
-                <span className="text-gray-400">سطح آموزشی:</span>
-                <span className="font-bold text-cyan-400">{course.level}</span>
+              <div className="flex items-center justify-between py-1 border-b border-slate-100">
+                <span className="text-slate-500">سطح آموزشی:</span>
+                <span className="font-bold text-cyan-700">{course.level}</span>
               </div>
-              <div className="flex items-center justify-between py-1 border-b border-slate-800/60">
-                <span className="text-gray-400">پیش‌نیاز:</span>
-                <span className="font-bold text-white">{course.prerequisites}</span>
+              <div className="flex items-center justify-between py-1 border-b border-slate-100">
+                <span className="text-slate-500">پیش‌نیاز:</span>
+                <span className="font-bold text-slate-900">{course.prerequisites}</span>
               </div>
             </div>
 
             {/* Instructor Box */}
-            <div className="p-4 bg-slate-900 rounded-2xl border border-slate-800 flex items-center gap-3">
+            <div className="p-4 bg-slate-50 rounded-2xl border border-slate-200 flex items-center gap-3">
               <Image
                 src={course.instructor.avatar}
                 alt={course.instructor.name}
@@ -128,15 +128,15 @@ export default async function CourseDetailPage({ params }: PageProps) {
                 unoptimized
               />
               <div>
-                <div className="font-bold text-xs text-white">{course.instructor.name}</div>
-                <div className="text-[11px] text-gray-400">{course.instructor.role}</div>
+                <div className="font-bold text-xs text-slate-900">{course.instructor.name}</div>
+                <div className="text-[11px] text-slate-500">{course.instructor.role}</div>
               </div>
             </div>
 
             {/* CTAs */}
             <a
               href="tel:02188252497"
-              className="w-full py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-black font-extrabold rounded-2xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-cyan-500/20"
+              className="w-full py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-extrabold rounded-2xl flex items-center justify-center gap-2 transition-all shadow-md text-sm"
             >
               <Phone className="w-4 h-4" />
               <span>ثبت‌نام تلفنی: 02188252497</span>
@@ -144,7 +144,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
 
             <a
               href="#consultation"
-              className="w-full py-3.5 bg-slate-900 hover:bg-slate-800 text-cyan-400 border border-cyan-500/30 text-xs font-bold rounded-2xl flex items-center justify-center gap-2"
+              className="w-full py-3.5 bg-slate-100 hover:bg-slate-200 text-cyan-800 border border-slate-300 text-xs font-bold rounded-2xl flex items-center justify-center gap-2"
             >
               <span>درخواست مشاوره رایگان</span>
             </a>

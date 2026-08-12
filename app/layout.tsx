@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl" className={vazirmatn.variable}>
-      <body className="antialiased bg-[#0b0f19] text-gray-100 min-h-screen flex flex-col selection:bg-cyan-500 selection:text-white">
+      <body className="antialiased bg-slate-50 text-slate-900 min-h-screen flex flex-col selection:bg-cyan-500 selection:text-white">
         <Navbar />
         <main className="flex-grow pt-20">
           {children}

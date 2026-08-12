@@ -33,16 +33,16 @@ export default function LearningRoadmap() {
   ];
 
   return (
-    <section className="py-20 relative bg-slate-950/80 border-t border-slate-800">
+    <section className="py-20 relative bg-slate-100/70 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-bold text-cyan-400 uppercase tracking-widest bg-cyan-950/60 px-3 py-1 rounded-full border border-cyan-500/30">
+          <span className="text-xs font-bold text-cyan-800 uppercase tracking-widest bg-cyan-100 px-3 py-1 rounded-full border border-cyan-300">
             مسیر موفقیت دانش‌پذیران
           </span>
-          <h2 className="text-2xl sm:text-4xl font-extrabold text-white">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
             مسیر ۴ مرحله‌ای یادگیری در <span className="text-gradient-cyan">آکادمی دیجی نورون</span>
           </h2>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-slate-600">
             چه یک دانش‌آموز باشد و چه یک مدیر ارشد، فرایند آموزش در دیجی نورون کاملاً شفاف و نقشه‌راه محور است.
           </p>
         </div>
@@ -53,22 +53,22 @@ export default function LearningRoadmap() {
             return (
               <div
                 key={idx}
-                className="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition-all relative group"
+                className="glass-panel bg-white p-6 rounded-2xl border border-slate-200 hover:border-cyan-400 transition-all relative group shadow-sm"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <div className={`p-3 rounded-xl bg-gradient-to-br ${step.color} text-black font-bold`}>
+                  <div className={`p-3 rounded-xl bg-gradient-to-br ${step.color} text-white font-bold`}>
                     <IconComp className="w-6 h-6" />
                   </div>
-                  <span className="text-3xl font-black text-slate-700 group-hover:text-cyan-400/40 transition-colors font-mono">
+                  <span className="text-3xl font-black text-slate-200 group-hover:text-cyan-500/30 transition-colors font-mono">
                     {step.num}
                   </span>
                 </div>
 
-                <h3 className="font-bold text-base text-white mb-2 group-hover:text-cyan-300 transition-colors">
+                <h3 className="font-bold text-base text-slate-900 mb-2 group-hover:text-cyan-700 transition-colors">
                   {step.title}
                 </h3>
 
-                <p className="text-xs text-gray-400 leading-relaxed">
+                <p className="text-xs text-slate-600 leading-relaxed">
                   {step.desc}
                 </p>
               </div>

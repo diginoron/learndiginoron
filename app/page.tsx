@@ -30,18 +30,18 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 text-xs font-semibold mb-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 border border-cyan-300 text-cyan-800 text-xs font-semibold mb-3">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>مجله علمی و مقالات تخصصی</span>
               </div>
-              <h2 className="text-2xl sm:text-4xl font-extrabold text-white">
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
                 آخرین تحلیل‌ها و <span className="text-gradient-cyan">اخبار هوش مصنوعی</span>
               </h2>
             </div>
 
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 text-sm font-bold text-cyan-400 hover:text-cyan-300 transition-colors"
+              className="inline-flex items-center gap-2 text-sm font-bold text-cyan-700 hover:text-cyan-800 transition-colors"
             >
               <span>مشاهده تمامی مقالات در چندین صفحه</span>
               <ArrowLeft className="w-4 h-4" />
@@ -52,9 +52,9 @@ export default function Home() {
             {featuredPosts.map((post) => (
               <div
                 key={post.id}
-                className="glass-panel rounded-2xl overflow-hidden border border-slate-800 hover:border-cyan-500/40 transition-all group flex flex-col justify-between"
+                className="glass-panel bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-cyan-400 transition-all group flex flex-col justify-between shadow-sm"
               >
-                <div className="relative h-48 w-full overflow-hidden bg-slate-900">
+                <div className="relative h-48 w-full overflow-hidden bg-slate-100">
                   <Image
                     src={post.image}
                     alt={post.title}
@@ -62,40 +62,40 @@ export default function Home() {
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     unoptimized
                   />
-                  <div className="absolute top-3 right-3 bg-slate-900/90 text-cyan-300 text-xs px-3 py-1 rounded-full font-bold">
+                  <div className="absolute top-3 right-3 bg-white/90 text-cyan-800 text-xs px-3 py-1 rounded-full font-bold shadow-sm">
                     {post.categoryName}
                   </div>
                 </div>
 
                 <div className="p-6 flex-grow flex flex-col justify-between space-y-4">
                   <div>
-                    <div className="flex items-center gap-4 text-xs text-gray-400 mb-2">
+                    <div className="flex items-center gap-4 text-xs text-slate-500 mb-2">
                       <span className="flex items-center gap-1">
-                        <Calendar className="w-3.5 h-3.5 text-slate-500" />
+                        <Calendar className="w-3.5 h-3.5 text-slate-400" />
                         {post.date}
                       </span>
                       <span className="flex items-center gap-1">
-                        <Clock className="w-3.5 h-3.5 text-slate-500" />
+                        <Clock className="w-3.5 h-3.5 text-slate-400" />
                         {post.readTime}
                       </span>
                     </div>
 
-                    <h3 className="font-bold text-lg text-white group-hover:text-cyan-400 transition-colors line-clamp-2 leading-snug">
+                    <h3 className="font-bold text-lg text-slate-900 group-hover:text-cyan-700 transition-colors line-clamp-2 leading-snug">
                       {post.title}
                     </h3>
 
-                    <p className="text-xs text-gray-400 mt-2 line-clamp-2 leading-relaxed">
+                    <p className="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">
                       {post.excerpt}
                     </p>
                   </div>
 
-                  <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                    <span className="text-xs text-slate-400 font-medium">
+                  <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
+                    <span className="text-xs text-slate-500 font-medium">
                       نویسنده: {post.author.name}
                     </span>
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="inline-flex items-center gap-1 text-xs font-bold text-cyan-400 hover:text-cyan-300"
+                      className="inline-flex items-center gap-1 text-xs font-bold text-cyan-700 hover:text-cyan-800"
                     >
                       <span>مطالعه مقاله</span>
                       <ArrowLeft className="w-3.5 h-3.5" />

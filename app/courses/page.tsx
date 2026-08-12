@@ -26,32 +26,32 @@ export default function CoursesPage() {
       
       {/* Page Title */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 text-xs font-semibold">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 border border-cyan-300 text-cyan-800 text-xs font-semibold">
           <Sparkles className="w-3.5 h-3.5" />
           <span>کاتالوگ کامل دوره‌های آموزشی آکادمی دیجی نورون</span>
         </div>
 
-        <h1 className="text-3xl sm:text-5xl font-black text-white">
+        <h1 className="text-3xl sm:text-5xl font-black text-slate-900">
           دوره‌ها و کارگاه‌های <span className="text-gradient-cyan">هوش مصنوعی</span>
         </h1>
 
-        <p className="text-sm text-gray-300">
+        <p className="text-sm text-slate-600">
           جستجو و فیلتر دوره‌های آموزشی در دو سطح تخصصی «کودکان و نوجوانان» و «سازمانی»
         </p>
       </div>
 
       {/* Search & Filter Bar */}
-      <div className="glass-panel p-4 rounded-2xl border border-slate-800 flex flex-col md:flex-row gap-4 items-center justify-between">
+      <div className="glass-panel bg-white p-4 rounded-2xl border border-slate-200 flex flex-col md:flex-row gap-4 items-center justify-between shadow-sm">
         
         {/* Search Input */}
         <div className="relative w-full md:w-96">
-          <Search className="w-4 h-4 text-gray-400 absolute right-3.5 top-3.5" />
+          <Search className="w-4 h-4 text-slate-400 absolute right-3.5 top-3.5" />
           <input
             type="text"
             placeholder="جستجوی دوره، عنوان یا مهارت..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pr-10 pl-4 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-xs text-white focus:outline-none focus:border-cyan-500 transition-colors"
+            className="w-full pr-10 pl-4 py-2.5 bg-white border border-slate-300 rounded-xl text-xs text-slate-900 focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-slate-400"
           />
         </div>
 
@@ -61,8 +61,8 @@ export default function CoursesPage() {
             onClick={() => setSelectedCategory("all")}
             className={`px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
               selectedCategory === "all"
-                ? "bg-cyan-500 text-black shadow-lg shadow-cyan-500/20"
-                : "bg-slate-900 text-gray-300 hover:bg-slate-800"
+                ? "bg-cyan-600 text-white shadow-md"
+                : "bg-slate-100 text-slate-700 hover:bg-slate-200"
             }`}
           >
             همه دوره‌ها
@@ -71,8 +71,8 @@ export default function CoursesPage() {
             onClick={() => setSelectedCategory("kids")}
             className={`px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
               selectedCategory === "kids"
-                ? "bg-cyan-500 text-black shadow-lg shadow-cyan-500/20"
-                : "bg-slate-900 text-gray-300 hover:bg-slate-800"
+                ? "bg-cyan-600 text-white shadow-md"
+                : "bg-slate-100 text-slate-700 hover:bg-slate-200"
             }`}
           >
             کودکان و نوجوانان (۸-۱۸ سال)
@@ -81,8 +81,8 @@ export default function CoursesPage() {
             onClick={() => setSelectedCategory("corporate")}
             className={`px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
               selectedCategory === "corporate"
-                ? "bg-purple-500 text-black shadow-lg shadow-purple-500/20"
-                : "bg-slate-900 text-gray-300 hover:bg-slate-800"
+                ? "bg-purple-600 text-white shadow-md"
+                : "bg-slate-100 text-slate-700 hover:bg-slate-200"
             }`}
           >
             آموزش‌های سازمانی
@@ -99,8 +99,8 @@ export default function CoursesPage() {
           ))}
         </div>
       ) : (
-        <div className="text-center py-16 bg-slate-900/50 rounded-2xl border border-slate-800">
-          <p className="text-gray-400 text-sm">دوره‌ای با این مشخصات یافت نشد.</p>
+        <div className="text-center py-16 bg-white rounded-2xl border border-slate-200">
+          <p className="text-slate-500 text-sm">دوره‌ای با این مشخصات یافت نشد.</p>
         </div>
       )}
 

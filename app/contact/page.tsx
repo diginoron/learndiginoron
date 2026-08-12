@@ -24,16 +24,16 @@ export default function ContactPage() {
       
       {/* Page Title Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 text-xs font-semibold">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 border border-cyan-300 text-cyan-800 text-xs font-semibold">
           <Headphones className="w-3.5 h-3.5" />
           <span>ارتباط مستقیم با آکادمی دیجی نورون</span>
         </div>
 
-        <h1 className="text-3xl sm:text-5xl font-black text-white">
+        <h1 className="text-3xl sm:text-5xl font-black text-slate-900">
           تماس با <span className="text-gradient-cyan">دیجی نورون</span>
         </h1>
 
-        <p className="text-sm text-gray-300">
+        <p className="text-sm text-slate-600">
           مشاورین ما پاسخگوی تمامی سوالات شما در زمینه دوره‌های آموزشی کودکان، نوجوانان و برنامه‌های سازمانی هستند.
         </p>
       </div>
@@ -44,61 +44,61 @@ export default function ContactPage() {
         <div className="space-y-6">
           
           {/* Prominent Direct Phone Card */}
-          <div className="glass-panel p-6 rounded-3xl border border-cyan-500/40 bg-gradient-to-br from-slate-900 to-cyan-950/50 space-y-4 shadow-xl">
+          <div className="glass-panel bg-white p-6 rounded-3xl border border-cyan-300 space-y-4 shadow-md">
             <div className="flex items-center gap-3">
-              <div className="p-3 rounded-2xl bg-cyan-500/20 text-cyan-400">
+              <div className="p-3 rounded-2xl bg-cyan-100 text-cyan-700">
                 <Phone className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-bold text-white text-base">شماره تماس اصلی و پشتیبانی</h3>
-                <span className="text-xs text-cyan-400">پاسخگویی سریع</span>
+                <h3 className="font-bold text-slate-900 text-base">شماره تماس اصلی و پشتیبانی</h3>
+                <span className="text-xs text-cyan-700 font-bold">پاسخگویی سریع</span>
               </div>
             </div>
 
             <div className="pt-2">
               <a
                 href="tel:02188252497"
-                className="text-2xl sm:text-3xl font-extrabold text-white tracking-widest text-cyan-300 font-mono block hover:text-cyan-400 transition-colors"
+                className="text-2xl sm:text-3xl font-extrabold text-cyan-800 tracking-widest font-mono block hover:text-cyan-600 transition-colors"
               >
                 02188252497
               </a>
-              <p className="text-xs text-gray-400 mt-1">
+              <p className="text-xs text-slate-500 mt-1">
                 (۰۲۱-۸۸۲۵۲۴۹۷) - جهت مشاوره تلفنی فوری کلیک کنید
               </p>
             </div>
           </div>
 
           {/* Working Hours */}
-          <div className="glass-panel p-6 rounded-3xl border border-slate-800 space-y-3">
+          <div className="glass-panel bg-white p-6 rounded-3xl border border-slate-200 space-y-3 shadow-sm">
             <div className="flex items-center gap-3">
-              <div className="p-3 rounded-2xl bg-purple-500/20 text-purple-400">
+              <div className="p-3 rounded-2xl bg-purple-100 text-purple-700">
                 <Clock className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-bold text-white text-base">ساعات کاری آکادمی</h3>
-                <span className="text-xs text-gray-400">شنبه تا چهارشنبه: ۸:۰۰ الی ۱۷:۰۰</span>
+                <h3 className="font-bold text-slate-900 text-base">ساعات کاری آکادمی</h3>
+                <span className="text-xs text-slate-500">شنبه تا چهارشنبه: ۸:۰۰ الی ۱۷:۰۰</span>
               </div>
             </div>
-            <p className="text-xs text-gray-400 pt-1">
+            <p className="text-xs text-slate-500 pt-1">
               پنجشنبه‌ها: ۸:۰۰ الی ۱۳:۰۰ (تعطیلات رسمی: پاسخگویی از طریق پیام‌رسان)
             </p>
           </div>
 
           {/* Location */}
-          <div className="glass-panel p-6 rounded-3xl border border-slate-800 space-y-3">
+          <div className="glass-panel bg-white p-6 rounded-3xl border border-slate-200 space-y-3 shadow-sm">
             <div className="flex items-center gap-3">
-              <div className="p-3 rounded-2xl bg-emerald-500/20 text-emerald-400">
+              <div className="p-3 rounded-2xl bg-emerald-100 text-emerald-700">
                 <MapPin className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-bold text-white text-base">نشانی آکادمی</h3>
-                <span className="text-xs text-gray-400">مرکز نوآوری دیجی نورون</span>
+                <h3 className="font-bold text-slate-900 text-base">نشانی آکادمی</h3>
+                <span className="text-xs text-slate-500">مرکز نوآوری دیجی نورون</span>
               </div>
             </div>
-            <p className="text-xs text-gray-300 leading-relaxed">
+            <p className="text-xs text-slate-700 leading-relaxed">
               تهران، خیابان آزادی، مجتمع فناوری و هوش مصنوعی دیجی نورون
             </p>
-            <p className="text-xs text-gray-400 pt-1">
+            <p className="text-xs text-slate-500 pt-1">
               ایمیل: info@diginoron.com
             </p>
           </div>
@@ -107,25 +107,25 @@ export default function ContactPage() {
 
         {/* Form Column */}
         <div className="lg:col-span-2">
-          <div className="glass-panel p-8 sm:p-10 rounded-3xl border border-slate-800 space-y-6">
-            <div className="border-b border-slate-800 pb-4">
-              <h2 className="text-xl font-bold text-white flex items-center gap-2">
-                <MessageSquare className="w-5 h-5 text-cyan-400" />
+          <div className="glass-panel bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 space-y-6 shadow-md">
+            <div className="border-b border-slate-100 pb-4">
+              <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+                <MessageSquare className="w-5 h-5 text-cyan-600" />
                 <span>فرم پیام مستقیم و درخواست مشاوره</span>
               </h2>
-              <p className="text-xs text-gray-400 mt-1">
+              <p className="text-xs text-slate-500 mt-1">
                 اطلاعات خود را وارد کنید تا کارشناسان آکادمی دیجی نورون در اسرع وقت با شما تماس بگیرند.
               </p>
             </div>
 
             {submitted ? (
-              <div className="p-8 bg-cyan-950/60 border border-cyan-500/40 rounded-2xl text-center space-y-4 py-16">
-                <CheckCircle2 className="w-16 h-16 text-cyan-400 mx-auto animate-bounce" />
-                <h3 className="text-xl font-bold text-white">پیام شما با موفقیت دریافت شد</h3>
-                <p className="text-xs text-gray-300 max-w-md mx-auto leading-relaxed">
+              <div className="p-8 bg-cyan-50 border border-cyan-300 rounded-2xl text-center space-y-4 py-16">
+                <CheckCircle2 className="w-16 h-16 text-cyan-600 mx-auto animate-bounce" />
+                <h3 className="text-xl font-bold text-slate-900">پیام شما با موفقیت دریافت شد</h3>
+                <p className="text-xs text-slate-600 max-w-md mx-auto leading-relaxed">
                   از تماس شما متشکریم. کارشناسان ما جهت ارائه مشاوره آموزشی به زودی با شما ارتباط برقرار خواهند کرد.
                 </p>
-                <div className="pt-2 text-cyan-300 font-mono font-bold text-sm">
+                <div className="pt-2 text-cyan-800 font-mono font-bold text-sm">
                   شماره پشتیبانی فوری: 02188252497
                 </div>
               </div>
@@ -133,8 +133,8 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs font-medium text-gray-300 mb-2">
-                      نام و نام خانوادگی <span className="text-cyan-400">*</span>
+                    <label className="block text-xs font-medium text-slate-700 mb-2">
+                      نام و نام خانوادگی <span className="text-cyan-600">*</span>
                     </label>
                     <input
                       type="text"
@@ -142,13 +142,13 @@ export default function ContactPage() {
                       placeholder="مثلا: مریم احمدی"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3.5 bg-slate-950 border border-slate-800 rounded-xl text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors"
+                      className="w-full px-4 py-3.5 bg-white border border-slate-300 rounded-xl text-sm text-slate-900 focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-slate-400"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-medium text-gray-300 mb-2">
-                      شماره تلفن همراه <span className="text-cyan-400">*</span>
+                    <label className="block text-xs font-medium text-slate-700 mb-2">
+                      شماره تلفن همراه <span className="text-cyan-600">*</span>
                     </label>
                     <input
                       type="tel"
@@ -156,14 +156,14 @@ export default function ContactPage() {
                       placeholder="۰۹۱۲..."
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-3.5 bg-slate-950 border border-slate-800 rounded-xl text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors text-right dir-ltr"
+                      className="w-full px-4 py-3.5 bg-white border border-slate-300 rounded-xl text-sm text-slate-900 focus:outline-none focus:border-cyan-500 transition-colors text-right dir-ltr placeholder:text-slate-400"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs font-medium text-gray-300 mb-2">
+                    <label className="block text-xs font-medium text-slate-700 mb-2">
                       پست الکترونیکی (اختیاری)
                     </label>
                     <input
@@ -171,18 +171,18 @@ export default function ContactPage() {
                       placeholder="name@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3.5 bg-slate-950 border border-slate-800 rounded-xl text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors text-right dir-ltr"
+                      className="w-full px-4 py-3.5 bg-white border border-slate-300 rounded-xl text-sm text-slate-900 focus:outline-none focus:border-cyan-500 transition-colors text-right dir-ltr placeholder:text-slate-400"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-medium text-gray-300 mb-2">
+                    <label className="block text-xs font-medium text-slate-700 mb-2">
                       موضوع مشاوره
                     </label>
                     <select
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      className="w-full px-4 py-3.5 bg-slate-950 border border-slate-800 rounded-xl text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors"
+                      className="w-full px-4 py-3.5 bg-white border border-slate-300 rounded-xl text-sm text-slate-900 focus:outline-none focus:border-cyan-500 transition-colors"
                     >
                       <option value="kids">آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)</option>
                       <option value="corporate">آموزش‌های سازمانی و ارگان‌ها</option>
@@ -193,7 +193,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-gray-300 mb-2">
+                  <label className="block text-xs font-medium text-slate-700 mb-2">
                     متن پیام یا توضیحات درخواست
                   </label>
                   <textarea
