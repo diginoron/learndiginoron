@@ -5,6 +5,8 @@ import { COURSES } from "@/data/courses";
 import { Clock, BookOpen, User, CheckCircle2, Phone, ArrowLeft, ShieldCheck, Award, Sparkles } from "lucide-react";
 import ContactTeaser from "@/components/ContactTeaser";
 
+import CourseFormatsDisplay from "@/components/CourseFormatsDisplay";
+
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
@@ -58,22 +60,26 @@ export default async function CourseDetailPage({ params }: PageProps) {
             />
           </div>
 
-          {/* Syllabus Topics */}
-          <div className="glass-panel bg-white p-8 rounded-3xl border border-slate-200 space-y-6 shadow-sm">
-            <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-cyan-600" />
-              <span>سرفصل‌های آموزشی دوره</span>
-            </h2>
+          {/* Syllabus Formats or Topics */}
+          {course.formats && course.formats.length > 0 ? (
+            <CourseFormatsDisplay formats={course.formats} />
+          ) : (
+            <div className="glass-panel bg-white p-8 rounded-3xl border border-slate-200 space-y-6 shadow-sm">
+              <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+                <Sparkles className="w-5 h-5 text-cyan-600" />
+                <span>سرفصل‌های آموزشی دوره</span>
+              </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {course.topics.map((topic, idx) => (
-                <div key={idx} className="p-4 bg-slate-50 rounded-2xl border border-slate-200 flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-cyan-600 shrink-0 mt-0.5" />
-                  <span className="text-xs font-semibold text-slate-800 leading-relaxed">{topic}</span>
-                </div>
-              ))}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {course.topics.map((topic, idx) => (
+                  <div key={idx} className="p-4 bg-slate-50 rounded-2xl border border-slate-200 flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-cyan-600 shrink-0 mt-0.5" />
+                    <span className="text-xs font-semibold text-slate-800 leading-relaxed">{topic}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Features & Guarantees */}
           <div className="glass-panel bg-white p-8 rounded-3xl border border-slate-200 space-y-4 shadow-sm">
