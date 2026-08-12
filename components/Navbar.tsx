@@ -71,19 +71,14 @@ export default function Navbar() {
           {/* Logo Section */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative flex items-center justify-center p-2 rounded-xl bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border border-cyan-500/30 group-hover:border-cyan-400 transition-all shadow-sm">
-              {/* DigiNoron original site logo image with fallbacks */}
+              {/* DigiNoron logo */}
               <div className="relative w-9 h-9 flex items-center justify-center">
                 <Image
-                  src="https://diginoron.com/wp-content/uploads/2024/09/diginoron1.png"
+                  src="/logo.png"
                   alt="لوگوی دیجی نورون"
                   width={36}
                   height={36}
                   className="object-contain"
-                  unoptimized
-                  onError={(e) => {
-                    // Fallback to stylized SVG icon if network blocks image loading
-                    e.currentTarget.style.display = "none";
-                  }}
                 />
               </div>
             </div>

@@ -17,12 +17,11 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-xl bg-white border border-cyan-500/30 shadow-sm">
                 <Image
-                  src="https://diginoron.com/wp-content/uploads/2024/09/diginoron1.png"
+                  src="/logo.png"
                   alt="دیجی نورون"
                   width={32}
                   height={32}
                   className="object-contain"
-                  unoptimized
                 />
               </div>
               <div>
