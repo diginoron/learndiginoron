@@ -19,8 +19,7 @@ import {
   GitBranch,
   ArrowRightLeft,
   Zap,
-  Compass,
-  FileText
+  Compass
 } from "lucide-react";
 
 export default function Navbar() {
@@ -285,12 +284,6 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link
-              href="/courses"
-              className="px-2.5 py-1.5 font-medium text-slate-700 hover:text-cyan-700 hover:bg-slate-50 rounded-lg transition-colors"
-            >
-              <span>دوره‌ها</span>
-            </Link>
 
             <Link
               href="/blog"
@@ -445,14 +438,7 @@ export default function Navbar() {
           </div>
 
           <div className="border-t border-slate-100 pt-1.5 space-y-1 text-xs">
-            <Link
-              href="/courses"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-2 px-3 py-1.5 text-slate-700 hover:bg-slate-50 rounded-lg"
-            >
-              <BookOpen className="w-4 h-4 text-cyan-600" />
-              <span>دوره‌های آموزشی</span>
-            </Link>
+
 
             <Link
               href="/blog"

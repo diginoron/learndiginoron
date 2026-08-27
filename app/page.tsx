@@ -7,13 +7,13 @@ import ContactTeaser from "@/components/ContactTeaser";
 import Link from "next/link";
 import Image from "next/image";
 import { BLOG_POSTS } from "@/data/blog";
-import { ArrowLeft, BookOpen, Clock, Calendar, Sparkles } from "lucide-react";
+import { ArrowLeft, Clock, Calendar, Sparkles } from "lucide-react";
 
 export default function Home() {
   const featuredPosts = BLOG_POSTS.slice(0, 3);
 
   return (
-    <div className="space-y-16">
+    <div className="flex flex-col">
       {/* 1. Hero Section: Highlights both Enterprise AI Transformation & Academy */}
       <Hero />
 
@@ -30,7 +30,7 @@ export default function Home() {
       <LearningRoadmap />
 
       {/* 6. Latest Articles Teaser */}
-      <section className="py-20 relative">
+      <section className="pt-12 sm:pt-16 pb-4 sm:pb-6 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>

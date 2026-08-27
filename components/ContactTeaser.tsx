@@ -74,7 +74,7 @@ export default function ContactTeaser() {
   };
 
   return (
-    <section id="consultation" className="py-16 sm:py-20 relative overflow-hidden scroll-mt-24">
+    <section id="consultation" className="pt-4 sm:pt-6 pb-16 sm:pb-20 relative overflow-hidden scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="glass-panel bg-white p-6 sm:p-12 rounded-3xl border border-cyan-300 relative shadow-xl">
           
