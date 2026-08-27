@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import EnterpriseServices from "@/components/EnterpriseServices";
 import ServicesOverview from "@/components/ServicesOverview";
 import CourseGrid from "@/components/CourseGrid";
 import LearningRoadmap from "@/components/LearningRoadmap";
@@ -12,20 +13,23 @@ export default function Home() {
   const featuredPosts = BLOG_POSTS.slice(0, 3);
 
   return (
-    <div className="space-y-12">
-      {/* Hero Section */}
+    <div className="space-y-16">
+      {/* 1. Hero Section: Highlights both Enterprise AI Transformation & Academy */}
       <Hero />
 
-      {/* Services Overview: Kids/Teens vs Corporate */}
+      {/* 2. Enterprise AI Transformation (Highest Visual Weight & Priority) */}
+      <EnterpriseServices />
+
+      {/* 3. Educational Services Overview (Kids/Teens & Corporate Academy) */}
       <ServicesOverview />
 
-      {/* Course Catalog Grid */}
+      {/* 4. Course Catalog Grid */}
       <CourseGrid />
 
-      {/* 4-Step Learning Roadmap */}
+      {/* 5. 4-Step Learning Roadmap */}
       <LearningRoadmap />
 
-      {/* Latest Articles Teaser */}
+      {/* 6. Latest Articles Teaser */}
       <section className="py-20 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
@@ -109,7 +113,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Consultation & Phone Teaser */}
+      {/* 7. Consultation & Phone Teaser */}
       <ContactTeaser />
     </div>
   );

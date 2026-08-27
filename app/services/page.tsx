@@ -1,125 +1,201 @@
 import Link from "next/link";
-import { GraduationCap, Building2, CheckCircle2, ArrowLeft, Brain, Sparkles, Phone, ShieldCheck, Users } from "lucide-react";
+import { 
+  Bot, 
+  GraduationCap, 
+  Building2, 
+  CheckCircle2, 
+  ArrowLeft, 
+  Brain, 
+  Sparkles, 
+  Phone, 
+  ShieldCheck, 
+  Users, 
+  Cpu, 
+  GitBranch, 
+  ArrowRightLeft,
+  Zap
+} from "lucide-react";
 import ContactTeaser from "@/components/ContactTeaser";
+
+export const metadata = {
+  title: "خدمات دیجی نورون | هوشمندسازی سازمانی و آموزش هوش مصنوعی",
+  description: "خدمات جامع دیجی نورون شامل خدمات هوشمندسازی سازمانی (طراحی ایجنت‌ها، اتوماسیون فرآیندها، پیاده‌سازی و انتقال تکنولوژی) و خدمات آموزشی (سازمانی و کودکان/نوجوانان).",
+};
 
 export default function ServicesPage() {
   return (
-    <div className="space-y-16 py-12">
+    <div className="space-y-20 py-12">
       
       {/* Header Banner */}
       <section className="relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-100 border border-cyan-300 text-cyan-800 text-xs font-semibold">
-            <Brain className="w-4 h-4" />
-            <span>خدمات آموزشی تخصصی هوش مصنوعی | learn.diginoron.com</span>
+            <Brain className="w-4 h-4 text-cyan-600" />
+            <span>مرکز جامع خدمات هوش مصنوعی دیجی نورون</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-black text-slate-900">
-            خدمات آموزشی <span className="text-gradient-cyan">دیجی نورون</span> در دو سطح اصلی
+          <h1 className="text-3xl sm:text-5xl font-black text-slate-900 leading-tight">
+            دو ستون اصلی خدمات <span className="text-gradient-cyan">دیجی نورون</span>
           </h1>
 
           <p className="text-base text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            آموزش‌های ما به‌صورت کاملاً تخصصی و هدفمند در دو سطح «کودکان و نوجوانان» و «آموزش‌های سازمانی و ارگان‌ها» طراحی شده تا پاسخگوی دقیق نیازهای هر گروه باشد.
+            دیجی نورون در دو محور اصلی فعالیت می‌کند: <strong className="text-slate-900 font-bold">۱. خدمات هوشمندسازی سازمانی</strong> (طراحی هوش مصنوعی و ایجنت‌ها، اتوماسیون، پیاده‌سازی و انتقال تکنولوژی) و <strong className="text-slate-900 font-bold">۲. خدمات آموزشی</strong> (ویژه سازمان‌ها و کودکان/نوجوانان).
           </p>
         </div>
       </section>
 
-      {/* Main 2 Tracks Detailed Comparison */}
+      {/* Pillar 1: Enterprise AI (Highest visual weight & prominence) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 text-white rounded-3xl p-8 sm:p-12 border border-cyan-500/30 shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
           
-          {/* Level 1: Kids & Teens */}
-          <div className="glass-panel bg-white p-8 sm:p-10 rounded-3xl border border-cyan-300 relative flex flex-col justify-between space-y-6 shadow-md">
-            <div className="space-y-6">
-              <div className="flex items-center justify-between">
-                <div className="p-4 rounded-2xl bg-cyan-100 text-cyan-700 border border-cyan-300">
-                  <GraduationCap className="w-10 h-10" />
+          <div className="relative z-10 space-y-8">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-cyan-950 border border-cyan-500/40 text-cyan-300 text-xs font-bold rounded-lg mb-2">
+                  <Zap className="w-4 h-4 text-cyan-400 animate-pulse" />
+                  <span>ستون اصلی شماره ۱ (خدمات سازمانی)</span>
                 </div>
-                <span className="px-3 py-1 bg-cyan-100 text-cyan-800 border border-cyan-300 rounded-full text-xs font-bold">
-                  سطح ۱: کودکان و نوجوانان
-                </span>
+                <h2 className="text-2xl sm:text-4xl font-black">
+                  خدمات هوشمندسازی سازمانی دیجی نورون
+                </h2>
               </div>
-
-              <h2 className="text-2xl font-bold text-slate-900">
-                آموزش هوش مصنوعی برای کودکان و نوجوانان (۸ تا ۱۸ سال)
-              </h2>
-
-              <p className="text-sm text-slate-600 leading-relaxed">
-                این خدمات آموزشی شامل یادگیری بازی‌محور، ساخت بازی‌های کامپوتری، تفکر تفکیکی، برنامه‌نویسی پایتون و آشنایی با ابزارهای تولید محتوای تصویری و متنی هوش مصنوعی است.
-              </p>
-
-              <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3">
-                <h3 className="text-xs font-bold text-cyan-700 uppercase tracking-wider">سرفصل‌ها و محورهای اصلی:</h3>
-                
-                <ul className="space-y-2 text-xs text-slate-700">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600" />
-                    <span>آموزش تفکر الگوریتمی با Scratch & Teachable Machine</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600" />
-                    <span>برنامه‌نویسی مقدماتی تا پیشرفته زبان پایتون (Python)</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600" />
-                    <span>پردازش تصویر، ساخت چت‌بات و رباتیک دانش‌آموزی</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-600" />
-                    <span>اخلاق دیجیتال و استفاده ایمن از ابزارهای مولد AI</span>
-                  </li>
-                </ul>
-              </div>
+              <Link
+                href="/services/enterprise-ai"
+                className="px-6 py-3.5 bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 font-black rounded-xl text-xs sm:text-sm flex items-center gap-2 transition-all self-start md:self-auto"
+              >
+                <span>مشاهده صفحه کامل و مستندات هوشمندسازی</span>
+                <ArrowLeft className="w-4 h-4" />
+              </Link>
             </div>
 
-            <Link
-              href="/services/kids-and-teens"
-              className="w-full py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-extrabold rounded-2xl flex items-center justify-center gap-2 transition-all shadow-md"
-            >
-              <span>اطلاعات کامل و ثبت‌نام دوره‌های کودکان و نوجوانان</span>
-              <ArrowLeft className="w-4 h-4" />
-            </Link>
-          </div>
+            <p className="text-sm sm:text-base text-slate-300 max-w-4xl leading-relaxed">
+              ارائه راهکارهای جامع B2B برای تبدیل سازمان‌ها به ساختارهای هوشمند، خودکار و داده‌محور شامل طراحی و استقرار ایجنت‌های تصمیم‌گیر، اتوماسیون فرآیندهای عملیاتی، ارتقای سیستم‌های قدیمی، پیاده‌سازی On-Premise و انتقال کامل سورس‌کد و دانش فنی.
+            </p>
 
-          {/* Level 2: Corporate */}
-          <div className="glass-panel bg-white p-8 sm:p-10 rounded-3xl border border-purple-300 relative flex flex-col justify-between space-y-6 shadow-md">
+            {/* 5 Sub-services Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              
+              <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-2xl space-y-2">
+                <div className="p-2 rounded-lg bg-cyan-950 text-cyan-400 w-fit">
+                  <Bot className="w-5 h-5" />
+                </div>
+                <h3 className="font-bold text-white text-sm">طراحی هوش مصنوعی و ایجنت‌های سازمانی</h3>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  توسعه ایجنت‌های خودمختار چندعامله، دستیارهای اداری متصل به اسناد محرمانه و سیستم‌های تصمیم‌یار مدیران.
+                </p>
+              </div>
+
+              <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-2xl space-y-2">
+                <div className="p-2 rounded-lg bg-blue-950 text-blue-400 w-fit">
+                  <Cpu className="w-5 h-5" />
+                </div>
+                <h3 className="font-bold text-white text-sm">هوشمندسازی فرآیندها (BPA)</h3>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  اتوماسیون هوشمند امور مالی، صدور فاکتور، غربالگری منابع انسانی، پیش‌بینی رفتار مشتریان و گزارش‌گیری خودکار.
+                </p>
+              </div>
+
+              <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-2xl space-y-2">
+                <div className="p-2 rounded-lg bg-indigo-950 text-indigo-400 w-fit">
+                  <GitBranch className="w-5 h-5" />
+                </div>
+                <h3 className="font-bold text-white text-sm">پیاده‌سازی و به‌روزرسانی زیرساخت</h3>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  استقرار On-Premise مدل‌های زبانی بدون نشت داده، ارتقای نرم‌افزارهای legacy و اتصال مستقیم به ERP سازمان.
+                </p>
+              </div>
+
+              <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-2xl space-y-2">
+                <div className="p-2 rounded-lg bg-emerald-950 text-emerald-400 w-fit">
+                  <ArrowRightLeft className="w-5 h-5" />
+                </div>
+                <h3 className="font-bold text-white text-sm">انتقال تکنولوژی و دانش فنی</h3>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  تحویل کامل کدهای منبع، مستندات معماری و توانمندسازی تیم IT درون‌سازمانی برای جلوگیری از وابستگی انحصاری.
+                </p>
+              </div>
+
+              <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-2xl space-y-2 md:col-span-2 lg:col-span-2">
+                <div className="p-2 rounded-lg bg-purple-950 text-purple-400 w-fit">
+                  <Building2 className="w-5 h-5" />
+                </div>
+                <h3 className="font-bold text-white text-sm">آموزش‌های تخصصی و کاربردی سازمانی</h3>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  مسترکلاس‌های استراتژی هوش مصنوعی ویژه مدیران ارشد، کارگاه‌های مهندسی پرامپت پرسنل و شیوه‌نامه‌های امنیت داده.
+                </p>
+              </div>
+
+            </div>
+
+            <div className="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-slate-800">
+              <span className="text-xs text-slate-400">
+                جهت استعلام نیازهای سازمانی یا دریافت پروپوزال فنی با ما در ارتباط باشید.
+              </span>
+              <a
+                href="tel:02188252497"
+                className="text-xs font-bold text-cyan-300 flex items-center gap-1.5 hover:underline"
+              >
+                <Phone className="w-4 h-4 text-cyan-400" />
+                <span>تماس مستقیم: 02188252497</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pillar 2: Educational Services (2 Tracks: Corporate & Kids/Teens) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        
+        <div>
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-purple-50 border border-purple-200 text-purple-800 text-xs font-bold rounded-lg mb-2">
+            <GraduationCap className="w-4 h-4 text-purple-600" />
+            <span>ستون شماره ۲ (خدمات آموزشی)</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
+            خدمات آموزشی تخصصی در دو بخش
+          </h2>
+          <p className="text-sm text-slate-600 mt-1">
+            ارائه دوره‌ها و برنامه‌های استاندارد یادگیری برای ارتقای شغلی سازمانی و پرورش نسل آینده
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          
+          {/* Level 1: Corporate Training */}
+          <div className="glass-panel bg-white p-8 sm:p-10 rounded-3xl border border-purple-200 relative flex flex-col justify-between space-y-6 shadow-md">
             <div className="space-y-6">
               <div className="flex items-center justify-between">
                 <div className="p-4 rounded-2xl bg-purple-100 text-purple-700 border border-purple-300">
-                  <Building2 className="w-10 h-10" />
+                  <Building2 className="w-8 h-8" />
                 </div>
                 <span className="px-3 py-1 bg-purple-100 text-purple-800 border border-purple-300 rounded-full text-xs font-bold">
-                  سطح ۲: آموزش‌های سازمانی
+                  بخش سازمانی و ارگان‌ها
                 </span>
               </div>
 
-              <h2 className="text-2xl font-bold text-slate-900">
-                خدمات آموزش هوش مصنوعی سازمانی و ارگان‌ها
-              </h2>
+              <h3 className="text-2xl font-bold text-slate-900">
+                آموزش‌های سازمانی و توانمندسازی پرسنل
+              </h3>
 
               <p className="text-sm text-slate-600 leading-relaxed">
-                ویژه شرکت‌ها، سازمان‌های دولتی و خصوصی، مدیران ارشد و تیم‌های عملیاتی جهت افزایش بهره‌وری، اتوماسیون فرایندها و تدوین استراتژی هوش مصنوعی.
+                ویژه شرکت‌ها، سازمان‌های دولتی و خصوصی، مدیران ارشد و تیم‌های عملیاتی جهت افزایش بهره‌وری، اتوماسیون اداری و تدوین استراتژی کاربردی هوش مصنوعی.
               </p>
 
               <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3">
-                <h3 className="text-xs font-bold text-purple-700 uppercase tracking-wider">سرفصل‌ها و محورهای اصلی:</h3>
-                
+                <h4 className="text-xs font-bold text-purple-700 uppercase tracking-wider">سرفصل‌ها و محورهای اصلی:</h4>
                 <ul className="space-y-2 text-xs text-slate-700">
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-purple-600" />
-                    <span>مسترکلاس استراتژی و تحول دیجیتال ویژه مدیران ارشد</span>
+                    <span>مسترکلاس استراتژی هوش مصنوعی ویژه مدیران و تصمیم‌گیران</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-purple-600" />
-                    <span>کارگاه‌های مهندسی پرامپت و اتوماسیون اداری برای پرسنل</span>
+                    <span>کارگاه‌های مهندسی پرامپت و اتوماسیون وظایف برای کارمندان</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-purple-600" />
-                    <span>طراحی و استقرار دستیارهای هوشمند اختصاصی (Custom Bots)</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-purple-600" />
-                    <span>ارزیابی امنیت داده و شیوه‌نامه‌های استفاده از LLMها</span>
+                    <span>شیوه‌نامه‌های امنیت داده و جلوگیری از نشت اطلاعات محرمانه</span>
                   </li>
                 </ul>
               </div>
@@ -129,55 +205,59 @@ export default function ServicesPage() {
               href="/services/corporate"
               className="w-full py-4 bg-purple-700 hover:bg-purple-800 text-white font-extrabold rounded-2xl flex items-center justify-center gap-2 transition-all shadow-md"
             >
-              <span>اطلاعات کامل و درخواست مشاوره سازمانی</span>
+              <span>مشاهده کامل خدمات و دوره‌های سازمانی</span>
               <ArrowLeft className="w-4 h-4 text-white" />
             </Link>
           </div>
 
-        </div>
-      </section>
+          {/* Level 2: Kids & Teens */}
+          <div className="glass-panel bg-white p-8 sm:p-10 rounded-3xl border border-cyan-200 relative flex flex-col justify-between space-y-6 shadow-md">
+            <div className="space-y-6">
+              <div className="flex items-center justify-between">
+                <div className="p-4 rounded-2xl bg-cyan-100 text-cyan-700 border border-cyan-300">
+                  <GraduationCap className="w-8 h-8" />
+                </div>
+                <span className="px-3 py-1 bg-cyan-100 text-cyan-800 border border-cyan-300 rounded-full text-xs font-bold">
+                  بخش کودکان و نوجوانان (۸ تا ۱۸ سال)
+                </span>
+              </div>
 
-      {/* Methodology Section */}
-      <section className="bg-white py-16 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-2xl font-bold text-slate-900">چرا خدمات آموزشی دیجی نورون؟</h2>
-            <p className="text-xs text-slate-500 mt-2">
-              مزایای رقابتی که دیجی نورون را به انتخاب اول فراگیران و سازمان‌ها تبدیل کرده است.
-            </p>
+              <h3 className="text-2xl font-bold text-slate-900">
+                آموزش هوش مصنوعی کودکان و نوجوانان
+              </h3>
+
+              <p className="text-sm text-slate-600 leading-relaxed">
+                آموزش بازی‌محور، ساخت بازی‌های کامپیوتری، تفکر الگوریتمی، برنامه‌نویسی پایتون و آشنایی با ابزارهای تولید تصویر و چت‌بات‌ها برای سنین ۸ تا ۱۸ سال.
+              </p>
+
+              <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3">
+                <h4 className="text-xs font-bold text-cyan-700 uppercase tracking-wider">سرفصل‌ها و محورهای اصلی:</h4>
+                <ul className="space-y-2 text-xs text-slate-700">
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-600" />
+                    <span>آموزش تفکر الگوریتمی و سواد پایه هوش مصنوعی با Scratch & Teachable Machine</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-600" />
+                    <span>برنامه‌نویسی پایتون نوجوانان، پردازش تصویر و ساخت بازی</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-600" />
+                    <span>ساخت دستیارهای صوتی و اخلاق کاربری ایمن در فضای دیجیتال</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <Link
+              href="/services/kids-and-teens"
+              className="w-full py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-extrabold rounded-2xl flex items-center justify-center gap-2 transition-all shadow-md"
+            >
+              <span>مشاهده کامل خدمات کودکان و نوجوانان</span>
+              <ArrowLeft className="w-4 h-4" />
+            </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="glass-panel bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center space-y-3 shadow-sm">
-              <div className="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center mx-auto">
-                <Users className="w-6 h-6" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base">استادان و متخصصین برجسته</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                بهره‌گیری از اساتید دانشگاهی و پژوهشگران باسابقه هوش مصنوعی در ایران.
-              </p>
-            </div>
-
-            <div className="glass-panel bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center space-y-3 shadow-sm">
-              <div className="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center mx-auto">
-                <Brain className="w-6 h-6" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base">برنامه درسی کاملاً بروز</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                سرفصل‌های منطبق با آخرین دستاوردهای سال ۲۰۲۶ و ابزارهای پیشرفته جهانی.
-              </p>
-            </div>
-
-            <div className="glass-panel bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center space-y-3 shadow-sm">
-              <div className="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto">
-                <Phone className="w-6 h-6" />
-              </div>
-              <h3 className="font-bold text-slate-900 text-base">پشتیبانی و مشاوره دائم</h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                امکان مشاوره مستقیم با شماره 02188252497 و پشتیبانی آنلاین دوره‌ها.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
