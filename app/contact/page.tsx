@@ -14,22 +14,61 @@ export default function ContactPage() {
     message: "",
   });
 
+  const getSubjectLabel = (key: string) => {
+    switch (key) {
+      case "enterprise":
+        return "۱. خدمات هوشمندسازی سازمانی (سند راهبردی، ایجنت‌ها، فرآیندها)";
+      case "corporate":
+        return "۲. آموزش‌های سازمانی و مسترکلاس مدیران";
+      case "kids":
+        return "۳. آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)";
+      default:
+        return "۴. سایر موارد";
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.phone) return;
     setLoading(true);
 
+    const now = new Date().toLocaleString("fa-IR", { timeZone: "Asia/Tehran" });
+
     try {
-      await fetch("/api/contact", {
+      // 1. Direct AJAX to FormSubmit
+      await fetch("https://formsubmit.co/ajax/diginoron@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `[دیجی نورون - تماس] پیام از ${formData.name} - ${formData.phone}`,
+          _template: "table",
+          _captcha: "false",
+          "زمان ثبت": now,
+          "نوع فرم": "فرم صفحه تماس با ما (Contact Page)",
+          "نام و نام خانوادگی": formData.name,
+          "شماره تلفن همراه": formData.phone,
+          "پست الکترونیکی": formData.email || "ثبت نشده",
+          "موضوع مشاوره": getSubjectLabel(formData.subject),
+          "متن پیام": formData.message || "بدون توضیحات",
+        }),
+      });
+
+      // 2. Backup to Next.js API
+      fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...formData,
+          serviceType: getSubjectLabel(formData.subject),
           formType: "فرم صفحه تماس با ما",
         }),
-      });
+      }).catch((err) => console.log("Backup API notice:", err));
+
     } catch (err) {
-      console.error(err);
+      console.error("Form submit error:", err);
     } finally {
       setLoading(false);
       setSubmitted(true);

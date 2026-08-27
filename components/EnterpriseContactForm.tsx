@@ -14,26 +14,70 @@ export default function EnterpriseContactForm() {
     message: "",
   });
 
+  const getServiceLabel = (type: string) => {
+    switch (type) {
+      case "blueprint":
+        return "۱. طراحی سند راهبردی هوشمندسازی سازمانی و اطلس بهبود (APQC)";
+      case "agents":
+        return "۲. طراحی هوش مصنوعی و ایجنت‌های سازمانی (AI Agents)";
+      case "bpa":
+        return "۳. هوشمندسازی و اتوماسیون فرآیندهای کسب‌وکار (BPA)";
+      case "implementation":
+        return "۴. پیاده‌سازی و استقرار On-Premise";
+      case "transfer":
+        return "۵. انتقال تکنولوژی و سورس‌کد به سازمان";
+      case "training":
+        return "۶. کارگاه‌ها و آموزش‌های تخصصی سازمانی";
+      default:
+        return type;
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.phone) return;
     setLoading(true);
 
+    const now = new Date().toLocaleString("fa-IR", { timeZone: "Asia/Tehran" });
+
     try {
-      await fetch("/api/contact", {
+      // 1. Direct AJAX to FormSubmit
+      await fetch("https://formsubmit.co/ajax/diginoron@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `[دیجی نورون - سازمانی] درخواست هوشمندسازی از ${formData.name} (${formData.company || "ارگان"})`,
+          _template: "table",
+          _captcha: "false",
+          "زمان ثبت": now,
+          "نوع فرم": "فرم اختصاصی هوشمندسازی سازمانی (B2B)",
+          "نام و مسئول": formData.name,
+          "نام شرکت / سازمان": formData.company || "ثبت نشده",
+          "شماره تماس مستقیم": formData.phone,
+          "حوزه خدمت": getServiceLabel(formData.serviceType),
+          "شرح نیاز سازمانی": formData.message || "بدون توضیحات",
+        }),
+      });
+
+      // 2. Backup to Next.js API
+      fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: `${formData.name} (${formData.company || "شرکت ثبت نشده"})`,
           company: formData.company,
           phone: formData.phone,
-          serviceType: formData.serviceType,
+          serviceType: getServiceLabel(formData.serviceType),
           message: formData.message,
           formType: "فرم اختصاصی هوشمندسازی سازمانی (Enterprise AI)",
         }),
-      });
+      }).catch((err) => console.log("Backup API notice:", err));
+
     } catch (err) {
-      console.error(err);
+      console.error("Enterprise Form submit error:", err);
     } finally {
       setLoading(false);
       setSubmitted(true);

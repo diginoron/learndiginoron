@@ -13,22 +13,60 @@ export default function ContactTeaser() {
     message: "",
   });
 
+  const getServiceLabel = (type: string) => {
+    switch (type) {
+      case "enterprise":
+        return "۱. خدمات هوشمندسازی سازمانی (سند راهبردی، ایجنت‌ها، فرآیندها)";
+      case "corporate":
+        return "۲. آموزش‌های سازمانی و شرکتی";
+      case "kids":
+        return "۳. آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)";
+      default:
+        return type;
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.phone) return;
     setLoading(true);
 
+    const now = new Date().toLocaleString("fa-IR", { timeZone: "Asia/Tehran" });
+
     try {
-      await fetch("/api/contact", {
+      // 1. Direct Client-side AJAX submission to FormSubmit
+      await fetch("https://formsubmit.co/ajax/diginoron@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `[دیجی نورون] درخواست مشاوره: ${formData.name || "کاربر"} - ${formData.phone}`,
+          _template: "table",
+          _captcha: "false",
+          "زمان ثبت": now,
+          "نوع فرم": "فرم مشاوره سریع (انتهای صفحه)",
+          "نام و نام خانوادگی": formData.name || "ثبت نشده",
+          "شماره تماس": formData.phone,
+          "حوزه خدمت": getServiceLabel(formData.audienceType),
+          "متن توضیحات": formData.message || "بدون توضیحات",
+        }),
+      });
+
+      // 2. Internal server-side API call as backup
+      fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...formData,
+          serviceType: getServiceLabel(formData.audienceType),
           formType: "فرم مشاوره سریع صفحه اصلی / انتهای صفحه",
         }),
-      });
+      }).catch((err) => console.log("Backup API notice:", err));
+
     } catch (err) {
-      console.error(err);
+      console.error("Form submit error:", err);
     } finally {
       setLoading(false);
       setSubmitted(true);
