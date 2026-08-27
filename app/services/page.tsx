@@ -13,13 +13,14 @@ import {
   Cpu, 
   GitBranch, 
   ArrowRightLeft,
-  Zap
+  Zap,
+  Compass
 } from "lucide-react";
 import ContactTeaser from "@/components/ContactTeaser";
 
 export const metadata = {
   title: "خدمات دیجی نورون | هوشمندسازی سازمانی و آموزش هوش مصنوعی",
-  description: "خدمات جامع دیجی نورون شامل خدمات هوشمندسازی سازمانی (طراحی ایجنت‌ها، اتوماسیون فرآیندها، پیاده‌سازی و انتقال تکنولوژی) و خدمات آموزشی (سازمانی و کودکان/نوجوانان).",
+  description: "خدمات جامع دیجی نورون شامل طراحی سند راهبردی هوشمندسازی، تحلیل فرآیندها با APQC، طراحی ایجنت‌ها، اتوماسیون فرآیندها، پیاده‌سازی و خدمات آموزشی.",
 };
 
 export default function ServicesPage() {
@@ -39,7 +40,7 @@ export default function ServicesPage() {
           </h1>
 
           <p className="text-base text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            دیجی نورون در دو محور اصلی فعالیت می‌کند: <strong className="text-slate-900 font-bold">۱. خدمات هوشمندسازی سازمانی</strong> (طراحی هوش مصنوعی و ایجنت‌ها، اتوماسیون، پیاده‌سازی و انتقال تکنولوژی) و <strong className="text-slate-900 font-bold">۲. خدمات آموزشی</strong> (ویژه سازمان‌ها و کودکان/نوجوانان).
+            دیجی نورون در دو محور اصلی فعالیت می‌کند: <strong className="text-slate-900 font-bold">۱. خدمات هوشمندسازی سازمانی</strong> (طراحی سند راهبردی، ایجنت‌ها، اتوماسیون، پیاده‌سازی و انتقال تکنولوژی) و <strong className="text-slate-900 font-bold">۲. خدمات آموزشی</strong> (ویژه سازمان‌ها و کودکان/نوجوانان).
           </p>
         </div>
       </section>
@@ -70,12 +71,25 @@ export default function ServicesPage() {
             </div>
 
             <p className="text-sm sm:text-base text-slate-300 max-w-4xl leading-relaxed">
-              ارائه راهکارهای جامع B2B برای تبدیل سازمان‌ها به ساختارهای هوشمند، خودکار و داده‌محور شامل طراحی و استقرار ایجنت‌های تصمیم‌گیر، اتوماسیون فرآیندهای عملیاتی، ارتقای سیستم‌های قدیمی، پیاده‌سازی On-Premise و انتقال کامل سورس‌کد و دانش فنی.
+              ارائه راهکارهای جامع B2B برای تبدیل سازمان‌ها به ساختارهای هوشمند و داده‌محور شامل طراحی سند راهبردی مبتنی بر APQC، طراحی و استقرار ایجنت‌های تصمیم‌گیر، اتوماسیون فرآیندهای عملیاتی، ارتقای سیستم‌های قدیمی، پیاده‌سازی On-Premise و انتقال کامل سورس‌کد و دانش فنی.
             </p>
 
-            {/* 5 Sub-services Cards */}
+            {/* 6 Sub-services Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               
+              <div className="p-4 bg-slate-900/90 border border-amber-500/40 rounded-2xl space-y-2 relative overflow-hidden">
+                <div className="p-2 rounded-lg bg-amber-950 text-amber-400 w-fit">
+                  <Compass className="w-5 h-5" />
+                </div>
+                <h3 className="font-bold text-white text-sm flex items-center justify-between">
+                  <span>طراحی سند راهبردی هوشمندسازی</span>
+                  <span className="text-[10px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded-full font-mono">APQC</span>
+                </h3>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  عارضه‌یابی ساختار، تحلیل شکاف فرآیندها مبتنی بر APQC و ترسیم اطلس راهبردی پروژه‌های بهبود هوش مصنوعی با اولویت ROI.
+                </p>
+              </div>
+
               <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-2xl space-y-2">
                 <div className="p-2 rounded-lg bg-cyan-950 text-cyan-400 w-fit">
                   <Bot className="w-5 h-5" />
@@ -116,11 +130,11 @@ export default function ServicesPage() {
                 </p>
               </div>
 
-              <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-2xl space-y-2 md:col-span-2 lg:col-span-2">
+              <div className="p-4 bg-slate-900/80 border border-slate-800 rounded-2xl space-y-2">
                 <div className="p-2 rounded-lg bg-purple-950 text-purple-400 w-fit">
                   <Building2 className="w-5 h-5" />
                 </div>
-                <h3 className="font-bold text-white text-sm">آموزش‌های تخصصی و کاربردی سازمانی</h3>
+                <h3 className="font-bold text-white text-sm">آموزش‌های تخصصی سازمانی</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">
                   مسترکلاس‌های استراتژی هوش مصنوعی ویژه مدیران ارشد، کارگاه‌های مهندسی پرامپت پرسنل و شیوه‌نامه‌های امنیت داده.
                 </p>

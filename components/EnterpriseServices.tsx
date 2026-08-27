@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { 
+  FileText,
   Bot, 
   Cpu, 
   GitBranch, 
@@ -19,7 +20,8 @@ import {
   Phone,
   Server,
   Layers,
-  Code2
+  Code2,
+  Compass
 } from "lucide-react";
 
 export default function EnterpriseServices() {
@@ -28,6 +30,24 @@ export default function EnterpriseServices() {
   const pillars = [
     {
       id: 0,
+      title: "طراحی سند راهبردی هوشمندسازی سازمانی",
+      subtitle: "AI Strategic Blueprint, APQC Gap Analysis & Readiness Atlas",
+      icon: Compass,
+      color: "amber",
+      badge: "گام نخست و بنیادین",
+      tagline: "تحلیل ساختار و فرآیندها مبتنی بر APQC، تحلیل شکاف و ترسیم اطلس پروژه‌های بهبود هوش مصنوعی",
+      description: "در این خدمت بنیادین، ابتدا فرآیندها، ساختار سازمانی و معماری داده‌های سازمان مورد تحلیل و عارضه‌یابی همه‌جانبه قرار می‌گیرند. سپس بر اساس تحلیل شکاف (Gap Analysis)، چارچوب بین‌المللی APQC و شاخص‌های سنجش آمادگی سازمان برای هوش مصنوعی (AI Readiness Index)، اطلس راهبردی پروژه‌های بهبود مبتنی بر هوش مصنوعی در قالب یک سند راهبردی جامع و نقشه راه فازبندی‌شده ارائه می‌گردد.",
+      capabilities: [
+        "عارضه‌یابی و مدلسازی فرآیندهای سازمان منطبق بر متدولوژی استاندارد جهانی APQC",
+        "ارزیابی سطح بلوغ دیجیتال و شاخص‌های سنجش آمادگی سازمان برای هوش مصنوعی (AI Readiness)",
+        "تحلیل شکاف (Gap Analysis) وضع موجود با وضع مطلوب فناوری در تمامی دپارتمان‌ها",
+        "تدوین اطلس راهبردی پروژه‌های بهبود مبتنی بر AI با اولویت‌بندی نرخ بازگشت سرمایه (ROI)",
+        "ارائه سند جامع معماری راهبردی هوشمندسازی و نقشه راه اجرایی ۳ تا ۵ ساله"
+      ],
+      deliverables: ["سند راهبردی مصوب", "اطلس پروژه‌های هوشمندسازی", "گزارش تحلیل شکاف APQC", "شاخص‌های سنجش آمادگی"]
+    },
+    {
+      id: 1,
       title: "طراحی هوش مصنوعی و ایجنت‌های سازمانی",
       subtitle: "AI Agents & Autonomous Multi-Agent Systems",
       icon: Bot,
@@ -44,7 +64,7 @@ export default function EnterpriseServices() {
       deliverables: ["کدبیس اختصاصی", "پنل مدیریت ایجنت‌ها", "تضمین امنیت داده‌ها", "پشتیبانی فنی"]
     },
     {
-      id: 1,
+      id: 2,
       title: "هوشمندسازی فرآیندها (BPA)",
       subtitle: "Business Process Intelligence & Intelligent Automation",
       icon: Cpu,
@@ -61,7 +81,7 @@ export default function EnterpriseServices() {
       deliverables: ["نقشه فرآیندی جدید", "پایپ‌لاین اتوماتیک", "کاهش ۷۰٪ زمان پردازش", "مانیتورینگ خطای Real-time"]
     },
     {
-      id: 2,
+      id: 3,
       title: "پیاده‌سازی، یکپارچه‌سازی و به‌روزرسانی",
       subtitle: "Implementation, Integration & Upgrades",
       icon: GitBranch,
@@ -72,13 +92,13 @@ export default function EnterpriseServices() {
       capabilities: [
         "استقرار On-Premise مدل‌های زبانی متن‌باز (Local LLMs) با صفر درصد نشت اطلاعات",
         "متصل‌سازی زیرساخت هوش مصنوعی به سرویس‌های Microsoft Dynamics, SAP, همکاران سیستم و...",
-        "بهینه‌سازی سخت‌افزاری و GPU Orchestration جهت کاهش هزینه‌های محاسباتی",
+        "بهینه‌سازی سخت‌افزاری و GPU Orchestraction جهت کاهش هزینه‌های محاسباتی",
         "به‌روزرسانی و ارتقای نرم‌افزارهای legacy موجود در سازمان به استانداردهای مدرن هوش مصنوعی"
       ],
       deliverables: ["کانفیگ سرور و پایپ‌لاین", "API Gateway امن", "گارانتی SLA آپ‌تایم", "مستندات معماری سیستم"]
     },
     {
-      id: 3,
+      id: 4,
       title: "انتقال تکنولوژی و دانش فنی",
       subtitle: "Technology Transfer & Internal IP Ownership",
       icon: ArrowRightLeft,
@@ -95,7 +115,7 @@ export default function EnterpriseServices() {
       deliverables: ["انتقال کامل سورس‌کد", "جلسات انتقال دانش", "شیوه‌نامه MLOps", "استقلال کامل تیم داخلی"]
     },
     {
-      id: 4,
+      id: 5,
       title: "آموزش‌های تخصصی سازمانی",
       subtitle: "Enterprise Upskilling & Executive AI Masterclasses",
       icon: Building2,
@@ -117,7 +137,7 @@ export default function EnterpriseServices() {
   const IconComponent = current.icon;
 
   return (
-    <section className="py-24 relative overflow-hidden bg-slate-900 text-white">
+    <section className="py-20 sm:py-24 relative overflow-hidden bg-slate-900 text-white">
       {/* Background Tech Grids & Lights */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30 pointer-events-none" />
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
@@ -126,7 +146,7 @@ export default function EnterpriseServices() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 text-xs font-bold shadow-lg">
             <Zap className="w-4 h-4 text-cyan-400 animate-pulse" />
             <span>خدمت محوری و تحول‌آفرین | Enterprise AI Solutions</span>
@@ -137,12 +157,12 @@ export default function EnterpriseServices() {
           </h2>
 
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl mx-auto">
-            ما با ترکیب پیشرفته‌ترین متدولوژی‌های هوش مصنوعی، اتوماسیون چندعامله و انتقال دانش، سازمان‌ها و شرکت‌ها را به لبه تکنولوژی روز مجهز می‌کنیم.
+            از تدوین سند راهبردی و تحلیل فرآیندها تا طراحی ایجنت‌های خودمختار، اتوماسیون، پیاده‌سازی و انتقال دانش به تیم شما.
           </p>
         </div>
 
-        {/* 5 Service Tabs Navigation */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-10">
+        {/* 6 Service Tabs Navigation */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-8">
           {pillars.map((pillar) => {
             const PIcon = pillar.icon;
             const isSelected = activePillar === pillar.id;
@@ -150,9 +170,9 @@ export default function EnterpriseServices() {
               <button
                 key={pillar.id}
                 onClick={() => setActivePillar(pillar.id)}
-                className={`p-4 rounded-2xl border text-right transition-all flex flex-col justify-between gap-3 relative overflow-hidden group ${
+                className={`p-3 sm:p-4 rounded-2xl border text-right transition-all flex flex-col justify-between gap-2.5 relative overflow-hidden group ${
                   isSelected
-                    ? "bg-slate-800/90 border-cyan-400 shadow-xl shadow-cyan-950/50 scale-[1.02]"
+                    ? "bg-slate-800/95 border-cyan-400 shadow-xl shadow-cyan-950/50 scale-[1.02]"
                     : "bg-slate-800/40 border-slate-700/60 hover:bg-slate-800/70 hover:border-slate-600 text-slate-300"
                 }`}
               >
@@ -161,12 +181,12 @@ export default function EnterpriseServices() {
                 )}
                 
                 <div className="flex items-center justify-between">
-                  <div className={`p-2.5 rounded-xl ${
+                  <div className={`p-2 rounded-xl ${
                     isSelected ? "bg-cyan-500/20 text-cyan-300" : "bg-slate-700/50 text-slate-400 group-hover:text-white"
                   }`}>
-                    <PIcon className="w-5 h-5" />
+                    <PIcon className="w-4 h-4" />
                   </div>
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                  <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded-full ${
                     isSelected ? "bg-cyan-500/20 text-cyan-300 border border-cyan-400/40" : "bg-slate-700/50 text-slate-400"
                   }`}>
                     {pillar.badge}
@@ -174,7 +194,7 @@ export default function EnterpriseServices() {
                 </div>
 
                 <div>
-                  <div className={`font-bold text-xs sm:text-sm leading-snug ${
+                  <div className={`font-bold text-[11px] sm:text-xs leading-snug ${
                     isSelected ? "text-white" : "text-slate-200"
                   }`}>
                     {pillar.title}
@@ -195,7 +215,7 @@ export default function EnterpriseServices() {
               <div className="flex items-center gap-3 flex-wrap">
                 <span className="px-3 py-1 bg-cyan-500/20 border border-cyan-400/40 text-cyan-300 text-xs font-bold rounded-lg flex items-center gap-1.5">
                   <IconComponent className="w-3.5 h-3.5" />
-                  <span>محور شماره {current.id + 1} از ۵ خدمت هوشمندسازی</span>
+                  <span>محور شماره {current.id + 1} از خدمات هوشمندسازی</span>
                 </span>
                 <span className="text-xs text-slate-400 font-mono">{current.subtitle}</span>
               </div>
@@ -209,7 +229,7 @@ export default function EnterpriseServices() {
                 </p>
               </div>
 
-              <p className="text-sm text-slate-300 leading-relaxed">
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                 {current.description}
               </p>
 
@@ -255,28 +275,28 @@ export default function EnterpriseServices() {
               <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                 <div className="flex items-center gap-2 text-xs font-bold text-cyan-300">
                   <Server className="w-4 h-4" />
-                  <span>مشخصات فنی و استانداردهای تحویل</span>
+                  <span>استانداردها و متدولوژی تحویل</span>
                 </div>
                 <span className="text-[10px] text-emerald-400 bg-emerald-950/70 border border-emerald-500/40 px-2 py-0.5 rounded-full font-bold">
-                  Enterprise Ready
+                  APQC & Enterprise Ready
                 </span>
               </div>
 
               {/* Architecture Badges */}
               <div className="space-y-3">
                 <div className="flex items-center justify-between p-2.5 bg-slate-900/60 rounded-xl border border-slate-800 text-xs">
+                  <span className="text-slate-400">چارچوب استاندارد فرآیندی:</span>
+                  <span className="text-white font-bold font-mono">APQC Process Framework</span>
+                </div>
+
+                <div className="flex items-center justify-between p-2.5 bg-slate-900/60 rounded-xl border border-slate-800 text-xs">
+                  <span className="text-slate-400">سنجش آمادگی هوش مصنوعی:</span>
+                  <span className="text-white font-bold">AI Readiness Index (AIRI)</span>
+                </div>
+
+                <div className="flex items-center justify-between p-2.5 bg-slate-900/60 rounded-xl border border-slate-800 text-xs">
                   <span className="text-slate-400">امنیت و ایزوله‌سازی داده:</span>
                   <span className="text-white font-bold font-mono">100% On-Premise / Hybrid</span>
-                </div>
-
-                <div className="flex items-center justify-between p-2.5 bg-slate-900/60 rounded-xl border border-slate-800 text-xs">
-                  <span className="text-slate-400">معماری سیستم:</span>
-                  <span className="text-white font-bold">Multi-Agent & Modular API</span>
-                </div>
-
-                <div className="flex items-center justify-between p-2.5 bg-slate-900/60 rounded-xl border border-slate-800 text-xs">
-                  <span className="text-slate-400">سازگاری با پایگاه‌های داده:</span>
-                  <span className="text-white font-bold">SQL, NoSQL, Vector DBs</span>
                 </div>
 
                 <div className="flex items-center justify-between p-2.5 bg-slate-900/60 rounded-xl border border-slate-800 text-xs">
@@ -300,7 +320,7 @@ export default function EnterpriseServices() {
               {/* Direct callout */}
               <div className="p-3 bg-gradient-to-r from-cyan-950/60 to-indigo-950/60 border border-cyan-500/30 rounded-xl text-center">
                 <div className="text-[11px] text-slate-300">
-                  نیاز به بررسی سازمانی دارید؟ کارشناسان ما فرآیندهای شما را ارزیابی می‌کنند.
+                  نیاز به طراحی سند راهبردی دارید؟ کارشناسان ما آماده برگزاری جلسه تحلیل اولیه هستند.
                 </div>
               </div>
 
@@ -316,22 +336,22 @@ export default function EnterpriseServices() {
               مراحل اجرای پروژه هوشمندسازی در سازمان شما
             </h3>
             <p className="text-xs text-slate-400 mt-1">
-              متدولوژی استاندارد ۴ مرحله‌ای دیجی نورون از عارضه‌یابی تا تحویل و استقلال سازمانی
+              متدولوژی استاندارد ۴ مرحله‌ای دیجی نورون از عارضه‌یابی و سند راهبردی تا تحویل و استقلال سازمانی
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             
             <div className="p-5 bg-slate-800/40 border border-slate-700/60 rounded-2xl relative">
-              <div className="text-3xl font-black text-cyan-500/30 font-mono mb-2">01</div>
-              <h4 className="font-bold text-white text-sm mb-1.5">ممیزی و ارزیابی هوشمندی</h4>
+              <div className="text-3xl font-black text-amber-400/30 font-mono mb-2">01</div>
+              <h4 className="font-bold text-white text-sm mb-1.5">تدوین سند راهبردی و اطلس بهبود</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
-                تحلیل داده‌های موجود، شناسایی گلوگاه‌های انسانی و تعیین دقیق سناریوهای با بیشترین نرخ بازگشت سرمایه (ROI).
+                تحلیل فرآیندها با APQC، ارزیابی آمادگی هوش مصنوعی و تدوین اطلس پروژه‌های با بالاترین ROI.
               </p>
             </div>
 
             <div className="p-5 bg-slate-800/40 border border-slate-700/60 rounded-2xl relative">
-              <div className="text-3xl font-black text-blue-500/30 font-mono mb-2">02</div>
+              <div className="text-3xl font-black text-cyan-400/30 font-mono mb-2">02</div>
               <h4 className="font-bold text-white text-sm mb-1.5">طراحی معماری و ایجنت‌ها</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
                 انتخاب یا تیونینگ مدل‌ها، طراحی عامل‌های هوشمند، ساخت پایپ‌لاین RAG و اتصال به ابزارهای سازمان.
@@ -342,7 +362,7 @@ export default function EnterpriseServices() {
               <div className="text-3xl font-black text-indigo-500/30 font-mono mb-2">03</div>
               <h4 className="font-bold text-white text-sm mb-1.5">استقرار فنی On-Premise/Cloud</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
-                راه‌اندازی پایلوت در محیط واقعی، تست‌های امنیتی و یکپارچه‌سازی کامل با سامانه‌های مالی، اداری و CRM.
+                راه‌اندازی پایلوت در محیط واقعی، تست‌های امنیتی و یکپارچه‌سازی کامل با سامانه‌های مالی و اداری.
               </p>
             </div>
 
@@ -350,7 +370,7 @@ export default function EnterpriseServices() {
               <div className="text-3xl font-black text-emerald-500/30 font-mono mb-2">04</div>
               <h4 className="font-bold text-white text-sm mb-1.5">انتقال دانش و آموزش پرسنل</h4>
               <p className="text-xs text-slate-400 leading-relaxed">
-                تحویل سورس‌کدها، برگزاری کارگاه‌های عملی برای کارمندان و آموزش راهبری سیستم به تیم مهندسی سازمان.
+                تحویل سورس‌کدها، برگزاری کارگاه‌های عملی برای کارمندان و آموزش راهبری سیستم به تیم مهندسی.
               </p>
             </div>
 

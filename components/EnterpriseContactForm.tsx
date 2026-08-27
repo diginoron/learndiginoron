@@ -10,7 +10,7 @@ export default function EnterpriseContactForm() {
     name: "",
     company: "",
     phone: "",
-    serviceType: "all",
+    serviceType: "blueprint",
     message: "",
   });
 
@@ -25,8 +25,9 @@ export default function EnterpriseContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: `${formData.name} (${formData.company || "شرکت ثبت نشده"})`,
+          company: formData.company,
           phone: formData.phone,
-          subject: formData.serviceType,
+          serviceType: formData.serviceType,
           message: formData.message,
           formType: "فرم اختصاصی هوشمندسازی سازمانی (Enterprise AI)",
         }),
@@ -110,12 +111,12 @@ export default function EnterpriseContactForm() {
                 onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
                 className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-cyan-400 text-xs"
               >
-                <option value="all">هوشمندسازی جامع فرآیندها و ایجنت‌ها</option>
-                <option value="agents">طراحی ایجنت‌های سازمانی (AI Agents)</option>
-                <option value="bpa">اتوماسیون فرآیندهای کسب‌وکار (BPA)</option>
-                <option value="implementation">پیاده‌سازی و استقرار On-Premise</option>
-                <option value="transfer">انتقال تکنولوژی و سورس‌کد</option>
-                <option value="training">کارگاه‌ها و آموزش سازمانی</option>
+                <option value="blueprint">۱. طراحی سند راهبردی هوشمندسازی سازمانی و اطلس بهبود</option>
+                <option value="agents">۲. طراحی هوش مصنوعی و ایجنت‌های سازمانی (AI Agents)</option>
+                <option value="bpa">۳. هوشمندسازی و اتوماسیون فرآیندهای کسب‌وکار (BPA)</option>
+                <option value="implementation">۴. پیاده‌سازی و استقرار On-Premise</option>
+                <option value="transfer">۵. انتقال تکنولوژی و سورس‌کد به سازمان</option>
+                <option value="training">۶. کارگاه‌ها و آموزش‌های تخصصی سازمانی</option>
               </select>
             </div>
           </div>

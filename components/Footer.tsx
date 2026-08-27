@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin, Sparkles, GraduationCap, Building2, ExternalLink, Bot, Cpu, GitBranch, ArrowRightLeft, Zap } from "lucide-react";
+import { Phone, Mail, MapPin, Sparkles, GraduationCap, Building2, ExternalLink, Bot, Cpu, GitBranch, ArrowRightLeft, Zap, Compass } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -26,12 +26,12 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="font-bold text-lg text-white">دیجی نورون</h3>
-                <p className="text-xs text-cyan-400 font-mono">diginoron.com</p>
+                <p className="text-xs text-cyan-400 font-mono">ai.diginoron.com</p>
               </div>
             </div>
 
             <p className="text-xs leading-relaxed text-slate-400">
-              دیجی نورون مرکز تخصصی <strong className="text-slate-200">هوشمندسازی سازمانی</strong> (طراحی ایجنت‌ها، اتوماسیون فرآیندها، پیاده‌سازی و انتقال تکنولوژی) و ارائه <strong className="text-slate-200">خدمات آموزشی</strong> در دو سطح سازمانی و کودکان/نوجوانان است.
+              دیجی نورون مرکز تخصصی <strong className="text-slate-200">طراحی سند راهبردی، هوشمندسازی سازمانی</strong> (تحلیل فرآیندها با APQC، ایجنت‌های سازمانی، اتوماسیون، پیاده‌سازی و انتقال تکنولوژی) و ارائه <strong className="text-slate-200">خدمات آموزشی</strong> در دو سطح سازمانی و کودکان/نوجوانان است.
             </p>
 
             <div className="flex items-center gap-2 pt-2">
@@ -51,6 +51,15 @@ export default function Footer() {
               هوشمندسازی سازمانی
             </h4>
             <ul className="space-y-2 text-xs">
+              <li>
+                <Link 
+                  href="/services/enterprise-ai#blueprint" 
+                  className="hover:text-cyan-300 transition-colors flex items-center gap-2 text-amber-300"
+                >
+                  <Compass className="w-3.5 h-3.5 text-amber-400" />
+                  <span>طراحی سند راهبردی هوشمندسازی (APQC)</span>
+                </Link>
+              </li>
               <li>
                 <Link 
                   href="/services/enterprise-ai#ai-agents" 
@@ -172,7 +181,7 @@ export default function Footer() {
 
               <div className="flex items-center gap-2 text-slate-400">
                 <Mail className="w-4 h-4 text-cyan-400 shrink-0" />
-                <span>info@diginoron.com</span>
+                <span className="font-mono">diginoron@gmail.com</span>
               </div>
             </div>
           </div>
@@ -182,7 +191,7 @@ export default function Footer() {
         {/* Bottom copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>
-            © ۲۰۲۶ تمامی حقوق مادی و معنوی این وب‌سایت متعلق به شرکت دیجی نورون (<span className="font-mono text-cyan-400">diginoron.com</span>) است.
+            © ۲۰۲۶ تمامی حقوق مادی و معنوی این وب‌سایت متعلق به شرکت دیجی نورون (<span className="font-mono text-cyan-400">ai.diginoron.com</span>) است.
           </p>
           <div className="flex items-center gap-4">
             <Link href="/privacy" className="hover:text-slate-300">حریم خصوصی</Link>

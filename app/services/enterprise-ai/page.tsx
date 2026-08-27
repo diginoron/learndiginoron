@@ -16,14 +16,16 @@ import {
   Lock,
   Headphones,
   FileCheck2,
-  Database
+  Database,
+  Compass,
+  FileText
 } from "lucide-react";
 import ContactTeaser from "@/components/ContactTeaser";
 import EnterpriseContactForm from "@/components/EnterpriseContactForm";
 
 export const metadata = {
-  title: "خدمات هوشمندسازی سازمانی و ایجنت‌های هوش مصنوعی | دیجی نورون",
-  description: "خدمات تخصصی هوشمندسازی سازمانی، طراحی ایجنت‌های اختصاصی (AI Agents)، اتوماسیون فرآیندها (BPA)، پیاده‌سازی On-Premise، انتقال تکنولوژی و آموزش‌های سازمانی دیجی نورون.",
+  title: "خدمات هوشمندسازی سازمانی و طراحی سند راهبردی هوش مصنوعی | دیجی نورون",
+  description: "خدمات تخصصی طراحی سند راهبردی هوشمندسازی، تحلیل فرآیندها با APQC، طراحی ایجنت‌های سازمانی (AI Agents)، اتوماسیون فرآیندها (BPA)، پیاده‌سازی On-Premise و انتقال تکنولوژی دیجی نورون.",
 };
 
 export default function EnterpriseAIPage() {
@@ -44,11 +46,11 @@ export default function EnterpriseAIPage() {
                 </div>
 
                 <h1 className="text-3xl sm:text-5xl font-black leading-tight">
-                  تحول و <span className="text-gradient-cyan">هوشمندسازی جامع سازمان‌ها</span> با هوش مصنوعی
+                  طراحی سند راهبردی و <span className="text-gradient-cyan">هوشمندسازی جامع سازمان‌ها</span> با هوش مصنوعی
                 </h1>
 
                 <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-                  ما با طراحی ایجنت‌های هوشمند سازمانی، اتوماسیون هوشمند فرآیندها (BPA)، پیاده‌سازی و استقرار امن On-Premise، انتقال کامل تکنولوژی و آموزش‌های تخصصی، سازمان شما را به سطح بالاتری از بهره‌وری و رقابت‌پذیری می‌رسانیم.
+                  ما از تحلیل ساختار و فرآیندها مبتنی بر چارچوب بین‌المللی APQC و تدوین اطلس پروژه‌های بهبود تا طراحی ایجنت‌های خودمختار، اتوماسیون هوشمند (BPA)، استقرار امن On-Premise، انتقال تکنولوژی و آموزش‌های سازمانی در کنار شما هستیم.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -56,7 +58,7 @@ export default function EnterpriseAIPage() {
                     href="#consultation-form"
                     className="px-7 py-4 bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 font-black rounded-xl shadow-lg shadow-cyan-500/25 text-sm transition-all hover:scale-105"
                   >
-                    درخواست جلسه دمو و ممیزی سازمانی
+                    درخواست جلسه دمو و تدوین سند راهبردی
                   </a>
                   <a
                     href="tel:02188252497"
@@ -76,6 +78,10 @@ export default function EnterpriseAIPage() {
 
                 <div className="space-y-3 text-xs text-slate-300">
                   <div className="flex items-start gap-2.5 bg-slate-950/60 p-2.5 rounded-xl border border-slate-800">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                    <span><strong>استاندارد جهانی APQC:</strong> عارضه‌یابی فرآیندها، تحلیل شکاف و اطلس پروژه‌های با بالاترین ROI</span>
+                  </div>
+                  <div className="flex items-start gap-2.5 bg-slate-950/60 p-2.5 rounded-xl border border-slate-800">
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
                     <span><strong>استقرار محلی (On-Premise):</strong> تضمین ۱۰۰٪ عدم خروج داده‌های حساس و محرمانه از شبکه سازمان</span>
                   </div>
@@ -87,10 +93,6 @@ export default function EnterpriseAIPage() {
                     <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
                     <span><strong>انتقال کامل سورس‌کد و دانش:</strong> عدم وابستگی دائمی به پیمانکار و آموزش کامل تیم IT داخلی</span>
                   </div>
-                  <div className="flex items-start gap-2.5 bg-slate-950/60 p-2.5 rounded-xl border border-slate-800">
-                    <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                    <span><strong>پشتیبانی و SLA رسمی:</strong> پشتیبانی فنی، مانیتورینگ بلادرنگ و به‌روزرسانی مدل‌ها</span>
-                  </div>
                 </div>
               </div>
 
@@ -99,23 +101,69 @@ export default function EnterpriseAIPage() {
         </div>
       </section>
 
-      {/* 5 Pillars Detailed Breakdown */}
+      {/* 6 Pillars Detailed Breakdown */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 border border-cyan-300 text-cyan-800 text-xs font-semibold">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>پنج ستون خدمات هوشمندسازی سازمانی</span>
+            <span>محورهای خدمات هوشمندسازی سازمانی</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
-            شرح تفصیلی محورهای خدمات هوشمندسازی
+            شرح تفصیلی ستون‌های خدمات هوشمندسازی
           </h2>
           <p className="text-sm text-slate-600">
             بررسی جامع حوزه‌های تخصصی ارائه خدمت به شرکت‌ها و سازمان‌های خصوصی و دولتی
           </p>
         </div>
 
-        {/* Pillar 1: AI Agents */}
+        {/* Pillar 1: Strategic Blueprint & APQC */}
+        <div id="blueprint" className="glass-panel bg-white p-8 sm:p-10 rounded-3xl border-2 border-amber-300 shadow-md scroll-mt-28">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-8 space-y-4">
+              <div className="flex items-center gap-2">
+                <span className="p-2.5 rounded-xl bg-amber-100 text-amber-800 font-bold">
+                  <Compass className="w-6 h-6" />
+                </span>
+                <span className="text-xs font-bold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-lg">خدمت اول و بنیادین</span>
+              </div>
+              <h3 className="text-2xl font-black text-slate-900">
+                ۱. طراحی سند راهبردی هوشمندسازی سازمانی و اطلس بهبود
+              </h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                تحول هوشمند بدون نقشه راه جامع منجر به هدررفت سرمایه می‌شود. در این خدمت ابتدا ساختار، فرآیندها و داده‌های سازمان با دقت عارضه‌یابی و تحلیل می‌شوند. سپس بر اساس تحلیل شکاف (Gap Analysis)، چارچوب بین‌المللی APQC و شاخص‌های سنجش آمادگی سازمان برای هوش مصنوعی (AI Readiness Index)، اطلس راهبردی پروژه‌های بهبود مبتنی بر هوش مصنوعی تدوین و در قالب سند راهبردی ارائه می‌گردد.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700">
+                  <strong>تحلیل فرآیندها منطبق بر چارچوب APQC:</strong> استانداردسازی جریان‌های کاری و شناسایی فرآیندهای مستعد هوشمندسازی.
+                </div>
+                <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700">
+                  <strong>سنجش آمادگی هوش مصنوعی (AI Readiness):</strong> ارزیابی بلوغ داده، زیرساخت سخت‌افزاری و پذیرش فرهنگ سازمانی.
+                </div>
+                <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700">
+                  <strong>تحلیل شکاف (Gap Analysis):</strong> بررسی فاصله وضع موجود با وضع مطلوب بهره‌وری و سودآوری سازمان.
+                </div>
+                <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-700">
+                  <strong>اطلس راهبردی پروژه‌های بهبود:</strong> اولویت‌بندی پروژه‌های هوش مصنوعی بر مبنای ارزش‌آفرینی و نرخ بازگشت سرمایه (ROI).
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-4 bg-slate-900 text-white p-6 rounded-2xl border border-slate-800 space-y-3">
+              <h4 className="text-xs font-bold text-amber-400 border-b border-slate-800 pb-2">خروجی‌های تحویلی سند راهبردی:</h4>
+              <ul className="text-xs text-slate-300 space-y-2">
+                <li className="flex items-center gap-1.5">✓ سند راهبردی جامع مصوب هیئت مدیره</li>
+                <li className="flex items-center gap-1.5">✓ اطلس پروژه‌های بهبود هوش مصنوعی</li>
+                <li className="flex items-center gap-1.5">✓ گزارش عارضه‌یابی و تحلیل شکاف APQC</li>
+                <li className="flex items-center gap-1.5">✓ نقشه راه ۳ تا ۵ ساله فازبندی شده با شاخص‌های KPI</li>
+              </ul>
+              <div className="pt-2 text-[11px] text-amber-300 font-mono">
+                کاهش ریسک سرمایه‌گذاری هوش مصنوعی به زیر ۵٪
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Pillar 2: AI Agents */}
         <div id="ai-agents" className="glass-panel bg-white p-8 sm:p-10 rounded-3xl border border-cyan-300 shadow-md scroll-mt-28">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
@@ -123,10 +171,10 @@ export default function EnterpriseAIPage() {
                 <span className="p-2.5 rounded-xl bg-cyan-100 text-cyan-700 font-bold">
                   <Bot className="w-6 h-6" />
                 </span>
-                <span className="text-xs font-bold text-cyan-800 bg-cyan-50 px-2.5 py-1 rounded-lg">محور اول</span>
+                <span className="text-xs font-bold text-cyan-800 bg-cyan-50 px-2.5 py-1 rounded-lg">محور دوم</span>
               </div>
               <h3 className="text-2xl font-black text-slate-900">
-                ۱. طراحی هوش مصنوعی، ابزارها و ایجنت‌های هوش مصنوعی سازمانی
+                ۲. طراحی هوش مصنوعی، ابزارها و ایجنت‌های هوش مصنوعی سازمانی
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 ایجنت‌های هوش مصنوعی (AI Agents) نسل جدید دستیارهای نرم‌افزاری هستند که برخلاف چت‌بات‌های ساده، می‌توانند به‌صورت خودمختار اهداف تعیین‌شده را به مراحل اجرایی تبدیل کرده، با ابزارها تعامل داشته باشند، در پایگاه‌های داده جستجو کنند و با سایر ایجنت‌ها هماهنگ شوند.
@@ -158,7 +206,7 @@ export default function EnterpriseAIPage() {
           </div>
         </div>
 
-        {/* Pillar 2: Process Automation */}
+        {/* Pillar 3: Process Automation */}
         <div id="process-automation" className="glass-panel bg-white p-8 sm:p-10 rounded-3xl border border-blue-300 shadow-md scroll-mt-28">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
@@ -166,10 +214,10 @@ export default function EnterpriseAIPage() {
                 <span className="p-2.5 rounded-xl bg-blue-100 text-blue-700 font-bold">
                   <Cpu className="w-6 h-6" />
                 </span>
-                <span className="text-xs font-bold text-blue-800 bg-blue-50 px-2.5 py-1 rounded-lg">محور دوم</span>
+                <span className="text-xs font-bold text-blue-800 bg-blue-50 px-2.5 py-1 rounded-lg">محور سوم</span>
               </div>
               <h3 className="text-2xl font-black text-slate-900">
-                ۲. هوشمندسازی و اتوماسیون فرآیندهای کسب‌وکار (BPA)
+                ۳. هوشمندسازی و اتوماسیون فرآیندهای کسب‌وکار (BPA)
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 اتوماسیون سنتی صرفاً قواعد شرطی (If-Else) را اجرا می‌کند؛ اما هوشمندسازی فرآیندها با هوش مصنوعی امکان درک متون نامتقارن، تشخیص الگوها در تصاویر، تصمیم‌گیری در شرایط عدم قطعیت و پیش‌بینی روندهای آینده را فراهم می‌سازد.
@@ -201,7 +249,7 @@ export default function EnterpriseAIPage() {
           </div>
         </div>
 
-        {/* Pillar 3: Implementation & Upgrades */}
+        {/* Pillar 4: Implementation & Upgrades */}
         <div id="implementation" className="glass-panel bg-white p-8 sm:p-10 rounded-3xl border border-indigo-300 shadow-md scroll-mt-28">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
@@ -209,10 +257,10 @@ export default function EnterpriseAIPage() {
                 <span className="p-2.5 rounded-xl bg-indigo-100 text-indigo-700 font-bold">
                   <GitBranch className="w-6 h-6" />
                 </span>
-                <span className="text-xs font-bold text-indigo-800 bg-indigo-50 px-2.5 py-1 rounded-lg">محور سوم</span>
+                <span className="text-xs font-bold text-indigo-800 bg-indigo-50 px-2.5 py-1 rounded-lg">محور چهارم</span>
               </div>
               <h3 className="text-2xl font-black text-slate-900">
-                ۳. پیاده‌سازی، یکپارچه‌سازی و به‌روزرسانی زیرساخت‌های هوش مصنوعی
+                ۴. پیاده‌سازی، یکپارچه‌سازی و به‌روزرسانی زیرساخت‌های هوش مصنوعی
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 تیم مهندسی دیجی نورون با تسلط بر مدرن‌ترین فریم‌ورک‌های MLOps و معماری‌های مایکروسرویس، سیستم‌های هوش مصنوعی را در بستر شبکه محلی یا ابری سازمان شما مستقر کرده و نرم‌افزارهای قدیمی (Legacy) را به قابلیت‌های AI ارتقا می‌دهد.
@@ -244,7 +292,7 @@ export default function EnterpriseAIPage() {
           </div>
         </div>
 
-        {/* Pillar 4: Tech Transfer */}
+        {/* Pillar 5: Tech Transfer */}
         <div id="tech-transfer" className="glass-panel bg-white p-8 sm:p-10 rounded-3xl border border-emerald-300 shadow-md scroll-mt-28">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
@@ -252,10 +300,10 @@ export default function EnterpriseAIPage() {
                 <span className="p-2.5 rounded-xl bg-emerald-100 text-emerald-700 font-bold">
                   <ArrowRightLeft className="w-6 h-6" />
                 </span>
-                <span className="text-xs font-bold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-lg">محور چهارم</span>
+                <span className="text-xs font-bold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-lg">محور پنجم</span>
               </div>
               <h3 className="text-2xl font-black text-slate-900">
-                ۴. انتقال تکنولوژی و دانش فنی هوش مصنوعی به سازمان
+                ۵. انتقال تکنولوژی و دانش فنی هوش مصنوعی به سازمان
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 ارزش واقعی زمانی خلق می‌شود که سازمان در راهبری و توسعه تکنولوژی به استقلال برسد. دیجی نورون با ارائه سورس‌کدهای کامل، داکیومنت‌های فنی استاندارد و جلسات فشرده انتقال دانش، تیم IT و فنی شما را به متخصصین راهبری سیستم تبدیل می‌کند.
@@ -284,7 +332,7 @@ export default function EnterpriseAIPage() {
           </div>
         </div>
 
-        {/* Pillar 5: Enterprise Training */}
+        {/* Pillar 6: Enterprise Training */}
         <div id="corporate-training" className="glass-panel bg-white p-8 sm:p-10 rounded-3xl border border-purple-300 shadow-md scroll-mt-28">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
@@ -292,10 +340,10 @@ export default function EnterpriseAIPage() {
                 <span className="p-2.5 rounded-xl bg-purple-100 text-purple-700 font-bold">
                   <Building2 className="w-6 h-6" />
                 </span>
-                <span className="text-xs font-bold text-purple-800 bg-purple-50 px-2.5 py-1 rounded-lg">محور پنجم</span>
+                <span className="text-xs font-bold text-purple-800 bg-purple-50 px-2.5 py-1 rounded-lg">محور ششم</span>
               </div>
               <h3 className="text-2xl font-black text-slate-900">
-                ۵. آموزش‌های تخصصی سازمانی و توانمندسازی مدیران و پرسنل
+                ۶. آموزش‌های تخصصی سازمانی و توانمندسازی مدیران و پرسنل
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
                 تکنولوژی بدون نیروی انسانی آموزش‌دیده عقیم می‌ماند. ما متناسب با نقش‌های مختلف سازمانی، دوره‌ها و کارگاه‌های عملی حضوری یا آنلاین طراحی و اجرا می‌کنیم تا تمام سطوح سازمان از هوش مصنوعی برای ارتقای راندمان کاری بهره ببرند.

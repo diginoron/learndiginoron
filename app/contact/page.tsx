@@ -201,10 +201,10 @@ export default function ContactPage() {
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                       className="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl text-sm text-slate-900 focus:outline-none focus:border-cyan-500 transition-colors"
                     >
-                      <option value="enterprise">هوشمندسازی سازمانی، ایجنت‌ها و اتوماسیون</option>
-                      <option value="corporate">آموزش‌های سازمانی و مسترکلاس مدیران</option>
-                      <option value="kids">آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)</option>
-                      <option value="other">سایر موارد</option>
+                      <option value="enterprise">۱. خدمات هوشمندسازی سازمانی (سند راهبردی، ایجنت‌ها، فرآیندها)</option>
+                      <option value="corporate">۲. آموزش‌های سازمانی و مسترکلاس مدیران</option>
+                      <option value="kids">۳. آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)</option>
+                      <option value="other">۴. سایر موارد</option>
                     </select>
                   </div>
                 </div>

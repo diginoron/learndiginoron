@@ -9,7 +9,7 @@ export default function ContactTeaser() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    audienceType: "kids",
+    audienceType: "enterprise",
     message: "",
   });
 
@@ -46,15 +46,15 @@ export default function ContactTeaser() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 border border-cyan-300 text-cyan-800 text-xs font-semibold">
                 <Headphones className="w-3.5 h-3.5" />
-                <span>مشاوره تخصصی آموزشی و سازمانی</span>
+                <span>مشاوره تخصصی هوشمندسازی و آموزش</span>
               </div>
 
               <h2 className="text-2xl sm:text-4xl font-black text-slate-900 leading-tight">
-                نیاز به مشاوره جهت دوره‌های <span className="text-gradient-cyan">کودکان و نوجوانان</span> یا <span className="text-purple-700">هوشمندسازی سازمانی</span> دارید؟
+                نیاز به مشاوره جهت <span className="text-cyan-700">هوشمندسازی سازمانی</span> یا <span className="text-purple-700">خدمات آموزشی</span> دارید؟
               </h2>
 
               <p className="text-sm text-slate-600 leading-relaxed">
-                کارشناسان دیجی نورون آماده پاسخگویی به تمامی سوالات شما درباره هوشمندسازی فرآیندها، طراحی ایجنت‌ها، سرفصل دوره‌ها و برگزاری کارگاه‌ها هستند.
+                کارشناسان دیجی نورون آماده پاسخگویی به تمامی سوالات شما درباره سند راهبردی هوشمندسازی، طراحی ایجنت‌ها، اتوماسیون فرآیندها و دوره‌های آموزشی هستند.
               </p>
 
               {/* Prominent Phone Highlight */}
@@ -66,7 +66,7 @@ export default function ContactTeaser() {
                   <Phone className="w-6 h-6 sm:w-7 sm:h-7" />
                 </div>
                 <div>
-                  <span className="text-xs text-slate-500 block font-medium">شماره تماس مستقیم مشاوره و ثبت‌نام:</span>
+                  <span className="text-xs text-slate-500 block font-medium">شماره تماس مستقیم مشاوره و استعلام:</span>
                   <span className="text-xl sm:text-3xl font-extrabold text-cyan-800 tracking-widest font-mono">
                     02188252497
                   </span>
@@ -76,19 +76,19 @@ export default function ContactTeaser() {
               <div className="grid grid-cols-2 gap-3 text-xs text-slate-600 pt-2">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0" />
-                  <span>پاسخگویی شنبه تا چهارشنبه</span>
+                  <span>طراحی سند راهبردی و اطلس بهبود</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0" />
-                  <span>ارزیابی رایگان سطح دانش‌آموز</span>
+                  <span>استقرار ایجنت و اتوماسیون فرآیند</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-purple-600 shrink-0" />
-                  <span>پیشنهاد راهکار سازمانی</span>
+                  <span>آموزش‌های تخصصی سازمانی</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-purple-600 shrink-0" />
-                  <span>برگزاری کارگاه اختصاصی</span>
+                  <span>آموزش کودکان و نوجوانان</span>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function ContactTeaser() {
                 <span>درخواست تماس مشاوره رایگان</span>
               </h3>
               <p className="text-xs text-slate-500 mb-5">
-                شماره خود را وارد کنید تا کارشناسان ما کمتر از ۲ ساعت کاری با شما تماس بگیرند.
+                اطلاعات خود را وارد کنید تا کارشناسان ما کمتر از ۲ ساعت کاری با شما تماس بگیرند.
               </p>
 
               {submitted ? (
@@ -152,9 +152,9 @@ export default function ContactTeaser() {
                       onChange={(e) => setFormData({ ...formData, audienceType: e.target.value })}
                       className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-cyan-500 transition-colors"
                     >
-                      <option value="enterprise">هوشمندسازی سازمانی و ایجنت‌های AI</option>
-                      <option value="corporate">آموزش‌های سازمانی و مسترکلاس مدیران</option>
-                      <option value="kids">آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)</option>
+                      <option value="enterprise">۱. خدمات هوشمندسازی سازمانی</option>
+                      <option value="corporate">۲. آموزش‌های سازمانی و شرکتی</option>
+                      <option value="kids">۳. آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)</option>
                     </select>
                   </div>
 

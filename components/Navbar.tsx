@@ -19,7 +19,8 @@ import {
   GitBranch,
   ArrowRightLeft,
   Zap,
-  Sparkles
+  Compass,
+  FileText
 } from "lucide-react";
 
 export default function Navbar() {
@@ -58,7 +59,7 @@ export default function Navbar() {
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-cyan-500"></span>
             </span>
             <span className="text-cyan-300 font-bold">دیجی نورون (ai.diginoron.com):</span>
-            <span className="text-slate-300">هوشمندسازی سازمانی و آکادمی تخصصی هوش مصنوعی</span>
+            <span className="text-slate-300">طراحی سند راهبردی، هوشمندسازی سازمانی و آکادمی هوش مصنوعی</span>
           </div>
           <div className="flex items-center gap-5">
             <a
@@ -122,14 +123,30 @@ export default function Navbar() {
 
               {/* Compact Enterprise Dropdown Menu */}
               {enterpriseDropdownOpen && (
-                <div className="absolute top-full right-0 pt-1.5 w-80 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
+                <div className="absolute top-full right-0 pt-1.5 w-84 sm:w-96 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
                   <div className="p-2 bg-white border border-slate-200 rounded-xl shadow-xl backdrop-blur-xl">
                     <div className="px-2.5 py-1.5 bg-slate-900 text-white rounded-lg mb-1.5 flex items-center justify-between text-[11px]">
-                      <span className="font-bold text-cyan-300">خدمات سازمانی هوش مصنوعی</span>
-                      <span className="text-[9px] text-slate-400 font-mono">B2B</span>
+                      <span className="font-bold text-cyan-300">خدمات جامع هوشمندسازی سازمانی</span>
+                      <span className="text-[9px] text-slate-400 font-mono">B2B Solutions</span>
                     </div>
 
                     <div className="space-y-0.5 text-xs">
+                      {/* Service 1: Strategic Blueprint */}
+                      <Link
+                        href="/services/enterprise-ai#blueprint"
+                        className="flex items-center gap-2 p-2 hover:bg-amber-50 rounded-lg transition-colors group"
+                      >
+                        <Compass className="w-4 h-4 text-amber-600 shrink-0" />
+                        <div>
+                          <div className="font-bold text-slate-900 group-hover:text-amber-800 text-[12px] flex items-center gap-1.5">
+                            <span>طراحی سند راهبردی هوشمندسازی</span>
+                            <span className="text-[9px] px-1 rounded bg-amber-100 text-amber-800">APQC</span>
+                          </div>
+                          <div className="text-[10px] text-slate-500">تحلیل ساختار، سنجش آمادگی و اطلس بهبود هوش مصنوعی</div>
+                        </div>
+                      </Link>
+
+                      {/* Service 2: AI Agents */}
                       <Link
                         href="/services/enterprise-ai#ai-agents"
                         className="flex items-center gap-2 p-2 hover:bg-cyan-50 rounded-lg transition-colors group"
@@ -139,10 +156,11 @@ export default function Navbar() {
                           <div className="font-bold text-slate-800 group-hover:text-cyan-800 text-[12px]">
                             طراحی هوش مصنوعی و ایجنت‌ها
                           </div>
-                          <div className="text-[10px] text-slate-500">ایجنت‌های چندعامله و دستیارهای سازمانی</div>
+                          <div className="text-[10px] text-slate-500">ایجنت‌های چندعامله و دستیارهای سازمانی RAG</div>
                         </div>
                       </Link>
 
+                      {/* Service 3: Process Automation */}
                       <Link
                         href="/services/enterprise-ai#process-automation"
                         className="flex items-center gap-2 p-2 hover:bg-blue-50 rounded-lg transition-colors group"
@@ -156,6 +174,7 @@ export default function Navbar() {
                         </div>
                       </Link>
 
+                      {/* Service 4: Implementation */}
                       <Link
                         href="/services/enterprise-ai#implementation"
                         className="flex items-center gap-2 p-2 hover:bg-indigo-50 rounded-lg transition-colors group"
@@ -169,6 +188,7 @@ export default function Navbar() {
                         </div>
                       </Link>
 
+                      {/* Service 5: Tech Transfer */}
                       <Link
                         href="/services/enterprise-ai#tech-transfer"
                         className="flex items-center gap-2 p-2 hover:bg-emerald-50 rounded-lg transition-colors group"
@@ -350,6 +370,15 @@ export default function Navbar() {
               className="flex items-center gap-2 pr-5 py-1.5 text-xs font-bold text-cyan-700"
             >
               <span>نمای کلی و ارزیابی هوشمندسازی</span>
+            </Link>
+
+            <Link
+              href="/services/enterprise-ai#blueprint"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-2 pr-5 py-1 text-[11px] text-slate-700"
+            >
+              <Compass className="w-3.5 h-3.5 text-amber-600" />
+              <span>طراحی سند راهبردی هوشمندسازی (APQC)</span>
             </Link>
 
             <Link
