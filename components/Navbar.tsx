@@ -6,7 +6,6 @@ import Image from "next/image";
 import { 
   Phone, 
   ChevronDown, 
-  Sparkles, 
   Menu, 
   X, 
   GraduationCap, 
@@ -19,10 +18,8 @@ import {
   Cpu,
   GitBranch,
   ArrowRightLeft,
-  Briefcase,
-  Layers,
-  ShieldCheck,
-  Zap
+  Zap,
+  Sparkles
 } from "lucide-react";
 
 export default function Navbar() {
@@ -33,7 +30,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      if (window.scrollY > 15) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -46,78 +43,69 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-md py-2.5"
-          : "bg-white/80 backdrop-blur-sm border-b border-slate-100 py-3.5"
+          ? "bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm py-1.5"
+          : "bg-white/90 backdrop-blur-sm border-b border-slate-100 py-2 sm:py-2.5"
       }`}
     >
       {/* Top Banner Contact Line */}
-      <div className="hidden lg:block bg-gradient-to-r from-slate-900 via-slate-800 to-indigo-950 text-slate-100 text-xs py-1.5 px-4 mb-2">
+      <div className="hidden lg:block bg-gradient-to-r from-slate-900 via-slate-800 to-indigo-950 text-slate-200 text-[11px] py-1 px-4 mb-1.5 rounded-b-md">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 font-medium">
-            <span className="flex h-2 w-2 relative">
+            <span className="flex h-1.5 w-1.5 relative">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-cyan-500"></span>
             </span>
-            <span className="text-cyan-300 font-bold">دیجی نورون:</span>
-            <span className="text-slate-300">مرکز تخصصی هوشمندسازی سازمانی و آموزش کاربردی هوش مصنوعی</span>
+            <span className="text-cyan-300 font-bold">دیجی نورون (ai.diginoron.com):</span>
+            <span className="text-slate-300">هوشمندسازی سازمانی و آکادمی تخصصی هوش مصنوعی</span>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-5">
             <a
               href="tel:02188252497"
-              className="flex items-center gap-1.5 text-cyan-300 hover:text-white transition-colors font-bold text-sm"
+              className="flex items-center gap-1.5 text-cyan-300 hover:text-white transition-colors font-bold text-xs"
             >
-              <Phone className="w-3.5 h-3.5 text-cyan-400" />
-              <span>مشاوره و استعلام سازمانی:</span>
-              <span className="tracking-widest font-mono text-white">02188252497</span>
+              <Phone className="w-3 h-3 text-cyan-400" />
+              <span>مشاوره و استعلام:</span>
+              <span className="tracking-widest font-mono text-white font-bold">02188252497</span>
             </a>
             <span className="text-slate-600">|</span>
-            <span className="text-slate-300 text-[11px]">پاسخگویی مستقیم: شنبه تا چهارشنبه ۸ الی ۱۷</span>
+            <span className="text-slate-400 text-[10px]">شنبه تا چهارشنبه ۸ الی ۱۷</span>
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-11 sm:h-12">
           
-          {/* Logo Section */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative flex items-center justify-center p-2 rounded-xl bg-gradient-to-br from-cyan-500/10 to-indigo-500/10 border border-cyan-500/30 group-hover:border-cyan-400 transition-all shadow-sm">
-              <div className="relative w-9 h-9 flex items-center justify-center">
-                <Image
-                  src="/logo.png"
-                  alt="لوگوی دیجی نورون"
-                  width={36}
-                  height={36}
-                  className="object-contain"
-                />
-              </div>
+          {/* Logo Section - Clean, just logo & name */}
+          <Link href="/" className="flex items-center gap-2.5 group shrink-0">
+            <div className="relative flex items-center justify-center p-1.5 rounded-xl bg-slate-50 border border-slate-200 group-hover:border-cyan-400 transition-all shadow-sm">
+              <Image
+                src="/logo.png"
+                alt="دیجی نورون"
+                width={28}
+                height={28}
+                className="object-contain"
+                priority
+              />
             </div>
-            <div className="flex flex-col">
-              <span className="font-black text-lg sm:text-xl tracking-tight text-slate-900 flex items-center gap-1.5">
-                دیجی نورون 
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-cyan-50 text-cyan-700 border border-cyan-200 font-bold">
-                  Enterprise & Academy
-                </span>
-              </span>
-              <span className="text-[11px] text-slate-500 font-medium">
-                هوشمندسازی سازمانی و آکادمی هوش مصنوعی
-              </span>
-            </div>
+            <span className="font-black text-base sm:text-lg tracking-tight text-slate-900 group-hover:text-cyan-700 transition-colors">
+              دیجی نورون
+            </span>
           </Link>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-1 lg:gap-1.5">
+          {/* Desktop Navigation Links - Compact & Sleek */}
+          <nav className="hidden md:flex items-center gap-1 text-[13px]">
             <Link
               href="/"
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-cyan-700 hover:bg-slate-100 rounded-lg transition-colors flex items-center gap-1.5"
+              className="px-2.5 py-1.5 font-medium text-slate-700 hover:text-cyan-700 hover:bg-slate-50 rounded-lg transition-colors flex items-center gap-1"
             >
-              <Home className="w-4 h-4 text-slate-500" />
+              <Home className="w-3.5 h-3.5 text-slate-400" />
               <span>صفحه اصلی</span>
             </Link>
 
-            {/* 1. Enterprise AI Dropdown (Main Pillar with Higher Weight) */}
+            {/* 1. Enterprise AI Dropdown */}
             <div 
               className="relative"
               onMouseEnter={() => setEnterpriseDropdownOpen(true)}
@@ -125,132 +113,85 @@ export default function Navbar() {
             >
               <Link
                 href="/services/enterprise-ai"
-                className="px-3.5 py-2 text-sm font-bold text-slate-900 bg-cyan-50/70 border border-cyan-200/80 hover:bg-cyan-100/70 rounded-xl transition-all flex items-center gap-1.5 text-cyan-900 group"
+                className="px-2.5 py-1.5 font-bold text-cyan-900 bg-cyan-50/80 border border-cyan-200/80 hover:bg-cyan-100/80 rounded-lg transition-all flex items-center gap-1 group"
               >
-                <Zap className="w-4 h-4 text-cyan-600 group-hover:scale-110 transition-transform" />
+                <Zap className="w-3.5 h-3.5 text-cyan-600" />
                 <span>هوشمندسازی سازمانی</span>
-                <ChevronDown className={`w-4 h-4 text-cyan-600 transition-transform duration-200 ${enterpriseDropdownOpen ? "rotate-180" : ""}`} />
+                <ChevronDown className={`w-3 h-3 text-cyan-600 transition-transform duration-200 ${enterpriseDropdownOpen ? "rotate-180" : ""}`} />
               </Link>
 
-              {/* Enterprise Dropdown Menu */}
+              {/* Compact Enterprise Dropdown Menu */}
               {enterpriseDropdownOpen && (
-                <div className="absolute top-full right-0 pt-2 w-[420px] z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-                  <div className="p-3 bg-white border border-slate-200 rounded-2xl shadow-2xl backdrop-blur-xl">
-                    <div className="px-3 py-2 bg-gradient-to-r from-slate-900 to-indigo-950 text-white rounded-xl mb-2 flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <Bot className="w-4 h-4 text-cyan-400" />
-                        <span className="text-xs font-bold">خدمات هوشمندسازی جامع سازمان‌ها</span>
-                      </div>
-                      <span className="text-[10px] text-cyan-300 bg-white/10 px-2 py-0.5 rounded-full font-mono">B2B Solutions</span>
+                <div className="absolute top-full right-0 pt-1.5 w-80 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
+                  <div className="p-2 bg-white border border-slate-200 rounded-xl shadow-xl backdrop-blur-xl">
+                    <div className="px-2.5 py-1.5 bg-slate-900 text-white rounded-lg mb-1.5 flex items-center justify-between text-[11px]">
+                      <span className="font-bold text-cyan-300">خدمات سازمانی هوش مصنوعی</span>
+                      <span className="text-[9px] text-slate-400 font-mono">B2B</span>
                     </div>
 
-                    <div className="space-y-1 text-xs">
-                      {/* 1. AI Agents & Custom Tools */}
+                    <div className="space-y-0.5 text-xs">
                       <Link
                         href="/services/enterprise-ai#ai-agents"
-                        className="flex items-start gap-3 p-2.5 hover:bg-cyan-50 transition-colors rounded-xl group"
+                        className="flex items-center gap-2 p-2 hover:bg-cyan-50 rounded-lg transition-colors group"
                       >
-                        <div className="p-2 rounded-lg bg-cyan-100 text-cyan-700 group-hover:bg-cyan-600 group-hover:text-white transition-colors shrink-0">
-                          <Bot className="w-4 h-4" />
-                        </div>
+                        <Bot className="w-4 h-4 text-cyan-600 shrink-0" />
                         <div>
-                          <div className="font-bold text-slate-900 group-hover:text-cyan-800 flex items-center gap-1.5">
-                            <span>طراحی هوش مصنوعی و ایجنت‌های سازمانی</span>
-                            <span className="text-[9px] px-1.5 py-0.2 rounded bg-cyan-100 text-cyan-800">اختصاصی</span>
+                          <div className="font-bold text-slate-800 group-hover:text-cyan-800 text-[12px]">
+                            طراحی هوش مصنوعی و ایجنت‌ها
                           </div>
-                          <div className="text-slate-500 text-[11px] mt-0.5 leading-relaxed">
-                            طراحی دستیارها و ایجنت‌های خودمختار چندعامله (Multi-Agent) و چت‌بات‌های شرکتی
-                          </div>
+                          <div className="text-[10px] text-slate-500">ایجنت‌های چندعامله و دستیارهای سازمانی</div>
                         </div>
                       </Link>
 
-                      {/* 2. Process Intelligence */}
                       <Link
                         href="/services/enterprise-ai#process-automation"
-                        className="flex items-start gap-3 p-2.5 hover:bg-blue-50 transition-colors rounded-xl group"
+                        className="flex items-center gap-2 p-2 hover:bg-blue-50 rounded-lg transition-colors group"
                       >
-                        <div className="p-2 rounded-lg bg-blue-100 text-blue-700 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
-                          <Cpu className="w-4 h-4" />
-                        </div>
+                        <Cpu className="w-4 h-4 text-blue-600 shrink-0" />
                         <div>
-                          <div className="font-bold text-slate-900 group-hover:text-blue-800">
+                          <div className="font-bold text-slate-800 group-hover:text-blue-800 text-[12px]">
                             هوشمندسازی فرآیندها (BPA)
                           </div>
-                          <div className="text-slate-500 text-[11px] mt-0.5 leading-relaxed">
-                            اتوماسیون فرآیندهای مالی، منابع انسانی، فروش، تولید و تحلیل خودکار داده‌ها
-                          </div>
+                          <div className="text-[10px] text-slate-500">اتوماسیون مالی، اداری، فروش و منابع انسانی</div>
                         </div>
                       </Link>
 
-                      {/* 3. Implementation & Upgrades */}
                       <Link
                         href="/services/enterprise-ai#implementation"
-                        className="flex items-start gap-3 p-2.5 hover:bg-indigo-50 transition-colors rounded-xl group"
+                        className="flex items-center gap-2 p-2 hover:bg-indigo-50 rounded-lg transition-colors group"
                       >
-                        <div className="p-2 rounded-lg bg-indigo-100 text-indigo-700 group-hover:bg-indigo-600 group-hover:text-white transition-colors shrink-0">
-                          <GitBranch className="w-4 h-4" />
-                        </div>
+                        <GitBranch className="w-4 h-4 text-indigo-600 shrink-0" />
                         <div>
-                          <div className="font-bold text-slate-900 group-hover:text-indigo-800">
-                            پیاده‌سازی، یکپارچه‌سازی و به‌روزرسانی
+                          <div className="font-bold text-slate-800 group-hover:text-indigo-800 text-[12px]">
+                            پیاده‌سازی و به‌روزرسانی زیرساخت
                           </div>
-                          <div className="text-slate-500 text-[11px] mt-0.5 leading-relaxed">
-                            استقرار مدل‌های اختصاصی محلی/ابری و ارتقای سیستم‌های نرم‌افزاری و ERPها
-                          </div>
+                          <div className="text-[10px] text-slate-500">استقرار On-Premise و اتصال به ERPها</div>
                         </div>
                       </Link>
 
-                      {/* 4. Tech Transfer */}
                       <Link
                         href="/services/enterprise-ai#tech-transfer"
-                        className="flex items-start gap-3 p-2.5 hover:bg-emerald-50 transition-colors rounded-xl group"
+                        className="flex items-center gap-2 p-2 hover:bg-emerald-50 rounded-lg transition-colors group"
                       >
-                        <div className="p-2 rounded-lg bg-emerald-100 text-emerald-700 group-hover:bg-emerald-600 group-hover:text-white transition-colors shrink-0">
-                          <ArrowRightLeft className="w-4 h-4" />
-                        </div>
+                        <ArrowRightLeft className="w-4 h-4 text-emerald-600 shrink-0" />
                         <div>
-                          <div className="font-bold text-slate-900 group-hover:text-emerald-800">
-                            انتقال تکنولوژی و زیرساخت
+                          <div className="font-bold text-slate-800 group-hover:text-emerald-800 text-[12px]">
+                            انتقال تکنولوژی و دانش فنی
                           </div>
-                          <div className="text-slate-500 text-[11px] mt-0.5 leading-relaxed">
-                            انتقال دانش فنی، کدبیس‌ها و پروتکل‌های امنیتی هوش مصنوعی به تیم داخلی شما
-                          </div>
-                        </div>
-                      </Link>
-
-                      {/* 5. Enterprise Training */}
-                      <Link
-                        href="/services/corporate"
-                        className="flex items-start gap-3 p-2.5 hover:bg-purple-50 transition-colors rounded-xl group"
-                      >
-                        <div className="p-2 rounded-lg bg-purple-100 text-purple-700 group-hover:bg-purple-600 group-hover:text-white transition-colors shrink-0">
-                          <Building2 className="w-4 h-4" />
-                        </div>
-                        <div>
-                          <div className="font-bold text-slate-900 group-hover:text-purple-800">
-                            آموزش‌های تخصصی سازمانی
-                          </div>
-                          <div className="text-slate-500 text-[11px] mt-0.5 leading-relaxed">
-                            مسترکلاس‌های استراتژی هوش مصنوعی مدیران و کارگاه‌های مهندسی پرامپت پرسنل
-                          </div>
+                          <div className="text-[10px] text-slate-500">تحویل سورس‌کدها و استقلال تیم داخلی</div>
                         </div>
                       </Link>
                     </div>
 
-                    <div className="mt-2 pt-2 border-t border-slate-100 px-2 flex items-center justify-between">
+                    <div className="mt-1 pt-1.5 border-t border-slate-100 px-1 flex items-center justify-between text-[11px]">
                       <Link 
                         href="/services/enterprise-ai" 
-                        className="text-xs font-bold text-cyan-700 hover:text-cyan-800 flex items-center gap-1"
+                        className="font-bold text-cyan-700 hover:underline flex items-center gap-0.5"
                       >
-                        <span>مشاهده صفحه کامل هوشمندسازی سازمانی</span>
-                        <ChevronDown className="w-3.5 h-3.5 -rotate-90" />
+                        <span>صفحه کامل هوشمندسازی</span>
+                        <ChevronDown className="w-3 h-3 -rotate-90" />
                       </Link>
-                      <a 
-                        href="tel:02188252497" 
-                        className="text-[11px] font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 px-2.5 py-1 rounded-lg transition-colors"
-                      >
-                        مشاوره فنی: 02188252497
-                      </a>
+                      <a href="tel:02188252497" className="text-slate-600 font-mono font-bold">02188252497</a>
                     </div>
                   </div>
                 </div>
@@ -265,66 +206,58 @@ export default function Navbar() {
             >
               <Link
                 href="/services"
-                className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-cyan-600 hover:bg-slate-100 rounded-lg transition-colors flex items-center gap-1"
+                className="px-2.5 py-1.5 font-medium text-slate-700 hover:text-cyan-700 hover:bg-slate-50 rounded-lg transition-colors flex items-center gap-1"
               >
                 <span>خدمات آموزشی</span>
-                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${educationDropdownOpen ? "rotate-180 text-cyan-600" : ""}`} />
+                <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${educationDropdownOpen ? "rotate-180 text-cyan-600" : "text-slate-400"}`} />
               </Link>
 
               {/* Education Dropdown Menu */}
               {educationDropdownOpen && (
-                <div className="absolute top-full right-0 pt-2 w-80 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-                  <div className="p-3 bg-white border border-slate-200 rounded-2xl shadow-2xl backdrop-blur-xl">
-                    <div className="px-3 py-1.5 text-xs font-semibold text-cyan-800 bg-cyan-50 rounded-lg mb-2">
-                      دو دپارتمان تخصصی آموزش هوش مصنوعی
+                <div className="absolute top-full right-0 pt-1.5 w-72 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
+                  <div className="p-2 bg-white border border-slate-200 rounded-xl shadow-xl backdrop-blur-xl">
+                    <div className="px-2.5 py-1 text-[11px] font-bold text-cyan-800 bg-cyan-50 rounded-md mb-1.5">
+                      دو دپارتمان تخصصی آموزش
                     </div>
 
-                    <div className="space-y-1">
+                    <div className="space-y-0.5">
                       <Link
                         href="/services/corporate"
-                        className="flex items-start gap-3 p-3 hover:bg-purple-50 transition-colors rounded-xl group"
+                        className="flex items-center gap-2.5 p-2 hover:bg-purple-50 rounded-lg transition-colors group"
                       >
-                        <div className="p-2 rounded-lg bg-purple-100 text-purple-700 group-hover:bg-purple-600 group-hover:text-white transition-colors shrink-0">
-                          <Building2 className="w-5 h-5" />
-                        </div>
+                        <Building2 className="w-4 h-4 text-purple-600 shrink-0" />
                         <div>
-                          <div className="font-bold text-sm text-slate-900 group-hover:text-purple-700">
+                          <div className="font-bold text-[12px] text-slate-800 group-hover:text-purple-700">
                             آموزش‌های سازمانی
                           </div>
-                          <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">
-                            کارگاه‌های پرامپت‌نویسی، اتوماسیون اداری و مسترکلاس مدیران
-                          </div>
+                          <div className="text-[10px] text-slate-500">مسترکلاس مدیران و پرامپت‌نویسی پرسنل</div>
                         </div>
                       </Link>
 
                       <Link
                         href="/services/kids-and-teens"
-                        className="flex items-start gap-3 p-3 hover:bg-cyan-50 transition-colors rounded-xl group"
+                        className="flex items-center gap-2.5 p-2 hover:bg-cyan-50 rounded-lg transition-colors group"
                       >
-                        <div className="p-2 rounded-lg bg-cyan-100 text-cyan-700 group-hover:bg-cyan-600 group-hover:text-white transition-colors shrink-0">
-                          <GraduationCap className="w-5 h-5" />
-                        </div>
+                        <GraduationCap className="w-4 h-4 text-cyan-600 shrink-0" />
                         <div>
-                          <div className="font-bold text-sm text-slate-900 group-hover:text-cyan-700">
+                          <div className="font-bold text-[12px] text-slate-800 group-hover:text-cyan-700">
                             کودکان و نوجوانان
                           </div>
-                          <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">
-                            پایتون، تفکر الگوریتمی، رباتیک و ابزارهای هوش مصنوعی (۸ تا ۱۸ سال)
-                          </div>
+                          <div className="text-[10px] text-slate-500">پایتون، تفکر الگوریتمی و رباتیک (۸-۱۸ سال)</div>
                         </div>
                       </Link>
                     </div>
 
-                    <div className="mt-2 pt-2 border-t border-slate-100">
+                    <div className="mt-1 pt-1.5 border-t border-slate-100 px-1">
                       <Link 
                         href="/courses" 
-                        className="flex items-center justify-between p-2 text-xs font-bold text-slate-700 hover:text-cyan-700 hover:bg-slate-50 rounded-lg"
+                        className="flex items-center justify-between p-1.5 text-[11px] font-bold text-slate-700 hover:text-cyan-700 rounded-md"
                       >
                         <span className="flex items-center gap-1.5">
-                          <BookOpen className="w-4 h-4 text-cyan-600" />
-                          <span>مشاهده تمامی دوره‌ها و سرفصل‌ها</span>
+                          <BookOpen className="w-3.5 h-3.5 text-cyan-600" />
+                          <span>مشاهده تمامی دوره‌ها</span>
                         </span>
-                        <ChevronDown className="w-3.5 h-3.5 -rotate-90" />
+                        <ChevronDown className="w-3 h-3 -rotate-90" />
                       </Link>
                     </div>
                   </div>
@@ -334,45 +267,41 @@ export default function Navbar() {
 
             <Link
               href="/courses"
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-cyan-600 hover:bg-slate-100 rounded-lg transition-colors flex items-center gap-1.5"
+              className="px-2.5 py-1.5 font-medium text-slate-700 hover:text-cyan-700 hover:bg-slate-50 rounded-lg transition-colors"
             >
-              <BookOpen className="w-4 h-4 text-slate-500" />
               <span>دوره‌ها</span>
             </Link>
 
             <Link
               href="/blog"
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-cyan-600 hover:bg-slate-100 rounded-lg transition-colors flex items-center gap-1.5"
+              className="px-2.5 py-1.5 font-medium text-slate-700 hover:text-cyan-700 hover:bg-slate-50 rounded-lg transition-colors"
             >
-              <MessageSquare className="w-4 h-4 text-slate-500" />
-              <span>مقالات و بلاگ</span>
+              <span>مقالات</span>
             </Link>
 
             <Link
               href="/about"
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-cyan-600 hover:bg-slate-100 rounded-lg transition-colors flex items-center gap-1.5"
+              className="px-2.5 py-1.5 font-medium text-slate-700 hover:text-cyan-700 hover:bg-slate-50 rounded-lg transition-colors"
             >
-              <Info className="w-4 h-4 text-slate-500" />
               <span>درباره ما</span>
             </Link>
 
             <Link
               href="/contact"
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-cyan-600 hover:bg-slate-100 rounded-lg transition-colors flex items-center gap-1.5"
+              className="px-2.5 py-1.5 font-medium text-slate-700 hover:text-cyan-700 hover:bg-slate-50 rounded-lg transition-colors"
             >
-              <Phone className="w-4 h-4 text-slate-500" />
-              <span>تماس با ما</span>
+              <span>تماس</span>
             </Link>
           </nav>
 
-          {/* Action Button & Contact */}
-          <div className="hidden lg:flex items-center gap-3">
+          {/* Action Button */}
+          <div className="hidden lg:flex items-center gap-2.5">
             <Link
               href="/services/enterprise-ai"
-              className="relative inline-flex items-center gap-2 px-4 py-2.5 text-xs font-bold text-white bg-gradient-to-r from-slate-900 via-cyan-900 to-indigo-900 hover:from-cyan-800 hover:to-indigo-800 rounded-xl shadow-md transition-all hover:scale-105 active:scale-95 border border-cyan-400/30"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-bold text-white bg-slate-900 hover:bg-cyan-900 rounded-lg shadow-sm transition-all border border-slate-700"
             >
               <Bot className="w-3.5 h-3.5 text-cyan-300" />
-              <span>درخواست هوشمندسازی سازمانی</span>
+              <span>هوشمندسازی سازمانی</span>
             </Link>
           </div>
 
@@ -380,45 +309,45 @@ export default function Navbar() {
           <div className="flex md:hidden items-center gap-2">
             <a
               href="tel:02188252497"
-              className="p-2 rounded-lg bg-cyan-100 text-cyan-800 border border-cyan-300 text-xs font-bold flex items-center gap-1"
+              className="px-2 py-1 rounded-lg bg-cyan-100 text-cyan-800 border border-cyan-300 text-xs font-bold flex items-center gap-1"
             >
-              <Phone className="w-4 h-4" />
-              <span>02188252497</span>
+              <Phone className="w-3.5 h-3.5 text-cyan-700" />
+              <span className="font-mono">02188252497</span>
             </a>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-xl bg-slate-100 text-slate-700 hover:text-slate-900 hover:bg-slate-200 transition-colors"
+              className="p-1.5 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors"
               aria-label="باز کردن منو"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Drawer Navigation */}
+      {/* Mobile Drawer Navigation - Compact & Clean */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 animate-in slide-in-from-top duration-300 shadow-xl max-h-[85vh] overflow-y-auto">
+        <div className="md:hidden bg-white/98 backdrop-blur-xl border-b border-slate-200 px-4 pt-2 pb-5 space-y-2 animate-in slide-in-from-top-2 duration-200 shadow-xl max-h-[82vh] overflow-y-auto">
           <Link
             href="/"
             onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center gap-2 px-3 py-2.5 text-slate-800 hover:bg-slate-100 rounded-xl font-medium"
+            className="flex items-center gap-2 px-3 py-2 text-slate-800 hover:bg-slate-50 rounded-lg text-xs font-bold"
           >
-            <Home className="w-5 h-5 text-cyan-600" />
+            <Home className="w-4 h-4 text-cyan-600" />
             <span>صفحه اصلی</span>
           </Link>
 
           {/* Mobile: Enterprise AI Section */}
-          <div className="border-t border-slate-100 pt-2 space-y-1">
-            <div className="px-3 py-1.5 text-xs font-black text-cyan-900 bg-cyan-50 rounded-lg flex items-center gap-2">
-              <Zap className="w-4 h-4 text-cyan-600" />
+          <div className="border-t border-slate-100 pt-1.5 space-y-0.5">
+            <div className="px-3 py-1 text-[11px] font-bold text-cyan-900 bg-cyan-50 rounded-md flex items-center gap-1.5">
+              <Zap className="w-3.5 h-3.5 text-cyan-600" />
               <span>خدمات هوشمندسازی سازمانی</span>
             </div>
             
             <Link
               href="/services/enterprise-ai"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-3 pr-6 py-2 text-sm font-bold text-cyan-700 hover:text-cyan-800"
+              className="flex items-center gap-2 pr-5 py-1.5 text-xs font-bold text-cyan-700"
             >
               <span>نمای کلی و ارزیابی هوشمندسازی</span>
             </Link>
@@ -426,119 +355,113 @@ export default function Navbar() {
             <Link
               href="/services/enterprise-ai#ai-agents"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-3 pr-6 py-1.5 text-xs text-slate-700 hover:text-cyan-600"
+              className="flex items-center gap-2 pr-5 py-1 text-[11px] text-slate-700"
             >
-              <Bot className="w-4 h-4 text-cyan-600" />
+              <Bot className="w-3.5 h-3.5 text-cyan-600" />
               <span>طراحی هوش مصنوعی و ایجنت‌های سازمانی</span>
             </Link>
 
             <Link
               href="/services/enterprise-ai#process-automation"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-3 pr-6 py-1.5 text-xs text-slate-700 hover:text-cyan-600"
+              className="flex items-center gap-2 pr-5 py-1 text-[11px] text-slate-700"
             >
-              <Cpu className="w-4 h-4 text-blue-600" />
+              <Cpu className="w-3.5 h-3.5 text-blue-600" />
               <span>هوشمندسازی و اتوماسیون فرآیندها</span>
             </Link>
 
             <Link
               href="/services/enterprise-ai#implementation"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-3 pr-6 py-1.5 text-xs text-slate-700 hover:text-cyan-600"
+              className="flex items-center gap-2 pr-5 py-1 text-[11px] text-slate-700"
             >
-              <GitBranch className="w-4 h-4 text-indigo-600" />
-              <span>پیاده‌سازی، یکپارچه‌سازی و به‌روزرسانی</span>
+              <GitBranch className="w-3.5 h-3.5 text-indigo-600" />
+              <span>پیاده‌سازی و به‌روزرسانی زیرساخت</span>
             </Link>
 
             <Link
               href="/services/enterprise-ai#tech-transfer"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-3 pr-6 py-1.5 text-xs text-slate-700 hover:text-cyan-600"
+              className="flex items-center gap-2 pr-5 py-1 text-[11px] text-slate-700"
             >
-              <ArrowRightLeft className="w-4 h-4 text-emerald-600" />
-              <span>انتقال تکنولوژی هوش مصنوعی</span>
+              <ArrowRightLeft className="w-3.5 h-3.5 text-emerald-600" />
+              <span>انتقال تکنولوژی و سورس‌کد</span>
             </Link>
           </div>
 
           {/* Mobile: Education Section */}
-          <div className="border-t border-slate-100 pt-2 space-y-1">
-            <div className="px-3 py-1.5 text-xs font-black text-purple-900 bg-purple-50 rounded-lg flex items-center gap-2">
-              <GraduationCap className="w-4 h-4 text-purple-600" />
-              <span>خدمات آموزشی دیجی نورون</span>
+          <div className="border-t border-slate-100 pt-1.5 space-y-0.5">
+            <div className="px-3 py-1 text-[11px] font-bold text-purple-900 bg-purple-50 rounded-md flex items-center gap-1.5">
+              <GraduationCap className="w-3.5 h-3.5 text-purple-600" />
+              <span>خدمات آموزشی</span>
             </div>
             
             <Link
               href="/services/corporate"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-3 pr-6 py-2 text-sm text-slate-700 hover:text-purple-600"
+              className="flex items-center gap-2 pr-5 py-1.5 text-xs text-slate-700"
             >
-              <Building2 className="w-4 h-4 text-purple-600" />
+              <Building2 className="w-3.5 h-3.5 text-purple-600" />
               <span>آموزش‌های سازمانی هوش مصنوعی</span>
             </Link>
 
             <Link
               href="/services/kids-and-teens"
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center gap-3 pr-6 py-2 text-sm text-slate-700 hover:text-cyan-600"
+              className="flex items-center gap-2 pr-5 py-1.5 text-xs text-slate-700"
             >
-              <GraduationCap className="w-4 h-4 text-cyan-600" />
-              <span>آموزش هوش مصنوعی کودکان و نوجوانان</span>
+              <GraduationCap className="w-3.5 h-3.5 text-cyan-600" />
+              <span>آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)</span>
             </Link>
           </div>
 
-          <Link
-            href="/courses"
-            onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center gap-2 px-3 py-2.5 text-slate-800 hover:bg-slate-100 rounded-xl font-medium"
-          >
-            <BookOpen className="w-5 h-5 text-cyan-600" />
-            <span>دوره‌های آموزشی</span>
-          </Link>
+          <div className="border-t border-slate-100 pt-1.5 space-y-1 text-xs">
+            <Link
+              href="/courses"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-2 px-3 py-1.5 text-slate-700 hover:bg-slate-50 rounded-lg"
+            >
+              <BookOpen className="w-4 h-4 text-cyan-600" />
+              <span>دوره‌های آموزشی</span>
+            </Link>
 
-          <Link
-            href="/blog"
-            onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center gap-2 px-3 py-2.5 text-slate-800 hover:bg-slate-100 rounded-xl font-medium"
-          >
-            <MessageSquare className="w-5 h-5 text-cyan-600" />
-            <span>بلاگ و مقالات</span>
-          </Link>
+            <Link
+              href="/blog"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-2 px-3 py-1.5 text-slate-700 hover:bg-slate-50 rounded-lg"
+            >
+              <MessageSquare className="w-4 h-4 text-cyan-600" />
+              <span>مقالات و بلاگ</span>
+            </Link>
 
-          <Link
-            href="/about"
-            onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center gap-2 px-3 py-2.5 text-slate-800 hover:bg-slate-100 rounded-xl font-medium"
-          >
-            <Info className="w-5 h-5 text-cyan-600" />
-            <span>درباره ما</span>
-          </Link>
+            <Link
+              href="/about"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-2 px-3 py-1.5 text-slate-700 hover:bg-slate-50 rounded-lg"
+            >
+              <Info className="w-4 h-4 text-cyan-600" />
+              <span>درباره ما</span>
+            </Link>
 
-          <Link
-            href="/contact"
-            onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center gap-2 px-3 py-2.5 text-slate-800 hover:bg-slate-100 rounded-xl font-medium"
-          >
-            <Phone className="w-5 h-5 text-cyan-600" />
-            <span>تماس با ما</span>
-          </Link>
+            <Link
+              href="/contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-2 px-3 py-1.5 text-slate-700 hover:bg-slate-50 rounded-lg"
+            >
+              <Phone className="w-4 h-4 text-cyan-600" />
+              <span>تماس با ما</span>
+            </Link>
+          </div>
 
-          <div className="pt-4 border-t border-slate-100 space-y-2">
+          <div className="pt-2 border-t border-slate-100">
             <Link
               href="/services/enterprise-ai"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 py-3 bg-gradient-to-r from-slate-900 to-cyan-900 text-white font-bold rounded-xl text-center shadow-md text-sm"
+              className="w-full flex items-center justify-center gap-2 py-2.5 bg-slate-900 text-white font-bold rounded-lg text-center text-xs"
             >
-              <Bot className="w-4 h-4 text-cyan-300" />
+              <Bot className="w-3.5 h-3.5 text-cyan-300" />
               <span>درخواست هوشمندسازی سازمانی</span>
             </Link>
-            
-            <a
-              href="tel:02188252497"
-              className="w-full flex items-center justify-center gap-2 py-2.5 bg-slate-100 text-slate-800 font-bold rounded-xl text-center border border-slate-200 text-xs"
-            >
-              <Phone className="w-4 h-4 text-cyan-600" />
-              <span>تماس مستقیم: 02188252497</span>
-            </a>
           </div>
         </div>
       )}

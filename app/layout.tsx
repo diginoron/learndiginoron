@@ -12,8 +12,8 @@ const vazirmatn = Vazirmatn({
 });
 
 export const metadata: Metadata = {
-  title: "دیجی نورون | مرکز تخصصی هوشمندسازی سازمانی و آموزش هوش مصنوعی",
-  description: "ارائه‌دهنده خدمات هوشمندسازی سازمانی (طراحی هوش مصنوعی، ایجنت‌های سازمانی، اتوماسیون فرآیندها، پیاده‌سازی و انتقال تکنولوژی) و خدمات آموزشی در دو بخش سازمانی و کودکان/نوجوانان. مشاوره: ۰۲۱۸۸۲۵۲۴۹۷",
+  title: "دیجی نورون | هوشمندسازی سازمانی و آموزش کاربردی هوش مصنوعی",
+  description: "مرکز تخصصی هوشمندسازی سازمانی، طراحی ایجنت‌های اختصاصی (AI Agents)، اتوماسیون فرآیندها (BPA)، پیاده‌سازی و انتقال تکنولوژی و خدمات آموزشی کودکان و سازمان‌ها. ai.diginoron.com - تلفن: ۰۲۱۸۸۲۵۲۴۹۷",
   keywords: [
     "هوشمندسازی سازمانی", 
     "ایجنت‌های هوش مصنوعی", 
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "آموزش سازمانی هوش مصنوعی", 
     "آموزش هوش مصنوعی کودکان", 
     "دیجی نورون", 
-    "diginoron.com"
+    "ai.diginoron.com"
   ],
   icons: {
     icon: "/logo.png",
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     apple: "/logo.png",
   },
   openGraph: {
-    title: "دیجی نورون - هوشمندسازی سازمانی و آکادمی هوش مصنوعی",
-    description: "خدمات تخصصی هوشمندسازی سازمانی، طراحی ایجنت‌های سازمانی، اتوماسیون فرآیندها و آموزش در دو سطح کودکان/نوجوانان و سازمان‌ها. تلفن: ۰۲۱۸۸۲۵۲۴۹۷",
-    url: "https://diginoron.com",
-    siteName: "DigiNoron Enterprise & Academy",
+    title: "دیجی نورون - هوشمندسازی سازمانی و آموزش هوش مصنوعی",
+    description: "خدمات تخصصی هوشمندسازی سازمانی، طراحی ایجنت‌های سازمانی، اتوماسیون فرآیندها و خدمات آموزشی. تلفن: ۰۲۱۸۸۲۵۲۴۹۷",
+    url: "https://ai.diginoron.com",
+    siteName: "DigiNoron AI",
     locale: "fa_IR",
     type: "website",
   },
@@ -49,7 +49,7 @@ export default function RootLayout({
     <html lang="fa" dir="rtl" className={vazirmatn.variable}>
       <body className="antialiased bg-slate-50 text-slate-900 min-h-screen flex flex-col selection:bg-cyan-500 selection:text-white">
         <Navbar />
-        <main className="flex-grow pt-24">
+        <main className="flex-grow pt-24 sm:pt-28">
           {children}
         </main>
         <Footer />

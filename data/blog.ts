@@ -44,14 +44,14 @@ export const BLOG_POSTS: BlogPost[] = [
       </blockquote>
 
       <h3>رویکرد دیجی نورون در آموزش کودکان</h3>
-      <p>در دوره‌های تخصصی دیجی نورون (learn.diginoron.com)، ما از ابزارهای بصری مانند Scratch، Teachable Machine و پروژه‌های بازی‌سازی استفاده می‌کنیم تا فرایند یادگیری کاملاً بازی‌محور و لذت‌بخش باشد.</p>
+      <p>در دوره‌های تخصصی دیجی نورون (ai.diginoron.com)، ما از ابزارهای بصری مانند Scratch، Teachable Machine و پروژه‌های بازی‌سازی استفاده می‌کنیم تا فرایند یادگیری کاملاً بازی‌محور و لذت‌بخش باشد.</p>
     `,
     category: "kids-ai",
     categoryName: "هوش مصنوعی کودکان",
     author: {
       name: "دکتر مهران شیرزاد",
       role: "مدیر بخش آموزش کودکان دیجی نورون",
-      avatar: ""
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
     },
     date: "۲۲ مرداد ۱۴۰۵",
     readTime: "۶ دقیقه",

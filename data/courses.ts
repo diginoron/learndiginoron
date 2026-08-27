@@ -50,8 +50,8 @@ export const COURSES: Course[] = [
     shortDesc: "یادگیری مفاهیم هوش مصنوعی، ساخت کاراکترهای هوشمند و بازی‌سازی تعاملی با ابزارهای دیداری.",
     fullDesc: "در این دوره هیجان‌انگیز، کودکان با مفاهیم پایه‌ای یادگیری ماشین، تشخیص تصویر و صدای هوشمند آشنا شده و اولین برنامه‌های هوشمند خود را بدون نیاز به کدنویسی پیچیده می‌سازند.",
     level: "مقدماتی",
-    duration: "۱۶ ساعت (۸ جلسه)",
-    sessionsCount: 8,
+    duration: "۸ ساعت (۴ جلسه ۲ ساعته)",
+    sessionsCount: 4,
     price: "۳,۵۰۰,۰۰۰ تومان",
     badge: "پرطرفدارترین کودکان",
     image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
@@ -64,8 +64,8 @@ export const COURSES: Course[] = [
     prerequisites: "آشنایی مقدماتی با کار با کامپیوتر",
     instructor: {
       name: "دکتر مهران شیرزاد",
-      role: "متخصص آموزش فناوری‌های نوین به کودکان",
-      avatar: ""
+      role: "متخصص آموزش فناوری‌های نوین و تفکر الگوریتمی",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
     },
     features: [
       "گواهی‌نامه رسمی دیجی نورون",
@@ -84,8 +84,8 @@ export const COURSES: Course[] = [
     shortDesc: "آموزش کامل پایتون، شبکه‌های عصبی مقدماتی و ساخت ربات‌های پردازش تصویر و متن.",
     fullDesc: "این دوره ویژه نوجوانان علاقه‌مند به دنیای نرم‌افزار طراحی شده است تا زبان پایتون را کاملا کاربردی فراگرفته و الگوریتم‌های هوش مصنوعی را پیاده‌سازی کنند.",
     level: "متوسط",
-    duration: "۲۴ ساعت (۱۲ جلسه)",
-    sessionsCount: 12,
+    duration: "۸ ساعت (۴ جلسه ۲ ساعته)",
+    sessionsCount: 4,
     price: "۵,۲۰۰,۰۰۰ تومان",
     badge: "ویژه نوجوانان",
     image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
@@ -118,9 +118,9 @@ export const COURSES: Course[] = [
     shortDesc: "ترسیم نقشه راه تحول هوشمند سازمان، اتوماسیون فرایندها و افزایش بهره‌وری تیم‌ها.",
     fullDesc: "ویژه مدیرانی که می‌خواهند از هوش مصنوعی مولد به عنوان اهرم رشد کسب‌وکار، کاهش هزینه‌ها و اتوماسیون فرایندهای سازمانی استفاده کنند.",
     level: "پیشرفته",
-    duration: "۱۸ ساعت (۶ جلسه اختصاصی)",
-    sessionsCount: 6,
-    price: "تماس جهت استعلام سازمانی",
+    duration: "۸ ساعت (کارگاه تخصصی متمرکز)",
+    sessionsCount: 4,
+    price: "۲۵,۰۰۰,۰۰۰ تومان",
     badge: "ویژه مدیران ارشد",
     image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
     topics: [
@@ -131,14 +131,14 @@ export const COURSES: Course[] = [
     ],
     prerequisites: "تجربه مدیریت اجرایی یا کسب‌وکار",
     instructor: {
-      name: "دکتر محمد کریمی",
-      role: "مشاور تحول دیجیتال و هوش مصنوعی سازمان‌ها",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+      name: "دکتر مهران شیرزاد",
+      role: "استراتژیست هوش مصنوعی و مشاور ارشد تحول سازمانی",
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
     },
     features: [
       "ارزیابی اختصاصی فرایندهای شرکت شما",
       "ارائه نقشه راه ۳ ساله هوشمندسازی",
-      " برگزاری کارگاه‌های عملی حضوری یا آنلاین",
+      "برگزاری کارگاه‌های عملی حضوری یا آنلاین",
       "پشتیبانی ۶ ماهه مشاوره سازمانی"
     ]
   },
@@ -152,9 +152,9 @@ export const COURSES: Course[] = [
     shortDesc: "خودکارسازی کارهای تکراری، تحلیل هوشمند اسناد و راه‌اندازی دستیارهای هوشمند سازمانی.",
     fullDesc: "در این کارگاه سازمانی، پرسنل شرکت شما نحوه اتصال ابزارهای هوش مصنوعی به اتوماسیون اداری و تسریع ۵ برابری کارهای روزمره را می‌آموزند.",
     level: "متوسط",
-    duration: "۱۲ ساعت (۴ کارگاه)",
+    duration: "۸ ساعت (کارگاه تخصصی متمرکز)",
     sessionsCount: 4,
-    price: "تماس جهت استعلام سازمانی",
+    price: "۲۵,۰۰۰,۰۰۰ تومان",
     badge: "ارتقای بهره‌وری",
     image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop",
     topics: [
@@ -165,9 +165,9 @@ export const COURSES: Course[] = [
     ],
     prerequisites: "دانش اولیه کارهای اداری و آفیس",
     instructor: {
-      name: "مهندس رضا حسینی",
-      role: "متخصص معماری داده و اتوماسیون",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+      name: "دکتر شهریار کریمی",
+      role: "متخصص معماری داده، اتوماسیون فرآیندها و هوش مصنوعی سازمانی",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
     },
     features: [
       "سفارشی‌سازی بر اساس چالش‌های واقعی شرکت",
@@ -237,7 +237,7 @@ export const COURSES: Course[] = [
     instructor: {
       name: "دکتر مهران شیرزاد",
       role: "متخصص آموزش کارآفرینی و فناوری به کودکان",
-      avatar: ""
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
     },
     features: [
       "قابلیت شرکت در کارگاه ۱ روزه یا دوره کامل ۷ جلسه‌ای",

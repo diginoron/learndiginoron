@@ -12,8 +12,6 @@ import {
   ArrowLeft, 
   Phone, 
   Server, 
-  Workflow, 
-  LineChart, 
   Sparkles,
   Lock,
   Headphones,
@@ -21,6 +19,7 @@ import {
   Database
 } from "lucide-react";
 import ContactTeaser from "@/components/ContactTeaser";
+import EnterpriseContactForm from "@/components/EnterpriseContactForm";
 
 export const metadata = {
   title: "خدمات هوشمندسازی سازمانی و ایجنت‌های هوش مصنوعی | دیجی نورون",
@@ -335,86 +334,8 @@ export default function EnterpriseAIPage() {
       </section>
 
       {/* Consultation & Demo Request Form */}
-      <section id="consultation-form" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 border border-cyan-500/30 shadow-2xl relative overflow-hidden">
-          <div className="max-w-2xl mx-auto text-center space-y-4 mb-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950 border border-cyan-500/30 text-cyan-300 text-xs font-bold">
-              <Phone className="w-3.5 h-3.5" />
-              <span>ارزیابی اولیه و جلسه مشاوره رایگان سازمانی</span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-black">
-              آماده هوشمندسازی سازمان خود هستید؟
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              مشخصات سازمان خود را وارد کنید تا کارشناسان ارشد هوش مصنوعی دیجی نورون جهت بررسی فرآیندها و برگزاری جلسه دمو اختصاصی با شما تماس بگیرند.
-            </p>
-          </div>
-
-          <form className="space-y-4 max-w-xl mx-auto text-xs">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-slate-300 font-bold mb-1.5">نام و نام خانوادگی مسئول</label>
-                <input 
-                  type="text" 
-                  placeholder="مثال: دکتر احمدی" 
-                  className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-cyan-400 text-xs"
-                />
-              </div>
-              <div>
-                <label className="block text-slate-300 font-bold mb-1.5">نام شرکت / سازمان</label>
-                <input 
-                  type="text" 
-                  placeholder="مثال: شرکت پتروشیمی / هلدینگ..." 
-                  className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-cyan-400 text-xs"
-                />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-slate-300 font-bold mb-1.5">شماره تماس مستقیم یا همراه</label>
-                <input 
-                  type="tel" 
-                  placeholder="0912... یا 021..." 
-                  className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-cyan-400 text-xs font-mono"
-                />
-              </div>
-              <div>
-                <label className="block text-slate-300 font-bold mb-1.5">حوزه خدمت مورد نظر</label>
-                <select className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-cyan-400 text-xs">
-                  <option value="all">هوشمندسازی جامع فرآیندها و ایجنت‌ها</option>
-                  <option value="agents">طراحی ایجنت‌های سازمانی (AI Agents)</option>
-                  <option value="bpa">اتوماسیون فرآیندهای کسب‌وکار (BPA)</option>
-                  <option value="implementation">پیاده‌سازی و استقرار On-Premise</option>
-                  <option value="transfer">انتقال تکنولوژی و سورس‌کد</option>
-                  <option value="training">کارگاه‌ها و آموزش سازمانی</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-slate-300 font-bold mb-1.5">توضیحات یا نیازهای خاص سازمان</label>
-              <textarea 
-                rows={3} 
-                placeholder="توضیح مختصری درباره سیستم‌ها، فرآیندها یا دغدغه‌های سازمانی شما..."
-                className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white focus:outline-none focus:border-cyan-400 text-xs"
-              />
-            </div>
-
-            <button 
-              type="button"
-              className="w-full py-4 bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 font-black rounded-xl text-sm transition-all shadow-lg shadow-cyan-500/20"
-            >
-              ثبت درخواست جلسه مشاوره و ارزیابی
-            </button>
-
-            <div className="text-center pt-2 text-[11px] text-slate-400 flex items-center justify-center gap-2">
-              <Phone className="w-3.5 h-3.5 text-cyan-400" />
-              <span>یا تماس مستقیم با دپارتمان سازمانی:</span>
-              <a href="tel:02188252497" className="text-cyan-300 font-bold font-mono tracking-wider hover:underline">02188252497</a>
-            </div>
-          </form>
-        </div>
+      <section id="consultation-form" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-28">
+        <EnterpriseContactForm />
       </section>
 
       {/* General Consultation & Teaser */}
