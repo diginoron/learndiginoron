@@ -19,7 +19,8 @@ import {
   GitBranch,
   ArrowRightLeft,
   Zap,
-  Compass
+  Compass,
+  Award
 } from "lucide-react";
 
 export default function Navbar() {
@@ -235,8 +236,8 @@ export default function Navbar() {
               {educationDropdownOpen && (
                 <div className="absolute top-full right-0 pt-1.5 w-72 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
                   <div className="p-2 bg-white border border-slate-200 rounded-xl shadow-xl backdrop-blur-xl">
-                    <div className="px-2.5 py-1 text-[11px] font-bold text-cyan-800 bg-cyan-50 rounded-md mb-1.5">
-                      دو دپارتمان تخصصی آموزش
+                    <div className="px-2.5 py-1 text-[11px] font-bold text-cyan-800 bg-cyan-50 rounded-md mb-1.5 flex items-center justify-between">
+                      <span>دپارتمان‌های آموزشی</span>
                     </div>
 
                     <div className="space-y-0.5">
@@ -263,6 +264,20 @@ export default function Navbar() {
                             کودکان و نوجوانان
                           </div>
                           <div className="text-[10px] text-slate-500">پایتون، تفکر الگوریتمی و رباتیک (۸-۱۸ سال)</div>
+                        </div>
+                      </Link>
+
+                      <Link
+                        href="/services/held-courses"
+                        className="flex items-center gap-2.5 p-2 hover:bg-amber-50 rounded-lg transition-colors group"
+                      >
+                        <Award className="w-4 h-4 text-amber-600 shrink-0" />
+                        <div>
+                          <div className="font-bold text-[12px] text-slate-800 group-hover:text-amber-700 flex items-center gap-1.5">
+                            <span>دوره‌های برگزار شده</span>
+                            <span className="px-1.5 py-0.5 bg-amber-100 text-amber-800 text-[9px] rounded font-bold">جدید</span>
+                          </div>
+                          <div className="text-[10px] text-slate-500">سوابق کارگاه‌های تخصصی و رویدادها</div>
                         </div>
                       </Link>
                     </div>
@@ -434,6 +449,15 @@ export default function Navbar() {
             >
               <GraduationCap className="w-3.5 h-3.5 text-cyan-600" />
               <span>آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)</span>
+            </Link>
+
+            <Link
+              href="/services/held-courses"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-2 pr-5 py-1.5 text-xs text-amber-800 font-bold"
+            >
+              <Award className="w-3.5 h-3.5 text-amber-600" />
+              <span>دوره‌های برگزار شده</span>
             </Link>
           </div>
 

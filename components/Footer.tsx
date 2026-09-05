@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin, Sparkles, GraduationCap, Building2, ExternalLink, Bot, Cpu, GitBranch, ArrowRightLeft, Zap, Compass } from "lucide-react";
+import { Phone, Mail, MapPin, Sparkles, GraduationCap, Building2, ExternalLink, Bot, Cpu, GitBranch, ArrowRightLeft, Zap, Compass, Award } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -129,6 +129,15 @@ export default function Footer() {
                 >
                   <GraduationCap className="w-3.5 h-3.5 text-cyan-400" />
                   <span>آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)</span>
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/services/held-courses" 
+                  className="hover:text-amber-300 transition-colors flex items-center gap-2"
+                >
+                  <Award className="w-3.5 h-3.5 text-amber-400" />
+                  <span>دوره‌های برگزار شده و سوابق کارگاه‌ها</span>
                 </Link>
               </li>
               <li>

@@ -14,7 +14,8 @@ import {
   GitBranch, 
   ArrowRightLeft,
   Zap,
-  Compass
+  Compass,
+  Award
 } from "lucide-react";
 import ContactTeaser from "@/components/ContactTeaser";
 
@@ -272,6 +273,30 @@ export default function ServicesPage() {
             </Link>
           </div>
 
+        </div>
+
+        {/* Held Courses Banner */}
+        <div className="glass-panel bg-gradient-to-r from-amber-500/10 via-amber-50/60 to-purple-500/10 p-6 sm:p-8 rounded-3xl border border-amber-200/80 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
+          <div className="flex items-center gap-4">
+            <div className="p-3.5 bg-amber-500 text-white rounded-2xl shadow-sm shrink-0">
+              <Award className="w-6 h-6" />
+            </div>
+            <div>
+              <div className="text-base sm:text-lg font-black text-slate-900">
+                سوابق و کارنامه‌ی دوره‌های برگزار شده دیجی نورون
+              </div>
+              <p className="text-xs sm:text-sm text-slate-600 mt-1">
+                مشاهده کارگاه‌های اجرا شده در اصناف، سازمان‌ها و مراکز استان‌ها (مانند کارگاه هوش مصنوعی در گردشگری شیراز)
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/services/held-courses"
+            className="px-5 py-3 bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-xl text-xs whitespace-nowrap shadow transition-colors flex items-center gap-2 shrink-0"
+          >
+            <span>مشاهده دوره‌های برگزار شده</span>
+            <ArrowLeft className="w-4 h-4" />
+          </Link>
         </div>
       </section>
 
