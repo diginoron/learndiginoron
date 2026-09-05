@@ -44,11 +44,10 @@ export default function AboutPage() {
 
           <div className="relative h-64 sm:h-80 rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
             <Image
-              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop"
+              src="/images/courses/enterprise-automation.jpg"
               alt="تیم دیجی نورون"
               fill
               className="object-cover"
-              unoptimized
             />
           </div>
 

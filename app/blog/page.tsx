@@ -142,7 +142,6 @@ export default function BlogPage() {
                   alt={post.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  unoptimized
                 />
                 <div className="absolute top-4 right-4 bg-white/90 text-cyan-800 text-xs px-3 py-1 rounded-full font-bold shadow-sm">
                   {post.categoryName}
@@ -179,7 +178,6 @@ export default function BlogPage() {
                       width={32}
                       height={32}
                       className="rounded-full object-cover"
-                      unoptimized
                     />
                     <div className="text-xs">
                       <div className="font-bold text-slate-800">{post.author.name}</div>

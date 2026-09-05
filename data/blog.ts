@@ -28,7 +28,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>ضرورت یادگیری هوش مصنوعی از سنین کودکی</h2>
       <p>جهانی که کودکان امروز در آن رشد می‌کنند، به شدت توسط تکنولوژی‌های هوش مصنوعی، یادگیری ماشین و الگوریتم‌های هوشمند احاطه شده است. برخلاف تصور عمومی، آموزش هوش مصنوعی به کودکان به معنای حفظ کردن فرمول‌های پیچیده ریاضی نیست؛ بلکه تقویت **تفکر تفکیکی (Computational Thinking)**، حل مسئله و خلاقیت دیجیتال است.</p>
       
-      <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop" alt="آموزش هوش مصنوعی به کودکان" class="rounded-xl my-6 w-full object-cover max-h-96" />
+      <img src="/images/courses/kids-ai.jpg" alt="آموزش هوش مصنوعی به کودکان" class="rounded-xl my-6 w-full object-cover max-h-96" />
 
       <h3>۵ مزیت اصلی آموزش AI به کودکان و نوجوانان</h3>
       <ol class="list-decimal pr-6 space-y-2 my-4">
@@ -51,11 +51,11 @@ export const BLOG_POSTS: BlogPost[] = [
     author: {
       name: "دکتر مهران شیرزاد",
       role: "مدیر بخش آموزش کودکان دیجی نورون",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
+      avatar: "/images/instructors/rezaei.jpg"
     },
     date: "۲۲ مرداد ۱۴۰۵",
     readTime: "۶ دقیقه",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
+    image: "/images/courses/kids-ai.jpg",
     featured: true,
     tags: ["کودکان", "آموزش هوش مصنوعی", "تفکر الگوریتمی", "دیجی نورون"]
   },
@@ -68,7 +68,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <h2>چرا سازمان‌ها امروز به آموزش هوش مصنوعی نیاز مبرم دارند؟</h2>
       <p>در دنیای رقابتی امروز، سازمان‌هایی که نتوانند ابزارهای هوش مصنوعی را در فرایندهای اداری، مالی، منابع انسانی و بازاریابی خود ادغام کنند، سهم بازار خود را به رقبای چابک‌تر واگذار خواهند کرد.</p>
 
-      <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1000&auto=format&fit=crop" alt="هوش مصنوعی سازمانی" class="rounded-xl my-6 w-full object-cover max-h-96" />
+      <img src="/images/courses/executive-ai.jpg" alt="هوش مصنوعی سازمانی" class="rounded-xl my-6 w-full object-cover max-h-96" />
 
       <h3>مراحل ۴ گانه تحول هوشمند سازمانی</h3>
       <div class="space-y-4 my-6">
@@ -97,11 +97,11 @@ export const BLOG_POSTS: BlogPost[] = [
     author: {
       name: "دکتر محمد کریمی",
       role: "مشاور ارشد تحول دیجیتال",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+      avatar: "/images/instructors/karimi.jpg"
     },
     date: "۱۹ مرداد ۱۴۰۵",
     readTime: "۸ دقیقه",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
+    image: "/images/courses/executive-ai.jpg",
     featured: true,
     tags: ["آموزش سازمانی", "تحول دیجیتال", "مدیریت", "اتوماسیون"]
   },
@@ -127,11 +127,11 @@ export const BLOG_POSTS: BlogPost[] = [
     author: {
       name: "مریم صادقی",
       role: "نویسنده فناوری دیجی نورون",
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop"
+      avatar: "/images/instructors/rad.jpg"
     },
     date: "۱۵ مرداد ۱۴۰۵",
     readTime: "۵ دقیقه",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
+    image: "/images/courses/generative-ai.jpg",
     featured: false,
     tags: ["ابزار هوش مصنوعی", "بهره وری", "پرامپت", "آموزش"]
   },
@@ -157,11 +157,11 @@ export const BLOG_POSTS: BlogPost[] = [
     author: {
       name: "دکتر علی امیری",
       role: "استاد دوره‌های نوجوانان",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      avatar: "/images/instructors/mohammadi.jpg"
     },
     date: "۱۰ مرداد ۱۴۰۵",
     readTime: "۷ دقیقه",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
+    image: "/images/courses/python-ai.jpg",
     featured: false,
     tags: ["پایتون", "نوجوانان", "برنامه نویسی", "پروژه"]
   },
@@ -186,11 +186,11 @@ export const BLOG_POSTS: BlogPost[] = [
     author: {
       name: "رضا حسینی",
       role: "معمار داده و مهندس پرامپت",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+      avatar: "/images/instructors/tehrani.jpg"
     },
     date: "۵ مرداد ۱۴۰۵",
     readTime: "۴ دقیقه",
-    image: "https://images.unsplash.com/photo-1677442136019-21780efad99a?q=80&w=800&auto=format&fit=crop",
+    image: "/images/blog/claude-llm.jpg",
     featured: false,
     tags: ["پرامپت نویسی", "ChatGPT", "Claude", "تکنیک"]
   },
@@ -208,11 +208,11 @@ export const BLOG_POSTS: BlogPost[] = [
     author: {
       name: "دکتر محمد کریمی",
       role: "مدیر آکادمی دیجی نورون",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+      avatar: "/images/instructors/karimi.jpg"
     },
     date: "۱ مرداد ۱۴۰۵",
     readTime: "۶ دقیقه",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=800&auto=format&fit=crop",
+    image: "/images/blog/ai-future.jpg",
     featured: false,
     tags: ["آینده آموزش", "ایجنت هوشمند", "یادگیری شخصی سازی شده"]
   }

@@ -56,7 +56,6 @@ export default async function CourseDetailPage({ params }: PageProps) {
               alt={course.title}
               fill
               className="object-cover"
-              unoptimized
             />
           </div>
 
@@ -132,7 +131,6 @@ export default async function CourseDetailPage({ params }: PageProps) {
                   width={48}
                   height={48}
                   className="rounded-full object-cover"
-                  unoptimized
                 />
               ) : (
                 <div className="w-12 h-12 rounded-full bg-cyan-100 border border-cyan-300 flex items-center justify-center text-cyan-700 shrink-0">

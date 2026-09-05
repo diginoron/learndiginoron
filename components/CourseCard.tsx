@@ -21,7 +21,6 @@ export default function CourseCard({ course }: CourseCardProps) {
           alt={course.title}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
-          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
         

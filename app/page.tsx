@@ -64,7 +64,6 @@ export default function Home() {
                     alt={post.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    unoptimized
                   />
                   <div className="absolute top-3 right-3 bg-white/90 text-cyan-800 text-xs px-3 py-1 rounded-full font-bold shadow-sm">
                     {post.categoryName}

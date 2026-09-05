@@ -44,7 +44,6 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
                 width={40}
                 height={40}
                 className="rounded-full object-cover"
-                unoptimized
               />
             ) : (
               <div className="w-10 h-10 rounded-full bg-cyan-100 border border-cyan-300 flex items-center justify-center text-cyan-800 shrink-0">
@@ -77,7 +76,6 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
           alt={post.title}
           fill
           className="object-cover"
-          unoptimized
         />
       </div>
 

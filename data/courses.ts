@@ -54,7 +54,7 @@ export const COURSES: Course[] = [
     sessionsCount: 4,
     price: "۳,۵۰۰,۰۰۰ تومان",
     badge: "پرطرفدارترین کودکان",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
+    image: "/images/courses/kids-ai.jpg",
     topics: [
       "مفاهیم پایه هوش مصنوعی به زبان ساده",
       "آموزش مدل‌های تشخیص چهره و صدا با Scratch & Teachable Machine",
@@ -65,7 +65,7 @@ export const COURSES: Course[] = [
     instructor: {
       name: "دکتر مهران شیرزاد",
       role: "متخصص آموزش فناوری‌های نوین و تفکر الگوریتمی",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
+      avatar: "/images/instructors/rezaei.jpg"
     },
     features: [
       "گواهی‌نامه رسمی دیجی نورون",
@@ -88,7 +88,7 @@ export const COURSES: Course[] = [
     sessionsCount: 4,
     price: "۵,۲۰۰,۰۰۰ تومان",
     badge: "ویژه نوجوانان",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
+    image: "/images/courses/python-ai.jpg",
     topics: [
       "اصول جامع برنامه‌نویسی Python",
       "کار با کتابخانه‌های OpenCV و NumPy",
@@ -99,7 +99,7 @@ export const COURSES: Course[] = [
     instructor: {
       name: "دکتر علی امیری",
       role: "مدرس دانشگاه و پژوهشگر هوش مصنوعی",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      avatar: "/images/instructors/mohammadi.jpg"
     },
     features: [
       "ساخت سبد پروژه (Portfolio) شخصی",
@@ -122,7 +122,7 @@ export const COURSES: Course[] = [
     sessionsCount: 4,
     price: "۲۵,۰۰۰,۰۰۰ تومان",
     badge: "ویژه مدیران ارشد",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
+    image: "/images/courses/executive-ai.jpg",
     topics: [
       "شناخت هوش مصنوعی مولد (Generative AI) و کاربردهای تجاری",
       "تدوین استراتژی AI و ارزیابی آمادگی سازمانی",
@@ -133,7 +133,7 @@ export const COURSES: Course[] = [
     instructor: {
       name: "دکتر مهران شیرزاد",
       role: "استراتژیست هوش مصنوعی و مشاور ارشد تحول سازمانی",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
+      avatar: "/images/instructors/rezaei.jpg"
     },
     features: [
       "ارزیابی اختصاصی فرایندهای شرکت شما",
@@ -156,7 +156,7 @@ export const COURSES: Course[] = [
     sessionsCount: 4,
     price: "۲۵,۰۰۰,۰۰۰ تومان",
     badge: "ارتقای بهره‌وری",
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop",
+    image: "/images/courses/enterprise-automation.jpg",
     topics: [
       "اتوماسیون ایمیل‌ها و مکاتبات اداری با ChatGPT & Claude",
       "تحول مالی و گزارش‌گیری داده محور به کمک AI",
@@ -167,7 +167,7 @@ export const COURSES: Course[] = [
     instructor: {
       name: "دکتر شهریار کریمی",
       role: "متخصص معماری داده، اتوماسیون فرآیندها و هوش مصنوعی سازمانی",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+      avatar: "/images/instructors/karimi.jpg"
     },
     features: [
       "سفارشی‌سازی بر اساس چالش‌های واقعی شرکت",
@@ -190,7 +190,7 @@ export const COURSES: Course[] = [
     sessionsCount: 10,
     price: "۴,۸۰۰,۰۰۰ تومان",
     badge: "جدید و بروز",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
+    image: "/images/courses/generative-ai.jpg",
     topics: [
       "تکنیک‌های پرامپت‌نویسی چندمرحله‌ای (Chain of Thought)",
       "ساخت تصاویر فوق‌العاده با Midjourney و Stable Diffusion",
@@ -201,7 +201,7 @@ export const COURSES: Course[] = [
     instructor: {
       name: "مهندس مریم صادقی",
       role: "استراتژیست محتوا و مدرس هوش مصنوعی",
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop"
+      avatar: "/images/instructors/rad.jpg"
     },
     features: [
       "دسترسی دائم به ویدیوها",
@@ -224,7 +224,7 @@ export const COURSES: Course[] = [
     sessionsCount: 7,
     price: "۴,۵۰۰,۰۰۰ تومان",
     badge: "جدید - ویژه کارآفرینی",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
+    image: "/images/courses/ai-bootcamp.jpg",
     topics: [
       "مفاهیم بنیادین هوش مصنوعی و شبکه‌های عصبی",
       "تحقیقات بازاریابی، ایده یابی و مفهوم سولو بیزینس",
@@ -237,7 +237,7 @@ export const COURSES: Course[] = [
     instructor: {
       name: "دکتر مهران شیرزاد",
       role: "متخصص آموزش کارآفرینی و فناوری به کودکان",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop"
+      avatar: "/images/instructors/rezaei.jpg"
     },
     features: [
       "قابلیت شرکت در کارگاه ۱ روزه یا دوره کامل ۷ جلسه‌ای",

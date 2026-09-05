@@ -50,11 +50,10 @@ export default function KidsAndTeensServicePage() {
 
               <div className="relative h-72 sm:h-96 rounded-2xl overflow-hidden border border-cyan-300 shadow-md">
                 <Image
-                  src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1000&auto=format&fit=crop"
+                  src="/images/courses/kids-ai.jpg"
                   alt="آموزش هوش مصنوعی به کودکان"
                   fill
                   className="object-cover"
-                  unoptimized
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
                 <div className="absolute bottom-4 right-4 left-4 p-4 bg-white/95 backdrop-blur-md rounded-xl border border-slate-200 text-xs text-slate-800 shadow-sm">
