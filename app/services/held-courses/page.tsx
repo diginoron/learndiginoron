@@ -11,7 +11,8 @@ import {
   Sparkles, 
   Phone, 
   Building2, 
-  ArrowLeft
+  ArrowLeft,
+  GraduationCap
 } from "lucide-react";
 import { HELD_COURSES } from "@/data/heldCourses";
 import ContactTeaser from "@/components/ContactTeaser";
@@ -93,17 +94,27 @@ export default function HeldCoursesPage() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
                 
                 {/* Image & Key Badges */}
-                <div className="lg:col-span-5 relative min-h-[320px] lg:min-h-full bg-slate-900">
+                <div className="lg:col-span-5 relative min-h-[360px] sm:min-h-[420px] lg:min-h-full bg-slate-950 overflow-hidden flex items-center justify-center">
+                  {/* Blurred Backdrop for nice atmosphere */}
                   <Image
                     src={course.image}
                     alt={course.title}
                     fill
-                    className="object-cover"
+                    className="object-cover blur-2xl opacity-30 scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
+                  {/* Crisp Foreground Image */}
+                  <div className="relative w-full h-full min-h-[360px] sm:min-h-[420px] lg:min-h-[480px]">
+                    <Image
+                      src={course.image}
+                      alt={course.title}
+                      fill
+                      className="object-contain p-2 sm:p-4 z-10 drop-shadow-2xl"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent pointer-events-none z-10" />
                   
                   {/* Top Badge */}
-                  <div className="absolute top-4 right-4 flex flex-wrap gap-2">
+                  <div className="absolute top-4 right-4 flex flex-wrap gap-2 z-20">
                     <span className="px-3 py-1 bg-amber-500/90 backdrop-blur-md text-slate-950 font-black rounded-lg text-xs shadow">
                       برگزار شده
                     </span>
@@ -113,7 +124,7 @@ export default function HeldCoursesPage() {
                   </div>
 
                   {/* Bottom Info on Image */}
-                  <div className="absolute bottom-4 right-4 left-4 p-3.5 bg-slate-900/90 backdrop-blur-md rounded-2xl border border-slate-700/60 text-white space-y-1.5 text-xs shadow-md">
+                  <div className="absolute bottom-4 right-4 left-4 p-3.5 bg-slate-900/90 backdrop-blur-md rounded-2xl border border-slate-700/60 text-white space-y-1.5 text-xs shadow-md z-20">
                     <div className="flex items-center gap-2 text-cyan-300 font-bold">
                       <MapPin className="w-4 h-4 text-cyan-400 shrink-0" />
                       <span>{course.location}</span>
@@ -136,6 +147,12 @@ export default function HeldCoursesPage() {
                     
                     {/* Tags */}
                     <div className="flex flex-wrap items-center gap-2 text-xs">
+                      {course.instructor && (
+                        <span className="flex items-center gap-1 text-cyan-900 bg-cyan-100 border border-cyan-300 px-2.5 py-1 rounded-md font-bold">
+                          <GraduationCap className="w-3.5 h-3.5 text-cyan-700" />
+                          <span>مدرس: {course.instructor}</span>
+                        </span>
+                      )}
                       <span className="flex items-center gap-1 text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md">
                         <MapPin className="w-3.5 h-3.5 text-slate-500" />
                         <span>{course.city}</span>
