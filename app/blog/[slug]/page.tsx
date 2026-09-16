@@ -1,11 +1,57 @@
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { BLOG_POSTS } from "@/data/blog";
-import { Calendar, Clock, ArrowLeft, Share2, Tag, BookOpen, Phone, User } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, Tag, User } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = BLOG_POSTS.find((p) => p.slug === slug);
+
+  if (!post) {
+    return {
+      title: "مقاله یافت نشد | دیجی نورون",
+    };
+  }
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://diginoron.com";
+  const postUrl = `${siteUrl}/blog/${post.slug}`;
+  const imageUrl = post.image.startsWith("http") ? post.image : `${siteUrl}${post.image}`;
+
+  return {
+    title: `${post.title} | دیجی نورون`,
+    description: post.excerpt,
+    alternates: {
+      canonical: postUrl,
+    },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: postUrl,
+      siteName: "دیجی نورون",
+      locale: "fa_IR",
+      type: "article",
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 675,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [imageUrl],
+    },
+  };
 }
 
 export default async function BlogPostDetailPage({ params }: PageProps) {
@@ -18,8 +64,121 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
 
   const relatedPosts = BLOG_POSTS.filter((p) => p.id !== post.id).slice(0, 2);
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://diginoron.com";
+  const postUrl = `${siteUrl}/blog/${post.slug}`;
+  const imageUrl = post.image.startsWith("http") ? post.image : `${siteUrl}${post.image}`;
+
+  const jsonLdGraph: { "@context": string; "@graph": Record<string, unknown>[] } = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "صفحه اصلی",
+            "item": siteUrl,
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "مجله مقالات",
+            "item": `${siteUrl}/blog`,
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": post.title,
+            "item": postUrl,
+          },
+        ],
+      },
+      {
+        "@type": "Article",
+        "headline": post.title,
+        "description": post.excerpt,
+        "image": imageUrl,
+        "inLanguage": "fa-IR",
+        "author": {
+          "@type": "Organization",
+          "name": post.author.name,
+          "url": siteUrl,
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "دیجی نورون",
+          "url": siteUrl,
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${siteUrl}/icon.png`,
+          },
+        },
+        "datePublished": "2026-03-15T08:00:00+03:30",
+        "dateModified": "2026-03-17T12:00:00+03:30",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": postUrl,
+        },
+      },
+    ],
+  };
+
+  if (post.slug === "smart-organization-ai-2026") {
+    jsonLdGraph["@graph"].push({
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "پیاده‌سازی زیرساخت‌های هوشمند در یک سازمان متوسط چقدر زمان می‌برد؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "مرحله عارضه‌یابی و پاک‌سازی داده‌ها بین ۲ تا ۴ هفته و استقرار اولین پایلوت عملیاتی کارگزاران هوشمند ۴ تا ۶ هفته زمان می‌برد. کل فرآیند استقرار یکپارچه و آموزش پرسنل ظرف ۳ تا ۶ ماه با موفقیت به اتمام می‌رسد.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "آیا هوشمند سازی سازمان در سال 2026 به معنای تعدیل گسترده نیروی کار است؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "خیر، تجربه سازمان‌های موفق نشان می‌دهد هدف اصلی این تحول، توانمندسازی کارکنان از طریق حذف وظایف تکراری است تا نیروها به ناظران تحلیلی و تصمیم‌گیرندگان استراتژیک در کنار کارگزاران هوشمند تبدیل شوند.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "چالش اصلی سازمان‌ها در برقراری امنیت داده‌ها چیست و چگونه حل می‌شود؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "چالش اصلی جلوگیری از خروج اسرار تجاری است. راهکار استاندارد دیجی نورون، پیاده‌سازی مدل‌های پردازشی روی سرورهای داخلی ایزوله (On-Premise) همراه با رمزنگاری پیشرفته و کنترل دسترسی نقش‌محور است.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "تفاوت اتوماسیون معمولی با هوشمند سازی سازمان در سال 2026 چیست؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "اتوماسیون سنتی تنها بر مبنای قوانین ثابت و ورودی‌های ساختاریافته کار می‌کند، در حالی که سیستم‌های نوین شناختی متون پیچیده، زبان طبیعی و شرایط متغیر کاری را درک کرده و رفتاری منطبق بر شرایط اتخاذ می‌کنند.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "بازگشت سرمایه (ROI) این پروژه‌ها چه زمانی نمایان می‌شود؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نشانه‌های صرفه‌جویی مالی ناشی از کاهش ساعات اضافه کاری و افت شدید خطاها در ماه‌های سوم تا ششم نمایان می‌شود و بازگشت کامل هزینه‌های سرمایه‌گذاری ظرف کمتر از یک سال مالی محقق می‌گردد.",
+          },
+        },
+      ],
+    });
+  }
+
   return (
     <article className="py-12 space-y-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Schema JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdGraph) }}
+      />
       
       {/* Breadcrumb & Meta */}
       <div className="space-y-4">
