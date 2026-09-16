@@ -58,7 +58,7 @@ export default function Navbar() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-cyan-500"></span>
             </span>
-            <span className="text-cyan-300 font-bold">دیجی نورون (ai.diginoron.com):</span>
+            <span className="text-cyan-300 font-bold">دیجی نورون (diginoron.com):</span>
             <span className="text-slate-300">طراحی سند راهبردی، هوشمندسازی سازمانی و آکادمی هوش مصنوعی</span>
           </div>
           <div className="flex items-center gap-5">

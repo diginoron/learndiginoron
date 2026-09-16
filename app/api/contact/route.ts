@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     const formattedData = {
       targetEmail: "diginoron@gmail.com",
       timestamp,
-      formType: formType || "فرم وب‌سایت ai.diginoron.com",
+      formType: formType || "فرم وب‌سایت diginoron.com",
       name: name || "ثبت نشده",
       company: company || "ثبت نشده",
       phone: phone || "ثبت نشده",
@@ -71,7 +71,7 @@ export async function POST(request: Request) {
             subject: `[دیجی نورون] درخواست جدید: ${formattedData.name} - ${formattedData.phone}`,
             html: `
               <div dir="rtl" style="font-family: Tahoma, sans-serif; padding: 20px; line-height: 1.8; color: #1e293b;">
-                <h2 style="color: #0891b2; border-bottom: 2px solid #0891b2; padding-bottom: 8px;">درخواست جدید از وب‌سایت دیجی نورون (ai.diginoron.com)</h2>
+                <h2 style="color: #0891b2; border-bottom: 2px solid #0891b2; padding-bottom: 8px;">درخواست جدید از وب‌سایت دیجی نورون (diginoron.com)</h2>
                 <p><strong>زمان ثبت:</strong> ${timestamp}</p>
                 <p><strong>نوع فرم:</strong> ${formattedData.formType}</p>
                 <p><strong>نام و مسئول:</strong> ${formattedData.name}</p>

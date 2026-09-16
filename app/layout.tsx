@@ -12,9 +12,9 @@ const vazirmatn = Vazirmatn({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://ai.diginoron.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://diginoron.com"),
   title: "دیجی نورون | هوشمندسازی سازمانی و آموزش کاربردی هوش مصنوعی",
-  description: "مرکز تخصصی هوشمندسازی سازمانی، طراحی ایجنت‌های اختصاصی (AI Agents)، اتوماسیون فرآیندها (BPA)، پیاده‌سازی و انتقال تکنولوژی و خدمات آموزشی کودکان و سازمان‌ها. ai.diginoron.com - تلفن: ۰۲۱۸۸۲۵۲۴۹۷",
+  description: "مرکز تخصصی هوشمندسازی سازمانی، طراحی ایجنت‌های اختصاصی (AI Agents)، اتوماسیون فرآیندها (BPA)، پیاده‌سازی و انتقال تکنولوژی و خدمات آموزشی کودکان و سازمان‌ها. diginoron.com - تلفن: ۰۲۱۸۸۲۵۲۴۹۷",
   keywords: [
     "هوشمندسازی سازمانی", 
     "ایجنت‌های هوش مصنوعی", 
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "آموزش سازمانی هوش مصنوعی", 
     "آموزش هوش مصنوعی کودکان", 
     "دیجی نورون", 
-    "ai.diginoron.com"
+    "diginoron.com"
   ],
   icons: {
     icon: "/logo.png",
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "دیجی نورون - هوشمندسازی سازمانی و آموزش هوش مصنوعی",
     description: "خدمات تخصصی هوشمندسازی سازمانی، طراحی ایجنت‌های سازمانی، اتوماسیون فرآیندها و خدمات آموزشی. تلفن: ۰۲۱۸۸۲۵۲۴۹۷",
-    url: "https://ai.diginoron.com",
-    siteName: "DigiNoron AI",
+    url: "https://diginoron.com",
+    siteName: "DigiNoron",
     locale: "fa_IR",
     type: "website",
   },

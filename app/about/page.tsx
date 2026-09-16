@@ -4,7 +4,7 @@ import { Sparkles, GraduationCap, Building2, ShieldCheck, Award, Phone, Users, C
 import ContactTeaser from "@/components/ContactTeaser";
 
 export const metadata = {
-  title: "درباره ما | دیجی نورون (ai.diginoron.com)",
+  title: "درباره ما | دیجی نورون (diginoron.com)",
   description: "آشنایی با تاریخچه، ماموریت و اهداف دیجی نورون در حوزه هوشمندسازی سازمانی و آموزش کاربردی هوش مصنوعی.",
 };
 
@@ -16,7 +16,7 @@ export default function AboutPage() {
       <div className="text-center max-w-3xl mx-auto space-y-4">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 border border-cyan-300 text-cyan-800 text-xs font-semibold">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>درباره دیجی نورون (ai.diginoron.com)</span>
+          <span>درباره دیجی نورون (diginoron.com)</span>
         </div>
 
         <h1 className="text-3xl sm:text-5xl font-black text-slate-900 leading-tight">
@@ -35,7 +35,7 @@ export default function AboutPage() {
           <div className="space-y-4">
             <h2 className="text-2xl font-bold text-slate-900">ماموریت و چشم‌انداز دیجی نورون</h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              دیجی نورون (DigiNoron) به عنوان یکی از پیشگامان تحول دیجیتال در کشور، بستر تخصصی خود را با دامنه اختصاصی <span className="text-cyan-700 font-mono font-bold">ai.diginoron.com</span> جهت ارائه خدمات مهندسی هوش مصنوعی، استقرار ایجنت‌های سازمانی و ارتقای سطح سواد و مهارت‌های هوش مصنوعی ایجاد نموده است.
+              دیجی نورون (DigiNoron) به عنوان یکی از پیشگامان تحول دیجیتال در کشور، بستر تخصصی خود را با دامنه اختصاصی <span className="text-cyan-700 font-mono font-bold">diginoron.com</span> جهت ارائه خدمات مهندسی هوش مصنوعی، استقرار ایجنت‌های سازمانی و ارتقای سطح سواد و مهارت‌های هوش مصنوعی ایجاد نموده است.
             </p>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
               با توجه به اهمیت فزاینده تکنولوژی‌های هوشمند، ما باور داریم که بهره‌گیری از هوش مصنوعی نباید تنها به پروژه‌های تئوریک محدود شود؛ بلکه شرکت‌ها برای بقا و سودآوری باید فرآیندهای خود را هوشمند کنند و کودکان و نوجوانان از سنین پایه باید تفکر الگوریتمی و سواد هوش مصنوعی را فراگیرند.

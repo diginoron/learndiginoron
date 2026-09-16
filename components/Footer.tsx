@@ -26,7 +26,7 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="font-bold text-lg text-white">دیجی نورون</h3>
-                <p className="text-xs text-cyan-400 font-mono">ai.diginoron.com</p>
+                <p className="text-xs text-cyan-400 font-mono">diginoron.com</p>
               </div>
             </div>
 
@@ -200,7 +200,7 @@ export default function Footer() {
         {/* Bottom copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>
-            © ۲۰۲۶ تمامی حقوق مادی و معنوی این وب‌سایت متعلق به شرکت دیجی نورون (<span className="font-mono text-cyan-400">ai.diginoron.com</span>) است.
+            © ۲۰۲۶ تمامی حقوق مادی و معنوی این وب‌سایت متعلق به شرکت دیجی نورون (<span className="font-mono text-cyan-400">diginoron.com</span>) است.
           </p>
           <div className="flex items-center gap-4">
             <Link href="/privacy" className="hover:text-slate-300">حریم خصوصی</Link>

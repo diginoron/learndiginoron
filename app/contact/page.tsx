@@ -82,7 +82,7 @@ export default function ContactPage() {
       <div className="text-center max-w-3xl mx-auto space-y-4">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 border border-cyan-300 text-cyan-800 text-xs font-semibold">
           <Headphones className="w-3.5 h-3.5" />
-          <span>ارتباط مستقیم با دیجی نورون (ai.diginoron.com)</span>
+          <span>ارتباط مستقیم با دیجی نورون (diginoron.com)</span>
         </div>
 
         <h1 className="text-3xl sm:text-5xl font-black text-slate-900">

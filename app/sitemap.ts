@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { COURSES } from "@/data/courses";
 import { BLOG_POSTS } from "@/data/blog";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://ai.diginoron.com";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://diginoron.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date();
