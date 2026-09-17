@@ -124,7 +124,19 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
     ],
   };
 
-  if (post.slug === "smart-organization-ai-2026") {
+  if (post.faq && post.faq.length > 0) {
+    jsonLdGraph["@graph"].push({
+      "@type": "FAQPage",
+      "mainEntity": post.faq.map((item) => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer,
+        },
+      })),
+    });
+  } else if (post.slug === "smart-organization-ai-2026") {
     jsonLdGraph["@graph"].push({
       "@type": "FAQPage",
       "mainEntity": [
