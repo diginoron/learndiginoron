@@ -140,6 +140,10 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
           title: "Automated Supply Chain Workflows",
           desc: "Leveraging intelligent systems to reduce turnaround delays and optimize commercial vendor selection.",
         },
+        {
+          title: "8-Hour Hands-On Masterclass",
+          desc: "Applied operational focus tailored specifically to enterprise purchasing challenges using cutting-edge AI models.",
+        },
       ],
     },
     fa: {},
@@ -176,6 +180,10 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
           title: "أتمتة تدفقات سلاسل الإمداد",
           desc: "استخدام الأنظمة الذكية لتقليص أوقات الانتظار واختيار أفضل شروط التعاقد التجاري.",
         },
+        {
+          title: "ورشة عمل تطبيقية لمدة ٨ ساعات",
+          desc: "تركيز تشغيلي مباشر لحل معضلات سلاسل الإمداد للشركات الكبرى بالاستعانة بأحدث النماذج الذكية.",
+        },
       ],
     },
   },
@@ -203,6 +211,20 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
         "Standard operating guidelines for regulatory AI deployment",
         "Prototypes of automated customer service dispute resolution agents",
       ],
+      keyPoints: [
+        {
+          title: "Open-Source vs Commercial API Models",
+          desc: "Architectural comparison, cost benefits, enterprise data privacy considerations, and trade-offs between self-hosted open-source models and commercial APIs.",
+        },
+        {
+          title: "Prompt Engineering & Professional Toolsets",
+          desc: "Formulating high-precision prompts and deploying specialized AI toolboxes to automate operational workflows and boost productivity.",
+        },
+        {
+          title: "Enterprise AI Transformation Methodology",
+          desc: "An end-to-end framework for deploying and tailoring customized AI models on internal enterprise documents and specific organizational requirements.",
+        },
+      ],
     },
     fa: {},
     ar: {
@@ -227,6 +249,20 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
         "صياغة خريطة طريق لاعتماد الذكاء الاصطناعي في المنصات التجارية",
         "إعداد أدلة إرشادية لاستخدام الذكاء الاصطناعي في الخدمات الحكومية الرقمية",
         "بناء نماذج أولية لوكلاء معالجة شكاوى العملاء وحل النزاعات آلياً",
+      ],
+      keyPoints: [
+        {
+          title: "النماذج مفتوحة المصدر وواجهات API",
+          desc: "مقارنة معمارية، المزايا، اعتبارات خصوصية بيانات المؤسسة ومعايير الاختيار بين النماذج مفتوحة المصدر وسحابة الخدمات التجارية.",
+        },
+        {
+          title: "هندسة الأوامر والأدوات الاحترافية",
+          desc: "تقنيات صياغة الأوامر الدقيقة واستعراض حقيبة أدوات الذكاء الاصطناعي التخصصية لأتمتة المهام ورفع الكفاءة التشغيلية.",
+        },
+        {
+          title: "منهجية التحول الذكي للمؤسسات",
+          desc: "إطار عمل تطبيقي لنشر وتخصيص نماذج الذكاء الاصطناعي بناءً على الوثائق والمتطلبات الخاصة بالمؤسسة.",
+        },
       ],
     },
   },
@@ -254,6 +290,20 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
         "Automating compliance reporting for environmental and safety standards",
         "Establishment of an in-house AI champions taskforce",
       ],
+      keyPoints: [
+        {
+          title: "Tailoring Enterprise AI for Industry",
+          desc: "Securely fine-tuning and connecting AI models to proprietary internal knowledge bases and technical documentation while preserving confidentiality.",
+        },
+        {
+          title: "Applications in Polymer & Chemical Industries",
+          desc: "Unlocking AI potential in optimizing polymerization processes, predicting material thermo-mechanical properties, and quality assurance.",
+        },
+        {
+          title: "Cross-Departmental Operational Acceleration",
+          desc: "Deploying intelligent assistants for business correspondence, market demand forecasting, chemical inventory logistics, and minimizing human errors.",
+        },
+      ],
     },
     fa: {},
     ar: {
@@ -278,6 +328,20 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
         "خفض فترات التوقف غير المخطط لها بنسبة تصل إلى ١٥٪ عبر الصيانة التنبؤية",
         "أتمتة إعداد تقارير الامتثال البيئي ومعايير السلامة المهنية",
         "تأهيل فريق داخلي لقيادة مبادرات الذكاء الاصطناعي في المنشآت",
+      ],
+      keyPoints: [
+        {
+          title: "تخصيص الذكاء الاصطناعي للمؤسسات",
+          desc: "طرق تدريب وربط نماذج الذكاء الاصطناعي بقواعد المعرفة والوثائق الداخلية للمصانع مع الحفاظ الصارم على سرية البيانات.",
+        },
+        {
+          title: "تطبيقات صناعة البوليمر والبتروكيماويات",
+          desc: "إمكانات الذكاء الاصطناعي في تحسين عمليات البلمرة، والتنبؤ بالخواص الميكانيكية والحرارية للمنتجات وضبط الجودة.",
+        },
+        {
+          title: "تطوير العمليات بين الأقسام",
+          desc: "توظيف المساعدات الذكية في المراسلات الفنية، التنبؤ بطلب السوق، إدارة المخزون وتقليل الأخطاء البشرية.",
+        },
       ],
     },
   },
@@ -305,6 +369,20 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
         "Increasing booking conversion rates via personalized dynamic offers",
         "Bilingual digital strategy roadmap for regional hospitality brands",
       ],
+      keyPoints: [
+        {
+          title: "Foundations & Core AI Paradigms",
+          desc: "Clear breakdown of algorithms, machine learning fundamentals, and the transformative impact of generative AI on modern service industries.",
+        },
+        {
+          title: "Multimodal Models for Hospitality",
+          desc: "Evaluating LLMs, computer vision, voice models, and transformers to pick the optimal engines for tourism and hospitality applications.",
+        },
+        {
+          title: "AI-Powered Web & App Development",
+          desc: "Examining software architectures and seamlessly connecting AI APIs to travel portals and mobile apps without unnecessary complexity.",
+        },
+      ],
     },
     fa: {},
     ar: {
@@ -329,6 +407,20 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
         "تطبيق نماذج أولية لمساعدات الحجز والرد الآلي متعدد اللغات",
         "رفع معدلات تحويل الحجوزات عبر العروض التفاعلية المخصصة",
         "خريطة طريق استراتيجية للتحول الرقمي لقطاع الضيافة",
+      ],
+      keyPoints: [
+        {
+          title: "مفاهيم وأسس الذكاء الاصطناعي",
+          desc: "شرح مبسط لكيفية عمل الخوارزميات، التعلم الآلي والدور التحويلي للذكاء الاصطناعي في قطاع الخدمات والسياحة.",
+        },
+        {
+          title: "نماذج الذكاء الاصطناعي المتنوعة",
+          desc: "مقارنة النماذج اللغوية، الرؤية الحاسوبية، النماذج الصوتية والمحولات لاختيار الحل الأمثل للقطاع الفندقي والسياحي.",
+        },
+        {
+          title: "تطوير البرمجيات والمواقع الذكية",
+          desc: "استعراض المعمارية البرمجية وربط واجهات API الذكية ببوابات وتطبيقات السياحة بسلاسة واحترافية.",
+        },
       ],
     },
   },
@@ -356,6 +448,20 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
         "High engagement and active parental participation showcase",
         "Accredited junior certification from DigiNoron Academy",
       ],
+      keyPoints: [
+        {
+          title: "AI-Powered Game Development",
+          desc: "Formulating interactive game logic, creating smart NPC behaviors, and designing entertaining levels using generative AI tools.",
+        },
+        {
+          title: "Visual Web & App Creation",
+          desc: "Step-by-step guidance on rapidly prototyping intuitive interfaces and deploying responsive interactive web pages without coding hurdles.",
+        },
+        {
+          title: "Digital Entrepreneurship & Creative Media",
+          desc: "Introducing value-creation in the digital economy, startup ideation, and crafting compelling multimedia content with AI.",
+        },
+      ],
     },
     fa: {},
     ar: {
@@ -380,6 +486,20 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
         "نجاح كل طالب في بناء وبرمجة لعبة ذكية تفاعلية متكاملة",
         "تفاعل طلابي استثنائي مع معرض للمشاريع بحضور أولياء الأمور",
         "شهادة Junior معتمدة من أكاديمية ديجي نورون",
+      ],
+      keyPoints: [
+        {
+          title: "صناعة الألعاب بالذكاء الاصطناعي",
+          desc: "ابتكار قواعد الألعاب وبناء مراحل ومستويات تفاعلية مسلية بمساعدة أدوات الذكاء الاصطناعي التوليدي.",
+        },
+        {
+          title: "تصميم المواقع والتطبيقات",
+          desc: "تدريب تطبيقي خطوة بخطوة على بناء واجهات المستخدم وإطلاق صفحات الويب التفاعلية بسرعة وسهولة.",
+        },
+        {
+          title: "ريادة الأعمال وصناعة المحتوى",
+          desc: "اكتساب مهارات توليد القيمة في العالم الرقمي، استكشاف الأفكار الريادية وإنتاج المحتوى الرقمي الجذاب.",
+        },
       ],
     },
   },
@@ -407,6 +527,20 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
         "Enhanced predictive visibility into rush-hour traffic choke points",
         "Comprehensive urban AI data governance blueprint",
       ],
+      keyPoints: [
+        {
+          title: "Customization for Urban Transit",
+          desc: "Adapting AI algorithms to passenger movement patterns, rush-hour peak periods, and citywide fleet demand distribution.",
+        },
+        {
+          title: "Enterprise AI Municipal Implementation",
+          desc: "Deployment blueprints for smart tooling across dispatch, monitoring, finance, citizen inquiry response, and fleet maintenance.",
+        },
+        {
+          title: "Operational Tools & Predictive Models",
+          desc: "Deploying tangible AI solutions for automated reporting, geospatial (GIS) telemetry processing, and data-driven executive leadership.",
+        },
+      ],
     },
     fa: {},
     ar: {
@@ -431,6 +565,20 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
         "بناء نموذج تجريبي لضبط توقيت الإشارات الضوئية ذاتياً",
         "تعزيز دقة التنبؤ بالازدحامات وتوجيه الفرق الميدانية استباقياً",
         "وثيقة حوكمة شاملة لبيانات النقل الذكي للمدينة",
+      ],
+      keyPoints: [
+        {
+          title: "التخصيص للنقل الحضري",
+          desc: "ملاءمة خوارزميات الذكاء الاصطناعي مع أنماط تنقل المواطنين، ساعات الذروة وتوزيع حافلات النقل في شوارع المدينة.",
+        },
+        {
+          title: "النشر المؤسسي للذكاء الاصطناعي",
+          desc: "خطة استقرار الأدوات الذكية في إدارات التشغيل، الرقابة الميدانية، الصيانة وخدمة المواطنين.",
+        },
+        {
+          title: "الأدوات والنماذج التطبيقية",
+          desc: "استخدام الأدوات الذكية لأتمتة إعداد التقارير، معالجة البيانات المكانية (GIS) ودعم اتخاذ القرار لمديري النقل.",
+        },
       ],
     },
   },
@@ -458,6 +606,20 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
         "Formalization of cooperative training partnerships with 5 corporate entities",
         "Launch of the first regional AI Agent development cohort",
       ],
+      keyPoints: [
+        {
+          title: "Unveiling the AI Mobile Ecosystem",
+          desc: "Introducing the intelligent infrastructure and mobile app of the Regional Youth Hub with interactive features and youth user guidance.",
+        },
+        {
+          title: "Generative Content Creation with AI",
+          desc: "Hands-on techniques for rapid visual, textual, and audio content synthesis for digital branding, growth marketing, and social media.",
+        },
+        {
+          title: "Custom AI Agent Development",
+          desc: "How to engineer, prompt, and fine-tune autonomous agents tailored to address bespoke challenges for startups and enterprises.",
+        },
+      ],
     },
     fa: {},
     ar: {
@@ -473,7 +635,7 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
       shortDesc: "الكلمة الافتتاحية والورش العملية حول منظومات الوكلاء المستقلين ومسارات التسويق التجاري للذكاء الاصطناعي.",
       fullDesc: "اختير ديجي نورون كشريك أكاديمي رئيسي لإلقاء الكلمة الافتتاحية وتقديم ورش عمل تطبيقية لمئات المبتكرين والباحثين ومسؤولي المؤسسات بمناسبة افتتاح المركز الإقليمي للذكاء الاصطناعي.",
       topics: [
-        "التحول من النماذج اللغوية البسيطة إلى أسراب الوكلاء المؤتمتة",
+        "التحول من النماذج اللغوية البسیطة إلى أسراب الوكلاء المؤتمتة",
         "تحويل البحوث التقنية إلى منتجات تجارية ذات قيمة مضافة",
         "مقارنة تكاليف البنية التحتية المحلية (On-Premise) مقابل السحابية",
         "تمكين ورعاية الكوادر الهندسية الصاعدة في الذكاء الاصطناعي",
@@ -482,6 +644,20 @@ export const HELD_COURSES_TRANSLATIONS: Record<string, Record<Locale, Partial<He
         "إلقاء الكلمة الرئيسية أمام أكثر من ٤٠٠ شخصية من قادة التكنولوجيا",
         "توقيع مذكرات تفاهم تدريبية مع ٥ مؤسسات صناعية وتجارية",
         "إطلاق أول دفعة لتأهيل مطوري وكلاء الذكاء الاصطناعي بالمنطقة",
+      ],
+      keyPoints: [
+        {
+          title: "إطلاق تطبيق الذكاء الاصطناعي",
+          desc: "استعراض البنية التحتية الذكية وتطبيق دار الشباب المخصص بخدمات تفاعلية وأدوات توجيهية لرواد الأعمال الصاعدين.",
+        },
+        {
+          title: "صناعة المحتوى بالذكاء الاصطناعي",
+          desc: "طرق عملية سريعة لإنتاج المحتوى البصري، النصي والصوتي للتسويق الرقمي وإدارة قنوات التواصل الاجتماعي.",
+        },
+        {
+          title: "تخصيص وكلاء الذكاء الاصطناعي",
+          desc: "كيفية برمجة وتطوير وكلاء أذكياء مستقلين لتلبية الاحتياجات التخصصية للشركات الناشئة والمؤسسات.",
+        },
       ],
     },
   },
