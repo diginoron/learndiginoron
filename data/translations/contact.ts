@@ -56,7 +56,7 @@ export const CONTACT_TRANSLATIONS: Record<Locale, ContactTranslations> = {
     emailLabel: "Official Email",
     emailValue: "diginoron@gmail.com",
     addressLabel: "Headquarters & Lab",
-    addressValue: "Tehran, Science & Technology Park, Innovation Center",
+    addressValue: "Technology & AI Innovation Center (Remote & On-Premise Delivery)",
     hoursLabel: "Working Hours",
     hoursValue: "Saturday to Wednesday, 8:00 AM to 5:00 PM",
     form: {
@@ -97,7 +97,7 @@ export const CONTACT_TRANSLATIONS: Record<Locale, ContactTranslations> = {
     emailLabel: "پست الکترونیکی",
     emailValue: "diginoron@gmail.com",
     addressLabel: "دفتر مرکزی",
-    addressValue: "تهران، خیابان ولیعصر، تقاطع فاطمی، پارک علم و فناوری",
+    addressValue: "مرکز نوآوری و پارک علم و فناوری (ارائه خدمات حضوری، آنلاین و On-Premise)",
     hoursLabel: "ساعات پاسخگویی",
     hoursValue: "شنبه تا چهارشنبه ۸:۰۰ الی ۱۷:۰۰",
     form: {
@@ -138,7 +138,7 @@ export const CONTACT_TRANSLATIONS: Record<Locale, ContactTranslations> = {
     emailLabel: "البريد الإلكتروني الرسمي",
     emailValue: "diginoron@gmail.com",
     addressLabel: "المقر الرئيسي والمختبر",
-    addressValue: "طهران - واحة العلوم والتكنولوجيا، مركز الابتكار",
+    addressValue: "واحة العلوم والتكنولوجيا والابتكار الرقمي (خدمات حضورية وافتراضية)",
     hoursLabel: "أوقات العمل",
     hoursValue: "السبت إلى الأربعاء: ٨:٠٠ صباحاً حتى ٥:٠٠ مساءً",
     form: {

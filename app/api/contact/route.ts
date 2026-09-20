@@ -12,7 +12,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const timestamp = new Date().toLocaleString("fa-IR", { timeZone: "Asia/Tehran" });
+    const timestamp = new Date().toISOString();
     const selectedField = serviceType || audienceType || subject || formType || "هوشمندسازی سازمانی";
     
     const formattedData = {
