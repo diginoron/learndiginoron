@@ -49,7 +49,7 @@ export default async function KidsAndTeensServicePage({ params }: PageProps) {
       titleHighlight: "Kids & Teens (Ages 8-18)",
       description: "We transform children from passive technology consumers into innovative creators of smart apps, interactive games, and autonomous bots through a rigorous yet playful curriculum.",
       viewCoursesBtn: "View Courses (Ages 8-18)",
-      parentsPhoneBtn: "Admissions Line: +98 21 8825 2497",
+      parentsPhoneBtn: "Admissions Line: +61 451 410 352",
       calloutTitle: "Project-Centric & Game-Based Learning",
       calloutSubtitle: "Taught using international standards: Scratch, Teachable Machine, and Python",
       ageGroupsTitle: "Age-Specific Educational Tracks",
@@ -99,7 +99,7 @@ export default async function KidsAndTeensServicePage({ params }: PageProps) {
       titleHighlight: "الذكاء الاصطناعي للأطفال واليافعين",
       description: "نحول اهتمام الأطفال بالأجهزة الرقمية من مجرد استهلاك سلبي إلى شغف ابتكاري ببناء التطبيقات الذكية والألعاب التفاعلية عبر مسار علمي ممتع.",
       viewCoursesBtn: "استعراض الدورات (٨ إلى ١٨ سنة)",
-      parentsPhoneBtn: "استشارات أولياء الأمور: +98 21 8825 2497",
+      parentsPhoneBtn: "استشارات أولياء الأمور: +61 451 410 352",
       calloutTitle: "تعليم قائم على المشاريع والألعاب التفاعلية",
       calloutSubtitle: "التدريب بأحدث الأدوات العالمية: Scratch وTeachable Machine ولغة بايثون",
       ageGroupsTitle: "المسارات التعليمية وفق الفئات العمرية",
@@ -153,7 +153,7 @@ export default async function KidsAndTeensServicePage({ params }: PageProps) {
                     {t.viewCoursesBtn}
                   </a>
                   <a
-                    href="tel:02188252497"
+                    href={locale === "fa" ? "tel:02188252497" : "tel:+61451410352"}
                     className="px-6 py-3.5 bg-slate-100 border border-slate-300 text-cyan-800 text-sm font-bold rounded-xl flex items-center gap-2 hover:bg-slate-200 transition-all"
                   >
                     <Phone className="w-4 h-4 text-cyan-600" />

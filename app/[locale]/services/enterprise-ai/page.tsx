@@ -52,7 +52,7 @@ export default async function EnterpriseAIPage({ params }: PageProps) {
       titleHighlight: "Enterprise Autonomous Transformation",
       description: "From APQC-aligned organizational auditing and high-ROI opportunity atlases to autonomous multi-agent systems, BPA process automation, air-gapped On-Premise infrastructure, and comprehensive IP transfer.",
       demoBtn: "Request Architectural Consultation",
-      phoneBtn: "Direct Line: +98 21 8825 2497",
+      phoneBtn: "Direct Line: +61 451 410 352",
       advantagesTitle: "Key Advantages of DigiNoron Solutions",
       adv1Title: "Global APQC Standard:",
       adv1Desc: "Systematic process gap analysis and establishing an initiative atlas prioritized by ROI payback.",
@@ -86,7 +86,7 @@ export default async function EnterpriseAIPage({ params }: PageProps) {
       titleHighlight: "التحول الذكي الشامل للمؤسسات",
       description: "نرافقكم من التشخيص الهيكلي للعمليات وفق معايير APQC العالمية وإعداد أطلس المشاريع، إلى تطوير وكلاء الذكاء الاصطناعي المستقلين، أتمتة العمليات (BPA)، النشر المحلي الآمن (On-Premise)، ونقل التكنولوجيا بالكامل.",
       demoBtn: "طلب جلسة استشارية وعرض حي",
-      phoneBtn: "الاتصال المباشر: +98 21 8825 2497",
+      phoneBtn: "الاتصال المباشر: +61 451 410 352",
       advantagesTitle: "مزايا حلول ديجي نورون المؤسسية",
       adv1Title: "معايير APQC العالمية:",
       adv1Desc: "تشخيص العمليات، تحليل الفجوات وأطلس مشاريع ذكاء اصطناعي بأعلى عائد استثماري (ROI).",
@@ -133,7 +133,7 @@ export default async function EnterpriseAIPage({ params }: PageProps) {
                     {t.demoBtn}
                   </a>
                   <a
-                    href="tel:02188252497"
+                    href={locale === "fa" ? "tel:02188252497" : "tel:+61451410352"}
                     className="px-6 py-4 bg-slate-800/80 border border-slate-700 hover:bg-slate-800 text-white text-sm font-bold rounded-xl flex items-center gap-2 transition-all"
                   >
                     <Phone className="w-4 h-4 text-cyan-400" />

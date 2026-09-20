@@ -232,11 +232,11 @@ export default async function CourseDetailPage({ params }: PageProps) {
               </a>
 
               <a
-                href="tel:02188252497"
+                href={locale === "fa" ? "tel:02188252497" : "tel:+61451410352"}
                 className="w-full py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition-all border border-slate-200"
               >
                 <Phone className="w-4 h-4 text-cyan-600" />
-                <span dir="ltr">02188252497</span>
+                <span dir="ltr">{locale === "fa" ? "02188252497" : "+61 451 410 352"}</span>
               </a>
             </div>
 

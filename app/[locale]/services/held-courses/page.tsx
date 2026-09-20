@@ -79,7 +79,7 @@ export default async function HeldCoursesPage({ params }: PageProps) {
       customOfferTitle: "Interested in hosting an AI workshop for your industry or city?",
       customOfferDesc: "DigiNoron's faculty and specialists design and deliver customized corporate workshops for guilds, associations, and enterprises in person and online.",
       customOfferCta: "Submit Training Request",
-      contactPhone: "+98 21 8825 2497",
+      contactPhone: "+61 451 410 352",
     },
     fa: {
       badge: "سوابق آموزشی و کارگاهی آکادمی دیجی‌نورون",
@@ -117,7 +117,7 @@ export default async function HeldCoursesPage({ params }: PageProps) {
       customOfferTitle: "هل ترغب في تنظيم ورشة عمل للذكاء الاصطناعي في قطاعك أو مدينتك؟",
       customOfferDesc: "فريق الخبراء والأساتذة في ديجي نورون مستعد لتصميم وتنفيذ ورش عمل متخصصة وفقاً لاحتياجات النقابات، المؤسسات والشركات حضورياً وافتراضياً.",
       customOfferCta: "تقديم طلب تعاون تدريبي",
-      contactPhone: "+98 21 8825 2497",
+      contactPhone: "+61 451 410 352",
     },
   }[locale];
 

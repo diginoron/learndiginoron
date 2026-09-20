@@ -49,7 +49,7 @@ export default async function CorporateServicePage({ params }: PageProps) {
       titleHighlight: "AI Training Solutions",
       description: "Accelerate organizational throughput, automate administrative routines, and master state-of-the-art prompt engineering with customized on-site or virtual enterprise masterclasses.",
       requestWorkshopBtn: "Request Customized Enterprise Workshop",
-      inquiryPhoneBtn: "Enterprise Line: +98 21 8825 2497",
+      inquiryPhoneBtn: "Enterprise Line: +61 451 410 352",
       calloutTitle: "Digital Transformation & Process Automation",
       calloutSubtitle: "Workshops completely customized around your proprietary data and workflow systems",
       pillarsTitle: "Core Dimensions of Corporate Training",
@@ -87,7 +87,7 @@ export default async function CorporateServicePage({ params }: PageProps) {
       titleHighlight: "التأهيل المؤسسي في الذكاء الاصطناعي",
       description: "رفع إنتاجية الفرق التشغيلية، أتمتة الإجراءات الإدارية، وإتقان هندسة صياغة الأوامر لكبار المديرين والخبراء عبر ورش حضورية وافتراضية مخصصة.",
       requestWorkshopBtn: "طلب ورشة عمل مخصصة لمؤسستكم",
-      inquiryPhoneBtn: "الاستفسارات المؤسسية: +98 21 8825 2497",
+      inquiryPhoneBtn: "الاستفسارات المؤسسية: +61 451 410 352",
       calloutTitle: "التحول الرقمي وأتمتة العمليات",
       calloutSubtitle: "تخصيص كامل للحقائب التدريبية بما يوافق بيانات وأنظمة مؤسستكم",
       pillarsTitle: "مسارات التأهيل المؤسسي",
@@ -135,7 +135,7 @@ export default async function CorporateServicePage({ params }: PageProps) {
                     {t.requestWorkshopBtn}
                   </a>
                   <a
-                    href="tel:02188252497"
+                    href={locale === "fa" ? "tel:02188252497" : "tel:+61451410352"}
                     className="px-6 py-3.5 bg-slate-100 border border-slate-300 text-cyan-800 text-sm font-bold rounded-xl flex items-center gap-2 hover:bg-slate-200 transition-all"
                   >
                     <Phone className="w-4 h-4 text-cyan-600" />

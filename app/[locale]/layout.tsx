@@ -40,9 +40,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 
   const descriptions: Record<Locale, string> = {
-    en: "DigiNoron is an enterprise AI innovation center specializing in autonomous AI agents, business process automation (BPA), on-premise technology transfer, and applied corporate training. diginoron.com - Phone: +98 21 8825 2497",
+    en: "DigiNoron is an enterprise AI innovation center specializing in autonomous AI agents, business process automation (BPA), on-premise technology transfer, and applied corporate training. diginoron.com - Phone: +61 451 410 352",
     fa: "مرکز تخصصی هوشمندسازی سازمانی، طراحی ایجنت‌های اختصاصی (AI Agents)، اتوماسیون فرآیندها (BPA)، پیاده‌سازی و انتقال تکنولوژی و خدمات آموزشی کودکان و سازمان‌ها. diginoron.com - تلفن: ۰۲۱۸۸۲۵۲۴۹۷",
-    ar: "مركز رائد في حلول الذكاء الاصطناعي المؤسسي، تطوير وكلاء الذكاء الاصطناعي (AI Agents)، أتمتة العمليات التجارية (BPA)، النشر المحلي والتدريب الاحترافي للشركات. diginoron.com - هاتف: +982188252497",
+    ar: "مركز رائد في حلول الذكاء الاصطناعي المؤسسي، تطوير وكلاء الذكاء الاصطناعي (AI Agents)، أتمتة العمليات التجارية (BPA)، النشر المحلي والتدريب الاحترافي للشركات. diginoron.com - هاتف: +61 451 410 352",
   };
 
   const ogLocales: Record<Locale, string> = {

@@ -129,7 +129,7 @@ export default function ContactTeaser({ locale = "en" }: ContactTeaserProps) {
 
               {/* Prominent Phone Highlight */}
               <a
-                href="tel:02188252497"
+                href={locale === "fa" ? "tel:02188252497" : "tel:+61451410352"}
                 className="inline-flex items-center gap-3 p-4 bg-gradient-to-r from-cyan-900 to-slate-900 text-white rounded-2xl shadow-lg hover:shadow-cyan-500/20 transition-all group"
               >
                 <div className="p-2.5 rounded-xl bg-cyan-500/20 text-cyan-300 group-hover:scale-110 transition-transform">
@@ -138,7 +138,7 @@ export default function ContactTeaser({ locale = "en" }: ContactTeaserProps) {
                 <div>
                   <div className="text-xs text-cyan-300 font-medium">{t.callNowBtn}</div>
                   <div className="text-xl font-bold font-mono tracking-wider dir-ltr">
-                    02188252497
+                    {locale === "fa" ? "02188252497" : "+61 451 410 352"}
                   </div>
                 </div>
               </a>

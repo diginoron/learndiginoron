@@ -65,7 +65,7 @@ export default function Hero({ locale = "en" }: HeroProps) {
             </Link>
 
             <a
-              href="tel:02188252497"
+              href={locale === "fa" ? "tel:02188252497" : "tel:+61451410352"}
               className="w-full sm:w-auto px-6 py-4 bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 font-bold text-sm rounded-2xl flex items-center justify-center gap-2 transition-all"
             >
               <Phone className="w-4 h-4 text-cyan-600" />
