@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { BLOG_POSTS } from "@/data/blog";
-import { Calendar, Clock, ArrowLeft, ArrowRight, Tag } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, ArrowRight, Tag, User } from "lucide-react";
 import { Locale, LOCALES, isValidLocale, getDirection, getLocalizedPath, getAlternateUrls, SITE_URL } from "@/lib/i18n";
 import { getLocalizedPost } from "@/data/translations/blog";
 
@@ -208,15 +208,8 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
         </h1>
 
         <div className="flex flex-wrap items-center gap-6 text-xs text-slate-500 border-b border-slate-200 pb-6">
-          <div className="flex items-center gap-2">
-            <div className="relative w-8 h-8 rounded-full overflow-hidden border border-slate-200">
-              <Image
-                src={post.author.avatar}
-                alt={post.author.name}
-                fill
-                className="object-cover"
-              />
-            </div>
+          <div className="flex items-center gap-1.5">
+            <User className="w-4 h-4 text-cyan-700" />
             <span className="font-bold text-slate-800">{post.author.name}</span>
           </div>
 
@@ -270,17 +263,12 @@ export default async function BlogPostDetailPage({ params }: PageProps) {
 
       {/* Author Bio Box */}
       <div className="glass-panel bg-white p-6 rounded-2xl border border-slate-200 flex items-center gap-4 shadow-xs">
-        <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-cyan-400 shrink-0">
-          <Image
-            src={post.author.avatar}
-            alt={post.author.name}
-            fill
-            className="object-cover"
-          />
+        <div className="w-12 h-12 rounded-2xl bg-cyan-50 border border-cyan-200 flex items-center justify-center text-cyan-700 shrink-0">
+          <User className="w-6 h-6" />
         </div>
         <div>
           <h4 className="font-bold text-slate-900 text-sm">{post.author.name}</h4>
-          <p className="text-xs text-slate-500 mt-0.5">{l.authorRole}</p>
+          <p className="text-xs text-slate-500 mt-0.5">{post.author.role || l.authorRole}</p>
         </div>
       </div>
 

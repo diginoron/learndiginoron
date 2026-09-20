@@ -143,7 +143,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
 
           {/* Syllabus Formats or Topics */}
           {course.formats && course.formats.length > 0 ? (
-            <CourseFormatsDisplay formats={course.formats} />
+            <CourseFormatsDisplay formats={course.formats} locale={locale} />
           ) : (
             <div className="glass-panel bg-white p-8 rounded-3xl border border-slate-200 space-y-6 shadow-xs">
               <h2 className="text-xl font-bold text-slate-900 flex items-center gap-2">
@@ -180,12 +180,14 @@ export default async function CourseDetailPage({ params }: PageProps) {
         {/* Right 1 col: Sticky Enrollment Box */}
         <div className="space-y-6">
           <div className="glass-panel bg-white p-8 rounded-3xl border border-cyan-300 sticky top-28 space-y-6 shadow-xl text-slate-900">
-            <div>
-              <span className="text-xs text-slate-500">{l.investmentLabel}</span>
-              <div className="text-2xl sm:text-3xl font-black text-cyan-700 mt-1">
-                {course.price}
+            {locale === "fa" && (
+              <div>
+                <span className="text-xs text-slate-500">{l.investmentLabel}</span>
+                <div className="text-2xl sm:text-3xl font-black text-cyan-700 mt-1">
+                  {course.price}
+                </div>
               </div>
-            </div>
+            )}
 
             <div className="space-y-3 border-t border-b border-slate-100 py-4 text-xs">
               <div className="flex items-center justify-between">

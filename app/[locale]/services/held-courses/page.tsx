@@ -16,6 +16,7 @@ import {
   Phone,
 } from "lucide-react";
 import { HELD_COURSES } from "@/data/heldCourses";
+import { getLocalizedHeldCourse } from "@/data/translations/heldCourses";
 import { Locale, getDirection, getLocalizedPath, getAlternateUrls } from "@/lib/i18n";
 import ContactTeaser from "@/components/ContactTeaser";
 
@@ -143,7 +144,9 @@ export default async function HeldCoursesPage({ params }: PageProps) {
       {/* Course List */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="space-y-12">
-          {HELD_COURSES.map((course) => (
+          {HELD_COURSES.map((rawCourse) => {
+            const course = getLocalizedHeldCourse(rawCourse, locale);
+            return (
             <div
               key={course.id}
               id={course.slug}
@@ -298,13 +301,14 @@ export default async function HeldCoursesPage({ params }: PageProps) {
                 </div>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
       {/* Invitation Section for Organizations / Guilds */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="glass-panel bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl border border-slate-800 shadow-xl">
+        <div className="bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 text-white p-8 sm:p-12 rounded-3xl border border-slate-800 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
             <div className="lg:col-span-2 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-bold border border-cyan-500/30">

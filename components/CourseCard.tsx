@@ -96,9 +96,13 @@ export default function CourseCard({ course: rawCourse, locale = "en" }: CourseC
           </div>
 
           <div className="flex items-center justify-between pt-1">
-            <div className="text-sm font-bold text-cyan-800">
-              {course.price}
-            </div>
+            {locale === "fa" ? (
+              <div className="text-sm font-bold text-cyan-800">
+                {course.price}
+              </div>
+            ) : (
+              <div />
+            )}
 
             <Link
               href={getLocalizedPath(`/courses/${course.slug}`, locale)}

@@ -405,16 +405,16 @@ export default function EnterpriseServices({ locale = "en" }: EnterpriseServices
         </div>
 
         {/* Active Pillar Showcase Panel */}
-        <div className="glass-panel bg-slate-950/80 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+        <div className="bg-slate-950 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden text-white">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
             {/* Left/Main Column: Overview & Capabilities */}
             <div className="lg:col-span-8 space-y-6">
               <div className="flex flex-wrap items-center gap-2.5">
-                <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 rounded-full text-xs font-black">
+                <span className="px-3.5 py-1.5 bg-cyan-950 border border-cyan-500/50 text-cyan-300 rounded-full text-xs font-black">
                   {currentPillar.badge}
                 </span>
-                <span className="text-xs text-slate-400 font-mono">
+                <span className="text-xs text-slate-300 font-mono">
                   {currentPillar.subtitle}
                 </span>
               </div>
@@ -423,25 +423,25 @@ export default function EnterpriseServices({ locale = "en" }: EnterpriseServices
                 <h3 className="text-2xl sm:text-3xl font-black text-white mb-2">
                   {currentPillar.title}
                 </h3>
-                <p className="text-sm font-semibold text-cyan-300/90 leading-snug">
+                <p className="text-sm font-semibold text-cyan-300 leading-snug">
                   {currentPillar.tagline}
                 </p>
               </div>
 
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              <p className="text-xs sm:text-sm text-slate-200 leading-relaxed font-normal">
                 {currentPillar.description}
               </p>
 
               {/* Capabilities List */}
               <div className="space-y-3 pt-2">
-                <h4 className="text-xs font-black uppercase tracking-wider text-slate-400">
+                <h4 className="text-xs font-black uppercase tracking-wider text-cyan-400">
                   {locale === "en" ? "Key Scope & Technical Capabilities:" : locale === "fa" ? "دامنه اجرایی و قابلیت‌های فنی:" : "النطاق التنفيذي والقدرات التقنية:"}
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                   {currentPillar.capabilities.map((cap, i) => (
-                    <div key={i} className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-900/90 border border-slate-800/80 text-xs text-slate-200">
+                    <div key={i} className="flex items-start gap-2.5 p-3.5 rounded-xl bg-slate-900 border border-slate-700/80 text-xs text-slate-100 shadow-xs hover:border-cyan-500/40 transition-colors">
                       <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                      <span className="leading-relaxed">{cap}</span>
+                      <span className="leading-relaxed font-medium">{cap}</span>
                     </div>
                   ))}
                 </div>
@@ -449,7 +449,7 @@ export default function EnterpriseServices({ locale = "en" }: EnterpriseServices
             </div>
 
             {/* Right/Side Column: Deliverables & Direct CTA */}
-            <div className="lg:col-span-4 space-y-6 bg-slate-900/90 border border-slate-800 p-6 rounded-2xl">
+            <div className="lg:col-span-4 space-y-6 bg-slate-900 border border-slate-700 p-6 rounded-2xl shadow-md">
               <div>
                 <h4 className="text-xs font-black uppercase tracking-wider text-cyan-300 mb-3 flex items-center gap-1.5">
                   <ShieldCheck className="w-4 h-4 text-cyan-400" />
@@ -457,9 +457,9 @@ export default function EnterpriseServices({ locale = "en" }: EnterpriseServices
                 </h4>
                 <ul className="space-y-2">
                   {currentPillar.deliverables.map((del, i) => (
-                    <li key={i} className="text-xs text-slate-300 flex items-center gap-2 border-b border-slate-800/60 pb-1.5">
+                    <li key={i} className="text-xs text-slate-100 flex items-center gap-2 border-b border-slate-800/80 pb-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" />
-                      <span>{del}</span>
+                      <span className="font-medium">{del}</span>
                     </li>
                   ))}
                 </ul>
