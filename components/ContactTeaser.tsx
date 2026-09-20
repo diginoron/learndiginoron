@@ -1,9 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, Send, CheckCircle2, Headphones, Sparkles, Loader2 } from "lucide-react";
+import { Phone, Send, CheckCircle2, Headphones, Loader2 } from "lucide-react";
+import { Locale } from "@/lib/i18n";
+import { HOME_TRANSLATIONS } from "@/data/translations/home";
 
-export default function ContactTeaser() {
+interface ContactTeaserProps {
+  locale?: Locale;
+}
+
+export default function ContactTeaser({ locale = "en" }: ContactTeaserProps) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -13,16 +19,42 @@ export default function ContactTeaser() {
     message: "",
   });
 
+  const t = HOME_TRANSLATIONS[locale]?.contactTeaser || HOME_TRANSLATIONS.en.contactTeaser;
+
   const getServiceLabel = (type: string) => {
-    switch (type) {
-      case "enterprise":
-        return "۱. خدمات هوشمندسازی سازمانی (سند راهبردی، ایجنت‌ها، فرآیندها)";
-      case "corporate":
-        return "۲. آموزش‌های سازمانی و شرکتی";
-      case "kids":
-        return "۳. آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)";
-      default:
-        return type;
+    if (locale === "en") {
+      switch (type) {
+        case "enterprise":
+          return "1. Enterprise AI Solutions (Roadmap, AI Agents, BPA)";
+        case "corporate":
+          return "2. Corporate AI Training & Executive Masterclasses";
+        case "kids":
+          return "3. Kids & Teens AI Academy (Ages 8-18)";
+        default:
+          return type;
+      }
+    } else if (locale === "ar") {
+      switch (type) {
+        case "enterprise":
+          return "١. حلول الذكاء الاصطناعي للمؤسسات (خريطة الطريق، الوكلاء، BPA)";
+        case "corporate":
+          return "٢. التدريب والتأهيل المؤسسي";
+        case "kids":
+          return "٣. أكاديمية الأطفال واليافعين";
+        default:
+          return type;
+      }
+    } else {
+      switch (type) {
+        case "enterprise":
+          return "۱. خدمات هوشمندسازی سازمانی (سند راهبردی، ایجنت‌ها، فرآیندها)";
+        case "corporate":
+          return "۲. آموزش‌های سازمانی و شرکتی";
+        case "kids":
+          return "۳. آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)";
+        default:
+          return type;
+      }
     }
   };
 
@@ -31,7 +63,7 @@ export default function ContactTeaser() {
     if (!formData.phone) return;
     setLoading(true);
 
-    const now = new Date().toLocaleString("fa-IR", { timeZone: "Asia/Tehran" });
+    const now = new Date().toISOString();
 
     try {
       // 1. Direct Client-side AJAX submission to FormSubmit
@@ -42,15 +74,15 @@ export default function ContactTeaser() {
           "Accept": "application/json",
         },
         body: JSON.stringify({
-          _subject: `[دیجی نورون] درخواست مشاوره: ${formData.name || "کاربر"} - ${formData.phone}`,
+          _subject: `[DigiNoron - ${locale.toUpperCase()}] Consultation Request: ${formData.name || "User"} - ${formData.phone}`,
           _template: "table",
           _captcha: "false",
-          "زمان ثبت": now,
-          "نوع فرم": "فرم مشاوره سریع (انتهای صفحه)",
-          "نام و نام خانوادگی": formData.name || "ثبت نشده",
-          "شماره تماس": formData.phone,
-          "حوزه خدمت": getServiceLabel(formData.audienceType),
-          "متن توضیحات": formData.message || "بدون توضیحات",
+          "Submitted At": now,
+          "Form Source": `Quick Consultation Form (${locale})`,
+          "Name": formData.name || "N/A",
+          "Phone": formData.phone,
+          "Service Track": getServiceLabel(formData.audienceType),
+          "Message": formData.message || "N/A",
         }),
       });
 
@@ -61,7 +93,7 @@ export default function ContactTeaser() {
         body: JSON.stringify({
           ...formData,
           serviceType: getServiceLabel(formData.audienceType),
-          formType: "فرم مشاوره سریع صفحه اصلی / انتهای صفحه",
+          formType: `Quick Consultation (${locale})`,
         }),
       }).catch((err) => console.log("Backup API notice:", err));
 
@@ -84,145 +116,139 @@ export default function ContactTeaser() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 border border-cyan-300 text-cyan-800 text-xs font-semibold">
                 <Headphones className="w-3.5 h-3.5" />
-                <span>مشاوره تخصصی هوشمندسازی و آموزش</span>
+                <span>{t.badge}</span>
               </div>
 
               <h2 className="text-2xl sm:text-4xl font-black text-slate-900 leading-tight">
-                نیاز به مشاوره جهت <span className="text-cyan-700">هوشمندسازی سازمانی</span> یا <span className="text-purple-700">خدمات آموزشی</span> دارید؟
+                {t.title}
               </h2>
 
               <p className="text-sm text-slate-600 leading-relaxed">
-                کارشناسان دیجی نورون آماده پاسخگویی به تمامی سوالات شما درباره سند راهبردی هوشمندسازی، طراحی ایجنت‌ها، اتوماسیون فرآیندها و دوره‌های آموزشی هستند.
+                {t.description}
               </p>
 
               {/* Prominent Phone Highlight */}
               <a
                 href="tel:02188252497"
-                className="p-5 sm:p-6 bg-slate-50 rounded-2xl border border-cyan-300 flex items-center gap-4 sm:gap-5 hover:border-cyan-400 transition-all group shadow-sm"
+                className="inline-flex items-center gap-3 p-4 bg-gradient-to-r from-cyan-900 to-slate-900 text-white rounded-2xl shadow-lg hover:shadow-cyan-500/20 transition-all group"
               >
-                <div className="p-3.5 sm:p-4 rounded-xl bg-gradient-to-br from-cyan-600 to-blue-600 text-white group-hover:scale-110 transition-transform shrink-0">
-                  <Phone className="w-6 h-6 sm:w-7 sm:h-7" />
+                <div className="p-2.5 rounded-xl bg-cyan-500/20 text-cyan-300 group-hover:scale-110 transition-transform">
+                  <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <span className="text-xs text-slate-500 block font-medium">شماره تماس مستقیم مشاوره و استعلام:</span>
-                  <span className="text-xl sm:text-3xl font-extrabold text-cyan-800 tracking-widest font-mono">
+                  <div className="text-xs text-cyan-300 font-medium">{t.callNowBtn}</div>
+                  <div className="text-xl font-bold font-mono tracking-wider dir-ltr">
                     02188252497
-                  </span>
+                  </div>
                 </div>
               </a>
-
-              <div className="grid grid-cols-2 gap-3 text-xs text-slate-600 pt-2">
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0" />
-                  <span>طراحی سند راهبردی و اطلس بهبود</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-600 shrink-0" />
-                  <span>استقرار ایجنت و اتوماسیون فرآیند</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-purple-600 shrink-0" />
-                  <span>آموزش‌های تخصصی سازمانی</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-purple-600 shrink-0" />
-                  <span>آموزش کودکان و نوجوانان</span>
-                </div>
-              </div>
             </div>
 
-            {/* Right Column: Fast Form */}
-            <div className="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 backdrop-blur-xl">
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-1.5 flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-cyan-600" />
-                <span>درخواست تماس مشاوره رایگان</span>
-              </h3>
-              <p className="text-xs text-slate-500 mb-5">
-                اطلاعات خود را وارد کنید تا کارشناسان ما کمتر از ۲ ساعت کاری با شما تماس بگیرند.
-              </p>
-
+            {/* Right Column: Quick Callback Form */}
+            <div className="bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-2xl relative">
               {submitted ? (
-                <div className="p-6 bg-cyan-50 border border-cyan-300 rounded-xl text-center space-y-3">
-                  <CheckCircle2 className="w-12 h-12 text-cyan-600 mx-auto animate-bounce" />
-                  <h4 className="font-bold text-slate-900 text-base">درخواست شما با موفقیت ثبت شد</h4>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    اطلاعات شما دریافت و به واحد پشتیبانی (<span className="font-mono text-cyan-700">diginoron@gmail.com</span>) ارسال گردید. به زودی با شما تماس خواهیم گرفت.
-                  </p>
-                  <p className="text-xs text-cyan-700 font-mono pt-2">
-                    یا می‌توانید مستقیما با 02188252497 تماس بگیرید.
-                  </p>
+                <div className="text-center py-8 space-y-3 animate-in fade-in">
+                  <CheckCircle2 className="w-12 h-12 text-emerald-500 mx-auto" />
+                  <h3 className="text-lg font-bold text-slate-900">
+                    {t.successMessage}
+                  </h3>
+                  <button
+                    onClick={() => {
+                      setSubmitted(false);
+                      setFormData({ name: "", phone: "", audienceType: "enterprise", message: "" });
+                    }}
+                    className="text-xs text-cyan-700 font-bold hover:underline pt-2"
+                  >
+                    {locale === "en" ? "Send Another Inquiry" : locale === "fa" ? "ارسال پیام جدید" : "إرسال رسالة أخرى"}
+                  </button>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-3.5">
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="border-b border-slate-200 pb-3 mb-4">
+                    <h3 className="font-bold text-base text-slate-900">
+                      {t.formTitle}
+                    </h3>
+                    <p className="text-xs text-slate-500">
+                      {t.formSubtitle}
+                    </p>
+                  </div>
+
                   <div>
-                    <label className="block text-xs font-semibold text-slate-700 mb-1">
-                      نام و نام خانوادگی
+                    <label className="block text-xs font-bold text-slate-700 mb-1">
+                      {t.nameLabel}
                     </label>
                     <input
                       type="text"
-                      placeholder="مثلا: علی محمدی"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-slate-400"
+                      placeholder={locale === "en" ? "e.g., Alexander Smith" : locale === "fa" ? "مثال: علی محمدی" : "مثال: أحمد المنصوري"}
+                      className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded-xl text-xs focus:outline-none focus:border-cyan-500"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-700 mb-1">
-                      شماره همراه جهت تماس <span className="text-cyan-600">*</span>
+                    <label className="block text-xs font-bold text-slate-700 mb-1">
+                      {t.phoneLabel} <span className="text-rose-500">*</span>
                     </label>
                     <input
                       type="tel"
                       required
-                      placeholder="۰۹۱۲..."
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-cyan-500 transition-colors text-right dir-ltr placeholder:text-slate-400 font-mono"
+                      placeholder={locale === "en" ? "+1 234 567 8900" : "۰۹۱۲۳۴۵۶۷۸۹"}
+                      className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded-xl text-xs focus:outline-none focus:border-cyan-500 text-left font-mono"
+                      dir="ltr"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-700 mb-1">
-                      حوزه خدمت مدنظر
+                    <label className="block text-xs font-bold text-slate-700 mb-1">
+                      {t.serviceTypeLabel}
                     </label>
                     <select
                       value={formData.audienceType}
                       onChange={(e) => setFormData({ ...formData, audienceType: e.target.value })}
-                      className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-cyan-500 transition-colors"
+                      className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded-xl text-xs focus:outline-none focus:border-cyan-500"
                     >
-                      <option value="enterprise">۱. خدمات هوشمندسازی سازمانی</option>
-                      <option value="corporate">۲. آموزش‌های سازمانی و شرکتی</option>
-                      <option value="kids">۳. آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)</option>
+                      <option value="enterprise">
+                        {locale === "en" ? "1. Enterprise AI Solutions (Roadmap, Multi-Agents, BPA)" : locale === "fa" ? "۱. خدمات هوشمندسازی سازمانی (سند راهبردی، ایجنت‌ها، فرآیندها)" : "١. حلول الذكاء الاصطناعي للمؤسسات (خريطة الطريق، الوكلاء)"}
+                      </option>
+                      <option value="corporate">
+                        {locale === "en" ? "2. Corporate AI Training & Executive Masterclasses" : locale === "fa" ? "۲. آموزش‌های سازمانی و شرکتی" : "٢. التدريب والتأهيل المؤسسي"}
+                      </option>
+                      <option value="kids">
+                        {locale === "en" ? "3. Kids & Teens AI Academy (Ages 8-18)" : locale === "fa" ? "۳. آموزش کودکان و نوجوانان (۸ تا ۱۸ سال)" : "٣. أكاديمية الأطفال واليافعين"}
+                      </option>
                     </select>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-700 mb-1">
-                      توضیحات کوتاه (اختیاری)
+                    <label className="block text-xs font-bold text-slate-700 mb-1">
+                      {t.notesLabel}
                     </label>
                     <textarea
                       rows={2}
-                      placeholder="سوال یا نیاز خاص خود را بنویسید..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-3.5 py-2.5 bg-white border border-slate-300 rounded-xl text-xs sm:text-sm text-slate-900 focus:outline-none focus:border-cyan-500 transition-colors placeholder:text-slate-400"
+                      placeholder={locale === "en" ? "Describe your organization's objective or question..." : locale === "fa" ? "توضیح کوتاه درباره سازمان یا هدف مدنظر..." : "نبذة عن أهداف المؤسسة أو استفساركم..."}
+                      className="w-full px-3.5 py-2 bg-white border border-slate-300 rounded-xl text-xs focus:outline-none focus:border-cyan-500 resize-none"
                     />
                   </div>
 
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-extrabold text-xs sm:text-sm rounded-xl shadow-md flex items-center justify-center gap-2 transition-all disabled:opacity-70"
+                    className="w-full py-3 bg-gradient-to-r from-cyan-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white font-extrabold text-xs rounded-xl shadow-md transition-all flex items-center justify-center gap-2 active:scale-98 disabled:opacity-50"
                   >
                     {loading ? (
                       <>
                         <Loader2 className="w-4 h-4 animate-spin" />
-                        <span>در حال ارسال...</span>
+                        <span>{locale === "en" ? "Submitting..." : locale === "fa" ? "در حال ثبت..." : "جارٍ الإرسال..."}</span>
                       </>
                     ) : (
                       <>
                         <Send className="w-4 h-4" />
-                        <span>ارسال درخواست مشاوره</span>
+                        <span>{t.submitBtn}</span>
                       </>
                     )}
                   </button>

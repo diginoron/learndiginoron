@@ -2,29 +2,57 @@
 
 import { useState } from "react";
 import { CourseFormat } from "@/data/courses";
-import { Clock, Info, CheckCircle2, BookOpen, Sparkles, Layers } from "lucide-react";
+import { Clock, Info, CheckCircle2, Sparkles, Layers } from "lucide-react";
+import { Locale } from "@/lib/i18n";
 
 interface CourseFormatsDisplayProps {
   formats: CourseFormat[];
+  locale?: Locale;
 }
 
-export default function CourseFormatsDisplay({ formats }: CourseFormatsDisplayProps) {
+export default function CourseFormatsDisplay({ formats, locale = "en" }: CourseFormatsDisplayProps) {
   const [activeTab, setActiveTab] = useState<number>(0);
 
   if (!formats || formats.length === 0) return null;
 
   const currentFormat = formats[activeTab];
 
+  const labels = {
+    en: {
+      badge: "Delivery Formats",
+      title: "Syllabus & Course Delivery Formats",
+      noteTitle: "Important Course Note:",
+      hoursLabel: "Training Duration:",
+      topicsTitle: "Detailed Modules & Topics:",
+    },
+    fa: {
+      badge: "فرمت‌های برگزاری دوره",
+      title: "سرفصل‌ها و ساختار برگزاری دوره",
+      noteTitle: "نکته مهم دوره:",
+      hoursLabel: "ساعات آموزشی:",
+      topicsTitle: "ریزسرفصل‌ها و مباحث:",
+    },
+    ar: {
+      badge: "صيغ تنظيم الدورة",
+      title: "المناهج وهيكلية انعقاد الدورة",
+      noteTitle: "ملاحظة هامة عن الدورة:",
+      hoursLabel: "الساعات التدريبية:",
+      topicsTitle: "المحاور التفصيلية:",
+    },
+  };
+
+  const l = labels[locale] || labels.en;
+
   return (
-    <div className="glass-panel bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-8">
+    <div className="glass-panel bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-xs space-y-8">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-6">
         <div>
           <div className="flex items-center gap-2 text-cyan-600 font-bold text-xs mb-1">
             <Layers className="w-4 h-4" />
-            <span>فرمت‌های برگزاری دوره</span>
+            <span>{l.badge}</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-black text-slate-900">
-            سرفصل‌ها و ساختار برگزاری دوره
+            {l.title}
           </h2>
         </div>
 
@@ -63,10 +91,10 @@ export default function CourseFormatsDisplay({ formats }: CourseFormatsDisplayPr
 
         {/* Note if available */}
         {currentFormat.note && (
-          <div className="p-4 bg-amber-50/80 border border-amber-200 rounded-2xl flex items-start gap-3 text-xs text-amber-900 leading-relaxed shadow-sm">
+          <div className="p-4 bg-amber-50/80 border border-amber-200 rounded-2xl flex items-start gap-3 text-xs text-amber-900 leading-relaxed shadow-xs">
             <Info className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
             <div>
-              <span className="font-bold block mb-0.5 text-amber-950">نکته مهم دوره:</span>
+              <span className="font-bold block mb-0.5 text-amber-950">{l.noteTitle}</span>
               <span>{currentFormat.note}</span>
             </div>
           </div>
@@ -91,13 +119,13 @@ export default function CourseFormatsDisplay({ formats }: CourseFormatsDisplayPr
               
               <span className="px-3 py-1 bg-white border border-slate-200 rounded-lg text-slate-700 text-xs font-semibold flex items-center gap-1.5 shadow-2xs">
                 <Clock className="w-3.5 h-3.5 text-cyan-600" />
-                <span>ساعات آموزشی: {section.duration}</span>
+                <span>{l.hoursLabel} {section.duration}</span>
               </span>
             </div>
 
             {/* Comprehensive Description if available */}
             {section.description && (
-              <p className="text-xs text-slate-600 leading-relaxed bg-white/80 p-4 rounded-xl border border-slate-100 text-justify">
+              <p className="text-xs text-slate-600 leading-relaxed bg-white/80 p-4 rounded-xl border border-slate-100">
                 {section.description}
               </p>
             )}
@@ -105,7 +133,7 @@ export default function CourseFormatsDisplay({ formats }: CourseFormatsDisplayPr
             {/* Items / Bullet points */}
             {section.items && section.items.length > 0 && (
               <div className="space-y-2">
-                <div className="text-[11px] font-bold text-slate-500 mb-1">ریزسرفصل‌ها و مباحث:</div>
+                <div className="text-[11px] font-bold text-slate-500 mb-1">{l.topicsTitle}</div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
                   {section.items.map((item, iIdx) => (
                     <div

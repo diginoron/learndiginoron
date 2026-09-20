@@ -1,15 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, BookOpen, User, ArrowLeft, Sparkles, CheckCircle2 } from "lucide-react";
+import { Clock, User, ArrowLeft, ArrowRight, Sparkles, CheckCircle2 } from "lucide-react";
 import { Course } from "@/data/courses";
+import { Locale, getDirection, getLocalizedPath } from "@/lib/i18n";
+import { getLocalizedCourse } from "@/data/translations/courses";
 
 interface CourseCardProps {
   course: Course;
+  locale?: Locale;
 }
 
-export default function CourseCard({ course }: CourseCardProps) {
+export default function CourseCard({ course: rawCourse, locale = "en" }: CourseCardProps) {
+  const course = getLocalizedCourse(rawCourse, locale);
   const isKids = course.category === "kids";
   const isCorporate = course.category === "corporate";
+  const isLtr = getDirection(locale) === "ltr";
 
   return (
     <div className="glass-panel bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-cyan-400 transition-all duration-300 flex flex-col group hover:-translate-y-1 hover:shadow-xl">
@@ -25,7 +30,7 @@ export default function CourseCard({ course }: CourseCardProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
         
         {/* Category Tag */}
-        <div className="absolute top-3 right-3">
+        <div className={`absolute top-3 ${isLtr ? "left-3" : "right-3"}`}>
           <span
             className={`px-3 py-1 rounded-full text-xs font-bold shadow-md backdrop-blur-md text-white ${
               isKids
@@ -41,7 +46,7 @@ export default function CourseCard({ course }: CourseCardProps) {
 
         {/* Badge */}
         {course.badge && (
-          <div className="absolute top-3 left-3 bg-white/95 border border-slate-200 text-cyan-800 text-[11px] px-2.5 py-0.5 rounded-lg flex items-center gap-1 font-semibold shadow-sm">
+          <div className={`absolute top-3 ${isLtr ? "right-3" : "left-3"} bg-white/95 border border-slate-200 text-cyan-800 text-[11px] px-2.5 py-0.5 rounded-lg flex items-center gap-1 font-semibold shadow-xs`}>
             <Sparkles className="w-3 h-3 text-cyan-600" />
             <span>{course.badge}</span>
           </div>
@@ -52,7 +57,9 @@ export default function CourseCard({ course }: CourseCardProps) {
       <div className="p-6 flex-grow flex flex-col justify-between space-y-4">
         <div>
           <div className="text-xs text-slate-500 flex items-center gap-2 mb-2">
-            <span className="text-cyan-700 font-medium">مخاطبین:</span>
+            <span className="text-cyan-700 font-medium">
+              {locale === "en" ? "Audience:" : locale === "fa" ? "مخاطبین:" : "الفئة المستهدفة:"}
+            </span>
             <span>{course.targetAudience}</span>
           </div>
 
@@ -94,16 +101,16 @@ export default function CourseCard({ course }: CourseCardProps) {
             </div>
 
             <Link
-              href={`/courses/${course.slug}`}
-              className="inline-flex items-center gap-1 text-xs font-bold text-cyan-700 hover:text-cyan-800 group-hover:translate-x-[-2px] transition-all"
+              href={getLocalizedPath(`/courses/${course.slug}`, locale)}
+              className="inline-flex items-center gap-1 text-xs font-bold text-cyan-700 hover:text-cyan-800 transition-all"
             >
-              <span>جزئیات دوره</span>
-              <ArrowLeft className="w-3.5 h-3.5" />
+              <span>{locale === "en" ? "Course Details" : locale === "fa" ? "جزئیات دوره" : "تفاصيل الدورة"}</span>
+              {isLtr ? <ArrowRight className="w-3.5 h-3.5" /> : <ArrowLeft className="w-3.5 h-3.5" />}
             </Link>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   );
 }

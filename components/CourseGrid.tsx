@@ -1,12 +1,21 @@
 "use client";
 
 import { useState } from "react";
-import { COURSES, Course } from "@/data/courses";
+import Link from "next/link";
+import { COURSES } from "@/data/courses";
 import CourseCard from "./CourseCard";
-import { Sparkles, GraduationCap, Building2, Layers } from "lucide-react";
+import { Sparkles, GraduationCap, Building2, Layers, ArrowRight, ArrowLeft } from "lucide-react";
+import { Locale, getDirection, getLocalizedPath } from "@/lib/i18n";
+import { HOME_TRANSLATIONS } from "@/data/translations/home";
 
-export default function CourseGrid() {
+interface CourseGridProps {
+  locale?: Locale;
+}
+
+export default function CourseGrid({ locale = "en" }: CourseGridProps) {
   const [activeTab, setActiveTab] = useState<"all" | "kids" | "corporate">("all");
+  const t = HOME_TRANSLATIONS[locale]?.courseGrid || HOME_TRANSLATIONS.en.courseGrid;
+  const isLtr = getDirection(locale) === "ltr";
 
   const filteredCourses = COURSES.filter((course) => {
     if (activeTab === "all") return true;
@@ -22,15 +31,18 @@ export default function CourseGrid() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-100 border border-cyan-300 text-cyan-800 text-xs font-semibold mb-3">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>دوره‌ها و کارگاه‌های آموزشی</span>
+              <span>{t.badge}</span>
             </div>
             <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900">
-              برترین دوره‌های <span className="text-gradient-cyan">آموزش هوش مصنوعی</span>
+              {t.title} <span className="text-gradient-cyan">{t.titleHighlight}</span>
             </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-2">
+              {t.subtitle}
+            </p>
           </div>
 
           {/* Filter Tabs */}
-          <div className="flex items-center gap-2 p-1.5 bg-white border border-slate-200 rounded-2xl shadow-sm self-start md:self-auto">
+          <div className="flex items-center gap-2 p-1.5 bg-white border border-slate-200 rounded-2xl shadow-xs self-start md:self-auto">
             <button
               onClick={() => setActiveTab("all")}
               className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold transition-all ${
@@ -40,7 +52,7 @@ export default function CourseGrid() {
               }`}
             >
               <Layers className="w-3.5 h-3.5" />
-              <span>همه دوره‌ها</span>
+              <span>{t.allFilter}</span>
             </button>
 
             <button
@@ -52,7 +64,7 @@ export default function CourseGrid() {
               }`}
             >
               <GraduationCap className="w-3.5 h-3.5" />
-              <span>کودکان و نوجوانان</span>
+              <span>{t.kidsFilter}</span>
             </button>
 
             <button
@@ -64,7 +76,7 @@ export default function CourseGrid() {
               }`}
             >
               <Building2 className="w-3.5 h-3.5" />
-              <span>آموزش‌های سازمانی</span>
+              <span>{t.corporateFilter}</span>
             </button>
           </div>
         </div>
@@ -72,8 +84,19 @@ export default function CourseGrid() {
         {/* Grid Output */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredCourses.map((course) => (
-            <CourseCard key={course.id} course={course} />
+            <CourseCard key={course.id} course={course} locale={locale} />
           ))}
+        </div>
+
+        {/* View All Footer CTA */}
+        <div className="mt-12 text-center">
+          <Link
+            href={getLocalizedPath("/courses", locale)}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white border border-slate-300 hover:border-cyan-500 hover:bg-slate-50 text-slate-800 text-xs sm:text-sm font-extrabold transition-all shadow-xs"
+          >
+            <span>{t.viewAllCoursesBtn}</span>
+            {isLtr ? <ArrowRight className="w-4 h-4 text-cyan-600" /> : <ArrowLeft className="w-4 h-4 text-cyan-600" />}
+          </Link>
         </div>
 
       </div>
