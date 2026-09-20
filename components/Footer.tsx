@@ -207,6 +207,24 @@ export default function Footer({ locale = "en" }: FooterProps) {
             <div className="pt-3">
               <LanguageSwitcher currentLocale={locale} variant="footer" />
             </div>
+
+            {/* Enamad Trust Badge */}
+            <div className="pt-3 border-t border-slate-800/80 flex items-center gap-3">
+              <div 
+                className="bg-white p-1.5 rounded-xl shadow-md border border-slate-700/60 hover:scale-105 transition-transform shrink-0 flex items-center justify-center min-w-[75px]"
+                dangerouslySetInnerHTML={{
+                  __html: `<a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=734879&Code=OfP1ZbpY82ZYoLwbOaTBNfiJBdDY5uRA"><img referrerpolicy="origin" src="https://trustseal.enamad.ir/logo.aspx?id=734879&Code=OfP1ZbpY82ZYoLwbOaTBNfiJBdDY5uRA" alt="${locale === 'en' ? 'Electronic Trust Seal - DigiNoron' : locale === 'fa' ? 'نماد اعتماد الکترونیکی دیجی نورون' : 'رمز الثقة الإلكترونية ديجي نورون'}" style="cursor:pointer;width:75px;height:auto" code="OfP1ZbpY82ZYoLwbOaTBNfiJBdDY5uRA"></a>`
+                }}
+              />
+              <div className="text-xs text-slate-300">
+                <span className="font-bold text-white block">
+                  {locale === "en" ? "Electronic Trust Seal (Enamad)" : locale === "fa" ? "نماد اعتماد الکترونیکی" : "رمز الثقة الإلكترونية"}
+                </span>
+                <span className="text-[11px] text-slate-400">
+                  {locale === "en" ? "Verified Business Credential" : locale === "fa" ? "تأیید هویت و صلاحیت کسب‌وکار" : "توثيق هوية واعتماد المؤسسة"}
+                </span>
+              </div>
+            </div>
           </div>
 
         </div>
