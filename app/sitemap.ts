@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/services/kids-and-teens", changeFrequency: "weekly", priority: 0.85 },
     { path: "/services/held-courses", changeFrequency: "weekly", priority: 0.9 },
     { path: "/courses", changeFrequency: "weekly", priority: 0.9 },
+    { path: "/courses/held", changeFrequency: "weekly", priority: 0.85 },
     { path: "/blog", changeFrequency: "daily", priority: 0.9 },
     { path: "/about", changeFrequency: "monthly", priority: 0.75 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.8 },
@@ -28,11 +29,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // Blog paths
-  const blogPaths = BLOG_POSTS.map((post) => ({
-    path: `/blog/${post.slug}`,
-    changeFrequency: (post.slug === "ai-extinction-warnings-and-risks" || post.featured) ? "daily" as const : "weekly" as const,
-    priority: post.slug === "ai-extinction-warnings-and-risks" ? 0.95 : post.featured ? 0.9 : 0.8,
-  }));
+  const blogPaths = BLOG_POSTS.map((post) => {
+    const isPillar = post.slug === "ai-extinction-warnings-and-risks" || post.slug === "smart-organization-ai-2026";
+    return {
+      path: `/blog/${post.slug}`,
+      changeFrequency: (isPillar || post.featured) ? ("daily" as const) : ("weekly" as const),
+      priority: isPillar ? 0.95 : post.featured ? 0.9 : 0.8,
+    };
+  });
 
   const allPaths = [...corePaths, ...coursePaths, ...blogPaths];
 
