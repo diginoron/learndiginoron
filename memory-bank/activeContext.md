@@ -13,10 +13,11 @@ User hit GSC error **"URL not in property"** inspecting `https://www.diginoron.c
 - Verified: zero remaining non-www occurrences in `app/`, `data/`, `lib/` (31 www occurrences).
 - Live check: page 200 (www), FAQ JSON-LD present, no noindex, in sitemap.
 
-## Next Steps (user actions in GSC after deploy)
-- Add/verify **Domain property** `diginoron.com` (DNS TXT) — recommended so both variants work in URL Inspection.
-- Submit sitemap `https://www.diginoron.com/sitemap.xml` (under the www URL-prefix property or domain property).
-- Request indexing for `https://www.diginoron.com/blog/human-vs-ai-war` (the final non-redirecting URL).
+## Next Steps (user actions in GSC)
+- ✅ User created URL-prefix property `https://www.diginoron.com`; verification = HTML file → deployed to `public/google4a7072231d8721be.html` (commit `df1d408`); live-checked: HTTP 200 + `google-site-verification: google4a7072231d8721be.html`. **User must now click Verify in GSC.**
+- After Verify: Sitemaps → `https://www.diginoron.com/sitemap.xml` → Submit; then URL Inspection → `https://www.diginoron.com/blog/human-vs-ai-war` → Request Indexing.
+- ⚠️ Never delete `public/google4a7072231d8721be.html` — Google re-verifies periodically; losing the file drops verification.
+- Note: `seo/` folder holds user's own `SEO_GEO_AEO_CONTENT_SKILL.md` (not committed; unrelated to app build).
 - Optional: Arabic translation for the new post (site supports `ar`).
 
 ## Active Decisions
