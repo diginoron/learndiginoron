@@ -622,7 +622,7 @@ export function getLocalizedCourse(course: Course, locale: Locale): Course {
     targetAudience: translation.targetAudience || course.targetAudience,
     shortDesc: translation.shortDesc || course.shortDesc,
     fullDesc: translation.fullDesc || course.fullDesc,
-    level: (translation.level as any) || course.level,
+    level: (translation.level as Course["level"]) || course.level,
     duration: translation.duration || course.duration,
     price: translation.price || course.price,
     badge: translation.badge || course.badge,
