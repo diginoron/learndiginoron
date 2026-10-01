@@ -149,7 +149,7 @@ export const corporateGuideTranslation: Record<Locale, Partial<BlogTranslation>>
   </p>
 
   <p>
-    Explore our specialized corporate training tracks at <a href="https://diginoron.com/services/corporate" style="color: #0066cc; font-weight: bold;">DigiNoron Corporate Training & Transformation Programs</a>.
+    Explore our specialized corporate training tracks at <a href="https://www.diginoron.com/services/corporate" style="color: #0066cc; font-weight: bold;">DigiNoron Corporate Training & Transformation Programs</a>.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->
@@ -379,7 +379,7 @@ export const corporateGuideTranslation: Record<Locale, Partial<BlogTranslation>>
   </p>
 
   <p>
-    يمكنكم استكشاف باقات التدريب المؤسسي المتخصصة عبر <a href="https://diginoron.com/services/corporate" style="color: #0066cc; font-weight: bold;">برامج ديجي نورون للتدريب والتحول المؤسسي</a>.
+    يمكنكم استكشاف باقات التدريب المؤسسي المتخصصة عبر <a href="https://www.diginoron.com/services/corporate" style="color: #0066cc; font-weight: bold;">برامج ديجي نورون للتدريب والتحول المؤسسي</a>.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->

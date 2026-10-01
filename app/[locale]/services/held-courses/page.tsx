@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: meta.title,
     description: meta.description,
     alternates: {
-      canonical: locale === "en" ? "https://diginoron.com/services/held-courses" : `https://diginoron.com/${locale}/services/held-courses`,
+      canonical: locale === "en" ? "https://www.diginoron.com/services/held-courses" : `https://www.diginoron.com/${locale}/services/held-courses`,
       languages: getAlternateUrls("/services/held-courses"),
     },
   };

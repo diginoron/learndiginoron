@@ -155,7 +155,7 @@ export const topToolsTranslation: Record<Locale, Partial<BlogTranslation>> = {
   </p>
 
   <p>
-    This orchestrated "assembly line" approach compresses multi-day project timelines into hours while eliminating cognitive fatigue. Learn how DigiNoron trains enterprise teams on advanced multi-tool synthesis via our <a href="https://diginoron.com" style="color: #0066cc; font-weight: bold;">DigiNoron Technology Consulting Portal</a>.
+    This orchestrated "assembly line" approach compresses multi-day project timelines into hours while eliminating cognitive fatigue. Learn how DigiNoron trains enterprise teams on advanced multi-tool synthesis via our <a href="https://www.diginoron.com" style="color: #0066cc; font-weight: bold;">DigiNoron Technology Consulting Portal</a>.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->
@@ -407,7 +407,7 @@ export const topToolsTranslation: Record<Locale, Partial<BlogTranslation>> = {
   </p>
 
   <p>
-    يقدم فريق ديجي نورون استشارات متخصصة لمساعدة المؤسسات على ربط هذه الأدوات ضمن سير عمل متناغم؛ تفضل بزيارة <a href="https://diginoron.com" style="color: #0066cc; font-weight: bold;">بوابة ديجي نورون للحلول الذكية</a> للتعرف على المزيد.
+    يقدم فريق ديجي نورون استشارات متخصصة لمساعدة المؤسسات على ربط هذه الأدوات ضمن سير عمل متناغم؛ تفضل بزيارة <a href="https://www.diginoron.com" style="color: #0066cc; font-weight: bold;">بوابة ديجي نورون للحلول الذكية</a> للتعرف على المزيد.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->

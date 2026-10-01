@@ -404,7 +404,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <!-- CTA 1 (Strategic Early Placement) -->
   <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
     <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">آیا نگران امنیت داده‌ها و پیامدهای استقرار سامانه‌های نوین در کسب‌وکار خود هستید؟</p>
-    <a href="https://diginoron.com/contact" className="btn btn-primary btn-lg" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+    <a href="https://www.diginoron.com/contact" className="btn btn-primary btn-lg" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
       دریافت مشاوره تخصصی و سفارش
     </a>
   </div>
@@ -551,7 +551,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <!-- CTA 2 (Mid-Content Placement) -->
   <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
     <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">برای تدوین چارچوب ایمن و ایزولاسیون مدل‌های هوشمند سازمانی، با کارشناسان ما همراه شوید.</p>
-    <a href="https://diginoron.com/contact" className="btn btn-primary btn-lg" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+    <a href="https://www.diginoron.com/contact" className="btn btn-primary btn-lg" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
       دریافت مشاوره تخصصی و سفارش
     </a>
   </div>
@@ -603,7 +603,7 @@ export const BLOG_POSTS: BlogPost[] = [
     استقرار مدل‌های بومی سازمانی در شبکه داخلی اختصاصی بدون اتصال به اینترنت عمومی، نشت اطلاعات را ناممکن می‌سازد. این تدبیر کلیه پردازش‌های متنی و اسنادی را در مرزهای امنیتی بنگاه حفظ می‌کند.
   </p>
   <p>
-    مجموعه دانش‌بنیان دیجی نورون در قالب خدمات تخصصی <a href="https://diginoron.com" style="color: #0066cc; font-weight: bold;">هوشمند سازی سازمان دیجی نورون</a>، به مجموعه‌ها یاری می‌رساند تا مدل‌های پیشرفته را روی سرورهای درون‌سازمانی پیاده‌سازی کرده و خطرات هوش مصنوعی را در بالاترین استاندارد ممکن مهار نمایند.
+    مجموعه دانش‌بنیان دیجی نورون در قالب خدمات تخصصی <a href="https://www.diginoron.com" style="color: #0066cc; font-weight: bold;">هوشمند سازی سازمان دیجی نورون</a>، به مجموعه‌ها یاری می‌رساند تا مدل‌های پیشرفته را روی سرورهای درون‌سازمانی پیاده‌سازی کرده و خطرات هوش مصنوعی را در بالاترین استاندارد ممکن مهار نمایند.
   </p>
 
   <!-- H3: Step 3 -->
@@ -621,7 +621,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <!-- CTA 3 (Closing Conversion Placement) -->
   <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
     <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">همین امروز سامانه سازمانی خود را با پیشرفته‌ترین استانداردهای حاکمیت امنیتی مجهز کنید.</p>
-    <a href="https://diginoron.com/contact" className="btn btn-primary btn-lg" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+    <a href="https://www.diginoron.com/contact" className="btn btn-primary btn-lg" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
       دریافت مشاوره تخصصی و سفارش
     </a>
   </div>
@@ -743,7 +743,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <!-- CTA 1 (Strategic Early Placement) -->
   <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
     <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">برای تدوین نقشه راه اختصاصی و استقرار سامانه‌های هوشمند در کسب‌وکار خود آماده‌اید؟</p>
-    <a href="https://diginoron.com/contact" className="btn btn-primary btn-lg" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+    <a href="https://www.diginoron.com/contact" className="btn btn-primary btn-lg" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
       دریافت مشاوره تخصصی و سفارش
     </a>
   </div>
@@ -898,7 +898,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <!-- CTA 2 (Mid-Content Placement) -->
   <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
     <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">آیا سازمان شما آماده پیاده‌سازی راهکارهای نوین است؟ با متخصصان ما گفتگو کنید.</p>
-    <a href="https://diginoron.com/contact" className="btn btn-primary btn-lg" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+    <a href="https://www.diginoron.com/contact" className="btn btn-primary btn-lg" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
       دریافت مشاوره تخصصی و سفارش
     </a>
   </div>
@@ -939,13 +939,13 @@ export const BLOG_POSTS: BlogPost[] = [
   </p>
 
   <p>
-    مجموعه آموزشی و اجرایی دیجی نورون با تحلیل ساختار سازمانی ده‌ها هلدینگ مطرح کشور، راهکارهای کارآمدی برای تسریع این تحول طراحی کرده است. شما می‌توانید جهت بررسی وضعیت شرکت خود از خدمات جامع <a href="https://diginoron.com" style="color: #0066cc; font-weight: bold;">هوشمند سازی سازمان دیجی نورون</a> بهره‌مند شده و نقشه راه اختصاصی مجموعه خود را تدوین کنید. همچنین مرور <a href="https://www.gartner.com" target="_blank" rel="noopener noreferrer" class="text-cyan-700 underline font-semibold">پیش‌بینی‌های استراتژیک موسسه گارتنر</a> نشان می‌دهد که تا پایان دهه حاضر، ساختارهای بدون سامانه‌های شناختی قادر به حفظ سود حاشیه‌ای نخواهند بود.
+    مجموعه آموزشی و اجرایی دیجی نورون با تحلیل ساختار سازمانی ده‌ها هلدینگ مطرح کشور، راهکارهای کارآمدی برای تسریع این تحول طراحی کرده است. شما می‌توانید جهت بررسی وضعیت شرکت خود از خدمات جامع <a href="https://www.diginoron.com" style="color: #0066cc; font-weight: bold;">هوشمند سازی سازمان دیجی نورون</a> بهره‌مند شده و نقشه راه اختصاصی مجموعه خود را تدوین کنید. همچنین مرور <a href="https://www.gartner.com" target="_blank" rel="noopener noreferrer" class="text-cyan-700 underline font-semibold">پیش‌بینی‌های استراتژیک موسسه گارتنر</a> نشان می‌دهد که تا پایان دهه حاضر، ساختارهای بدون سامانه‌های شناختی قادر به حفظ سود حاشیه‌ای نخواهند بود.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->
   <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
     <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">همین امروز تحول سازمانی خود را با پیشرفته‌ترین راهکارهای عملیاتی آغاز نمایید.</p>
-    <a href="https://diginoron.com/contact" className="btn btn-primary btn-lg" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+    <a href="https://www.diginoron.com/contact" className="btn btn-primary btn-lg" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
       دریافت مشاوره تخصصی و سفارش
     </a>
   </div>

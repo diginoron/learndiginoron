@@ -150,7 +150,7 @@ export const promptEngineeringTranslation: Record<Locale, Partial<BlogTranslatio
   </p>
 
   <p>
-    Explore our enterprise architecture solutions at <a href="https://diginoron.com/services/enterprise-ai" style="color: #0066cc; font-weight: bold;">DigiNoron Enterprise AI Consulting Services</a>.
+    Explore our enterprise architecture solutions at <a href="https://www.diginoron.com/services/enterprise-ai" style="color: #0066cc; font-weight: bold;">DigiNoron Enterprise AI Consulting Services</a>.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->
@@ -397,7 +397,7 @@ export const promptEngineeringTranslation: Record<Locale, Partial<BlogTranslatio
   </p>
 
   <p>
-    تعرف على خدماتنا المعمارية الشاملة عبر <a href="https://diginoron.com/services/enterprise-ai" style="color: #0066cc; font-weight: bold;">خدمات ديجي نورون الاستشارية للأنظمة الذكية</a>.
+    تعرف على خدماتنا المعمارية الشاملة عبر <a href="https://www.diginoron.com/services/enterprise-ai" style="color: #0066cc; font-weight: bold;">خدمات ديجي نورون الاستشارية للأنظمة الذكية</a>.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->

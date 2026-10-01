@@ -125,7 +125,7 @@ export const futureEducationTranslation: Record<Locale, Partial<BlogTranslation>
   </p>
 
   <p>
-    Learn more about our educational research at <a href="https://diginoron.com" style="color: #0066cc; font-weight: bold;">DigiNoron Academic Initiatives & Research</a>.
+    Learn more about our educational research at <a href="https://www.diginoron.com" style="color: #0066cc; font-weight: bold;">DigiNoron Academic Initiatives & Research</a>.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->
@@ -347,7 +347,7 @@ export const futureEducationTranslation: Record<Locale, Partial<BlogTranslation>
   </p>
 
   <p>
-    يمكنكم استكشاف المزيد عن رؤيتنا عبر زيارة <a href="https://diginoron.com" style="color: #0066cc; font-weight: bold;">أكاديمية ديجي نورون للتعليم والبحث التكنولوجي</a>.
+    يمكنكم استكشاف المزيد عن رؤيتنا عبر زيارة <a href="https://www.diginoron.com" style="color: #0066cc; font-weight: bold;">أكاديمية ديجي نورون للتعليم والبحث التكنولوجي</a>.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->

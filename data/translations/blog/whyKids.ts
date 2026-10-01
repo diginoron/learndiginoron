@@ -139,7 +139,7 @@ export const whyKidsTranslation: Record<Locale, Partial<BlogTranslation>> = {
   </p>
 
   <p>
-    By anchoring abstract computational concepts in playful, interactive projects, learners build genuine technical competence without frustration. To explore our full course catalog, visit the <a href="https://diginoron.com/services/kids-and-teens" style="color: #0066cc; font-weight: bold;">DigiNoron Kids & Teens Educational Track</a>.
+    By anchoring abstract computational concepts in playful, interactive projects, learners build genuine technical competence without frustration. To explore our full course catalog, visit the <a href="https://www.diginoron.com/services/kids-and-teens" style="color: #0066cc; font-weight: bold;">DigiNoron Kids & Teens Educational Track</a>.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->
@@ -375,7 +375,7 @@ export const whyKidsTranslation: Record<Locale, Partial<BlogTranslation>> = {
   </p>
 
   <p>
-    يمكنكم الاطلاع على كافة تفاصيل الدورات المتاحة عبر زيارة <a href="https://diginoron.com/services/kids-and-teens" style="color: #0066cc; font-weight: bold;">مسار ديجي نورون لتعليم الأطفال واليافعين</a>، حيث يضمن الأسلوب العملي التفاعلي متعة التعلم واكتساب مهارات راسخة.
+    يمكنكم الاطلاع على كافة تفاصيل الدورات المتاحة عبر زيارة <a href="https://www.diginoron.com/services/kids-and-teens" style="color: #0066cc; font-weight: bold;">مسار ديجي نورون لتعليم الأطفال واليافعين</a>، حيث يضمن الأسلوب العملي التفاعلي متعة التعلم واكتساب مهارات راسخة.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->

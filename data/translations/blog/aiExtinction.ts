@@ -208,7 +208,7 @@ export const aiExtinctionTranslation: Record<Locale, Partial<BlogTranslation>> =
     Deploying open-weight enterprise models on internal dedicated hardware completely eliminates exposure to external internet vulnerabilities. All contextual reasoning and document parsing remain strictly confined within the organization's fortified perimeter.
   </p>
   <p>
-    Through specialized modernization services at <a href="https://diginoron.com" style="color: #0066cc; font-weight: bold;">DigiNoron Enterprise Modernization</a>, organizations receive turnkey support to establish hardened private clusters and eliminate corporate data exposure.
+    Through specialized modernization services at <a href="https://www.diginoron.com" style="color: #0066cc; font-weight: bold;">DigiNoron Enterprise Modernization</a>, organizations receive turnkey support to establish hardened private clusters and eliminate corporate data exposure.
   </p>
 
   <!-- H3: Step 3 -->
@@ -525,7 +525,7 @@ export const aiExtinctionTranslation: Record<Locale, Partial<BlogTranslation>> =
     إن تثبيت النماذج الذكية المتطورة داخل الشبكة المحلية للشركة دون الحاجة للاتصال بالإنترنت الخارجي يقضي تماماً على خطر تسريب البيانات، ويضمن بقاء معالجة المستندات خلف جدران الحماية المؤسسية.
   </p>
   <p>
-    تقدم أكاديمية ومركز <a href="https://diginoron.com" style="color: #0066cc; font-weight: bold;">ديجي نورون للتحول الذكي</a> خدمات استشارية وتنفيذية متكاملة لتركيب النماذج محلياً وتأمينها وفق أعلى المعايير القياسية العالمية.
+    تقدم أكاديمية ومركز <a href="https://www.diginoron.com" style="color: #0066cc; font-weight: bold;">ديجي نورون للتحول الذكي</a> خدمات استشارية وتنفيذية متكاملة لتركيب النماذج محلياً وتأمينها وفق أعلى المعايير القياسية العالمية.
   </p>
 
   <!-- H3: Step 3 -->

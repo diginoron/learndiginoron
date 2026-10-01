@@ -1,16 +1,23 @@
 # Active Context
 
-## Current Focus (2026-10-01)
-Article **human-vs-ai-war** is COMPLETE, validated and shipped: FA content (~1700 words) in `data/blog.ts`, EN translation in `data/translations/blog/humanVsAiWar.ts` (+ `fa: {}`/`ar: {}` stubs to satisfy `Record<Locale, ...>`), registered in `data/translations/blog.ts` with date map.
+## Current Focus (2026-10-01) — RESOLVED: canonical domain standardized on www
+User hit GSC error **"URL not in property"** inspecting `https://www.diginoron.com/blog/human-vs-ai-war`. Diagnosis: Vercel serves on `www.diginoron.com` (apex 308→www) while code generated non-www canonical/sitemap (fallback `"https://diginoron.com"`). GSC error itself is property-scope (URL-prefix property rejects the other www/non-www variant).
+**Decision (user-approved): standardize on www.** Done:
+- `lib/i18n.ts:47` + `app/robots.ts:3`: fallback → `https://www.diginoron.com`
+- All 31 hardcoded non-www URLs → www (held-courses canonical, internal links in `data/blog.ts` + 8 EN translation files)
+- DoD PASS (`ran=3 failed=0 skipped=1`), committed & pushed; Vercel auto-deploys from main.
 
 ## State
-- Validation green: `npm run lint` → 0 errors; `npm run build` → success, 87 static pages incl. `/en/blog/human-vs-ai-war`; sitemap auto-generated.
-- Fixed a PRE-EXISTING lint error in `data/translations/courses.ts` line 625 (`as any` → `as Course["level"]`) — it blocked the lint gate (unrelated file, minimal fix, runtime behavior unchanged).
-- Git: committed and pushed to `origin/main`.
-- Temp validation files (`lint-output*.txt`, `build-output.txt`) deleted after use.
+- Article **human-vs-ai-war** complete, committed (`01b1846`), pushed, DoD PASS.
+- All generated SEO URLs (canonical, hreflang, og:url, sitemap, robots, JSON-LD) now www.
+- Verified: zero remaining non-www occurrences in `app/`, `data/`, `lib/` (31 www occurrences).
+- Live check: page 200 (www), FAQ JSON-LD present, no noindex, in sitemap.
 
-## Next Steps
-- Optional future: Arabic translation for the new post (site supports `ar`; only en/fa were requested).
+## Next Steps (user actions in GSC after deploy)
+- Add/verify **Domain property** `diginoron.com` (DNS TXT) — recommended so both variants work in URL Inspection.
+- Submit sitemap `https://www.diginoron.com/sitemap.xml` (under the www URL-prefix property or domain property).
+- Request indexing for `https://www.diginoron.com/blog/human-vs-ai-war` (the final non-redirecting URL).
+- Optional: Arabic translation for the new post (site supports `ar`).
 
 ## Active Decisions
 - Title/keywords chosen by Cline per user instruction (user delegated wording).

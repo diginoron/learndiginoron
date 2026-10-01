@@ -211,7 +211,7 @@ export const smartOrgTranslation: Record<Locale, Partial<BlogTranslation>> = {
   </p>
 
   <p>
-    DigiNoron's specialized implementation group has structured end-to-end roadmaps for dozens of prominent industrial holdings and financial groups. Organizations can explore comprehensive capabilities through <a href="https://diginoron.com" style="color: #0066cc; font-weight: bold;">DigiNoron Smart Enterprise Transformation Solutions</a> to draft a bespoke deployment blueprint. Furthermore, industry forecasts by <a href="https://www.gartner.com" target="_blank" rel="noopener noreferrer" class="text-cyan-700 underline font-semibold">Gartner</a> project that enterprises lacking cognitive architectures by 2027 will suffer irreversible operating margin decay.
+    DigiNoron's specialized implementation group has structured end-to-end roadmaps for dozens of prominent industrial holdings and financial groups. Organizations can explore comprehensive capabilities through <a href="https://www.diginoron.com" style="color: #0066cc; font-weight: bold;">DigiNoron Smart Enterprise Transformation Solutions</a> to draft a bespoke deployment blueprint. Furthermore, industry forecasts by <a href="https://www.gartner.com" target="_blank" rel="noopener noreferrer" class="text-cyan-700 underline font-semibold">Gartner</a> project that enterprises lacking cognitive architectures by 2027 will suffer irreversible operating margin decay.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->
@@ -504,7 +504,7 @@ export const smartOrgTranslation: Record<Locale, Partial<BlogTranslation>> = {
   </p>
 
   <p>
-    قام فريق ديجي نورون بوضع تصاميم متطورة لمساعدة كبرى المؤسسات على تسريع هذا التحول. يمكنك التعرف على الحلول عبر <a href="https://diginoron.com" style="color: #0066cc; font-weight: bold;">خدمات ديجي نورون للتحول الذكي للمؤسسات</a>، حيث تشير تقارير مؤسسة جارتنر العالمية إلى أن المنظمات التي تغفل هذه الحلول بحلول عام 2027 ستفقد قدرتها على الحفاظ على هوامش ربحية مجدية.
+    قام فريق ديجي نورون بوضع تصاميم متطورة لمساعدة كبرى المؤسسات على تسريع هذا التحول. يمكنك التعرف على الحلول عبر <a href="https://www.diginoron.com" style="color: #0066cc; font-weight: bold;">خدمات ديجي نورون للتحول الذكي للمؤسسات</a>، حيث تشير تقارير مؤسسة جارتنر العالمية إلى أن المنظمات التي تغفل هذه الحلول بحلول عام 2027 ستفقد قدرتها على الحفاظ على هوامش ربحية مجدية.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->

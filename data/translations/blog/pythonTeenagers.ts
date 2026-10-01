@@ -129,7 +129,7 @@ export const pythonTeenagersTranslation: Record<Locale, Partial<BlogTranslation>
   </p>
 
   <p>
-    Learn more about our dedicated curriculum at <a href="https://diginoron.com/courses/python-ai-teenagers" style="color: #0066cc; font-weight: bold;">DigiNoron Python Programming for Teenagers Course</a>.
+    Learn more about our dedicated curriculum at <a href="https://www.diginoron.com/courses/python-ai-teenagers" style="color: #0066cc; font-weight: bold;">DigiNoron Python Programming for Teenagers Course</a>.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->
@@ -355,7 +355,7 @@ export const pythonTeenagersTranslation: Record<Locale, Partial<BlogTranslation>
   </p>
 
   <p>
-    تفضل بزيارة صفحة الدورة التخصصية عبر <a href="https://diginoron.com/courses/python-ai-teenagers" style="color: #0066cc; font-weight: bold;">دورة بايثون والذكاء الاصطناعي لليافعين في ديجي نورون</a>.
+    تفضل بزيارة صفحة الدورة التخصصية عبر <a href="https://www.diginoron.com/courses/python-ai-teenagers" style="color: #0066cc; font-weight: bold;">دورة بايثون والذكاء الاصطناعي لليافعين في ديجي نورون</a>.
   </p>
 
   <!-- CTA 3 (Closing Conversion Placement) -->
