@@ -78,6 +78,11 @@ export const BLOG_AUTHOR_NAME_TRANSLATIONS: Record<string, Record<Locale, string
 };
 
 export const BLOG_AUTHOR_ROLE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
+  "بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی": {
+    en: "5+ Years of AI Project Experience",
+    fa: "بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی",
+    ar: "أكثر من ٥ سنوات من الخبرة في مشاريع الذكاء الاصطناعي",
+  },
   "تیم پژوهش و توسعه دیجی نورون": {
     en: "DigiNoron AI R&D Editorial Team",
     fa: "تیم پژوهش و توسعه دیجی نورون",
