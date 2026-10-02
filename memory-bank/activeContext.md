@@ -1,24 +1,19 @@
 # Active Context
 
-## Current Focus (2026-10-01) — RESOLVED: canonical domain standardized on www
-User hit GSC error **"URL not in property"** inspecting `https://www.diginoron.com/blog/human-vs-ai-war`. Diagnosis: Vercel serves on `www.diginoron.com` (apex 308→www) while code generated non-www canonical/sitemap (fallback `"https://diginoron.com"`). GSC error itself is property-scope (URL-prefix property rejects the other www/non-www variant).
-**Decision (user-approved): standardize on www.** Done:
-- `lib/i18n.ts:47` + `app/robots.ts:3`: fallback → `https://www.diginoron.com`
-- All 31 hardcoded non-www URLs → www (held-courses canonical, internal links in `data/blog.ts` + 8 EN translation files)
-- DoD PASS (`ran=3 failed=0 skipped=1`), committed & pushed; Vercel auto-deploys from main.
+## Current Focus (2026-10-03) — DONE: Arabic translation of `human-vs-ai-war`
+Full `ar` content inserted in `data/translations/blog/humanVsAiWar.ts` (lines ~366–709): title/excerpt/category/readTime/tags, hero answer, CTA 1, Sections 1–2 (five-mechanism `<ol>`), voice-search section (SIPRI link), fear-shift section (ICRC link), 6-row comparison table, CTA 2 (→ `/ar/contact`), 4-pitfalls section, Sections 6–7, CTA 3, FAQ ×5 array (feeds JSON-LD FAQPage + metadata), author profile box. Author role added to `BLOG_AUTHOR_ROLE_TRANSLATIONS` in `data/translations/blog.ts` (ar: "أكثر من ٥ سنوات من الخبرة في مشاريع الذكاء الاصطناعي").
+Validation: lint PASS, build #4 PASS (87 pages, route summary OK), sitemap contains `/ar/blog/human-vs-ai-war`. Committed `d449fed`, pushed to `origin/main` (Vercel auto-deploys).
+Gotcha learned: foreground long builds are killed (^C) when the next terminal command starts → run builds detached (`Start-Process -WindowStyle Hidden`) writing the exit code to a temp file, then poll.
 
 ## State
-- Article **human-vs-ai-war** complete, committed (`01b1846`), pushed, DoD PASS.
-- All generated SEO URLs (canonical, hreflang, og:url, sitemap, robots, JSON-LD) now www.
-- Verified: zero remaining non-www occurrences in `app/`, `data/`, `lib/` (31 www occurrences).
-- Live check: page 200 (www), FAQ JSON-LD present, no noindex, in sitemap.
+- Article **human-vs-ai-war** complete in fa/en/**ar**; latest commit pushed, DoD verified.
+- All generated SEO URLs (canonical, hreflang, og:url, sitemap, robots, JSON-LD) are www.
+- Sitemap verified in build output: ar blog URL present.
 
 ## Next Steps (user actions in GSC)
-- ✅ User created URL-prefix property `https://www.diginoron.com`; verification = HTML file → deployed to `public/google4a7072231d8721be.html` (commit `df1d408`); live-checked: HTTP 200 + `google-site-verification: google4a7072231d8721be.html`. **User must now click Verify in GSC.**
-- After Verify: Sitemaps → `https://www.diginoron.com/sitemap.xml` → Submit; then URL Inspection → `https://www.diginoron.com/blog/human-vs-ai-war` → Request Indexing.
+- After Verify: Sitemaps → `https://www.diginoron.com/sitemap.xml` → Submit; then URL Inspection → `https://www.diginoron.com/blog/human-vs-ai-war` (and optionally `/ar/blog/human-vs-ai-war`) → Request Indexing.
 - ⚠️ Never delete `public/google4a7072231d8721be.html` — Google re-verifies periodically; losing the file drops verification.
 - Note: `seo/` folder holds user's own `SEO_GEO_AEO_CONTENT_SKILL.md` (not committed; unrelated to app build).
-- Optional: Arabic translation for the new post (site supports `ar`).
 
 ## Active Decisions
 - Title/keywords chosen by Cline per user instruction (user delegated wording).
