@@ -9,6 +9,7 @@ export interface CourseTranslation {
   fullDesc: string;
   level: string;
   duration: string;
+  sessionsCount?: string;
   price: string;
   badge?: string;
   topics: string[];
@@ -139,13 +140,20 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
       fullDesc: "Designed for business leaders seeking to leverage Generative AI as a catalyst for growth, cost reduction, and comprehensive workflow automation.",
       level: "Executive / Advanced",
       duration: "8 hours (Focused Executive Masterclass)",
+      sessionsCount: "4 two-hour sessions or 2 four-hour sessions",
       price: "Enterprise Quotation",
       badge: "C-Suite Priority",
       topics: [
-        "Strategic landscape of Generative AI & commercial applications",
-        "Enterprise AI readiness auditing & roadmap formulation",
-        "Advanced prompt engineering for executive decision support",
-        "Data privacy governance, compliance & enterprise risk management",
+        "AI concepts & fundamentals",
+        "Introduction to the major types of AI models",
+        "Professional AI usage beyond chatbots",
+        "Prompt engineering for organizational units",
+        "AI agents: from concept to building for organizational units",
+        "Hands-on exercise: building an agent with Vibe Coding",
+        "Multi-agent systems & their role in managing organizational operations",
+        "Essential tools & toolkit for AI",
+        "Organizational challenges in AI adoption & practical solutions",
+        "How to make your organization smarter with AI: a practical guide",
       ],
       prerequisites: "Executive leadership or operational management experience",
       instructorName: "Dr. Mehran Shirzad",
@@ -166,13 +174,20 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
       fullDesc: "برنامج مكثف للإدارات العليا للاستفادة من أدوات الذكاء الاصطناعي التوليدي كرافعة للنمو، خفض التكاليف التشغيلية وأتمتة الإجراءات المؤسسية.",
       level: "متقدم / تنفيذي",
       duration: "٨ ساعات (ورشة عمل تنفيذية مركزة)",
+      sessionsCount: "٤ جلسة مدة كل منها ساعتان، أو جلستان مدة كل منهما ٤ ساعات",
       price: "عرض فني للمؤسسات",
       badge: "خاص بالقيادات التنفيذية",
       topics: [
-        "فهم الذكاء الاصطناعي التوليدي والتطبيقات التجارية",
-        "صياغة استراتيجية الذكاء الاصطناعي وتقييم الجاهزية",
-        "هندسة الأوامر المتقدمة لإدارة المشاريع ودعم اتخاذ القرار",
-        "حوكمة وسرية البيانات، الامتثال والسياسات الأخلاقية",
+        "مفاهيم وأساسيات الذكاء الاصطناعي",
+        "التعريف بأنواع نماذج الذكاء الاصطناعي",
+        "الاستخدام الاحترافي للذكاء الاصطناعي بما يتجاوز روبوتات الدردشة",
+        "هندسة الأوامر (البرومبت) في الوحدات المؤسسية",
+        "الوكلاء الأذكياء (الإيجنت): من المفهوم إلى البناء للوحدات المؤسسية",
+        "تمرين عملي لبناء وكيل ذكي بتقنية Vibe Coding",
+        "أنظمة الوكلاء المتعددة ودورها في إدارة الشؤون المؤسسية",
+        "الأدوات اللازمة للذكاء الاصطناعي",
+        "التحديات المؤسسية في تبني الذكاء الاصطناعي والحلول العملية",
+        "كيف تجعل مؤسستك أذكى بالذكاء الاصطناعي؟ دليل عملي",
       ],
       prerequisites: "خبرة في الإدارة التنفيذية أو قيادة الأعمال",
       instructorName: "د. مهران شيرزاد",
@@ -624,6 +639,7 @@ export function getLocalizedCourse(course: Course, locale: Locale): Course {
     fullDesc: translation.fullDesc || course.fullDesc,
     level: (translation.level as Course["level"]) || course.level,
     duration: translation.duration || course.duration,
+    sessionsCount: translation.sessionsCount || course.sessionsCount,
     price: translation.price || course.price,
     badge: translation.badge || course.badge,
     topics: translation.topics || course.topics,

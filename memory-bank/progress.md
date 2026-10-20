@@ -6,6 +6,8 @@
 - 8 posts have EN translations (some also AR) via `data/translations/blog/*`.
 
 ## Completed Tasks (log)
+- 2026-10-20: Course page `generative-ai-for-executives` enriched in fa/en/ar: syllabus 4 → 10 topics (`data/courses.ts` + en/ar in `data/translations/courses.ts`), sessions row localized («۴ جلسه ۲ ساعته یا ۲ جلسه ۴ ساعته» — `Course.sessionsCount` widened to `number | string`, optional `sessionsCount?: string` in `CourseTranslation` via `getLocalizedCourse`), instructor photo → generated generic avatar `public/images/instructors/avatar.png` (System.Drawing silhouette on cyan→indigo gradient; PNG so next/image needs no `dangerouslyAllowSVG`). Verified in built HTML for all 3 locales (10 topic cards, localized sessions strings, avatar srcSet, no rezaei.jpg). tsc/lint/build green, DoD PASS (ran=3). Learned: per-locale display strings fit naturally as optional `CourseTranslation` fields wired through `getLocalizedCourse`.
+
 - 2026-10-20: Trilingual post `ai-entrepreneurship-from-childhood` (id 10) completed: FA base in `data/blog.ts`, full EN+AR in new `data/translations/blog/aiEntrepreneurship.ts`, registry + date map in `data/translations/blog.ts`. Full SEO-CRAFT anatomy in all locales (3 CTAs, 7 sections, comparison table, pitfalls, voice-search Q&As, FAQ ×5, author box; WEF 2025 + UNESCO citations). tsc clean, lint PASS, build PASS (90 pages, 3 new locale routes), DoD PASS. Committed `4ec334f` & pushed. Learned: blog translation files require an explicit `fa: {}` key (tsc); builds survive log-file polling via file reads only.
 
 - 2026-10-01: GSC setup: user created www URL-prefix property; Google HTML verification file deployed to `public/google4a7072231d8721be.html` (must stay permanently). Live-checked 200 + correct content.
