@@ -6,6 +6,8 @@
 - 8 posts have EN translations (some also AR) via `data/translations/blog/*`.
 
 ## Completed Tasks (log)
+- 2026-10-20: Trilingual post `ai-entrepreneurship-from-childhood` (id 10) completed: FA base in `data/blog.ts`, full EN+AR in new `data/translations/blog/aiEntrepreneurship.ts`, registry + date map in `data/translations/blog.ts`. Full SEO-CRAFT anatomy in all locales (3 CTAs, 7 sections, comparison table, pitfalls, voice-search Q&As, FAQ ×5, author box; WEF 2025 + UNESCO citations). tsc clean, lint PASS, build PASS (90 pages, 3 new locale routes), DoD PASS. Committed `4ec334f` & pushed. Learned: blog translation files require an explicit `fa: {}` key (tsc); builds survive log-file polling via file reads only.
+
 - 2026-10-01: GSC setup: user created www URL-prefix property; Google HTML verification file deployed to `public/google4a7072231d8721be.html` (must stay permanently). Live-checked 200 + correct content.
 - 2026-10-01: Diagnosed GSC "URL not in property" → found canonical/www mismatch (Vercel serves www, code emitted non-www). Standardized all 31 site URLs on `https://www.diginoron.com` (`lib/i18n.ts`, `app/robots.ts`, held-courses canonical, content links). DoD PASS; committed & pushed.
 - 2026-10-01: Bootstrap `GUIDE.md` + `memory-bank/`. Added bilingual article `human-vs-ai-war` (FA base in `data/blog.ts`, EN in `data/translations/blog/humanVsAiWar.ts`, registered + date-mapped in `data/translations/blog.ts`). Sitemap auto-includes it on next build.
