@@ -21,6 +21,355 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "11",
+    slug: "neet-risk-ai-era-children",
+    title: "خطر NEET شدن کودکان در عصر هوش مصنوعی؛ چرا والدین باید همین امروز فرزندان خود را مجهز کنند؟",
+    excerpt: "چرا در عصر هوش مصنوعی خطر NEET شدن کودکان و نوجوانان چند برابر می‌شود و چگونه والدین می‌توانند فرزندان خود را با دانش هوش مصنوعی برای آینده مجهز کنند.",
+    content: `<div class="space-y-8 text-slate-800 leading-relaxed">
+
+  <!-- Hero Answer (50-70 words) -->
+  <div class="p-6 bg-gradient-to-br from-cyan-50 to-blue-50 border border-cyan-200 rounded-2xl shadow-sm">
+    <h3 class="text-lg font-bold text-cyan-900 mb-2">پاسخ سریع و خلاصه تحلیلی:</h3>
+    <p class="text-sm text-slate-700 leading-relaxed font-medium">
+      «NEET شدن» یعنی بازماندن جوان از هر سه ریل زندگی: تحصیل، اشتغال و آموزش مهارت. هوش مصنوعی این خطر را بی‌سابقه بزرگ کرده است؛ چون مشاغل ورودی را خودکار می‌کند و ساعت‌های خالی نوجوانان را با سرگرمی منفعلانه بی‌انتها پر می‌کند. والدینی که همین امروز فرزندشان را به دانش هوش مصنوعی مجهز کنند، او را از قربانی این تحول به بهره‌بردار آن تبدیل می‌کنند.
+    </p>
+  </div>
+
+  <!-- CTA 1 (Strategic Early Placement) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">هر روز تأخیر در یادگیری، فاصله فرزند شما با نسل سازندگان هوش مصنوعی را بیشتر می‌کند؛ مسیر کامل آموزش تخصصی کودکان و نوجوانان را در دیجی نورون ببینید.</p>
+    <a href="/fa/services/kids-and-teens" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      مشاهده صفحه آموزش هوش مصنوعی کودکان و نوجوانان
+    </a>
+  </div>
+
+  <!-- Section 1: H2 with Primary Keyword -->
+  <h2>NEET چیست و چرا عصر هوش مصنوعی خطر آن را چند برابر می‌کند؟</h2>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    NEET مخفف «Not in Education, Employment or Training» است؛ وضعیت جوانی که نه درس می‌خواند، نه کار می‌کند و نه در حال یادگیری مهارت است. هوش مصنوعی این خطر را از دو مسیر تشدید می‌کند: حذف سریع مشاغل ورودیِ نردبان ورود به بازار کار، و پوشاندن بیکاری واقعی پشت سرگرمی‌های دیجیتال بی‌پایان.
+  </p>
+
+  <p>
+    داده‌ها همین را می‌گویند: بر پایه شاخص NEET بانک جهانی، در بسیاری از کشورها بیش از یک جوان از هر پنج جوان از تحصیل، اشتغال و آموزش دور مانده است و <a href="https://data.worldbank.org/indicator/SL.UEM.NEET.ZS" target="_blank" rel="noopener noreferrer" class="text-cyan-700 underline font-semibold">شاخص جهانی NEET</a> در سال‌های اخیر روند افزایشی دارد. از سوی دیگر، <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/" target="_blank" rel="noopener noreferrer" class="text-cyan-700 underline font-semibold">گزارش آینده مشاغل WEF</a> تصریح می‌کند مشاغل ورودی — همان‌هایی که نوجوان‌ها معمولاً با آن‌ها وارد بازار کار می‌شوند — در موج اتوماسیون بیشترین آسیب را می‌بینند. ترکیب این دو، یعنی «خلأ فرصت» برای نسلی که دقیقاً در سن ورود است.
+  </p>
+
+  <!-- H3 -->
+  <h3>موج اتوماسیون، پله اول نردبان شغلی را بسته است</h3>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    نوجوانان برای ورود به دنیای کار همیشه از پله‌های پایین شروع می‌کردند: ورود داده، تولید محتوای ساده، پاسخگویی به مشتری، تایپ و ترجمه اولیه. هوش مصنوعی مولد دقیقاً همین پله‌ها را سریع‌تر و ارزان‌تر انجام می‌دهد؛ پس نسل امروز برای شروع به مهارت‌های بالاتری نیاز دارد و بدون آموزش زودهنگام، پشت درِ بسته می‌ماند.
+  </p>
+
+  <p>
+    نکته ظریف این است که هوش مصنوعی «شغل» را حذف نمی‌کند، «کار» را دگرگون می‌کند: مشاغل جدیدی مانند مهندس پرامپت، طراح ایجنت و سرپرست فرآیندهای خودکار پدید آمده‌اند، اما هیچ‌کدام با «فقط گوشی همراه بودن» ساخته نمی‌شوند. فاصله میان نسلِ مجهز و نسلِ حذف‌شده، دقیقاً همان مهارت‌هایی است که در سنین مدرسه ساخته می‌شوند — یا هرگز ساخته نمی‌شوند.
+  </p>
+
+  <!-- H3 -->
+  <h3>اقتصاد توجه؛ مارپیچ خاموشی که انگیزه تحصیل را می‌بلعد</h3>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    الگوریتم‌های توصیه‌گر برای نگه‌داشتن نگاه نوجوان طراحی شده‌اند، نه برای رشد او. ساعت‌هایی که باید با حل مسئله، ساختن و آزمودن پر می‌شد، با اسکرول و مصرف منفعلانه محتوا جای خالی می‌کند. نتیجه، کاهش تدریجی تحملِ «رنج یادگیری» است؛ همان ویژگی که مرز اصلی با وضعیت NEET است.
+  </p>
+
+  <p>
+    این مارپیچ خطرناک است چون بی‌صدا پیش می‌رود: نوجوان از مدرسه خسته می‌شود، گوشی را برمی‌دارد، پاداش فوری می‌گیرد و تدریجاً «شروع کردن» هر فعالیت سخت را غیرممکن حس می‌کند. رابطه این پدیده با آینده یادگیری را در تحلیل <a href="/fa/blog/future-of-ai-in-education-2026" class="text-cyan-700 underline font-semibold">آینده هوش مصنوعی در آموزش</a> بررسی کرده‌ایم؛ اینجا تنها راه خروج را معرفی می‌کنیم: جایگزینی مصرف با ساختن، از همان کودکی.
+  </p>
+
+  <!-- Section 2: Step-by-Step Methodology -->
+  <h2>نقشه گام‌به‌گام والدین برای مجهز کردن کودکان به دانش هوش مصنوعی</h2>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    مسیر پیشگیری از NEET شدن در پنج گام خلاصه می‌شود: ساختن سواد پایه و گفت‌وگوی روزانه درباره هوش مصنوعی، یادگیری بازی‌محور منطق ابزارها، ساخت نخستین پروژه واقعی، تبدیل دانش به مهارت قابل ارائه، و تثبیت روتین هفتگی خلاق. هر گام را می‌توان متناسب با سن کودک و بدون هیچ فشاری اجرا کرد.
+  </p>
+
+  <!-- H3: Step 1 -->
+  <h3>گام اول (۶ تا ۹ سال): از مصرف آگاهانه شروع کنید، نه از ممنوعیت</h3>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    ممنوعیت، کودک را به مصرف پنهان می‌راند؛ مصرف آگاهانه، او را به پرسش‌گری می‌برد. در این سن، کنار کودک از ابزارهای هوشمند استفاده کنید، بپرسید «به نظرت این دستیار از کجا جواب را پیدا کرد؟» و مرزهای ساده حریم خصوصی را به زبان کودکانه توضیح دهید.
+  </p>
+
+  <p>
+    هدف این مرحله، ساختن «ذهنیت پرسش‌گر» است؛ پایه‌ای که تمام مهارت‌های بعدی روی آن می‌نشیند. کودکی که یاد می‌گیرد از ابزار بپرسد «چطور؟» و «چرا؟»، بعدها در برابر الگوریتم‌ها منفعل نمی‌ماند؛ او کاربر و سازنده است، نه مخاطب بی‌دفاع.
+  </p>
+
+  <!-- H3: Step 2 -->
+  <h3>گام دوم (۸ تا ۱۲ سال): یادگیری بازی‌محور منطق هوش مصنوعی</h3>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    ابزارهای بصری مانند Scratch و Teachable Machine به کودک اجازه می‌دهند مدل آموزش دهد، الگو تشخیص دهد و منطق الگوریتمی را بدون یک خط کد تجربه کند. هدف این مرحله درونی‌کردن مفهوم است، نه حفظ نرم‌افزار؛ چون ابزارها عوض می‌شوند اما مفاهیم می‌مانند.
+  </p>
+
+  <p>
+    برای درک اینکه چرا این سواد در ردیف سواد خواندن و نوشتن نشسته است، <a href="/fa/blog/why-kids-should-learn-ai-early" class="text-cyan-700 underline font-semibold">مقاله ضرورت آموزش هوش مصنوعی به کودکان</a> را از دست ندهید؛ در آن پنج دلیل کلیدی این ضرورت تحصیلی بررسی شده است.
+  </p>
+
+  <!-- H3: Step 3 -->
+  <h3>گام سوم (۱۰ تا ۱۴ سال): ساخت نخستین پروژه واقعی</h3>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    کودک باید از «یادگیری درباره هوش مصنوعی» به «ساختن با آن» برسد: یک بازی ساده، چت‌بات توضیح‌دهنده درس‌ها یا انیمیشنی درباره موضوع مورد علاقه‌اش. پروژه کوچک اما کامل، حس «من می‌توانم بسازم» را می‌سازد؛ حسی که مصرف‌کننده منفعل هرگز تجربه نمی‌کند.
+  </p>
+
+  <!-- H3: Step 4 -->
+  <h3>گام چهارم (۱۲ سال به بالا): تبدیل دانش به مهارت قابل ارائه</h3>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    در این سن، دانش باید به نمونه‌کار و هویت حرفه‌ای اولیه تبدیل شود: یک پوشه نمونه‌کار ساده، نخستین درآمد کوچک یا مشارکت در یک پروژه تیمی. نوجوانی که مهارت پرامپت‌نویسی و پایه‌های برنامه‌نویسی پایتون را دارد، پیش از ورود رسمی به بازار کار، رزومه‌ای واقعی ساخته است.
+  </p>
+
+  <p>
+    دو مقاله کاربردی ما دقیقاً همین دو مهارت را هدف گرفته‌اند: <a href="/fa/blog/prompt-engineering-best-practices" class="text-cyan-700 underline font-semibold">مهارت پرامپت‌نویسی</a> برای حرفه‌ای‌تر شدن کار با ابزارهای مولد، و <a href="/fa/blog/python-programming-for-teenagers" class="text-cyan-700 underline font-semibold">برنامه‌نویسی پایتون برای نوجوانان</a> برای رسیدن از کاربر بودن به سازنده بودن.
+  </p>
+
+  <!-- H3: Step 5 -->
+  <h3>گام پنجم: روتین هفتگی؛ نقیضِ NEET شدن یعنی انضباط نرم</h3>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    NEET شدن یک‌شبه رخ نمی‌دهد؛ حاصل سال‌ها غیبت روتین هدفمند است. یک تا دو ساعت کار خلاق هوشمند در هفته — ساختن، آزمودن، به اشتراک گذاشتن — در طول دو سال تفاوت نسلی می‌سازد. نقش والدین، پاسداری از این روتین است؛ نه تبدیل شدن به معلم فنی.
+  </p>
+
+  <!-- Section 3: Comprehensive Comparison Table -->
+  <h2>مقایسه جامع: کودک در مسیر منفعلانه در برابر کودک مجهز به دانش هوش مصنوعی</h2>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    تفاوت این دو مسیر، در دنیای پس از اتوماسیون تعیین‌کننده است: کودک منفعل مصرف‌کننده‌ای می‌شود که موج خودکارسازی او را جا می‌گذارد؛ کودک مجهز، کاربر و سازنده‌ای است که از همان موج اهرم می‌سازد. جدول زیر شش بعد این دو مسیر را روشن می‌کند.
+  </p>
+
+  <div class="overflow-x-auto my-6">
+    <table class="w-full border-collapse border border-slate-300 text-right text-sm rounded-xl overflow-hidden shadow-sm">
+      <thead>
+        <tr class="bg-slate-900 text-white">
+          <th class="p-3.5 border border-slate-700 font-bold">بُعد مقایسه</th>
+          <th class="p-3.5 border border-slate-700 font-bold">کودک در مسیر منفعلانه</th>
+          <th class="p-3.5 border border-slate-700 font-bold bg-cyan-900 text-cyan-100">کودک مجهز به دانش هوش مصنوعی</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200">
+        <tr class="bg-white hover:bg-slate-50">
+          <td class="p-3 border border-slate-300 font-bold text-slate-900">نگاه به هوش مصنوعی</td>
+          <td class="p-3 border border-slate-300 text-slate-600">جعبه جادویی سرگرمی</td>
+          <td class="p-3 border border-slate-300 text-cyan-950 font-semibold bg-cyan-50/50">ابزار کار و خلق ارزش</td>
+        </tr>
+        <tr class="bg-slate-50 hover:bg-slate-100">
+          <td class="p-3 border border-slate-300 font-bold text-slate-900">زمان بیداری روزانه</td>
+          <td class="p-3 border border-slate-300 text-slate-600">اسکرول و مصرف منفعل محتوا</td>
+          <td class="p-3 border border-slate-300 text-cyan-950 font-semibold bg-cyan-50/50">ساختن، آزمودن و تمرین پروژه</td>
+        </tr>
+        <tr class="bg-white hover:bg-slate-50">
+          <td class="p-3 border border-slate-300 font-bold text-slate-900">مهارت محوری</td>
+          <td class="p-3 border border-slate-300 text-slate-600">جست‌وجوی سرگرمی</td>
+          <td class="p-3 border border-slate-300 text-cyan-950 font-semibold bg-cyan-50/50">حل مسئله، پرامپت‌نویسی، تفکر الگوریتمی</td>
+        </tr>
+        <tr class="bg-slate-50 hover:bg-slate-100">
+          <td class="p-3 border border-slate-300 font-bold text-slate-900">هویت و اعتمادبه‌نفس</td>
+          <td class="p-3 border border-slate-300 text-slate-600">وابسته به لایک و بازخورد تصادفی</td>
+          <td class="p-3 border border-slate-300 text-cyan-950 font-semibold bg-cyan-50/50">مبتنی بر نمونه‌کار واقعی</td>
+        </tr>
+        <tr class="bg-white hover:bg-slate-50">
+          <td class="p-3 border border-slate-300 font-bold text-slate-900">چشم‌انداز شغلی</td>
+          <td class="p-3 border border-slate-300 text-slate-600">در معرض خطر NEET شدن</td>
+          <td class="p-3 border border-slate-300 text-cyan-950 font-semibold bg-cyan-50/50">در مسیر مشاغل عصر هوش مصنوعی</td>
+        </tr>
+        <tr class="bg-slate-50 hover:bg-slate-100">
+          <td class="p-3 border border-slate-300 font-bold text-slate-900">نقش والدین</td>
+          <td class="p-3 border border-slate-300 text-slate-600">ناظر سخت‌گیر زمان گوشی</td>
+          <td class="p-3 border border-slate-300 text-cyan-950 font-semibold bg-cyan-50/50">هم‌سفر یادگیری و مشوق پروژه</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA 2 (Mid-Content Placement) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">فاصله میان این دو مسیر با یک تصمیم ساخته می‌شود؛ دوره‌ها و مسیرهای آموزشی تخصصی کودکان و نوجوانان دیجی نورون (۸ تا ۱۸ سال) را ببینید.</p>
+    <a href="/fa/services/kids-and-teens" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      مشاهده دوره‌ها و مسیرهای آموزشی کودکان و نوجوانان
+    </a>
+  </div>
+
+  <!-- Section 4: Common Pitfalls -->
+  <h2>پنج اشتباه رایج والدین که ناخواسته فرزندشان را به سمت NEET شدن می‌راند</h2>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    بسیاری از والدین با نیت خوب، دقیقاً همین پنج اشتباه را تکرار می‌کنند: جایگزینی نظارت با ممنوعیت، امید واهی به «بعداً یادش می‌گیرد»، خرید ابزار به جای ساختن مهارت، تبدیل هوش مصنوعی به درس اجباری، و غفلت از الگوی مصرف خودشان. راهکار هر پنج مورد، عملی و آزموده است.
+  </p>
+
+  <ol class="list-decimal pr-6 space-y-3 my-4 text-slate-700">
+    <li>
+      <strong>جایگزینی نظارت با ممنوعیت:</strong> فرزند فقط روش‌های پنهان‌تر مصرف را یاد می‌گیرد و شما از مسیر رشد او بی‌خبر می‌مانید. راهکار: مرزهای شفاف و کوتاه تعیین کنید و در کنارش، یک گزینه «ساختن با فناوری» همیشه در دسترس باشد.
+    </li>
+    <li>
+      <strong>امید واهی به «بعداً یادش می‌گیرد»:</strong> پنجره طلایی کنجکاوی دائمی نیست؛ نوجوانی که در ۱۴ سالگی برای نخستین بار با منطق الگوریتمی روبه‌رو می‌شود، با نوجوانی که از ۹ سالگی ساختن را شروع کرده رقابت می‌کند. راهکار: امروز، حتی با یک تمرین کوچک، شروع کنید.
+    </li>
+    <li>
+      <strong>خرید ابزار به جای ساختن مهارت:</strong> گران‌ترین کلاس‌ها و تبلت‌ها هم بدون پروژه واقعی اثری ندارند. راهکار: هر ابزار تازه را با یک محصول کوچک قابل نمایش به پایان برسانید؛ «ساختن» معیار یادگیری است، نه «حضور».
+    </li>
+    <li>
+      <strong>تبدیل هوش مصنوعی به درس اجباری:</strong> وقتی یادگیری هوش مصنوعی شبیه تکلیف مدرسه شود، کنجکاوی طبیعی کودک می‌میرد. راهکار: مسیر را از علاقه واقعی فرزندتان شروع کنید؛ بازی، داستان، موسیقی یا ورزش، همگی با ابزارهای هوشمند پیش می‌روند.
+    </li>
+    <li>
+      <strong>غفلت از الگوی مصرف خود والدین:</strong> کودکی که والدینش ساعت‌ها اسکرول می‌کنند، درس «مصرف منفعل» را می‌آموزد، هرچه شما بگویید. راهکار: روتین خانوادگی «ساعت ساختن» بسازید؛ بزرگ‌سال‌ها هم با ابزارهای هوشمند چیزی بسازند و کودک ببیند.
+    </li>
+  </ol>
+
+  <!-- Section 5: Voice Search Questions -->
+  <h2>آیا هر نوجوانی که زیاد با گوشی وقت می‌گذراند در مسیر NEET شدن است؟</h2>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    نه لزوماً؛ معیار، نوع تعامل است نه فقط ساعت مصرف. نوجوانی که دو ساعت بازی می‌کند و بعد برای کاراکترهایش سناریو می‌نویسد، در حال ساختن است؛ نوجوانی که چهار ساعت فقط اسکرول می‌کند، در حال مصرف منفعل است. مرز واقعی، جایگزینی «ساختن» به جای «تماشا کردن» است.
+  </p>
+
+  <!-- H3: Voice Q2 -->
+  <h3>از چه سنی باید آموزش هوش مصنوعی را شروع کرد؟</h3>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    بهترین نقطه شروع ۶ تا ۹ سالگی با بازی و پرسش‌گری است؛ اما هیچ‌وقت دیر نیست. مهم‌تر از عدد سن، ثبات مسیر است: نوجوانی که امروز با اشتیاق شروع می‌کند، ظرف دو سال از اکثر هم‌نسل‌های خود جلو می‌زند و پیش از ورود به بازار کار، نمونه‌کار واقعی دارد.
+  </p>
+
+  <!-- H3: Voice Q3 -->
+  <h3>اگر فرزندم به فناوری و ریاضی علاقه‌ای نشان نمی‌دهد چه کنم؟</h3>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    هوش مصنوعی فقط برای «بچه‌های فنی» نیست؛ هنر، داستان‌گویی، تجارت و حتی ورزش با ابزارهای هوشمند پیش می‌روند. از علاقه واقعی فرزندتان شروع کنید — مثلاً ساخت انیمیشن برای داستان محبوبش — و اجازه دهید مهارت‌های فنی در دل همان علاقه رشد کنند.
+  </p>
+
+  <!-- Section 6: Value Bridge -->
+  <h2>نقش دیجی نورون در پیشگیری از NEET شدن نسل آینده</h2>
+
+  <!-- 40-60 word front-loaded answer -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    دیجی نورون مسیر کامل «از مصرف‌کننده تا سازنده» را برای رده سنی ۸ تا ۱۸ سال طراحی کرده است: از مبانی هوش مصنوعی و تفکر الگوریتمی و برنامه‌نویسی پایتون تا کارآفرینی هوش مصنوعی و تولید محتوا. خروجی هر دوره یک نمونه‌کار واقعی است؛ دقیقاً همان چیزی که نوجوان را از مصرف منفعل جدا می‌کند.
+  </p>
+
+  <p>
+    این تجربه تازه نیست؛ تیم دیجی نورون پیش‌تر کارگاه‌های پروژه‌محور هوش مصنوعی، بازی‌سازی و کارآفرینی دیجیتال را در مدارس اجرا کرده و دانش‌آموزان را تا ساخت پروژه واقعی همراهی کرده است. جزئیات مسیر در <a href="/fa/services/kids-and-teens" class="text-cyan-700 underline font-semibold">صفحه آموزش هوش مصنوعی کودکان و نوجوانان دیجی نورون</a> آمده و برای عمق بیشتر، تحلیل <a href="/fa/blog/ai-entrepreneurship-from-childhood" class="text-cyan-700 underline font-semibold">کارآفرینی هوش مصنوعی از کودکی</a> را نیز بخوانید.
+  </p>
+
+  <!-- CTA 3 (Closing Conversion) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">نسل آینده یا در موج اتوماسیون جا می‌ماند یا آن را اسباب رشد خود می‌کند؛ این انتخاب از خانه و از والدین آغاز می‌شود. همین امروز مسیر فرزندتان را ببینید.</p>
+    <a href="/fa/services/kids-and-teens" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      شروع مسیر آموزش هوش مصنوعی فرزند من
+    </a>
+  </div>
+
+  <!-- Section 7: FAQ Section with 5 Q&As -->
+  <h2>سوالات متداول والدین درباره خطر NEET شدن و آموزش هوش مصنوعی</h2>
+
+  <!-- 40-60 word front-loaded answer for FAQ Intro -->
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    در این بخش به رایج‌ترین پرسش‌های والدین پاسخ داده‌ایم: معنای دقیق NEET، رابطه واقعی هوش مصنوعی با مشاغل اولیه، سن مناسب شروع، راهکار فرزندان بی‌علاقه به فناوری و اینکه چرا صرفاً محدود کردن گوشی کافی نیست؛ تا تصمیم آگاهانه‌ای برای آینده فرزندتان بگیرید.
+  </p>
+
+  <div class="space-y-6 my-6">
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۱. NEET یعنی چه و چرا این‌قدر مهم شده است؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        NEET اصطلاح سازمان‌های بین‌المللی برای جوانانی است که نه مشغول تحصیل‌اند، نه شاغل و نه در حال آموزش مهارت. بر پایه داده‌های جهانی، در بسیاری از کشورها بیش از یک جوان از هر پنج جوان در این وضعیت است؛ به همین دلیل پیشگیری از آن به یکی از دغدغه‌های اصلی سیاست‌گذاران و والدین تبدیل شده است.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۲. آیا هوش مصنوعی واقعاً فرصت‌های شغلی اولیه را حذف می‌کند؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        بله؛ تحلیل گزارش آینده مشاغل مجمع جهانی اقتصاد نشان می‌دهد مشاغلی مانند ورود داده، پشتیبانی اولیه مشتری و تولید محتوای ساده بیشترین سرعت خودکار شدن را دارند. مشاغل جدیدی هم پدید می‌آیند، اما برای آن‌ها مهارت کار با هوش مصنوعی لازم است؛ مهارتی که از سنین مدرسه ساخته می‌شود.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۳. از چه سنی آموزش هوش مصنوعی برای پیشگیری از NEET شدن منطقی است؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        از ۶ تا ۸ سالگی با بازی و پرسش‌گری؛ سپس یادگیری بازی‌محور ابزارها در ۸ تا ۱۲ سالگی و ساخت پروژه از ۱۰ سالگی به بالا. اما اگر فرزندتان بزرگ‌تر است، همین امروز بهترین زمان است؛ چون فاصله با نسل مجهز به هوش مصنوعی هر سال بیشتر می‌شود.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۴. اگر فرزند من به فناوری علاقه‌ای نشان ندهد چه کنیم؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        از دنیای خود او شروع کنید، نه از دنیای فناوری: داستان مورد علاقه‌اش را با ابزارهای هوشمند تصویرسازی کنید، برای تیم ورزشی‌اش آمار بسازد یا برای اسباب‌بازی‌هایش صدا تولید کند. علاقه، موتور یادگیری است؛ فناوری بعداً به عنوان ابزارِ همان علاقه وارد می‌شود.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۵. چرا صرفاً محدود کردن گوشی برای پیشگیری از NEET شدن کافی نیست؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        چون ممنوعیت بدون جایگزین، فقط مصرف پنهان می‌سازد و هیچ مهارتی اضافه نمی‌کند. گزینه سومی که باید ارائه دهید «ساختن با فناوری» است: پروژه‌های کوچک، بازی‌سازی و ابزارهای خلاق. نوجوانی که طعم ساختن را چشیده، خودش از مصرف بی‌هدف فاصله می‌گیرد.
+      </p>
+    </div>
+  </div>
+
+  <!-- Author Profile Box -->
+  <div class="mt-12 p-6 bg-slate-900 text-white rounded-2xl shadow-lg border border-slate-800">
+    <div class="flex flex-col sm:flex-row items-center gap-5">
+      <div class="w-16 h-16 rounded-full bg-cyan-500/20 border-2 border-cyan-400 flex items-center justify-center text-cyan-300 font-bold text-xl shrink-0">
+        DN
+      </div>
+      <div class="text-center sm:text-right space-y-2">
+        <h4 class="text-lg font-bold text-white">درباره نویسنده و مرجع علمی محتوا:</h4>
+        <p class="text-sm text-cyan-300 font-semibold">
+          گروه تخصصی دیجی نورون — مدیر بخش آموزش کودکان و بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی
+        </p>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          تیم فنی دیجی نورون به عنوان یکی از مجموعه‌های پیشگام در ارائه دوره‌ها و پروژه‌های تحول فناوری در کشور، با هدایت اساتید برجسته دانشگاهی و مهندسان باسابقه صنعت داده، صدها پروژه عملیاتی موفق در حوزه‌های پردازش زبان طبیعی، معماری کارگزاران خودمختار و پیاده‌سازی زیرساخت‌های نوین سازمانی را در صنایع پتروشیمی، تأمین آب، مدیریت شهری و شرکت‌های بزرگ تجاری کشور به ثمر رسانده است.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>`,
+    category: "kids-ai",
+    categoryName: "هوش مصنوعی کودکان",
+    author: {
+      name: "گروه تخصصی دیجی نورون",
+      role: "مدیر بخش آموزش کودکان دیجی نورون",
+      avatar: "/images/instructors/karimi.jpg"
+    },
+    date: "۳۰ مهر ۱۴۰۵",
+    readTime: "۱۶ دقیقه",
+    image: "/images/courses/kids-ai.jpg",
+    featured: true,
+    tags: ["NEET", "کودکان و نوجوانان", "آموزش هوش مصنوعی کودکان", "والدین و هوش مصنوعی", "مهارت آینده", "دیجی نورون"],
+    faq: [
+      {
+        "question": "NEET یعنی چه و چرا این‌قدر مهم شده است؟",
+        "answer": "NEET اصطلاح سازمان‌های بین‌المللی برای جوانانی است که نه مشغول تحصیل‌اند، نه شاغل و نه در حال آموزش مهارت. بر پایه داده‌های جهانی، در بسیاری از کشورها بیش از یک جوان از هر پنج جوان در این وضعیت است؛ به همین دلیل پیشگیری از آن به دغدغه اصلی سیاست‌گذاران و والدین تبدیل شده است."
+      },
+      {
+        "question": "آیا هوش مصنوعی واقعاً فرصت‌های شغلی اولیه را حذف می‌کند؟",
+        "answer": "بله؛ تحلیل گزارش آینده مشاغل مجمع جهانی اقتصاد نشان می‌دهد مشاغلی مانند ورود داده، پشتیبانی اولیه مشتری و تولید محتوای ساده بیشترین سرعت خودکار شدن را دارند. مشاغل جدیدی هم پدید می‌آیند، اما برای آن‌ها مهارت کار با هوش مصنوعی لازم است؛ مهارتی که از سنین مدرسه ساخته می‌شود."
+      },
+      {
+        "question": "از چه سنی آموزش هوش مصنوعی برای پیشگیری از NEET شدن منطقی است؟",
+        "answer": "از ۶ تا ۸ سالگی با بازی و پرسش‌گری؛ سپس یادگیری بازی‌محور ابزارها در ۸ تا ۱۲ سالگی و ساخت پروژه از ۱۰ سالگی به بالا. اما اگر فرزندتان بزرگ‌تر است، همین امروز بهترین زمان است؛ چون فاصله با نسل مجهز به هوش مصنوعی هر سال بیشتر می‌شود."
+      },
+      {
+        "question": "اگر فرزند من به فناوری علاقه‌ای نشان ندهد چه کنیم؟",
+        "answer": "از دنیای خود او شروع کنید، نه از دنیای فناوری: داستان مورد علاقه‌اش را با ابزارهای هوشمند تصویرسازی کنید، برای تیم ورزشی‌اش آمار بسازد یا برای اسباب‌بازی‌هایش صدا تولید کند. علاقه، موتور یادگیری است؛ فناوری بعداً به عنوان ابزارِ همان علاقه وارد می‌شود."
+      },
+      {
+        "question": "چرا صرفاً محدود کردن گوشی برای پیشگیری از NEET شدن کافی نیست؟",
+        "answer": "چون ممنوعیت بدون جایگزین، فقط مصرف پنهان می‌سازد و هیچ مهارتی اضافه نمی‌کند. گزینه سومی که باید ارائه دهید «ساختن با فناوری» است: پروژه‌های کوچک، بازی‌سازی و ابزارهای خلاق. نوجوانی که طعم ساختن را چشیده، خودش از مصرف بی‌هدف فاصله می‌گیرد."
+      }
+    ]
+  },
+
+  {
     id: "10",
     slug: "ai-entrepreneurship-from-childhood",
     title: "چرا باید کارآفرینی هوش مصنوعی را از کودکی یاد گرفت؟",

@@ -10,6 +10,7 @@ import { promptEngineeringTranslation } from "./blog/promptEngineering";
 import { futureEducationTranslation } from "./blog/futureEducation";
 import { humanVsAiWarTranslation } from "./blog/humanVsAiWar";
 import { aiEntrepreneurshipTranslation } from "./blog/aiEntrepreneurship";
+import { neetAiEraTranslation } from "./blog/neetAiEra";
 
 export interface BlogTranslation {
   title: string;
@@ -32,6 +33,7 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "future-of-ai-in-education-2026": futureEducationTranslation,
   "human-vs-ai-war": humanVsAiWarTranslation,
   "ai-entrepreneurship-from-childhood": aiEntrepreneurshipTranslation,
+  "neet-risk-ai-era-children": neetAiEraTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
@@ -45,6 +47,7 @@ export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
   "۱ مرداد ۱۴۰۵": { en: "July 23, 2026", fa: "۱ مرداد ۱۴۰۵", ar: "٢٣ يوليو ٢٠٢٦" },
   "۹ مهر ۱۴۰۵": { en: "October 1, 2026", fa: "۹ مهر ۱۴۰۵", ar: "١ أكتوبر ٢٠٢٦" },
   "۲۸ مهر ۱۴۰۵": { en: "October 20, 2026", fa: "۲۸ مهر ۱۴۰۵", ar: "٢٠ أكتوبر ٢٠٢٦" },
+  "۳۰ مهر ۱۴۰۵": { en: "October 22, 2026", fa: "۳۰ مهر ۱۴۰۵", ar: "٢٢ أكتوبر ٢٠٢٦" },
 };
 
 export const BLOG_AUTHOR_NAME_TRANSLATIONS: Record<string, Record<Locale, string>> = {
