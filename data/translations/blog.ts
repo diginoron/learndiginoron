@@ -11,6 +11,7 @@ import { futureEducationTranslation } from "./blog/futureEducation";
 import { humanVsAiWarTranslation } from "./blog/humanVsAiWar";
 import { aiEntrepreneurshipTranslation } from "./blog/aiEntrepreneurship";
 import { neetAiEraTranslation } from "./blog/neetAiEra";
+import { aiAbundanceTranslation } from "./blog/aiAbundance";
 
 export interface BlogTranslation {
   title: string;
@@ -34,6 +35,7 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "human-vs-ai-war": humanVsAiWarTranslation,
   "ai-entrepreneurship-from-childhood": aiEntrepreneurshipTranslation,
   "neet-risk-ai-era-children": neetAiEraTranslation,
+  "ai-era-abundance-democratizing-luxury": aiAbundanceTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
@@ -48,6 +50,7 @@ export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
   "۹ مهر ۱۴۰۵": { en: "October 1, 2026", fa: "۹ مهر ۱۴۰۵", ar: "١ أكتوبر ٢٠٢٦" },
   "۲۸ مهر ۱۴۰۵": { en: "October 20, 2026", fa: "۲۸ مهر ۱۴۰۵", ar: "٢٠ أكتوبر ٢٠٢٦" },
   "۳۰ مهر ۱۴۰۵": { en: "October 22, 2026", fa: "۳۰ مهر ۱۴۰۵", ar: "٢٢ أكتوبر ٢٠٢٦" },
+  "۲ آبان ۱۴۰۵": { en: "October 24, 2026", fa: "۲ آبان ۱۴۰۵", ar: "٢٤ أكتوبر ٢٠٢٦" },
 };
 
 export const BLOG_AUTHOR_NAME_TRANSLATIONS: Record<string, Record<Locale, string>> = {

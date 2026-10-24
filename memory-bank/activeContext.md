@@ -1,6 +1,13 @@
 # Active Context
 
-## Current Focus (2026-10-22) — DONE: Trilingual post `neet-risk-ai-era-children` (id 11)
+## Current Focus (2026-10-24) — DONE: Trilingual post `ai-era-abundance-democratizing-luxury` (id 12)
+- **Post**: «عصر فراوانی و هوش مصنوعی؛ چرا خودرو و زندگی لوکس امروز برای غالب مردم دست‌یافتنی می‌شود؟» — slug `ai-era-abundance-democratizing-luxury`, category `trends`, featured, date `۲ آبان ۱۴۰۵` (= Oct 24, 2026), readTime ۱۵ دقیقه.
+- **FA base**: top of `BLOG_POSTS` in `data/blog.ts` (hero answer → CTA1 → 7 H2 sections → CTA2 → misconceptions → voice Q&As → value bridge → CTA3 → FAQ ×5 → author box + `faq` meta array).
+- **EN + AR**: new `data/translations/blog/aiAbundance.ts` (`Record<Locale, Partial<BlogTranslation>>` with `fa: {}` placeholder; AR wraps content in `dir="rtl"`, `border-r-4`).
+- **Registry**: import + `"ai-era-abundance-democratizing-luxury"` entry + date map entry in `data/translations/blog.ts`.
+- **State**: Blog has 12 posts; sitemap (`app/sitemap.ts`) dynamically includes all 3 locale URLs (`/blog/ai-era-abundance-democratizing-luxury`, `/fa/blog/ai-era-abundance-democratizing-luxury`, `/ar/blog/ai-era-abundance-democratizing-luxury`) with priority 0.9 / daily frequency.
+
+## Previous Focus (2026-10-22) — DONE: Trilingual post `neet-risk-ai-era-children` (id 11)
 - **Post**: «خطر NEET شدن کودکان در عصر هوش مصنوعی؛ چرا والدین باید همین امروز فرزندان خود را مجهز کنند؟» — slug `neet-risk-ai-era-children`, category `kids-ai`, featured, date `۳۰ مهر ۱۴۰۵` (= Oct 22, 2026), readTime ۱۶ دقیقه.
 - **FA base**: top of `BLOG_POSTS` in `data/blog.ts` (hero answer → CTA1 → 7 H2 sections → CTA2 → pitfalls → voice Q&As → value bridge → CTA3 → FAQ ×5 → author box + `faq` meta array).
 - **EN + AR**: new `data/translations/blog/neetAiEra.ts` (`Record<Locale, Partial<BlogTranslation>>` with `fa: {}` placeholder; AR wraps content in `dir="rtl"`, `border-r-4`).
