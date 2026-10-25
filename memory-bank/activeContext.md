@@ -1,6 +1,14 @@
 # Active Context
 
-## Current Focus (2026-10-24) — DONE: Trilingual post `ai-era-abundance-democratizing-luxury` (id 12)
+## Current Focus (2026-10-25) — DONE: Trilingual post `why-ai-entrepreneurship-beats-traditional-school-subjects` (id 13)
+- **Post**: «چرا کارآفرینی هوش مصنوعی از درس‌های معمولی مدارس برای کودکان و آینده‌سازان اهمیت بیشتری دارد؟» — slug `why-ai-entrepreneurship-beats-traditional-school-subjects`, category `kids-ai`, featured, date `۳ آبان ۱۴۰۵` (= Oct 25, 2026), readTime ۱۶ دقیقه.
+- **FA base**: top of `BLOG_POSTS` in `data/blog.ts` (hero answer → CTA1 → 7 H2 sections → CTA2 → pitfalls → voice Q&As → value bridge → CTA3 → FAQ ×5 → author box + `faq` meta array).
+- **EN + AR**: new `data/translations/blog/aiEntrepreneurshipVsSchool.ts` (`Record<Locale, Partial<BlogTranslation>>` with `fa: {}` placeholder; AR wraps content in `dir="rtl"`, `border-r-4`).
+- **Registry**: import + `"why-ai-entrepreneurship-beats-traditional-school-subjects"` entry + date map entry in `data/translations/blog.ts`.
+- **CTA funnel**: CTAs & in-body links target `/{locale}/courses/ai-entrepreneurship-kids-teens` and `/{locale}/services/kids-and-teens`.
+- **State**: Blog has 13 posts; sitemap (`app/sitemap.ts`) dynamically includes all 3 locale URLs with priority 0.9 / daily frequency.
+
+## Previous Focus (2026-10-24) — DONE: Trilingual post `ai-era-abundance-democratizing-luxury` (id 12)
 - **Post**: «عصر فراوانی و هوش مصنوعی؛ چرا خودرو و زندگی لوکس امروز برای غالب مردم دست‌یافتنی می‌شود؟» — slug `ai-era-abundance-democratizing-luxury`, category `trends`, featured, date `۲ آبان ۱۴۰۵` (= Oct 24, 2026), readTime ۱۵ دقیقه.
 - **FA base**: top of `BLOG_POSTS` in `data/blog.ts` (hero answer → CTA1 → 7 H2 sections → CTA2 → misconceptions → voice Q&As → value bridge → CTA3 → FAQ ×5 → author box + `faq` meta array).
 - **EN + AR**: new `data/translations/blog/aiAbundance.ts` (`Record<Locale, Partial<BlogTranslation>>` with `fa: {}` placeholder; AR wraps content in `dir="rtl"`, `border-r-4`).
