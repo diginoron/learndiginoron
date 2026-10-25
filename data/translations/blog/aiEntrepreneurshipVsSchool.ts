@@ -59,7 +59,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
   </p>
 
   <p>
-    In DigiNoron's <a href="/courses/ai-entrepreneurship-kids-teens" style="color: #0066cc; font-weight: bold;">AI Entrepreneurship Course for Kids &amp; Teens</a>, students experience this remarkable leverage firsthand: they learn how to conduct market research with AI, design characters and animations, build a working WordPress website, and launch a digital marketing campaign — practical capabilities that no standard school textbook even comes close to teaching.
+    In DigiNoron's <a href="/courses/ai-entrepreneurship-kids-teens" style="color: #0066cc; font-weight: bold;">AI Entrepreneurship Course for Kids &amp; Teens</a>, students experience this remarkable leverage firsthand: they master professional prompt engineering, Vibe Coding, building AI agents and multi-agent systems, developing AI apps and websites, data analysis tools, digital marketing &amp; SEO, and full-cycle AI entrepreneurship (team building, HR, and financial management) through a real project — practical capabilities that no standard school textbook even comes close to teaching.
   </p>
 
   <!-- Section 2: 5 Core Pillars (H2 / H3) -->
@@ -222,7 +222,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
 
   <!-- 40-60 word front-loaded answer -->
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-l-4 border-cyan-600">
-    Students learn hands-on how to use AI to discover a personal business idea (solo-business), analyze customer needs, create scripts, characters, posters, and promotional animations, build a real WordPress website with AI-generated content, and structure a digital marketing campaign to launch their product.
+    Students learn hands-on professional prompt engineering, AI content creation, Vibe Coding, building AI agents and multi-agent systems, developing real AI apps and websites, working with data analysis tools, digital marketing and SEO, and executing core entrepreneurship concepts (from team building, HR, and financial management to product development and control) based on a real project.
   </p>
 
   <!-- H3: Voice Q3 -->
@@ -242,7 +242,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
   </p>
 
   <p>
-    In this educational pathway — designed under the supervision of university faculty and industry specialists — your children are not passive viewers of slides; they experience everything step by step, from neural network concepts and AI market research to website creation, content production, and campaign execution. You can review the full syllabus right now on the <a href="/courses/ai-entrepreneurship-kids-teens" class="text-cyan-700 underline font-semibold">Kids &amp; Teens AI Entrepreneurship Course page</a> or choose the ideal age-specific track through the <a href="/services/kids-and-teens" class="text-cyan-700 underline font-semibold">DigiNoron Kids &amp; Teens AI Education Department</a>. For more on why starting early is critical, reading <a href="/blog/why-kids-should-learn-ai-early" class="text-cyan-700 underline font-semibold">why kids should learn AI early</a> is also highly recommended.
+    In this educational pathway — designed under the supervision of university faculty and industry specialists — your children are not passive viewers of slides; they experience everything step by step, from foundational AI, neural networks, and professional prompting to Vibe Coding, AI agents and multi-agents, app and web development, data analysis, digital marketing &amp; SEO, and real-world project entrepreneurship. You can review the full syllabus right now on the <a href="/courses/ai-entrepreneurship-kids-teens" class="text-cyan-700 underline font-semibold">Kids &amp; Teens AI Entrepreneurship Course page</a> or choose the ideal age-specific track through the <a href="/services/kids-and-teens" class="text-cyan-700 underline font-semibold">DigiNoron Kids &amp; Teens AI Education Department</a>. For more on why starting early is critical, reading <a href="/blog/why-kids-should-learn-ai-early" class="text-cyan-700 underline font-semibold">why kids should learn AI early</a> is also highly recommended.
   </p>
 
   <!-- CTA 3 (Closing Conversion) -->
@@ -398,7 +398,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
   </p>
 
   <p>
-    في <a href="/ar/courses/ai-entrepreneurship-kids-teens" style="color: #0066cc; font-weight: bold;">دورة تعليم ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين</a> في ديجي نورون، يعيش الطلاب هذه الرافعة المذهلة عملياً: إذ يتعلمون كيف يجرون أبحاث السوق بالذكاء الاصطناعي، ويصممون الشخصيات والرسوم المتحركة، ويبنون موقع ووردبريس حقيقياً، ويطلقون حملة تسويق رقمي — وهي مهارات لا تقترب منها الكتب المدرسية المعتادة.
+    في <a href="/ar/courses/ai-entrepreneurship-kids-teens" style="color: #0066cc; font-weight: bold;">دورة تعليم ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين</a> في ديجي نورون، يعيش الطلاب هذه الرافعة المذهلة عملياً: إذ يتعلمون هندسة الأوامر الاحترافية، والبرمجة الإبداعية (Vibe Coding)، وبناء الوكلاء والأنظمة متعددة الوكلاء، وتطوير التطبيقات والمواقع، وأدوات تحليل البيانات، والتسويق الرقمي وتحسين محركات البحث (SEO)، وإدارة مشروع ريادي متكامل (بناء الفرق والموارد البشرية والإدارة المالية) — وهي مهارات لا تقترب منها الكتب المدرسية المعتادة.
   </p>
 
   <!-- Section 2: 5 Core Pillars (H2 / H3) -->
@@ -561,7 +561,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
 
   <!-- 40-60 word front-loaded answer -->
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
-    يتعلم الطالب عملياً كيف يستعين بالذكاء الاصطناعي لاكتشاف فكرة مشروع شخصي (Solo-Business)، وتحليل احتياجات العملاء، وصناعة السيناريو والشخصيات والملصقات والرسوم المتحركة الإعلانية، وتصميم موقع ووردبريس حقيقي مع محتواه، وإعداد حملة تسويق رقمي لإطلاق منتجه.
+    يتعلم الطالب عملياً هندسة الأوامر الاحترافية، وصناعة المحتوى بالذكاء الاصطناعي، والبرمجة الإبداعية (Vibe Coding)، وبناء الوكلاء الأذكياء والأنظمة متعددة الوكلاء، وتطوير تطبيقات ومواقع حقيقية، والعمل مع أدوات تحليل البيانات، والتسويق الرقمي وتحسين محركات البحث (SEO)، وتطبيق مفاهيم ريادة الأعمال (من بناء الفرق والموارد البشرية والإدارة المالية إلى تطوير المنتجات والرقابة) على أساس مشروع واقعي.
   </p>
 
   <!-- H3: Voice Q3 -->
@@ -581,7 +581,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
   </p>
 
   <p>
-    في هذا المسار التعليمي المصمم بإشراف أساتذة جامعيين وخبراء في الصناعة، لا يكون أبناؤكم مجرد متفرجين على شرائح العرض؛ بل يخوضون التجربة خطوة بخطوة من فهم الشبكات العصبية وأبحاث السوق إلى تصميم المواقع وإنتاج المحتوى وتنفيذ الحملات. يمكنكم الآن الاطلاع على تفاصيل المحاور كاملة في صفحة <a href="/ar/courses/ai-entrepreneurship-kids-teens" class="text-cyan-700 underline font-semibold">دورة ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين</a> أو اختيار المسار المناسب لعمر طفلكم عبر <a href="/ar/services/kids-and-teens" class="text-cyan-700 underline font-semibold">قسم تعليم الذكاء الاصطناعي للأطفال واليافعين في ديجي نورون</a>. ولمعرفة المزيد عن أهمية البداية المبكرة، ننصح أيضاً بقراءة مقال <a href="/ar/blog/why-kids-should-learn-ai-early" class="text-cyan-700 underline font-semibold">ضرورة تعليم الذكاء الاصطناعي للأطفال منذ الصغر</a>.
+    في هذا المسار التعليمي المصمم بإشراف أساتذة جامعيين وخبراء في الصناعة، لا يكون أبناؤكم مجرد متفرجين على شرائح العرض؛ بل يخوضون التجربة خطوة بخطوة من فهم أساسيات الذكاء الاصطناعي والشبكات العصبية وهندسة الأوامر الاحترافية إلى البرمجة الإبداعية (Vibe Coding)، وبناء الوكلاء والأنظمة متعددة الوكلاء، وتطوير التطبيقات والمواقع، وتحليل البيانات، والتسويق الرقمي وتحسين محركات البحث (SEO) وتنفيذ مشروع ريادي واقعي. يمكنكم الآن الاطلاع على تفاصيل المحاور كاملة في صفحة <a href="/ar/courses/ai-entrepreneurship-kids-teens" class="text-cyan-700 underline font-semibold">دورة ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين</a> أو اختيار المسار المناسب لعمر طفلكم عبر <a href="/ar/services/kids-and-teens" class="text-cyan-700 underline font-semibold">قسم تعليم الذكاء الاصطناعي للأطفال واليافعين في ديجي نورون</a>. ولمعرفة المزيد عن أهمية البداية المبكرة، ننصح أيضاً بقراءة مقال <a href="/ar/blog/why-kids-should-learn-ai-early" class="text-cyan-700 underline font-semibold">ضرورة تعليم الذكاء الاصطناعي للأطفال منذ الصغر</a>.
   </p>
 
   <!-- CTA 3 (Closing Conversion) -->
