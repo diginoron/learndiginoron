@@ -65,7 +65,7 @@ export const COURSES: Course[] = [
     instructor: {
       name: "دکتر مهران شیرزاد",
       role: "متخصص آموزش فناوری‌های نوین و تفکر الگوریتمی",
-      avatar: "/images/instructors/rezaei.jpg"
+      avatar: "/images/instructors/shirzad.jpg"
     },
     features: [
       "گواهی‌نامه رسمی دیجی نورون",
@@ -139,7 +139,7 @@ export const COURSES: Course[] = [
     instructor: {
       name: "دکتر مهران شیرزاد",
       role: "استراتژیست هوش مصنوعی و مشاور ارشد تحول سازمانی",
-      avatar: "/images/instructors/avatar.png"
+      avatar: "/images/instructors/shirzad.jpg"
     },
     features: [
       "ارزیابی اختصاصی فرایندهای شرکت شما",
@@ -243,13 +243,13 @@ export const COURSES: Course[] = [
     instructor: {
       name: "دکتر مهران شیرزاد",
       role: "متخصص آموزش کارآفرینی و فناوری به کودکان",
-      avatar: "/images/instructors/rezaei.jpg"
+      avatar: "/images/instructors/shirzad.jpg"
     },
     features: [
       "قابلیت شرکت در کارگاه ۱ روزه یا دوره کامل ۷ جلسه‌ای",
       "آموزش عملی کارآفرینی دیجیتال و کسب و کار فردی (سولو بیزینس)",
       "تولید پوستر، کاتالوگ، انیمیشن و ویدیو با AI",
-      "طراحی سایت واقعی وردپرسی با ابزارهای جدید هوش مصنوعی",
+      "طراحی سایت واقعی با ابزارهای جدید هوش مصنوعی",
       "ارائه گواهینامه معتبر دیجی نورون"
     ],
     formats: [

@@ -336,7 +336,7 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
         "Option for 1-day workshop or comprehensive 7-session format",
         "Practical digital solo-business training",
         "AI poster, catalog, animation and video creation",
-        "Real WordPress website deployment with AI tools",
+        "Real website deployment with AI tools",
         "Official DigiNoron Youth Entrepreneurship Diploma",
       ],
       formats: [
@@ -478,7 +478,7 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
         "خيار المشاركة في ورشة اليوم الواحد أو الدورة الكاملة من ٧ جلسات",
         "تدريب عملي على ريادة الأعمال الرقمية والمشاريع الفردية",
         "إنتاج الملصقات والكتالوجات ومقاطع الفيديو والأنيميشن بالذكاء الاصطناعي",
-        "بناء وإطلاق موقع ووردبريس فعلي بالاستعانة بأدوات الذكاء الاصطناعي",
+        "بناء وإطلاق موقع فعلي بالاستعانة بأدوات الذكاء الاصطناعي",
         "شهادة رسمية معتمدة من أكاديمية ديجي نورون",
       ],
       formats: [

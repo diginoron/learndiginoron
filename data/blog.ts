@@ -2434,7 +2434,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: {
       name: "دکتر مهران شیرزاد",
       role: "مدیر بخش آموزش کودکان دیجی نورون",
-      avatar: "/images/instructors/rezaei.jpg"
+      avatar: "/images/instructors/shirzad.jpg"
     },
     date: "۲۲ مرداد ۱۴۰۵",
     readTime: "۶ دقیقه",
