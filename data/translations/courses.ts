@@ -318,7 +318,8 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
       shortDesc: "Learning digital entrepreneurship, market research, content creation, character design, animation, and website design with AI.",
       fullDesc: "In this creative and economic empowerment bootcamp, youth learn how to use AI for everything from market discovery to brand creation, animation, WordPress web design, and digital campaigns.",
       level: "Beginner to Intermediate",
-      duration: "1-Day Intensive Workshop (8 hrs) or Full 7-Session Bootcamp",
+      duration: "8 hours (Focused Workshop)",
+      sessionsCount: "4 two-hour sessions, or 2 four-hour sessions",
       price: "Inquire for Rates",
       badge: "New - Entrepreneurship Track",
       topics: [
@@ -333,7 +334,7 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
       instructorName: "Dr. Mehran Shirzad",
       instructorRole: "Youth Entrepreneurship & Innovation Mentor",
       features: [
-        "Option for 1-day workshop or comprehensive 7-session format",
+        "Delivered in 4 two-hour sessions or 2 four-hour sessions (8 hours total)",
         "Practical digital solo-business training",
         "AI poster, catalog, animation and video creation",
         "Real website deployment with AI tools",
@@ -341,8 +342,8 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
       ],
       formats: [
         {
-          title: "1-Day Intensive Workshop",
-          subtitle: "8 Focused Workshop Hours",
+          title: "8-Hour Specialized Workshop",
+          subtitle: "4 two-hour sessions or 2 four-hour sessions",
           note: "Note: This intensive workshop format provides an end-to-end overview, tool walkthroughs, and practical demonstrations.",
           sections: [
             {
@@ -393,63 +394,6 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
             },
           ],
         },
-        {
-          title: "Comprehensive Business & AI Bootcamp",
-          subtitle: "7 Specialized Sessions (1.5 hrs each)",
-          sections: [
-            {
-              title: "Understanding Modern AI Foundations",
-              duration: "Session 1 (1.5 Hours)",
-              description: "Comprehensive introduction to artificial intelligence, neural networks, machine learning paradigms, real-world industrial applications, and ethical considerations.",
-              items: [
-                "Neural networks and historical milestones",
-                "Modern industrial applications across sectors",
-                "Future trends: AGI and generative autonomy",
-              ],
-            },
-            {
-              title: "AI-Powered Market Research & Validation",
-              duration: "Session 2 (1.5 Hours)",
-              description: "Using AI to analyze customer needs, uncover niche opportunities, model consumer personas, and assess competitive landscapes with data-driven predictive tools.",
-              items: [
-                "AI-driven R&D and innovative idea generation",
-                "Extracting consumer preferences and behavioral patterns",
-                "Identifying disruptive service niches",
-                "Tracking industry market trends and competitor signals",
-              ],
-            },
-            {
-              title: "Marketing & Creative Content Generation",
-              duration: "Sessions 3 & 4 (3 Hours)",
-              description: "End-to-end mastery of promotional asset generation, social media copywriting, campaign structuring, visual identity design, and automated digital engagement.",
-              items: [
-                "Strategic advertising campaign design with AI",
-                "Creating multi-format promotional visual collateral",
-                "Digital SEO optimization and targeted messaging",
-                "Social media automation and audience growth loops",
-              ],
-            },
-            {
-              title: "Web Design & Deployment with AI",
-              duration: "Sessions 5 & 6 (3 Hours)",
-              description: "From UX/UI wireframing to production deployment: building engaging, modern WordPress portals populated with high-quality SEO-optimized AI copy and imagery.",
-              items: [
-                "Core UI/UX web design fundamentals",
-                "Automated web layout synthesis with AI builders",
-                "Creating dynamic SEO-rich website content",
-              ],
-            },
-            {
-              title: "Live Project Pitching & Capstone Q&A",
-              duration: "Session 7 (1.5 Hours)",
-              description: "Interactive showcase where students present their business models, review feedback from mentors, and finalize their launch roadmap.",
-              items: [
-                "Project presentations and student evaluations",
-                "Hands-on mentorship and roadmap finalization",
-              ],
-            },
-          ],
-        },
       ],
     },
     fa: {},
@@ -460,7 +404,8 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
       shortDesc: "تعليم ريادة الأعمال الرقمية، أبحاث السوق، صناعة المحتوى، الرسوم المتحركة وتصميم المواقع بالذكاء الاصطناعي.",
       fullDesc: "دورة تطبيقية فريدة لتنمية روح الابتكار والمهارات الاقتصادية لليافعين، تمكنهم من استثمار الذكاء الاصطناعي في إطلاق المشاريع، إنتاج الوسائط المتعددة وبناء مواقع الويب.",
       level: "مبتدئ إلى متوسط",
-      duration: "ورشة يوم واحد مكثفة (٨ ساعات) أو دورة كاملة من ٧ جلسات",
+      duration: "٨ ساعات (ورشة عمل متخصصة مركزة)",
+      sessionsCount: "٤ جلسات مدة كل منها ساعتان، أو جلستان مدة كل منهما ٤ ساعات",
       price: "حسب الاستفسار",
       badge: "جديد - مسار ريادة الأعمال",
       topics: [
@@ -475,7 +420,7 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
       instructorName: "د. مهران شيرزاد",
       instructorRole: "خبير ريادة الأعمال وتكنولوجيا الجيل القادم لليافعين",
       features: [
-        "خيار المشاركة في ورشة اليوم الواحد أو الدورة الكاملة من ٧ جلسات",
+        "إمكانية الانعقاد في ٤ جلسات (ساعتان للجلسة) أو جلستين (٤ ساعات للجلسة) بإجمالي ٨ ساعات",
         "تدريب عملي على ريادة الأعمال الرقمية والمشاريع الفردية",
         "إنتاج الملصقات والكتالوجات ومقاطع الفيديو والأنيميشن بالذكاء الاصطناعي",
         "بناء وإطلاق موقع فعلي بالاستعانة بأدوات الذكاء الاصطناعي",
@@ -483,8 +428,8 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
       ],
       formats: [
         {
-          title: "ورشة اليوم الواحد المكثفة",
-          subtitle: "٨ ساعات تدريبية عملية مركزة",
+          title: "ورشة عمل تخصصية (٨ ساعات)",
+          subtitle: "٤ جلسات (ساعتان للجلسة) أو جلستان (٤ ساعات للجلسة)",
           note: "ملاحظة: تقدم هذه الورشة مدخلاً شاملاً وتطبيقياً للتعرف على الأدوات وسيناريوهات الاستخدام العملي.",
           sections: [
             {
@@ -531,63 +476,6 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
               duration: "ساعة واحدة",
               items: [
                 "الإجابة عن استفسارات الطلاب وتوجيه أفكارهم",
-              ],
-            },
-          ],
-        },
-        {
-          title: "الدورة المتكاملة في الأعمال والذكاء الاصطناعي",
-          subtitle: "٧ جلسات تفاعلية (ساعة ونصف لكل جلسة)",
-          sections: [
-            {
-              title: "فهم المفاهيم الأساسية للذكاء الاصطناعي",
-              duration: "الجلسة الأولى (١.٥ ساعة)",
-              description: "مدخل تأسيسي لشبكات الأعصاب، تاريخ التطور، والتطبيقات المعاصرة مع مناقشة الجوانب الأخلاقية.",
-              items: [
-                "الشبكات العصبية وتاريخ الذكاء الاصطناعي",
-                "الاستخدامات الصناعية والواقع الحالي",
-                "التوجهات المستقبلية والذكاء العام (AGI)",
-              ],
-            },
-            {
-              title: "أبحاث السوق الذكية واستكشاف الفرص",
-              duration: "الجلسة الثانية (١.٥ ساعة)",
-              description: "استخدام خوارزميات التحليل لاستكشاف احتياجات العملاء وبناء نماذج الطلب والميزة التنافسية.",
-              items: [
-                "تطوير المنتجات والخدمات بالذكاء الاصطناعي",
-                "استخراج بيانات ورغبات العملاء بدقة",
-                "تحديد الأفكار المبتكرة لتطوير المشاريع",
-                "تحليل المنافسين ومؤشرات السوق",
-              ],
-            },
-            {
-              title: "التسويق وصناعة المحتوى الإبداعي",
-              duration: "الجلستان الثالثة والرابعة (٣ ساعات)",
-              description: "تصميم الحملات التسويقية، إنتاج المواد البصرية، والتسويق الرقمي عبر شبكات التواصل الاجتماعي.",
-              items: [
-                "تصميم الحملات الإعلانية بالذكاء الاصطناعي",
-                "إنتاج المواد الإعلانية والتصاميم المبتكرة",
-                "تحسين محركات البحث والتسويق المستهدف",
-                "إدارة وأتمتة النشر على الشبكات الاجتماعية",
-              ],
-            },
-            {
-              title: "تصميم وإطلاق المواقع الإلكترونية",
-              duration: "الجلستان الخامسة والسادسة (٣ ساعات)",
-              description: "تعلم مبادئ UI/UX واستخدام أدوات الذكاء الاصطناعي لبناء وإطلاق مواقع ويب تفاعلية متوافقة مع محركات البحث.",
-              items: [
-                "مبادئ تصميم واجهات المستخدم والمواقع",
-                "بناء المواقع الإلكترونية بمساعدة الذكاء الاصطناعي",
-                "إنتاج المحتوى النصي والمرئي المحسن للمواقع",
-              ],
-            },
-            {
-              title: "عرض المشاريع والتقييم الختامي",
-              duration: "الجلسة السابعة (١.٥ ساعة)",
-              description: "عرض الطلاب لمشاريعهم الرقمية وتلقي الملاحظات والتوجيهات من المدربين المعتمدين.",
-              items: [
-                "عروض مشاريع التخرج ومناقشتها",
-                "توجيهات الإطلاق التجاري والشهادات",
               ],
             },
           ],

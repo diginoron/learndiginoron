@@ -238,7 +238,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
 
   <!-- 40-60 word front-loaded answer -->
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-l-4 border-cyan-600">
-    Recognizing this historic gap between traditional schooling and tomorrow's economy, DigiNoron Academy has designed and delivered the "AI Entrepreneurship &amp; Solo-Business Course for Kids &amp; Teens (Ages 10-18)" in two flexible formats: a 1-day intensive workshop (8 hours) and a full 7-session hands-on bootcamp.
+    Recognizing this historic gap between traditional schooling and tomorrow's economy, DigiNoron Academy has designed and delivered the "AI Entrepreneurship &amp; Solo-Business Course for Kids &amp; Teens (Ages 10-18)" as a focused 8-hour workshop (offered in 4 two-hour sessions or 2 four-hour sessions).
   </p>
 
   <p>
@@ -258,7 +258,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
 
   <!-- 40-60 word front-loaded answer for FAQ Intro -->
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-l-4 border-cyan-600">
-    In this section we answer the five top questions asked by parents and educators: why AI entrepreneurship outweighs rote school lessons, how it affects school grades, the right starting age and prerequisites, practical course outputs, and the difference between DigiNoron's 1-day workshop and full bootcamp.
+    In this section we answer the five top questions asked by parents and educators: why AI entrepreneurship outweighs rote school lessons, how it affects school grades, the right starting age and prerequisites, the solo-business concept, and how DigiNoron's 8-hour workshop is delivered.
   </p>
 
   <div class="space-y-6 my-6">
@@ -293,7 +293,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
     <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
       <h3 class="font-bold text-base text-slate-900 mb-2">5. How is the Kids &amp; Teens AI Entrepreneurship course delivered at DigiNoron?</h3>
       <p class="text-sm text-slate-700 leading-relaxed">
-        The program is offered in two formats: a "1-Day Intensive Workshop (8 hours)" for a complete end-to-end overview of AI entrepreneurship concepts and tools, and a "Full Hands-On Bootcamp (7 sessions of 1.5 hours)" where students build their own real project, website, and campaign step by step and earn an official DigiNoron certificate.
+        The program is delivered as an 8-hour specialized workshop structured into either "4 two-hour sessions" or "2 four-hour sessions," where students learn AI entrepreneurship concepts, tools, website creation, and digital campaigns step by step and earn an official DigiNoron certificate.
       </p>
     </div>
   </div>
@@ -336,7 +336,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
       },
       {
         "question": "How is the Kids & Teens AI Entrepreneurship course delivered at DigiNoron?",
-        "answer": "The program is offered in two formats: a \"1-Day Intensive Workshop (8 hours)\" for a complete end-to-end overview of AI entrepreneurship concepts and tools, and a \"Full Hands-On Bootcamp (7 sessions of 1.5 hours)\" where students build their own real project, website, and campaign step by step and earn an official DigiNoron certificate."
+        "answer": "The program is delivered as an 8-hour specialized workshop structured into either \"4 two-hour sessions\" or \"2 four-hour sessions,\" where students learn AI entrepreneurship concepts, tools, website creation, and digital campaigns step by step and earn an official DigiNoron certificate."
       }
     ]
   },
@@ -577,7 +577,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
 
   <!-- 40-60 word front-loaded answer -->
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
-    إدراكاً لهذه الفجوة التاريخية بين المدرسة التقليدية ومتطلبات عالم الغد، صممت أكاديمية ديجي نورون ونفذت «دورة ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين (١٠ إلى ١٨ سنة)» في صيغتين مرنتين: ورشة مكثفة ليوم واحد (٨ ساعات) ودورة تطبيقية شاملة (٧ جلسات).
+    إدراكاً لهذه الفجوة التاريخية بين المدرسة التقليدية ومتطلبات عالم الغد، صممت أكاديمية ديجي نورون ونفذت «دورة ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين (١٠ إلى ١٨ سنة)» في إطار ورشة عمل تخصصية مدتها ٨ ساعات (تُعقد في ٤ جلسات مدة كل منها ساعتان، أو جلستين مدة كل منهما ٤ ساعات).
   </p>
 
   <p>
@@ -597,7 +597,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
 
   <!-- 40-60 word front-loaded answer for FAQ Intro -->
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
-    نجيب في هذا القسم عن خمسة شواغل رئيسية للوالدين والتربويين: سبب تفوق ريادة الأعمال بالذكاء الاصطناعي على المحفوظات المدرسية، وأثرها في التحصيل الدراسي، والسن والمتطلبات المناسبة للبدء، والمخرجات العملية للدورات، والفرق بين ورشة اليوم الواحد والدورة الكاملة في ديجي نورون.
+    نجيب في هذا القسم عن خمسة شواغل رئيسية للوالدين والتربويين: سبب تفوق ريادة الأعمال بالذكاء الاصطناعي على المحفوظات المدرسية، وأثرها في التحصيل الدراسي، والسن والمتطلبات المناسبة للبدء، ومفهوم الأعمال الفردية، وكيفية انعقاد ورشة الـ ٨ ساعات في ديجي نورون.
   </p>
 
   <div class="space-y-6 my-6">
@@ -632,7 +632,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
     <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
       <h3 class="font-bold text-base text-slate-900 mb-2">٥. كيف تُقدَّم دورة ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين في ديجي نورون؟</h3>
       <p class="text-sm text-slate-700 leading-relaxed">
-        يُقدَّم البرنامج في صيغتين: «ورشة عمل مكثفة ليوم واحد (٨ ساعات)» للتعرف الشامل على مفاهيم وأدوات ريادة الأعمال بالذكاء الاصطناعي، و«الدورة التطبيقية الكاملة (٧ جلسات مدة كل منها ساعة ونصف)» حيث يبني الطلاب خطوة بخطوة مشروعهم الحقيقي وموقعهم وحملتهم ويحصلون على شهادة معتمدة من ديجي نورون.
+        يُقدَّم البرنامج في صورة ورشة عمل تخصصية مدتها ٨ ساعات، وتُعقد إما في «٤ جلسات مدة كل منها ساعتان» أو «جلستين مدة كل منهما ٤ ساعات»، حيث يتعرف الطلاب خطوة بخطوة على مفاهيم وأدوات ريادة الأعمال بالذكاء الاصطناعي وتصميم المواقع والحملات ويحصلون على شهادة معتمدة من ديجي نورون.
       </p>
     </div>
   </div>
@@ -675,7 +675,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
       },
       {
         "question": "كيف تُقدَّم دورة ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين في ديجي نورون؟",
-        "answer": "يُقدَّم البرنامج في صيغتين: «ورشة عمل مكثفة ليوم واحد (٨ ساعات)» للتعرف الشامل على مفاهيم وأدوات ريادة الأعمال بالذكاء الاصطناعي، و«الدورة التطبيقية الكاملة (٧ جلسات مدة كل منها ساعة ونصف)» حيث يبني الطلاب خطوة بخطوة مشروعهم الحقيقي وموقعهم وحملتهم ويحصلون على شهادة معتمدة من ديجي نورون."
+        "answer": "يُقدَّم البرنامج في صورة ورشة عمل تخصصية مدتها ٨ ساعات، وتُعقد إما في «٤ جلسات مدة كل منها ساعتان» أو «جلستين مدة كل منهما ٤ ساعات»، حيث يتعرف الطلاب خطوة بخطوة على مفاهيم وأدوات ريادة الأعمال بالذكاء الاصطناعي وتصميم المواقع والحملات ويحصلون على شهادة معتمدة من ديجي نورون."
       }
     ]
   }
