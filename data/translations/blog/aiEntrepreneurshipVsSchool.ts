@@ -238,11 +238,11 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
 
   <!-- 40-60 word front-loaded answer -->
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-l-4 border-cyan-600">
-    Recognizing this historic gap between traditional schooling and tomorrow's economy, DigiNoron Academy has designed and delivered the "AI Entrepreneurship &amp; Solo-Business Course for Kids &amp; Teens (Ages 10-18)" as a focused 8-hour workshop (offered in 4 two-hour sessions or 2 four-hour sessions).
+    Guided by the conviction that the AI era requires "thinking humans who master AI to create added value" rather than mere technical engineers, DigiNoron Academy has designed and delivered the "AI Entrepreneurship &amp; Solo-Business Course for Kids &amp; Teens (Ages 10-18)" as a comprehensive 16-hour program (8 two-hour sessions) with full post-course support.
   </p>
 
   <p>
-    In this educational pathway — designed under the supervision of university faculty and industry specialists — your children are not passive viewers of slides; they experience everything step by step, from foundational AI, neural networks, and professional prompting to Vibe Coding, AI agents and multi-agents, app and web development, data analysis, digital marketing &amp; SEO, and real-world project entrepreneurship. You can review the full syllabus right now on the <a href="/courses/ai-entrepreneurship-kids-teens" class="text-cyan-700 underline font-semibold">Kids &amp; Teens AI Entrepreneurship Course page</a> or choose the ideal age-specific track through the <a href="/services/kids-and-teens" class="text-cyan-700 underline font-semibold">DigiNoron Kids &amp; Teens AI Education Department</a>. For more on why starting early is critical, reading <a href="/blog/why-kids-should-learn-ai-early" class="text-cyan-700 underline font-semibold">why kids should learn AI early</a> is also highly recommended.
+    Crucially, we do not aim to train your children merely as "technical engineers" — in the AI era, what is needed is a thinking human who masters AI to generate real added value, not a narrow technical AI engineer. In this educational pathway — designed under the supervision of university faculty and industry specialists — your children experience everything step by step, from foundational AI, neural networks, and professional prompting to Vibe Coding, AI agents and multi-agents, app and web development, data analysis, digital marketing &amp; SEO, and real-world project entrepreneurship. You can review the full syllabus right now on the <a href="/courses/ai-entrepreneurship-kids-teens" class="text-cyan-700 underline font-semibold">Kids &amp; Teens AI Entrepreneurship Course page</a> or choose the ideal age-specific track through the <a href="/services/kids-and-teens" class="text-cyan-700 underline font-semibold">DigiNoron Kids &amp; Teens AI Education Department</a>. For more on why starting early is critical, reading <a href="/blog/why-kids-should-learn-ai-early" class="text-cyan-700 underline font-semibold">why kids should learn AI early</a> is also highly recommended.
   </p>
 
   <!-- CTA 3 (Closing Conversion) -->
@@ -258,7 +258,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
 
   <!-- 40-60 word front-loaded answer for FAQ Intro -->
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-l-4 border-cyan-600">
-    In this section we answer the five top questions asked by parents and educators: why AI entrepreneurship outweighs rote school lessons, how it affects school grades, the right starting age and prerequisites, the solo-business concept, and how DigiNoron's 8-hour workshop is delivered.
+    In this section we answer the five top questions asked by parents and educators: why AI entrepreneurship outweighs rote school lessons, how it affects school grades, the right starting age and prerequisites, the solo-business concept, and how DigiNoron's 16-hour course (8 two-hour sessions) is delivered.
   </p>
 
   <div class="space-y-6 my-6">
@@ -293,7 +293,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
     <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
       <h3 class="font-bold text-base text-slate-900 mb-2">5. How is the Kids &amp; Teens AI Entrepreneurship course delivered at DigiNoron?</h3>
       <p class="text-sm text-slate-700 leading-relaxed">
-        The program is delivered as an 8-hour specialized workshop structured into either "4 two-hour sessions" or "2 four-hour sessions," where students learn AI entrepreneurship concepts, tools, website creation, and digital campaigns step by step and earn an official DigiNoron certificate.
+        The program is delivered as a 16-hour hands-on course across "8 two-hour sessions" accompanied by ongoing post-course support; the goal is not to train mere technical engineers, but to cultivate thinking, value-creating leaders who master AI through a real project and earn an official DigiNoron certificate.
       </p>
     </div>
   </div>
@@ -336,7 +336,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
       },
       {
         "question": "How is the Kids & Teens AI Entrepreneurship course delivered at DigiNoron?",
-        "answer": "The program is delivered as an 8-hour specialized workshop structured into either \"4 two-hour sessions\" or \"2 four-hour sessions,\" where students learn AI entrepreneurship concepts, tools, website creation, and digital campaigns step by step and earn an official DigiNoron certificate."
+        "answer": "The program is delivered as a 16-hour hands-on course across \"8 two-hour sessions\" accompanied by ongoing post-course support; the goal is not to train mere technical engineers, but to cultivate thinking, value-creating leaders who master AI through a real project and earn an official DigiNoron certificate."
       }
     ]
   },
@@ -577,11 +577,11 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
 
   <!-- 40-60 word front-loaded answer -->
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
-    إدراكاً لهذه الفجوة التاريخية بين المدرسة التقليدية ومتطلبات عالم الغد، صممت أكاديمية ديجي نورون ونفذت «دورة ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين (١٠ إلى ١٨ سنة)» في إطار ورشة عمل تخصصية مدتها ٨ ساعات (تُعقد في ٤ جلسات مدة كل منها ساعتان، أو جلستين مدة كل منهما ٤ ساعات).
+    انطلاقاً من قناعتنا بأن عصر الذكاء الاصطناعي يحتاج إلى «الإنسان المفكر المتقن للذكاء الاصطناعي والصانع للقيمة المضافة» لا مجرد المهندس التقني الصرف، صممت أكاديمية ديجي نورون ونفذت «دورة ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين (١٠ إلى ١٨ سنة)» في ١٦ ساعة تدريبية تطبيقية (٨ جلسات مدة كل منها ساعتان) مع دعم كامل بعد الدورة.
   </p>
 
   <p>
-    في هذا المسار التعليمي المصمم بإشراف أساتذة جامعيين وخبراء في الصناعة، لا يكون أبناؤكم مجرد متفرجين على شرائح العرض؛ بل يخوضون التجربة خطوة بخطوة من فهم أساسيات الذكاء الاصطناعي والشبكات العصبية وهندسة الأوامر الاحترافية إلى البرمجة الإبداعية (Vibe Coding)، وبناء الوكلاء والأنظمة متعددة الوكلاء، وتطوير التطبيقات والمواقع، وتحليل البيانات، والتسويق الرقمي وتحسين محركات البحث (SEO) وتنفيذ مشروع ريادي واقعي. يمكنكم الآن الاطلاع على تفاصيل المحاور كاملة في صفحة <a href="/ar/courses/ai-entrepreneurship-kids-teens" class="text-cyan-700 underline font-semibold">دورة ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين</a> أو اختيار المسار المناسب لعمر طفلكم عبر <a href="/ar/services/kids-and-teens" class="text-cyan-700 underline font-semibold">قسم تعليم الذكاء الاصطناعي للأطفال واليافعين في ديجي نورون</a>. ولمعرفة المزيد عن أهمية البداية المبكرة، ننصح أيضاً بقراءة مقال <a href="/ar/blog/why-kids-should-learn-ai-early" class="text-cyan-700 underline font-semibold">ضرورة تعليم الذكاء الاصطناعي للأطفال منذ الصغر</a>.
+    والنقطة الجوهرية هنا أننا لا نريد تخريج أبنائكم كمجرد «مهندسين تقنيين»؛ ففي عصر الذكاء الاصطناعي تبرز الحاجة إلى الإنسان المفكر المتقن للذكاء الاصطناعي القادر على ابتكار قيمة مضافة به، لا مجرد المهندس التقني الصرف. في هذا المسار التعليمي المصمم بإشراف أساتذة جامعيين وخبراء في الصناعة، يخوض أبناؤكم التجربة خطوة بخطوة من فهم أساسيات الذكاء الاصطناعي والشبكات العصبية وهندسة الأوامر الاحترافية إلى البرمجة الإبداعية (Vibe Coding)، وبناء الوكلاء والأنظمة متعددة الوكلاء، وتطوير التطبيقات والمواقع، وتحليل البيانات، والتسويق الرقمي وتحسين محركات البحث (SEO) وتنفيذ مشروع ريادي واقعي. يمكنكم الآن الاطلاع على تفاصيل المحاور كاملة في صفحة <a href="/ar/courses/ai-entrepreneurship-kids-teens" class="text-cyan-700 underline font-semibold">دورة ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين</a> أو اختيار المسار المناسب لعمر طفلكم عبر <a href="/ar/services/kids-and-teens" class="text-cyan-700 underline font-semibold">قسم تعليم الذكاء الاصطناعي للأطفال واليافعين في ديجي نورون</a>. ولمعرفة المزيد عن أهمية البداية المبكرة، ننصح أيضاً بقراءة مقال <a href="/ar/blog/why-kids-should-learn-ai-early" class="text-cyan-700 underline font-semibold">ضرورة تعليم الذكاء الاصطناعي للأطفال منذ الصغر</a>.
   </p>
 
   <!-- CTA 3 (Closing Conversion) -->
@@ -597,7 +597,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
 
   <!-- 40-60 word front-loaded answer for FAQ Intro -->
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
-    نجيب في هذا القسم عن خمسة شواغل رئيسية للوالدين والتربويين: سبب تفوق ريادة الأعمال بالذكاء الاصطناعي على المحفوظات المدرسية، وأثرها في التحصيل الدراسي، والسن والمتطلبات المناسبة للبدء، ومفهوم الأعمال الفردية، وكيفية انعقاد ورشة الـ ٨ ساعات في ديجي نورون.
+    نجيب في هذا القسم عن خمسة شواغل رئيسية للوالدين والتربويين: سبب تفوق ريادة الأعمال بالذكاء الاصطناعي على المحفوظات المدرسية، وأثرها في التحصيل الدراسي، والسن والمتطلبات المناسبة للبدء، ومفهوم الأعمال الفردية، وكيفية انعقاد الدورة الممتدة لـ ١٦ ساعة (٨ جلسات) في ديجي نورون.
   </p>
 
   <div class="space-y-6 my-6">
@@ -632,7 +632,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
     <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
       <h3 class="font-bold text-base text-slate-900 mb-2">٥. كيف تُقدَّم دورة ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين في ديجي نورون؟</h3>
       <p class="text-sm text-slate-700 leading-relaxed">
-        يُقدَّم البرنامج في صورة ورشة عمل تخصصية مدتها ٨ ساعات، وتُعقد إما في «٤ جلسات مدة كل منها ساعتان» أو «جلستين مدة كل منهما ٤ ساعات»، حيث يتعرف الطلاب خطوة بخطوة على مفاهيم وأدوات ريادة الأعمال بالذكاء الاصطناعي وتصميم المواقع والحملات ويحصلون على شهادة معتمدة من ديجي نورون.
+        يُقدَّم البرنامج في ١٦ ساعة تدريبية تطبيقية مقسمة على «٨ جلسات مدة كل منها ساعتان» مع دعم مستمر بعد الدورة؛ ولا يهدف البرنامج إلى تخريج مهندس تقني صرف، بل إلى إعداد إنسان مفكر وصانع للقيمة يتقن الذكاء الاصطناعي عبر مشروع واقعي ويحصل على شهادة معتمدة من ديجي نورون.
       </p>
     </div>
   </div>
@@ -675,7 +675,7 @@ export const aiEntrepreneurshipVsSchoolTranslation: Record<Locale, Partial<BlogT
       },
       {
         "question": "كيف تُقدَّم دورة ريادة الأعمال بالذكاء الاصطناعي للأطفال واليافعين في ديجي نورون؟",
-        "answer": "يُقدَّم البرنامج في صورة ورشة عمل تخصصية مدتها ٨ ساعات، وتُعقد إما في «٤ جلسات مدة كل منها ساعتان» أو «جلستين مدة كل منهما ٤ ساعات»، حيث يتعرف الطلاب خطوة بخطوة على مفاهيم وأدوات ريادة الأعمال بالذكاء الاصطناعي وتصميم المواقع والحملات ويحصلون على شهادة معتمدة من ديجي نورون."
+        "answer": "يُقدَّم البرنامج في ١٦ ساعة تدريبية تطبيقية مقسمة على «٨ جلسات مدة كل منها ساعتان» مع دعم مستمر بعد الدورة؛ ولا يهدف البرنامج إلى تخريج مهندس تقني صرف، بل إلى إعداد إنسان مفكر وصانع للقيمة يتقن الذكاء الاصطناعي عبر مشروع واقعي ويحصل على شهادة معتمدة من ديجي نورون."
       }
     ]
   }
