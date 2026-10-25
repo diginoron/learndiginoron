@@ -230,7 +230,7 @@ export const COURSES: Course[] = [
     sessionsCount: 7,
     price: "۴,۵۰۰,۰۰۰ تومان",
     badge: "جدید - ویژه کارآفرینی",
-    image: "/images/courses/ai-bootcamp.jpg",
+    image: "/images/courses/ai-kids-poorsina-school.jpg",
     topics: [
       "مفاهیم بنیادین هوش مصنوعی و شبکه‌های عصبی",
       "تحقیقات بازاریابی، ایده یابی و مفهوم سولو بیزینس",

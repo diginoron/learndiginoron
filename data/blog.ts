@@ -343,7 +343,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     date: "۳ آبان ۱۴۰۵",
     readTime: "۱۶ دقیقه",
-    image: "/images/courses/ai-bootcamp.jpg",
+    image: "/images/courses/ai-kids-poorsina-school.jpg",
     featured: true,
     tags: ["کارآفرینی هوش مصنوعی کودکان", "آموزش هوش مصنوعی در مدارس", "مهارت‌های آینده‌سازان", "سولو بیزینس نوجوانان", "آموزش کارآفرینی کودکان", "دیجی نورون"],
     faq: [
