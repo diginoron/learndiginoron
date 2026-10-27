@@ -1,6 +1,14 @@
 # Active Context
 
-## Current Focus (2026-10-26) — DONE: Trilingual post `why-managers-employees-must-learn-ai-beyond-content-creation` (id 14)
+## Current Focus (2026-10-28) — DONE: Trilingual post `why-teach-kids-ai-entrepreneurship-not-ai-engineering` (id 15)
+- **Post**: «چرا باید به کودکان در خصوص کارآفرینی در حیطه هوش مصنوعی آموزش داد نه مهندسی هوش مصنوعی؟» — slug `why-teach-kids-ai-entrepreneurship-not-ai-engineering`, category `kids-ai`, featured, date `۶ آبان ۱۴۰۵` (= Oct 28, 2026), readTime ۱۶ دقیقه.
+- **FA base**: top of `BLOG_POSTS` in `data/blog.ts` (hero answer → CTA1 → 7 H2 sections → CTA2 → pitfalls → voice Q&As → value bridge → CTA3 → FAQ ×5 → author box + `faq` meta array).
+- **EN + AR**: new `data/translations/blog/aiEntrepreneurshipNotEngineering.ts` (`Record<Locale, Partial<BlogTranslation>>` with `fa: {}` placeholder; AR wraps content in `dir="rtl"`, `border-r-4`).
+- **Registry & Sitemap**: import + `"why-teach-kids-ai-entrepreneurship-not-ai-engineering"` entry + date map entry in `data/translations/blog.ts`; pillar entry in `app/sitemap.ts`.
+- **CTA funnel**: CTAs & in-body links target `/{locale}/courses/ai-entrepreneurship-kids-teens` and `/{locale}/services/kids-and-teens`.
+- **State**: Blog has 15 posts; sitemap (`app/sitemap.ts`) dynamically includes all 3 locale URLs with priority 0.95 / daily frequency.
+
+## Previous Focus (2026-10-26) — DONE: Trilingual post `why-managers-employees-must-learn-ai-beyond-content-creation` (id 14)
 - **Post**: «چرا همه مدیران و کارکنان سازمان‌های امروزی باید هوش مصنوعی را فراتر از تولید محتوا و آموزش‌های اینستاگرامی یاد بگیرند؟» — slug `why-managers-employees-must-learn-ai-beyond-content-creation`, category `corporate-ai`, featured, date `۴ آبان ۱۴۰۵` (= Oct 26, 2026), readTime ۱۶ دقیقه.
 - **FA base**: top of `BLOG_POSTS` in `data/blog.ts` (hero answer → CTA1 → 7 H2 sections → CTA2 → pitfalls → voice Q&As → value bridge → CTA3 → FAQ ×5 → author box + `faq` meta array).
 - **EN + AR**: new `data/translations/blog/managersEmployeesAiAgents.ts` (`Record<Locale, Partial<BlogTranslation>>` with `fa: {}` placeholder; AR wraps content in `dir="rtl"`, `border-r-4`).

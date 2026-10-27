@@ -33,7 +33,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const isPillar =
       post.slug === "ai-extinction-warnings-and-risks" ||
       post.slug === "smart-organization-ai-2026" ||
-      post.slug === "why-managers-employees-must-learn-ai-beyond-content-creation";
+      post.slug === "why-managers-employees-must-learn-ai-beyond-content-creation" ||
+      post.slug === "why-teach-kids-ai-entrepreneurship-not-ai-engineering";
     return {
       path: `/blog/${post.slug}`,
       changeFrequency: (isPillar || post.featured) ? ("daily" as const) : ("weekly" as const),

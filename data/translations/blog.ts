@@ -14,6 +14,7 @@ import { neetAiEraTranslation } from "./blog/neetAiEra";
 import { aiAbundanceTranslation } from "./blog/aiAbundance";
 import { aiEntrepreneurshipVsSchoolTranslation } from "./blog/aiEntrepreneurshipVsSchool";
 import { managersEmployeesAiAgentsTranslation } from "./blog/managersEmployeesAiAgents";
+import { aiEntrepreneurshipNotEngineeringTranslation } from "./blog/aiEntrepreneurshipNotEngineering";
 
 export interface BlogTranslation {
   title: string;
@@ -40,6 +41,7 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "ai-era-abundance-democratizing-luxury": aiAbundanceTranslation,
   "why-ai-entrepreneurship-beats-traditional-school-subjects": aiEntrepreneurshipVsSchoolTranslation,
   "why-managers-employees-must-learn-ai-beyond-content-creation": managersEmployeesAiAgentsTranslation,
+  "why-teach-kids-ai-entrepreneurship-not-ai-engineering": aiEntrepreneurshipNotEngineeringTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
@@ -57,6 +59,7 @@ export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
   "۲ آبان ۱۴۰۵": { en: "October 24, 2026", fa: "۲ آبان ۱۴۰۵", ar: "٢٤ أكتوبر ٢٠٢٦" },
   "۳ آبان ۱۴۰۵": { en: "October 25, 2026", fa: "۳ آبان ۱۴۰۵", ar: "٢٥ أكتوبر ٢٠٢٦" },
   "۴ آبان ۱۴۰۵": { en: "October 26, 2026", fa: "۴ آبان ۱۴۰۵", ar: "٢٦ أكتوبر ٢٠٢٦" },
+  "۶ آبان ۱۴۰۵": { en: "October 28, 2026", fa: "۶ آبان ۱۴۰۵", ar: "٢٨ أكتوبر ٢٠٢٦" },
 };
 
 export const BLOG_AUTHOR_NAME_TRANSLATIONS: Record<string, Record<Locale, string>> = {
