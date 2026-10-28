@@ -1,6 +1,14 @@
 # Active Context
 
-## Current Focus (2026-10-28) — DONE: Trilingual post `why-teach-kids-ai-entrepreneurship-not-ai-engineering` (id 15)
+## Current Focus (2026-10-28) — DONE: Trilingual post `enterprise-ai-transformation-diginoron-model` (id 16)
+- **Post**: «هوشمند سازی سازمانی از طریق هوش مصنوعی با الگوی دیجی نورون» — slug `enterprise-ai-transformation-diginoron-model`, category `corporate-ai`, featured, date `۶ آبان ۱۴۰۵` (= Oct 28, 2026), readTime ۱۷ دقیقه.
+- **FA base**: top of `BLOG_POSTS` in `data/blog.ts` (hero answer → CTA1 → 7 H2 sections covering the 6-pillar DigiNoron Enterprise AI Model → CTA2 → pitfalls → voice Q&As → value bridge → CTA3 → FAQ ×5 → author box + `faq` meta array).
+- **EN + AR**: new `data/translations/blog/diginoronEnterpriseModel.ts` (`Record<Locale, Partial<BlogTranslation>>` with `fa: {}` placeholder; AR wraps content in `dir="rtl"`, `border-r-4`).
+- **Registry & Sitemap**: import + `"enterprise-ai-transformation-diginoron-model"` entry in `data/translations/blog.ts`; pillar entry in `app/sitemap.ts`.
+- **CTA funnel**: 3 temporal/funnel CTAs & in-body links in all 3 locales target `/{locale}/services/enterprise-ai`.
+- **State**: Blog has 16 posts; sitemap (`app/sitemap.ts`) dynamically includes all 3 locale URLs with priority 0.95 / daily frequency.
+
+## Previous Focus (2026-10-28) — DONE: Trilingual post `why-teach-kids-ai-entrepreneurship-not-ai-engineering` (id 15)
 - **Post**: «چرا باید به کودکان در خصوص کارآفرینی در حیطه هوش مصنوعی آموزش داد نه مهندسی هوش مصنوعی؟» — slug `why-teach-kids-ai-entrepreneurship-not-ai-engineering`, category `kids-ai`, featured, date `۶ آبان ۱۴۰۵` (= Oct 28, 2026), readTime ۱۶ دقیقه.
 - **FA base**: top of `BLOG_POSTS` in `data/blog.ts` (hero answer → CTA1 → 7 H2 sections → CTA2 → pitfalls → voice Q&As → value bridge → CTA3 → FAQ ×5 → author box + `faq` meta array).
 - **EN + AR**: new `data/translations/blog/aiEntrepreneurshipNotEngineering.ts` (`Record<Locale, Partial<BlogTranslation>>` with `fa: {}` placeholder; AR wraps content in `dir="rtl"`, `border-r-4`).

@@ -15,6 +15,7 @@ import { aiAbundanceTranslation } from "./blog/aiAbundance";
 import { aiEntrepreneurshipVsSchoolTranslation } from "./blog/aiEntrepreneurshipVsSchool";
 import { managersEmployeesAiAgentsTranslation } from "./blog/managersEmployeesAiAgents";
 import { aiEntrepreneurshipNotEngineeringTranslation } from "./blog/aiEntrepreneurshipNotEngineering";
+import { diginoronEnterpriseModelTranslation } from "./blog/diginoronEnterpriseModel";
 
 export interface BlogTranslation {
   title: string;
@@ -42,6 +43,7 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "why-ai-entrepreneurship-beats-traditional-school-subjects": aiEntrepreneurshipVsSchoolTranslation,
   "why-managers-employees-must-learn-ai-beyond-content-creation": managersEmployeesAiAgentsTranslation,
   "why-teach-kids-ai-entrepreneurship-not-ai-engineering": aiEntrepreneurshipNotEngineeringTranslation,
+  "enterprise-ai-transformation-diginoron-model": diginoronEnterpriseModelTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
