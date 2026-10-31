@@ -1,13 +1,17 @@
+import Link from "next/link";
 import { 
   ShieldCheck, 
   Zap, 
   CheckCircle2, 
-  Phone 
+  Phone,
+  Globe,
+  ArrowRight,
+  ArrowLeft
 } from "lucide-react";
 import ContactTeaser from "@/components/ContactTeaser";
 import EnterpriseContactForm from "@/components/EnterpriseContactForm";
 import EnterpriseServices from "@/components/EnterpriseServices";
-import { Locale, isValidLocale, getAlternateUrls } from "@/lib/i18n";
+import { Locale, isValidLocale, getAlternateUrls, getLocalizedPath, getDirection } from "@/lib/i18n";
 import type { Metadata } from "next";
 
 interface PageProps {
@@ -175,6 +179,36 @@ export default async function EnterpriseAIPage({ params }: PageProps) {
 
       {/* 6 Core Enterprise Solutions Interactive Display */}
       <EnterpriseServices locale={locale} />
+
+      {/* Featured Sub-Division: International Trade AI */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-r from-slate-950 via-slate-900 to-emerald-950/60 p-6 sm:p-10 rounded-3xl border border-emerald-500/30 shadow-xl relative overflow-hidden flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div className="space-y-3 max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950 border border-emerald-500/40 text-emerald-300 text-xs font-bold">
+              <Globe className="w-3.5 h-3.5 text-emerald-400" />
+              <span>{locale === "en" ? "Specialized Enterprise Division" : locale === "fa" ? "دپارتمان تخصصی بازرگانی خارجی" : "القطاع التخصصي للتجارة الدولية"}</span>
+            </div>
+            <h3 className="text-xl sm:text-3xl font-black text-white">
+              {locale === "en" ? "AI for International Trade & Cross-Border Commerce" : locale === "fa" ? "هوشمند سازی جامع تجارت بین‌الملل و بازرگانی خارجی" : "التحول الذكي الشامل للتجارة الدولية"}
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              {locale === "en"
+                ? "Specialized multi-agent swarms engineered for International Trade Law & Sanctions, Global B2B Export Marketing, Smart Logistics & HS Code Clearance, and Trade Finance & Settlement (LCs & FX Hedging)."
+                : locale === "fa"
+                ? "راهکار تخصصی چندعامله دیجی نورون در چهار رکن: حقوق تجارت و تحریم‌ها، بازاریابی صادراتی، لجستیک و گمرک هوشمند، و تسویه مالی بین‌الملل (ستلمنت و مدیریت ارزی)."
+                : "حلول الوكلاء المتعددين المتخصصة في القانون التجاري، التسويق التصديري الذكي، اللوجستيات والتخليص الجمركي، والتمويل والتسوية المالية الدولية."}
+            </p>
+          </div>
+
+          <Link
+            href={getLocalizedPath("/services/international-trade-ai", locale)}
+            className="px-6 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs sm:text-sm font-black transition-all flex items-center gap-2 self-start lg:self-center shrink-0 shadow-lg shadow-emerald-600/20"
+          >
+            <span>{locale === "en" ? "Explore Trade AI Solutions" : locale === "fa" ? "ورود به بخش هوشمندسازی تجارت" : "عرض حلول التجارة الدولية"}</span>
+            {getDirection(locale) === "ltr" ? <ArrowRight className="w-4 h-4" /> : <ArrowLeft className="w-4 h-4" />}
+          </Link>
+        </div>
+      </section>
 
       {/* Enterprise Lead Inbound Form */}
       <section id="consultation-form" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">

@@ -6,16 +6,17 @@ import { Locale } from "@/lib/i18n";
 
 interface EnterpriseContactFormProps {
   locale?: Locale;
+  initialServiceType?: string;
 }
 
-export default function EnterpriseContactForm({ locale = "en" }: EnterpriseContactFormProps) {
+export default function EnterpriseContactForm({ locale = "en", initialServiceType = "blueprint" }: EnterpriseContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     company: "",
     phone: "",
-    serviceType: "blueprint",
+    serviceType: initialServiceType,
     message: "",
   });
 
@@ -34,6 +35,16 @@ export default function EnterpriseContactForm({ locale = "en" }: EnterpriseConta
           return "5. Technology & Source Code Transfer";
         case "training":
           return "6. Corporate AI Training & Masterclasses";
+        case "trade-ai":
+          return "7. Smart International Trade AI (End-to-End)";
+        case "trade-law":
+          return "8. Trade Law & Smart Contract AI";
+        case "trade-marketing":
+          return "9. Global B2B Trade Marketing & Prospecting";
+        case "trade-logistics":
+          return "10. Smart Logistics & Customs Clearance AI";
+        case "trade-settlement":
+          return "11. Trade Finance & Cross-Border Settlement AI";
         default:
           return type;
       }
@@ -51,6 +62,16 @@ export default function EnterpriseContactForm({ locale = "en" }: EnterpriseConta
           return "٥. نقل التكنولوجيا والشيفرة المصدرية";
         case "training":
           return "٦. التدريب والتأهيل المؤسسي للفرق";
+        case "trade-ai":
+          return "٧. التحول الذكي الشامل للتجارة الدولية";
+        case "trade-law":
+          return "٨. القانون التجاري والعقود الذكية بالذكاء الاصطناعي";
+        case "trade-marketing":
+          return "٩. التسويق الذكي واستكشاف الأسواق والمشترين الدوليين";
+        case "trade-logistics":
+          return "١٠. اللوجستيات الذكية والتخليص الجمركي وتصنيف HS";
+        case "trade-settlement":
+          return "١١. التمويل والتسوية المالية الدولية الذكية";
         default:
           return type;
       }
@@ -68,6 +89,16 @@ export default function EnterpriseContactForm({ locale = "en" }: EnterpriseConta
           return "۵. انتقال تکنولوژی و سورس‌کد به سازمان";
         case "training":
           return "۶. کارگاه‌ها و آموزش‌های تخصصی سازمانی";
+        case "trade-ai":
+          return "۷. هوشمندسازی جامع بازرگانی و تجارت بین‌الملل";
+        case "trade-law":
+          return "۸. حقوق تجارت، تحریم‌ها و قراردادهای بین‌المللی با هوش مصنوعی";
+        case "trade-marketing":
+          return "۹. بازاریابی صادراتی و کشف خریداران جهانی با هوش مصنوعی";
+        case "trade-logistics":
+          return "۱۰. لجستیک، ترخیص کالا و کدهای تعرفه گمرکی هوشمند (HS Code)";
+        case "trade-settlement":
+          return "۱۱. تسویه مالی، مدیریت ارزی و LC با هوش مصنوعی";
         default:
           return type;
       }
@@ -235,6 +266,21 @@ export default function EnterpriseContactForm({ locale = "en" }: EnterpriseConta
                 </option>
                 <option value="training">
                   {locale === "en" ? "6. Corporate AI Training & Masterclasses" : locale === "fa" ? "۶. کارگاه‌ها و آموزش‌های تخصصی سازمانی" : "٦. التدريب والتأهيل المؤسسي للفرق"}
+                </option>
+                <option value="trade-ai">
+                  {locale === "en" ? "7. Smart International Trade AI (End-to-End)" : locale === "fa" ? "۷. هوشمندسازی جامع بازرگانی و تجارت بین‌الملل" : "٧. التحول الذكي الشامل للتجارة الدولية"}
+                </option>
+                <option value="trade-law">
+                  {locale === "en" ? "8. Trade Law & Smart Contract AI" : locale === "fa" ? "۸. حقوق تجارت، تحریم‌ها و قراردادهای بین‌المللی با هوش مصنوعی" : "٨. القانون التجاري وعقود التجارة بالذكاء الاصطناعي"}
+                </option>
+                <option value="trade-marketing">
+                  {locale === "en" ? "9. Global B2B Trade Marketing & Prospecting" : locale === "fa" ? "۹. بازاریابی صادراتی و کشف خریداران جهانی با هوش مصنوعی" : "٩. التسويق الذكي واستكشاف الأسواق والمشترين الدوليين"}
+                </option>
+                <option value="trade-logistics">
+                  {locale === "en" ? "10. Smart Logistics & Customs Clearance AI" : locale === "fa" ? "۱۰. لجستیک، ترخیص کالا و کدهای تعرفه گمرکی هوشمند (HS Code)" : "١٠. اللوجستيات الذكية والتخليص الجمركي وتصنيف HS"}
+                </option>
+                <option value="trade-settlement">
+                  {locale === "en" ? "11. Trade Finance & Cross-Border Settlement AI" : locale === "fa" ? "۱۱. تسویه مالی، مدیریت ارزی و LC با هوش مصنوعی" : "١١. التمويل والتسوية المالية الدولية الذكية"}
                 </option>
               </select>
             </div>

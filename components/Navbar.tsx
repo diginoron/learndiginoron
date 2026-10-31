@@ -18,7 +18,8 @@ import {
   Compass, 
   Award,
   ArrowRight,
-  ArrowLeft
+  ArrowLeft,
+  Globe
 } from "lucide-react";
 import { Locale, getDirection, getLocalizedPath } from "@/lib/i18n";
 import { COMMON_TRANSLATIONS } from "@/data/translations/common";
@@ -181,6 +182,22 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
                           </div>
                           <div className="text-[10px] text-slate-500">
                             {locale === "en" ? "Finance, procurement, sales & HR automation" : locale === "fa" ? "اتوماسیون مالی، اداری، فروش و منابع انسانی" : "أتمتة العمليات الإدارية والمالية"}
+                          </div>
+                        </div>
+                      </Link>
+
+                      <Link
+                        href={getLocalizedPath("/services/international-trade-ai", locale)}
+                        className="flex items-center gap-2 p-2 hover:bg-emerald-50 rounded-lg transition-colors group bg-emerald-50/40 border border-emerald-100"
+                      >
+                        <Globe className="w-4 h-4 text-emerald-600 shrink-0" />
+                        <div>
+                          <div className="font-bold text-slate-900 group-hover:text-emerald-800 text-[12px] flex items-center gap-1.5">
+                            <span>{locale === "en" ? "International Trade AI" : locale === "fa" ? "هوشمند سازی تجارت بین‌الملل" : "التحول الذكي للتجارة الدولية"}</span>
+                            <span className="text-[9px] px-1 rounded bg-emerald-500 text-white font-bold font-mono">Specialized</span>
+                          </div>
+                          <div className="text-[10px] text-slate-500">
+                            {locale === "en" ? "Trade Law, Smart Marketing, Customs & Settlements" : locale === "fa" ? "حقوق تجارت، بازاریابی هوشمند، لجستیک و تسویه ارزی" : "القانون التجاري، التسويق، الجمارك والتسوية المالية"}
                           </div>
                         </div>
                       </Link>
@@ -356,6 +373,18 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
               className="flex items-center gap-2 px-5 py-1.5 text-xs font-bold text-cyan-700"
             >
               <span>{locale === "en" ? "Overview & Solutions" : locale === "fa" ? "نمای کلی و استعلام هوشمندسازی" : "نظرة عامة على الحلول"}</span>
+            </Link>
+
+            <Link
+              href={getLocalizedPath("/services/international-trade-ai", locale)}
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-between px-4 py-2 text-xs font-bold text-emerald-800 bg-emerald-50 rounded-lg mx-2 border border-emerald-100"
+            >
+              <span className="flex items-center gap-2">
+                <Globe className="w-3.5 h-3.5 text-emerald-600" />
+                <span>{locale === "en" ? "International Trade AI" : locale === "fa" ? "هوشمند سازی تجارت بین‌الملل" : "التحول الذكي للتجارة الدولية"}</span>
+              </span>
+              <span className="text-[9px] px-1.5 py-0.5 bg-emerald-200 text-emerald-900 rounded font-bold font-mono">NEW</span>
             </Link>
           </div>
 

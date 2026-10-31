@@ -13,7 +13,8 @@ import {
   Zap, 
   Compass, 
   Award,
-  BookOpen
+  BookOpen,
+  Globe
 } from "lucide-react";
 import { Locale, getDirection, getLocalizedPath } from "@/lib/i18n";
 import { COMMON_TRANSLATIONS } from "@/data/translations/common";
@@ -109,6 +110,15 @@ export default function Footer({ locale = "en" }: FooterProps) {
                 >
                   <GitBranch className="w-3.5 h-3.5 text-indigo-400" />
                   <span>{locale === "en" ? "Deployment & Modernization" : locale === "fa" ? "پیاده‌سازی، یکپارچه‌سازی و به‌روزرسانی" : "النشر والتكامل وتحديث الأنظمة"}</span>
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href={getLocalizedPath("/services/international-trade-ai", locale)} 
+                  className="hover:text-emerald-300 transition-colors flex items-center gap-2 text-emerald-400 font-semibold"
+                >
+                  <Globe className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>{locale === "en" ? "International Trade AI" : locale === "fa" ? "هوشمند سازی تجارت بین‌الملل" : "التحول الذكي للتجارة الدولية"}</span>
                 </Link>
               </li>
               <li>

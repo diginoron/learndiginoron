@@ -13,7 +13,8 @@ import {
   GitBranch,
   ArrowRightLeft,
   ShieldCheck,
-  CheckCircle2
+  CheckCircle2,
+  Globe
 } from "lucide-react";
 import ContactTeaser from "@/components/ContactTeaser";
 import { Locale, isValidLocale, getDirection, getLocalizedPath, getAlternateUrls } from "@/lib/i18n";
@@ -130,6 +131,33 @@ export default async function ServicesPage({ params }: PageProps) {
                   </div>
                 );
               })}
+            </div>
+            {/* International Trade AI Highlight Banner */}
+            <div className="p-5 rounded-2xl bg-gradient-to-r from-emerald-950/60 via-slate-900 to-indigo-950/60 border border-emerald-500/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 rounded-xl bg-emerald-900/40 border border-emerald-600/50 text-emerald-400">
+                  <Globe className="w-6 h-6" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-white font-bold text-sm sm:text-base">
+                      {locale === "en" ? "Specialized Hub: International Trade AI" : locale === "fa" ? "بخش تخصصی: هوشمند سازی تجارت بین‌الملل" : "المحور التخصصي: التحول الذكي للتجارة الدولية"}
+                    </span>
+                    <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-500 text-white font-mono font-bold">NEW</span>
+                  </div>
+                  <p className="text-xs text-slate-300 mt-0.5">
+                    {locale === "en" ? "AI Agents for Trade Law, Export Prospecting, Smart Customs & Trade Settlement" : locale === "fa" ? "حقوق تجارت، بازاریابی هوشمند صادرات، لجستیک و گمرک، و تسویه مالی بین‌الملل (ستلمنت)" : "القانون التجاري، التسويق الدولي، الجمارك والتسوية المالية الذكية"}
+                  </p>
+                </div>
+              </div>
+
+              <Link
+                href={getLocalizedPath("/services/international-trade-ai", locale)}
+                className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 shrink-0"
+              >
+                <span>{locale === "en" ? "Explore Trade AI" : locale === "fa" ? "مشاهده لندینگ تجارت بین‌الملل" : "استكشاف التجارة الذكية"}</span>
+                {isLtr ? <ArrowRight className="w-3.5 h-3.5" /> : <ArrowLeft className="w-3.5 h-3.5" />}
+              </Link>
             </div>
           </div>
         </div>

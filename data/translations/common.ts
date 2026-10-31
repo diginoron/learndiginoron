@@ -13,6 +13,8 @@ export interface CommonTranslations {
     home: string;
     enterpriseAI: string;
     enterpriseAIDesc: string;
+    internationalTradeAI: string;
+    internationalTradeAIDesc: string;
     corporateTraining: string;
     corporateTrainingDesc: string;
     kidsAndTeens: string;
@@ -75,6 +77,8 @@ export const COMMON_TRANSLATIONS: Record<Locale, CommonTranslations> = {
       home: "Home",
       enterpriseAI: "Enterprise AI Solutions",
       enterpriseAIDesc: "Autonomous AI Agents, BPA Process Automation & Tech Transfer",
+      internationalTradeAI: "International Trade AI",
+      internationalTradeAIDesc: "AI Agents for Global Trade Law, Smart Marketing, Logistics & Customs, and Cross-Border Settlement",
       corporateTraining: "Corporate AI Academy",
       corporateTrainingDesc: "Specialized in-house workshops for executives and specialists",
       kidsAndTeens: "Kids & Teens Academy",
@@ -135,6 +139,8 @@ export const COMMON_TRANSLATIONS: Record<Locale, CommonTranslations> = {
       home: "صفحه اصلی",
       enterpriseAI: "هوشمندسازی سازمانی",
       enterpriseAIDesc: "طراحی ایجنت‌های سازمانی، اتوماسیون فرآیندها (BPA) و انتقال تکنولوژی",
+      internationalTradeAI: "هوشمند سازی تجارت بین‌الملل",
+      internationalTradeAIDesc: "ایجنت‌های هوشمند حقوق تجارت، بازاریابی صادراتی، لجستیک و گمرک، و تسویه مالی بین‌الملل",
       corporateTraining: "آموزش هوش مصنوعی سازمانی",
       corporateTrainingDesc: "دوره‌ها و کارگاه‌های تخصصی برای مدیران و کارشناسان صنایع",
       kidsAndTeens: "آموزش کودکان و نوجوانان",
@@ -195,6 +201,8 @@ export const COMMON_TRANSLATIONS: Record<Locale, CommonTranslations> = {
       home: "الرئيسية",
       enterpriseAI: "حلول الذكاء الاصطناعي للشركات",
       enterpriseAIDesc: "وكلاء الذكاء الاصطناعي المستقلون، أتمتة BPA ونقل التكنولوجيا",
+      internationalTradeAI: "التحول الذكي للتجارة الدولية",
+      internationalTradeAIDesc: "وكلاء الذكاء الاصطناعي للقانون التجاري، التسويق الذكي، الجمارك، والتمويل والتسوية الدولية",
       corporateTraining: "التدريب المؤسسي المتخصص",
       corporateTrainingDesc: "ورش عمل مخصصة للمديرين التنفيذيين والخبراء والمهندسين",
       kidsAndTeens: "أكاديمية الأطفال واليافعين",
