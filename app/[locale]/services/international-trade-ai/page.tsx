@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: t.metaTitle,
       description: t.metaDesc,
       url: alternates.canonical,
-      siteName: "DigiNeuron",
+      siteName: "DigiNoron",
       locale: locale === "fa" ? "fa_IR" : locale === "ar" ? "ar_SA" : "en_US",
       type: "website",
     },

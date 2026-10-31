@@ -553,14 +553,14 @@ export const TRADE_TRANSLATIONS: Record<Locale, TradeTranslations> = {
   },
 
   en: {
-    metaTitle: "International Trade AI Solutions | DigiNeuron Enterprise AI",
+    metaTitle: "International Trade AI Solutions | DigiNoron Enterprise AI",
     metaDesc: "Comprehensive AI solutions for global trade: International Trade Law & Compliance, Smart B2B Export Marketing, Smart Logistics & Customs (HS Codes), and Trade Finance & Settlement AI with autonomous agents, multi-agent swarms, corporate training, and executive dashboards.",
     hero: {
-      badge: "DigiNeuron International Trade AI Division",
+      badge: "DigiNoron International Trade AI Division",
       titleStart: "Transforming Cross-Border Commerce with",
       titleHighlight: "International Trade AI",
       titleEnd: "& Multi-Agent Swarms",
-      description: "DigiNeuron empowers multinational traders, exporters, and industrial conglomerates with autonomous decision intelligence across four foundational axes: Trade Law & Sanctions Screening, Global B2B Marketing, Smart Logistics & Customs Clearance, and International Trade Finance & Settlement.",
+      description: "DigiNoron empowers multinational traders, exporters, and industrial conglomerates with autonomous decision intelligence across four foundational axes: Trade Law & Sanctions Screening, Global B2B Marketing, Smart Logistics & Customs Clearance, and International Trade Finance & Settlement.",
       ctaConsultation: "Request Commercial Demo & Roadmap",
       ctaDirectLine: "Direct Trade Inquiries",
       phone: "+61 451 410 352",
@@ -575,17 +575,17 @@ export const TRADE_TRANSLATIONS: Record<Locale, TradeTranslations> = {
       badge: "Core Trade Intelligence Concepts",
       title: "What Does 'Settlement' Mean in International Trade?",
       subtitle: "Final financial clearing, multi-currency risk hedging, and secure cross-border fund transfers",
-      definition: "In international trade and finance, 'Settlement' refers to the definitive fulfillment of obligations through the transfer of funds, currencies, or negotiable instruments between the buyer, seller, advising banks, and financial intermediaries. It encompasses Letter of Credit (LC) compliance, foreign exchange risk hedging (FX Hedging), automated invoice reconciliation, and sovereign payment gateway routing. DigiNeuron's AI agents automate this high-stakes process to guarantee zero discrepancies and optimized liquidity.",
+      definition: "In international trade and finance, 'Settlement' refers to the definitive fulfillment of obligations through the transfer of funds, currencies, or negotiable instruments between the buyer, seller, advising banks, and financial intermediaries. It encompasses Letter of Credit (LC) compliance, foreign exchange risk hedging (FX Hedging), automated invoice reconciliation, and sovereign payment gateway routing. DigiNoron's AI agents automate this high-stakes process to guarantee zero discrepancies and optimized liquidity.",
       traditionalVsAI: {
         traditionalTitle: "Traditional Trade Settlement (High Friction & Delay)",
         traditionalDesc: "Weeks of bank back-and-forth, expensive document discrepancy penalties under UCP 600, unprotected FX margin slippage, and opaque intermediary routing.",
-        aiTitle: "DigiNeuron Smart Settlement (Autonomous & Secure)",
+        aiTitle: "DigiNoron Smart Settlement (Autonomous & Secure)",
         aiDesc: "Pre-submission LC discrepancy audit, algorithmic currency forecasting for timely hedging, and instant multi-currency ledger reconciliation.",
       },
     },
     pillarsSection: {
       badge: "Four Strategic Pillars",
-      title: "Specialized DigiNeuron Solutions across",
+      title: "Specialized DigiNoron Solutions across",
       titleHighlight: "The Four Axes of Global Trade",
       subtitle: "Across every pillar, we deliver a 5-dimensional framework: Autonomous AI Agents, Collaborative Multi-Agent Swarms, Business Process Automation, Specialized Corporate Training, and Executive Decision Dashboards.",
       tabLabels: {
@@ -614,7 +614,7 @@ export const TRADE_TRANSLATIONS: Record<Locale, TradeTranslations> = {
         badge: "Legal Certainty & Compliance",
         accentColor: "indigo",
         tagline: "Autonomous contract review, Incoterms 2020 verification, and 24/7 global sanctions monitoring",
-        summary: "Cross-border commercial agreements entail substantial legal liabilities, complex jurisdiction clauses, and rapidly shifting global sanction regimes. DigiNeuron deploys specialized legal LLMs and agents grounded in ICC rules (Incoterms 2020, CISG) to protect enterprise interests.",
+        summary: "Cross-border commercial agreements entail substantial legal liabilities, complex jurisdiction clauses, and rapidly shifting global sanction regimes. DigiNoron deploys specialized legal LLMs and agents grounded in ICC rules (Incoterms 2020, CISG) to protect enterprise interests.",
         agents: {
           title: "Autonomous Legal & Compliance Agents",
           desc: "Domain-adapted agents engineered for contract deep parsing and regulatory vetting:",
@@ -675,7 +675,7 @@ export const TRADE_TRANSLATIONS: Record<Locale, TradeTranslations> = {
         badge: "Global Market Expansion",
         accentColor: "emerald",
         tagline: "Autonomous international buyer discovery, customs big data mining, and automated multilingual B2B outreach",
-        summary: "Penetrating international markets no longer relies on third-party brokers or costly overseas trade exhibitions. DigiNeuron utilizes autonomous agent networks to uncover active global buyers, predict market demand trends, and orchestrate localized outreach.",
+        summary: "Penetrating international markets no longer relies on third-party brokers or costly overseas trade exhibitions. DigiNoron utilizes autonomous agent networks to uncover active global buyers, predict market demand trends, and orchestrate localized outreach.",
         agents: {
           title: "Autonomous Lead Hunting & Market Intelligence Agents",
           desc: "Agents that continuously scan global trade registries and commercial databases:",
@@ -736,7 +736,7 @@ export const TRADE_TRANSLATIONS: Record<Locale, TradeTranslations> = {
         badge: "Logistics Optimization",
         accentColor: "cyan",
         tagline: "Automated HS Code classification, ultra-fast customs clearance, and real-time multimodal container tracking",
-        summary: "Customs classification errors create crippling demurrage charges and supply chain delays. DigiNeuron combines multimodal computer vision and specialized customs NLP to classify goods with 99.4% precision and automate cross-border shipping workflows.",
+        summary: "Customs classification errors create crippling demurrage charges and supply chain delays. DigiNoron combines multimodal computer vision and specialized customs NLP to classify goods with 99.4% precision and automate cross-border shipping workflows.",
         agents: {
           title: "Automated Customs & Tariff Classification Agents",
           desc: "Specialized models trained on the WCO Harmonized System nomenclature and national customs tariffs:",
@@ -797,7 +797,7 @@ export const TRADE_TRANSLATIONS: Record<Locale, TradeTranslations> = {
         badge: "Financial Security & Liquidity",
         accentColor: "amber",
         tagline: "Letter of Credit (LC) discrepancy elimination, algorithmic FX risk hedging, and automated cross-border settlement",
-        summary: "Financial clearing (Settlement), foreign exchange exposure, and banking document discrepancies represent the most precarious bottleneck in cross-border trade. DigiNeuron's trade finance agents audit LCs under UCP 600 rules and execute timely currency risk hedging.",
+        summary: "Financial clearing (Settlement), foreign exchange exposure, and banking document discrepancies represent the most precarious bottleneck in cross-border trade. DigiNoron's trade finance agents audit LCs under UCP 600 rules and execute timely currency risk hedging.",
         agents: {
           title: "Trade Finance & Settlement Intelligence Agents",
           desc: "Autonomous agents mastering SWIFT messaging, international banking customs, and FX markets:",
@@ -852,10 +852,10 @@ export const TRADE_TRANSLATIONS: Record<Locale, TradeTranslations> = {
       },
     ],
     multiAgentOrchestration: {
-      badge: "Integrated DigiNeuron Architecture",
+      badge: "Integrated DigiNoron Architecture",
       title: "How the Multi-Agent Swarm",
       titleHighlight: "Executes an End-to-End Trade Transaction Autonomously",
-      description: "The transformative power of DigiNeuron emerges when all four pillars synchronize via an orchestrated Multi-Agent Swarm. Rather than fragmented manual operations, intelligent agents drive the trade from prospect acquisition to final fund settlement:",
+      description: "The transformative power of DigiNoron emerges when all four pillars synchronize via an orchestrated Multi-Agent Swarm. Rather than fragmented manual operations, intelligent agents drive the trade from prospect acquisition to final fund settlement:",
       steps: [
         {
           step: "Step 1",
@@ -886,12 +886,12 @@ export const TRADE_TRANSLATIONS: Record<Locale, TradeTranslations> = {
     comparison: {
       badge: "Performance Benchmark",
       title: "Conventional Global Trade vs.",
-      titleHighlight: "AI-Augmented Trade with DigiNeuron",
+      titleHighlight: "AI-Augmented Trade with DigiNoron",
       subtitle: "Quantifiable differences in cycle velocity, regulatory precision, and bottom-line margin retention",
       headers: {
         feature: "Performance Metric",
         traditional: "Conventional Trading Practice",
-        diginoron: "DigiNeuron AI-Augmented Operations",
+        diginoron: "DigiNoron AI-Augmented Operations",
       },
       rows: [
         {
@@ -930,7 +930,7 @@ export const TRADE_TRANSLATIONS: Record<Locale, TradeTranslations> = {
       badge: "Sovereign Architecture & Security",
       title: "Ironclad Trade Secret Protection &",
       titleHighlight: "Air-Gapped On-Premise Deployment",
-      description: "Buyer registries, negotiated supplier terms, shipping rates, and treasury margins represent the crown jewels of international trade enterprises. DigiNeuron provides air-gapped on-premise infrastructure guaranteeing zero confidential data leaves your corporate perimeter.",
+      description: "Buyer registries, negotiated supplier terms, shipping rates, and treasury margins represent the crown jewels of international trade enterprises. DigiNoron provides air-gapped on-premise infrastructure guaranteeing zero confidential data leaves your corporate perimeter.",
       features: [
         {
           title: "Air-Gapped On-Premise Deployment",
@@ -955,15 +955,15 @@ export const TRADE_TRANSLATIONS: Record<Locale, TradeTranslations> = {
       title: "Key Answers Concerning International Trade AI Transformation",
       items: [
         {
-          q: "What types of enterprises benefit most from DigiNeuron's Trade AI solutions?",
+          q: "What types of enterprises benefit most from DigiNoron's Trade AI solutions?",
           a: "Our solutions are engineered for large-scale export-import enterprises, petrochemical and commodity conglomerates, export management companies (EMCs), customs brokers, and multinational 3PL/4PL logistics providers seeking accelerated operational velocity and reduced compliance risk.",
         },
         {
-          q: "Does implementing DigiNeuron require replacing our current ERP or accounting software?",
+          q: "Does implementing DigiNoron require replacing our current ERP or accounting software?",
           a: "No. Our autonomous agents operate as an intelligence layer connecting directly to your existing systems (SAP, Microsoft Dynamics, Oracle, or local trade backbones) via secure APIs or database connectors.",
         },
         {
-          q: "How does DigiNeuron protect confidential commercial data and trade secrets?",
+          q: "How does DigiNoron protect confidential commercial data and trade secrets?",
           a: "We offer 100% air-gapped On-Premise installations where LLMs run locally on your internal GPU servers with no data egress to external cloud providers, backed by rigorous NDAs.",
         },
         {
@@ -1412,3 +1412,4 @@ export const TRADE_TRANSLATIONS: Record<Locale, TradeTranslations> = {
     },
   },
 };
+
