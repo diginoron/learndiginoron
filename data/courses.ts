@@ -13,6 +13,12 @@ export interface CourseFormat {
   note?: string;
 }
 
+export interface CourseInstructor {
+  name: string;
+  role: string;
+  avatar: string;
+}
+
 export interface Course {
   id: string;
   slug: string;
@@ -30,11 +36,8 @@ export interface Course {
   image: string;
   topics: string[];
   prerequisites: string;
-  instructor: {
-    name: string;
-    role: string;
-    avatar: string;
-  };
+  instructor: CourseInstructor;
+  instructors?: CourseInstructor[];
   features: string[];
   formats?: CourseFormat[];
 }
@@ -247,9 +250,21 @@ export const COURSES: Course[] = [
     prerequisites: "آشنایی اولیه با کار با کامپیوتر و اینترنت",
     instructor: {
       name: "دکتر مهران شیرزاد",
-      role: "متخصص آموزش کارآفرینی و فناوری به کودکان",
+      role: "متخصص آموزش کارآفرینی و فناوری به کودکان و نوجوانان",
       avatar: "/images/instructors/shirzad.jpg"
     },
+    instructors: [
+      {
+        name: "دکتر مهران شیرزاد",
+        role: "متخصص آموزش کارآفرینی و فناوری به کودکان و نوجوانان",
+        avatar: "/images/instructors/shirzad.jpg"
+      },
+      {
+        name: "دکتر شهریار کریمی",
+        role: "متخصص آموزش کارآفرینی و فناوری به کودکان و نوجوانان",
+        avatar: "/images/instructors/shahriar-karimi.jpg"
+      }
+    ],
     features: [
       "پرورش انسان متفکر و ارزش‌آفرین مسلط به هوش مصنوعی (نه مهندس صرف فنی)",
       "۱۶ ساعت آموزش کاربردی (۸ جلسه ۲ ساعته) به همراه پشتیبانی کامل بعد از دوره",

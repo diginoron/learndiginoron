@@ -90,8 +90,12 @@ export default function CourseCard({ course: rawCourse, locale = "en" }: CourseC
               <span>{course.duration}</span>
             </div>
             <div className="flex items-center gap-1">
-              <User className="w-3.5 h-3.5 text-slate-400" />
-              <span>{course.instructor.name}</span>
+              <User className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+              <span className="truncate">
+                {course.instructors && course.instructors.length > 0
+                  ? course.instructors.map((i) => i.name).join(locale === "en" ? " & " : " و ")
+                  : course.instructor.name}
+              </span>
             </div>
           </div>
 

@@ -208,20 +208,27 @@ export default async function CourseDetailPage({ params }: PageProps) {
               </div>
             </div>
 
-            {/* Instructor */}
-            <div className="flex items-center gap-3">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden border border-cyan-400">
-                <Image
-                  src={course.instructor.avatar}
-                  alt={course.instructor.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <div className="text-xs font-bold text-slate-900">{course.instructor.name}</div>
-                <div className="text-[11px] text-slate-500">{course.instructor.role}</div>
-              </div>
+            {/* Instructor(s) */}
+            <div className="space-y-3">
+              {(course.instructors && course.instructors.length > 0
+                ? course.instructors
+                : [course.instructor]
+              ).map((inst, idx) => (
+                <div key={idx} className="flex items-center gap-3">
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden border border-cyan-400 shrink-0">
+                    <Image
+                      src={inst.avatar}
+                      alt={inst.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold text-slate-900">{inst.name}</div>
+                    <div className="text-[11px] text-slate-500">{inst.role}</div>
+                  </div>
+                </div>
+              ))}
             </div>
 
             {/* Actions */}

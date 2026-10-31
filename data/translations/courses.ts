@@ -1,4 +1,4 @@
-import { Course, CourseFormat } from "@/data/courses";
+import { Course, CourseFormat, CourseInstructor } from "@/data/courses";
 import { Locale } from "@/lib/i18n";
 
 export interface CourseTranslation {
@@ -16,6 +16,7 @@ export interface CourseTranslation {
   prerequisites: string;
   instructorName: string;
   instructorRole: string;
+  instructors?: CourseInstructor[];
   features: string[];
   formats?: CourseFormat[];
 }
@@ -337,7 +338,19 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
       ],
       prerequisites: "Basic computer and web browsing skills",
       instructorName: "Dr. Mehran Shirzad",
-      instructorRole: "Youth Entrepreneurship & Innovation Mentor",
+      instructorRole: "Specialist in Entrepreneurship & Technology Education for Kids & Teens",
+      instructors: [
+        {
+          name: "Dr. Mehran Shirzad",
+          role: "Specialist in Entrepreneurship & Technology Education for Kids & Teens",
+          avatar: "/images/instructors/shirzad.jpg",
+        },
+        {
+          name: "Dr. Shahriar Karimi",
+          role: "Specialist in Entrepreneurship & Technology Education for Kids & Teens",
+          avatar: "/images/instructors/shahriar-karimi.jpg",
+        },
+      ],
       features: [
         "Cultivating thinking, value-creating leaders who master AI (not mere technical engineers)",
         "16 hours of hands-on training (8 two-hour sessions) + ongoing post-course support",
@@ -374,7 +387,19 @@ export const COURSE_TRANSLATIONS: Record<string, Record<Locale, Partial<CourseTr
       ],
       prerequisites: "معرفة أساسية باستخدام الحاسوب والإنترنت",
       instructorName: "د. مهران شيرزاد",
-      instructorRole: "خبير ريادة الأعمال وتكنولوجيا الجيل القادم لليافعين",
+      instructorRole: "متخصص في تعليم ريادة الأعمال والتكنولوجيا للأطفال واليافعين",
+      instructors: [
+        {
+          name: "د. مهران شيرزاد",
+          role: "متخصص في تعليم ريادة الأعمال والتكنولوجيا للأطفال واليافعين",
+          avatar: "/images/instructors/shirzad.jpg",
+        },
+        {
+          name: "د. شهريار كريمي",
+          role: "متخصص في تعليم ريادة الأعمال والتكنولوجيا للأطفال واليافعين",
+          avatar: "/images/instructors/shahriar-karimi.jpg",
+        },
+      ],
       features: [
         "إعداد الإنسان المفكر الصانع للقيمة والمتقن للذكاء الاصطناعي (وليس مجرد مهندس تقني صرف)",
         "١٦ ساعة تدريبية تطبيقية (٨ جلسات مدة كل منها ساعتان) مع دعم مستمر بعد الدورة",
@@ -439,6 +464,7 @@ export function getLocalizedCourse(course: Course, locale: Locale): Course {
       name: instructorName,
       role: translation.instructorRole || course.instructor.role,
     },
+    instructors: translation.instructors || course.instructors,
     features: translation.features || course.features,
     formats: translation.formats || course.formats,
   };
