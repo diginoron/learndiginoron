@@ -36,7 +36,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       post.slug === "smart-organization-ai-2026" ||
       post.slug === "why-managers-employees-must-learn-ai-beyond-content-creation" ||
       post.slug === "why-teach-kids-ai-entrepreneurship-not-ai-engineering" ||
-      post.slug === "enterprise-ai-transformation-diginoron-model";
+      post.slug === "enterprise-ai-transformation-diginoron-model" ||
+      post.slug === "smart-marketing-department-ai";
     return {
       path: `/blog/${post.slug}`,
       changeFrequency: (isPillar || post.featured) ? ("daily" as const) : ("weekly" as const),
