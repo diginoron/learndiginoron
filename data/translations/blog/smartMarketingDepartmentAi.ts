@@ -644,3 +644,4 @@ export const smartMarketingDepartmentAiTranslation: Record<Locale, Partial<BlogT
     ]
   }
 };
+

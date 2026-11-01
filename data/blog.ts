@@ -317,7 +317,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     date: "۱۱ آبان ۱۴۰۵",
     readTime: "۱۸ دقیقه",
-    image: "/images/courses/enterprise-automation.jpg",
+    image: "/images/blog/ai-marketing-transformation.jpg",
     featured: true,
     tags: [
       "هوشمند سازی دپارتمان بازاریابی با هوش مصنوعی",
