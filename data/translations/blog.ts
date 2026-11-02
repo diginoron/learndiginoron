@@ -17,6 +17,7 @@ import { managersEmployeesAiAgentsTranslation } from "./blog/managersEmployeesAi
 import { aiEntrepreneurshipNotEngineeringTranslation } from "./blog/aiEntrepreneurshipNotEngineering";
 import { diginoronEnterpriseModelTranslation } from "./blog/diginoronEnterpriseModel";
 import { smartMarketingDepartmentAiTranslation } from "./blog/smartMarketingDepartmentAi";
+import { banksBlockAiAgentsTranslation } from "./blog/banksBlockAiAgents";
 
 export interface BlogTranslation {
   title: string;
@@ -46,9 +47,11 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "why-teach-kids-ai-entrepreneurship-not-ai-engineering": aiEntrepreneurshipNotEngineeringTranslation,
   "enterprise-ai-transformation-diginoron-model": diginoronEnterpriseModelTranslation,
   "smart-marketing-department-ai": smartMarketingDepartmentAiTranslation,
+  "banks-block-ai-agents-open-banking": banksBlockAiAgentsTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
+  "۱۲ آبان ۱۴۰۵": { en: "November 3, 2026", fa: "۱۲ آبان ۱۴۰۵", ar: "٣ نوفمبر ٢٠٢٦" },
   "۱۱ آبان ۱۴۰۵": { en: "November 1, 2026", fa: "۱۱ آبان ۱۴۰۵", ar: "١ نوفمبر ٢٠٢٦" },
   "۲۷ اسفند ۱۴۰۴": { en: "March 18, 2026", fa: "۲۷ اسفند ۱۴۰۴", ar: "١٨ مارس ٢٠٢٦" },
   "۲۶ اسفند ۱۴۰۴": { en: "March 17, 2026", fa: "۲۶ اسفند ۱۴۰۴", ar: "١٧ مارس ٢٠٢٦" },

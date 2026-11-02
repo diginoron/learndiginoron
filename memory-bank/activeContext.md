@@ -1,6 +1,14 @@
 # Active Context
 
-## Current Focus (2026-10-28) — DONE: Trilingual post `enterprise-ai-transformation-diginoron-model` (id 16)
+## Current Focus (2026-11-03) — DONE: Trilingual post `banks-block-ai-agents-open-banking` (id 18)
+- **Post**: «چرا بانک‌های بزرگ جهان راه ایجنت‌های هوش مصنوعی را بستند؟ درس‌های بحران «رمز عبور» برای هر سازمان» — based on AI News article (artificialintelligence-news.com/news/banks-block-ai-agents-open-banking-rule/; site is behind a captcha, facts gathered via web search). Slug `banks-block-ai-agents-open-banking`, category `trends`, featured, date `۱۲ آبان ۱۴۰۵` (= Nov 3, 2026), readTime ۱۴ دقیقه.
+- **Angle**: news analysis (credential sharing, excessive agency, liability vacuum, stalled CFPB §1033) → 6-principle "agent-ready architecture" + 5-step roadmap for enterprises. AR version localized with Gulf open banking (Bahrain 2018, SAMA 2022, CBUAE open finance).
+- **Files**: FA at top of `BLOG_POSTS` in `data/blog.ts`; EN + AR in `data/translations/blog/banksBlockAiAgents.ts`; registry + date entry in `data/translations/blog.ts`; pillar entry in `app/sitemap.ts`; cover `public/images/blog/banks-block-ai-agents.jpg` (AI-generated, 1376x768).
+- **CTA funnel**: `/{locale}/services/enterprise-ai` + `/{locale}/contact`. External: AI News source, CFPB §1033 rule page, OWASP LLM06 Excessive Agency.
+- **Note**: pre-existing date map entry `۱۱ آبان ۱۴۰۵` → "November 1" is off by one (actual Nov 2); left untouched.
+- **State**: Blog has 18 posts.
+
+## Previous Focus (2026-10-28) — DONE: Trilingual post `enterprise-ai-transformation-diginoron-model` (id 16)
 - **Post**: «هوشمند سازی سازمانی از طریق هوش مصنوعی با الگوی دیجی نورون» — slug `enterprise-ai-transformation-diginoron-model`, category `corporate-ai`, featured, date `۶ آبان ۱۴۰۵` (= Oct 28, 2026), readTime ۱۷ دقیقه.
 - **FA base**: top of `BLOG_POSTS` in `data/blog.ts` (hero answer → CTA1 → 7 H2 sections covering the 6-pillar DigiNoron Enterprise AI Model → CTA2 → pitfalls → voice Q&As → value bridge → CTA3 → FAQ ×5 → author box + `faq` meta array).
 - **EN + AR**: new `data/translations/blog/diginoronEnterpriseModel.ts` (`Record<Locale, Partial<BlogTranslation>>` with `fa: {}` placeholder; AR wraps content in `dir="rtl"`, `border-r-4`).
