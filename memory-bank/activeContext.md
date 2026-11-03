@@ -1,5 +1,28 @@
 # Active Context
 
+## Current Focus (2026-11-03) — DONE: GitHub Actions quality gate (repo-level)
+- **Why**: user: «گیت هنوز اپدیت نشده» → meant the GitHub repo `diginoron/learndiginoron` — the DoD gate lived only locally (Windows-only script outside the repo).
+- **What**: `.github/workflows/ci.yml` (push/PR → main: npm ci → lint → build → `node scripts/verify-build.mjs`); `scripts/verify-build.mjs` = portable no-deps mirror of the gate's postbuild checks (canonical, sitemap artifact, noindex⇄sitemap invariant, `dod.config.json` noindexPages incl. forbiddenLocales real-page detection via `noindex, nofollow`). npm script `verify:build` added.
+- **Validation**: `node scripts/verify-build.mjs` → `[OK] verify-build (111 HTML pages ...)` EXIT=0; `npm run lint` → 0 errors (fixed the one warning: unused `locale` in `course-requirements` generateMetadata, now early-returns `{}` for invalid locales). Full DoD gate re-run before commit.
+- **State**: changes committed (2 commits) and pushed to `main` — GitHub now runs the same gate on every push/PR. NOTE: `data/translations/blog/banksBlockAiAgents.ts` had a pre-existing uncommitted modification NOT belonging to this task — left unstaged.
+
+## Previous Focus (2026-11-03) — DONE: DoD gate extended with NOINDEX checks
+- **What**: global runner `C:\Users\Asus\OneDrive\Documents\Cline\Scripts\cassher-dod.ps1` postbuild step extended (user: «گیت رو اپدیت کن», covered by standing Gate-extension mandate): (a) invariant — any prerendered HTML with a `robots noindex` meta must NOT be in the built sitemap; (b) config-driven — `dod.config.json` at project root (`"noindexPages": [{ "path": ..., "forbiddenLocales": [...] }]`): declared pages must ship the noindex meta in build output, stay out of the sitemap, and must not prerender for forbidden locales — catches broken `notFound()` locale guards.
+- **Project config**: `dod.config.json` created at repo root, seeded with `fa/course-requirements` (forbidden: en, ar). Every future noindex page just gets an entry there.
+- **Debug story (rule 16 win)**: first gate run FAILed — false positive. Next.js automatically adds a plain `<meta name="robots" content="noindex"/>` to its prerendered 404 pages (present on `en\`/`ar\course-requirements.html`), AND all 3 locales in this project are prefixed (`en\...` exists — earlier `verify.txt` `en_exists=False` had checked the wrong root path). Fix: forbidden-locale check FAILs only on a `noindex, nofollow` meta (the page's own metadata), not plain `noindex`. Also: `This page could not be found` is NOT a reliable 404 marker on `.html` files (the real page embeds it in its RSC payload).
+- **Validation**: re-ran official gate via `scratch/dod-gate.ps1` (wrapper + transcript, rule 14) → typecheck OK 3.9s, lint OK 9s, build OK 22.5s, test SKIP (no script), postbuild OK (111 HTML pages, canonical + sitemap + noindex checks passed) → `ran=4 failed=0 skipped=1 — DOD: PASS`.
+- **Note**: keep `dod.config.json` in sync when adding noindex pages — a page present in the build but missing from it will FAIL the gate.
+
+## Previous Focus (2026-11-03) — DONE: Persian-only noindex page `course-requirements`
+- **Page**: «نیازمندی‌های دوره» at `/fa/course-requirements` — install & test guide (VS Code, Python, SoftEther VPN, optional Node.js) for course students. Persian-ONLY: `en`/`ar` locales call `notFound()` (verified 404 in build output).
+- **No-SEO**: metadata `robots: { index: false, follow: false }`; NOT in sitemap (auto-generated from BLOG_POSTS/COURSES only — no edit needed); canonical = `/fa/course-requirements`.
+- **File**: `app/[locale]/course-requirements/page.tsx` (self-contained, no data-file changes).
+- **VPN content**: SoftEther download link (`softether-download.com/en.aspx?product=softether`) with exact selections table (Freeware / VPN Client / Windows / Intel x86 & x64); steps: install → run → **Refresh server list** → select country → connect; test sites: `aistudio.google.com` + `antigravity.google` (no error = VPN OK). Callout: VPN is «پیشنهادی ما» — students may test their own trusted VPN with the same sites.
+- **Support**: phone `021-88252497` (`tel:02188252497`) at page end.
+- **Validation**: lint 0 errors, build EXIT 0; rendered-HTML check: noindex ×2 in fa HTML, title «نیازمندی‌های دوره | دیجی نورون», SoftEther link + phone present, en/ar routes 404, not in sitemap.
+- **TODO**: page is unlinked (reachable by URL only). Add the link wherever students see it (course page / Telegram / email) when needed.
+
+## Previous Focus (2026-11-03) — DONE: Trilingual post `banks-block-ai-agents-open-banking` (id 18)
 ## Current Focus (2026-11-03) — DONE: Trilingual post `banks-block-ai-agents-open-banking` (id 18)
 - **Post**: «چرا بانک‌های بزرگ جهان راه ایجنت‌های هوش مصنوعی را بستند؟ درس‌های بحران «رمز عبور» برای هر سازمان» — based on AI News article (artificialintelligence-news.com/news/banks-block-ai-agents-open-banking-rule/; site is behind a captcha, facts gathered via web search). Slug `banks-block-ai-agents-open-banking`, category `trends`, featured, date `۱۲ آبان ۱۴۰۵` (= Nov 3, 2026), readTime ۱۴ دقیقه.
 - **Angle**: news analysis (credential sharing, excessive agency, liability vacuum, stalled CFPB §1033) → 6-principle "agent-ready architecture" + 5-step roadmap for enterprises. AR version localized with Gulf open banking (Bahrain 2018, SAMA 2022, CBUAE open finance).

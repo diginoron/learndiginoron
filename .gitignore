@@ -42,3 +42,6 @@ next-env.d.ts
 
 # internal / local SEO files
 [Ss][Ee][Oo]/
+
+# local gate logs & scratch scripts
+/scratch/

@@ -1,0 +1,5 @@
+{
+  "noindexPages": [
+    { "path": "fa/course-requirements", "forbiddenLocales": ["en", "ar"] }
+  ]
+}
