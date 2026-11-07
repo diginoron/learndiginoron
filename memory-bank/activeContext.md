@@ -1,6 +1,14 @@
 # Active Context
 
-## Current Focus (2026-11-03) — DONE: GitHub Actions quality gate (repo-level)
+## Current Focus (2026-11-07) — DONE: Trilingual post `best-ai-course-for-kids-and-teens` (id 19)
+- **Post**: «بهترین دوره آموزش هوش مصنوعی کودکان و نوجوانان؛ راهنمای کامل انتخاب والدین» — slug `best-ai-course-for-kids-and-teens`, category `kids-ai`, featured, date `۱۶ آبان ۱۴۰۵` (= Nov 7, 2026), readTime ۱۵ دقیقه, image `/images/courses/kids-ai.jpg`.
+- **FA base**: top of `BLOG_POSTS` in `data/blog.ts` — hero answer → CTA1 → Section 1 (5 quality-criteria H3s) → Section 2 (why not just engineers) → Section 3 (entrepreneurship steps 1–4) → comparison table (3-approach) → CTA2 → pitfalls ×5 → voice Q&As ×3 → internal links → CTA3 → FAQ HTML ×5 → author box + `faq` meta array ×5.
+- **EN + AR**: new `data/translations/blog/bestAiCourseKidsTeens.ts` (`fa: {}` placeholder; AR root `dir="rtl"`, `border-r-4`; EN `border-l-4`). Registry: import + `"best-ai-course-for-kids-and-teens"` entry + date map (`۱۶ آبان ۱۴۰۵` → Nov 7, 2026) in `data/translations/blog.ts`.
+- **CTA funnel**: all 3 CTAs target `/{locale}/courses/ai-entrepreneurship-kids-teens` (kids AI-entrepreneurship course page). Citations: UNESCO AI competency framework + WEF Future of Jobs 2025. Internal links: `why-teach-kids-ai-entrepreneurship-not-ai-engineering`, `why-kids-should-learn-ai-early`, `ai-entrepreneurship-from-childhood`, `python-programming-for-teenagers` (locale-prefixed).
+- **Validation**: DoD gate PASS — typecheck OK, lint OK, build OK, test SKIP (no script), postbuild OK (114 HTML pages, canonical + sitemap + noindex checks passed); built sitemap contains all 3 locale URLs (`/blog/…`, `/fa/blog/…`, `/ar/blog/best-ai-course-for-kids-and-teens`).
+- **Session learnings**: (1) chunk-inserting a long post via `insert_line` at a fixed line in reverse order works — junctions verified clean; keep every chunk < 6000 chars (editor hard limit, ~5000 safe). (2) rule-14 refined the hard way: ANY foreground shell command (even a quick Select-String) started while the gate runs kills the gate shell mid-run — the gate had to be re-run; poll strictly with file reads until `Stop-Transcript`.
+
+## Previous Focus (2026-11-03) — DONE: GitHub Actions quality gate (repo-level)
 - **Why**: user: «گیت هنوز اپدیت نشده» → meant the GitHub repo `diginoron/learndiginoron` — the DoD gate lived only locally (Windows-only script outside the repo).
 - **What**: `.github/workflows/ci.yml` (push/PR → main: npm ci → lint → build → `node scripts/verify-build.mjs`); `scripts/verify-build.mjs` = portable no-deps mirror of the gate's postbuild checks (canonical, sitemap artifact, noindex⇄sitemap invariant, `dod.config.json` noindexPages incl. forbiddenLocales real-page detection via `noindex, nofollow`). npm script `verify:build` added.
 - **Validation**: `node scripts/verify-build.mjs` → `[OK] verify-build (111 HTML pages ...)` EXIT=0; `npm run lint` → 0 errors (fixed the one warning: unused `locale` in `course-requirements` generateMetadata, now early-returns `{}` for invalid locales). Full DoD gate re-run before commit.

@@ -18,6 +18,7 @@ import { aiEntrepreneurshipNotEngineeringTranslation } from "./blog/aiEntreprene
 import { diginoronEnterpriseModelTranslation } from "./blog/diginoronEnterpriseModel";
 import { smartMarketingDepartmentAiTranslation } from "./blog/smartMarketingDepartmentAi";
 import { banksBlockAiAgentsTranslation } from "./blog/banksBlockAiAgents";
+import { bestAiCourseKidsTeensTranslation } from "./blog/bestAiCourseKidsTeens";
 
 export interface BlogTranslation {
   title: string;
@@ -48,6 +49,7 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "enterprise-ai-transformation-diginoron-model": diginoronEnterpriseModelTranslation,
   "smart-marketing-department-ai": smartMarketingDepartmentAiTranslation,
   "banks-block-ai-agents-open-banking": banksBlockAiAgentsTranslation,
+  "best-ai-course-for-kids-and-teens": bestAiCourseKidsTeensTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
@@ -68,6 +70,7 @@ export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
   "۳ آبان ۱۴۰۵": { en: "October 25, 2026", fa: "۳ آبان ۱۴۰۵", ar: "٢٥ أكتوبر ٢٠٢٦" },
   "۴ آبان ۱۴۰۵": { en: "October 26, 2026", fa: "۴ آبان ۱۴۰۵", ar: "٢٦ أكتوبر ٢٠٢٦" },
   "۶ آبان ۱۴۰۵": { en: "October 28, 2026", fa: "۶ آبان ۱۴۰۵", ar: "٢٨ أكتوبر ٢٠٢٦" },
+  "۱۶ آبان ۱۴۰۵": { en: "November 7, 2026", fa: "۱۶ آبان ۱۴۰۵", ar: "٧ نوفمبر ٢٠٢٦" },
 };
 
 export const BLOG_AUTHOR_NAME_TRANSLATIONS: Record<string, Record<Locale, string>> = {
