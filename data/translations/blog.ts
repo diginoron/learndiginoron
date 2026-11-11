@@ -19,6 +19,7 @@ import { diginoronEnterpriseModelTranslation } from "./blog/diginoronEnterpriseM
 import { smartMarketingDepartmentAiTranslation } from "./blog/smartMarketingDepartmentAi";
 import { banksBlockAiAgentsTranslation } from "./blog/banksBlockAiAgents";
 import { bestAiCourseKidsTeensTranslation } from "./blog/bestAiCourseKidsTeens";
+import { naturalIntelligenceBeforeAiTranslation } from "./blog/naturalIntelligenceBeforeAi";
 
 export interface BlogTranslation {
   title: string;
@@ -50,9 +51,11 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "smart-marketing-department-ai": smartMarketingDepartmentAiTranslation,
   "banks-block-ai-agents-open-banking": banksBlockAiAgentsTranslation,
   "best-ai-course-for-kids-and-teens": bestAiCourseKidsTeensTranslation,
+  "natural-intelligence-before-artificial-intelligence": naturalIntelligenceBeforeAiTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
+  "۲۱ آبان ۱۴۰۵": { en: "November 12, 2026", fa: "۲۱ آبان ۱۴۰۵", ar: "١٢ نوفمبر ٢٠٢٦" },
   "۱۲ آبان ۱۴۰۵": { en: "November 3, 2026", fa: "۱۲ آبان ۱۴۰۵", ar: "٣ نوفمبر ٢٠٢٦" },
   "۱۱ آبان ۱۴۰۵": { en: "November 1, 2026", fa: "۱۱ آبان ۱۴۰۵", ar: "١ نوفمبر ٢٠٢٦" },
   "۲۷ اسفند ۱۴۰۴": { en: "March 18, 2026", fa: "۲۷ اسفند ۱۴۰۴", ar: "١٨ مارس ٢٠٢٦" },
@@ -131,6 +134,11 @@ export const BLOG_AUTHOR_ROLE_TRANSLATIONS: Record<string, Record<Locale, string
     en: "Senior Digital Transformation Advisor",
     fa: "مشاور ارشد تحول دیجیتال",
     ar: "كبير مستشاري التحول الرقمي",
+  },
+  "استراتژیست هوش مصنوعی و مشاور ارشد تحول سازمانی": {
+    en: "AI Strategist & Senior Organizational Transformation Consultant",
+    fa: "استراتژیست هوش مصنوعی و مشاور ارشد تحول سازمانی",
+    ar: "استراتيجي الذكاء الاصطناعي وكبير مستشاري التحول المؤسسي",
   },
   "تولیدکننده محتوا و پژوهشگر هوش مصنوعی": {
     en: "AI Researcher & Content Strategist",
