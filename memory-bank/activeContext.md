@@ -1,6 +1,20 @@
 # Active Context
 
-## Current Focus (2026-11-07) — DONE: Trilingual post `best-ai-course-for-kids-and-teens` (id 19)
+## Current Focus (2026-11-14) — DONE: Trilingual post `what-age-should-kids-start-learning-ai` (id 21) shipped
+- **Post**: «کودکان خود را از چه سنی با مهارت‌های هوش مصنوعی آشنا کنیم؟» — FA base at top of `BLOG_POSTS` in `data/blog.ts`, full EN+AR in `data/translations/blog/whatAgeKidsLearnAi.ts` (`fa: {}` stub required), registered in `data/translations/blog.ts` (import + slug + date map `۲۳ آبان ۱۴۰۵` → November 14, 2026).
+- **Validation**: DoD gate PASS (ran=4 failed=0 skipped=1; postbuild 120 HTML pages, canonical + sitemap + noindex OK).
+- **Junction lesson (rule 16 win)**: reverse-order `insert_line=1` chunks made the duplicated E1 header land mid-file and left the AR faq tail dangling at EOF; fixed via two anchor-based junction edits (duplicate header → AR `faq: [` items 1–5 + `en: {` reopen; dangling tail deleted). Verify structure by reading back junctions + tail before gating.
+- **CTAs**: all 3 target `/courses/ai-entrepreneurship-kids-teens` (EN, unprefixed) / `/fa/courses/…` / `/ar/courses/…`. Citations: WEF Future of Jobs 2025, UNESCO AI Competency Framework. Internal links: `why-kids-should-learn-ai-early`, `why-teach-kids-ai-entrepreneurship-not-ai-engineering`, `why-ai-entrepreneurship-beats-traditional-school-subjects`, `best-ai-course-for-kids-and-teens` (locale-prefixed).
+- **Committed**: only `data/blog.ts`, `data/translations/blog.ts`, `data/translations/blog/whatAgeKidsLearnAi.ts`, `GUIDE.md`, memory-bank files. `banksBlockAiAgents.ts` trailing-blank-line noise left unstaged again.
+
+## Previous Focus (2026-11-12) — DONE: Trilingual post `natural-intelligence-before-artificial-intelligence` (id 20) shipped
+- **Post**: «هوش طبیعی قبل از هوش مصنوعی» — FA base in `data/blog.ts`, full EN+AR in `data/translations/blog/naturalIntelligenceBeforeAi.ts` (`fa: {}` stub required), registered in `data/translations/blog.ts`.
+- **Validation**: DoD gate PASS (ran=4 failed=0 skipped=1). CTAs: `/ar/contact` in AR content; sitemap auto-generates all 3 locale URLs.
+- **Shipped**: commit `d875105` (translation file, 604 lines) + `19578c7` (data/blog.ts +315, registry +8) — both pushed to `main` (`f480d5c..19578c7`).
+- **Still uncommitted (intentionally)**: `data/translations/blog/banksBlockAiAgents.ts` has a trailing-blank-line-only diff — pre-existing noise, not part of this task; left unstaged.
+- **Tooling learnings**: (1) Start-Transcript reliably captures only the FIRST git command per run — subsequent git commands' output vanishes. (2) Reliable pattern: set `$env:GIT_REDIRECT_STDERR='2>&1'` and redirect each git command with `*> "file.txt"`, then read the files with the editor (git stderr under redirection writes UTF-16; readable via editor read despite mojibake-looking output). (3) Commit discovery: the retried commit HAD landed (`git log` tail) even though its transcript was empty — always verify against `git log`, not transcript absence.
+
+## Previous Focus (2026-11-07) — DONE: Trilingual post `best-ai-course-for-kids-and-teens` (id 19)
 - **Post**: «بهترین دوره آموزش هوش مصنوعی کودکان و نوجوانان؛ راهنمای کامل انتخاب والدین» — slug `best-ai-course-for-kids-and-teens`, category `kids-ai`, featured, date `۱۶ آبان ۱۴۰۵` (= Nov 7, 2026), readTime ۱۵ دقیقه, image `/images/courses/kids-ai.jpg`.
 - **FA base**: top of `BLOG_POSTS` in `data/blog.ts` — hero answer → CTA1 → Section 1 (5 quality-criteria H3s) → Section 2 (why not just engineers) → Section 3 (entrepreneurship steps 1–4) → comparison table (3-approach) → CTA2 → pitfalls ×5 → voice Q&As ×3 → internal links → CTA3 → FAQ HTML ×5 → author box + `faq` meta array ×5.
 - **EN + AR**: new `data/translations/blog/bestAiCourseKidsTeens.ts` (`fa: {}` placeholder; AR root `dir="rtl"`, `border-r-4`; EN `border-l-4`). Registry: import + `"best-ai-course-for-kids-and-teens"` entry + date map (`۱۶ آبان ۱۴۰۵` → Nov 7, 2026) in `data/translations/blog.ts`.

@@ -20,6 +20,7 @@ import { smartMarketingDepartmentAiTranslation } from "./blog/smartMarketingDepa
 import { banksBlockAiAgentsTranslation } from "./blog/banksBlockAiAgents";
 import { bestAiCourseKidsTeensTranslation } from "./blog/bestAiCourseKidsTeens";
 import { naturalIntelligenceBeforeAiTranslation } from "./blog/naturalIntelligenceBeforeAi";
+import { whatAgeKidsLearnAiTranslation } from "./blog/whatAgeKidsLearnAi";
 
 export interface BlogTranslation {
   title: string;
@@ -52,9 +53,11 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "banks-block-ai-agents-open-banking": banksBlockAiAgentsTranslation,
   "best-ai-course-for-kids-and-teens": bestAiCourseKidsTeensTranslation,
   "natural-intelligence-before-artificial-intelligence": naturalIntelligenceBeforeAiTranslation,
+  "what-age-should-kids-start-learning-ai": whatAgeKidsLearnAiTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
+  "۲۳ آبان ۱۴۰۵": { en: "November 14, 2026", fa: "۲۳ آبان ۱۴۰۵", ar: "١٤ نوفمبر ٢٠٢٦" },
   "۲۱ آبان ۱۴۰۵": { en: "November 12, 2026", fa: "۲۱ آبان ۱۴۰۵", ar: "١٢ نوفمبر ٢٠٢٦" },
   "۱۲ آبان ۱۴۰۵": { en: "November 3, 2026", fa: "۱۲ آبان ۱۴۰۵", ar: "٣ نوفمبر ٢٠٢٦" },
   "۱۱ آبان ۱۴۰۵": { en: "November 1, 2026", fa: "۱۱ آبان ۱۴۰۵", ar: "١ نوفمبر ٢٠٢٦" },
