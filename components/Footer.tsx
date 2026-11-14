@@ -177,6 +177,14 @@ export default function Footer({ locale = "en" }: FooterProps) {
               </li>
               <li>
                 <Link 
+                  href={getLocalizedPath("/tools", locale)} 
+                  className="hover:text-cyan-300 transition-colors flex items-center gap-2"
+                >
+                  <span>• {t.nav.tools}</span>
+                </Link>
+              </li>
+              <li>
+                <Link 
                   href={getLocalizedPath("/blog", locale)} 
                   className="hover:text-cyan-300 transition-colors flex items-center gap-2"
                 >
@@ -243,6 +251,9 @@ export default function Footer({ locale = "en" }: FooterProps) {
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>{t.footer.rightsReserved}</p>
           <div className="flex items-center gap-6">
+            <Link href={getLocalizedPath("/tools", locale)} className="hover:text-slate-400 transition-colors">
+              {t.nav.tools}
+            </Link>
             <Link href={getLocalizedPath("/about", locale)} className="hover:text-slate-400 transition-colors">
               {t.nav.about}
             </Link>

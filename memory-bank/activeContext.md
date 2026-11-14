@@ -1,6 +1,21 @@
 # Active Context
 
-## Current Focus (2026-11-14) — DONE: Trilingual post `what-age-should-kids-start-learning-ai` (id 21) shipped
+## Current Focus (2026-11-14) — DONE: Dedicated AI Tools page & navigation menu integration
+- **Feature**: Added "ابزارها" / "AI Tools" / "الأدوات" to header and footer navigation (desktop & mobile) placed right before Articles/Blog.
+- **Pages**: New trilingual `/tools` route (`app/[locale]/tools/page.tsx` + `data/translations/tools.ts`).
+  - Persian (`fa`): 4 tools:
+    1. Thesis (`thesis.diginoron.com` app + `ai.caspianthesis.com` blog)
+    2. Trading (`trading.diginoron.com` app)
+    3. Scholar (`scholar.diginoron.com` app + `scholarmag.diginoron.com` blog)
+    4. Beauty (`beauty.diginoron.com` app + `beautymag.diginoron.com` blog)
+  - English (`en`) & Arabic (`ar`): 2 tools:
+    1. Scholar (`scholar.diginoron.com` app + `scholarmag.diginoron.com` blog)
+    2. Beauty (`beauty.diginoron.com/en` app + `beautymag.diginoron.com/en` blog)
+- **UI/UX**: Custom responsive glass cards with accent glows, feature bullet points, direct app launch and magazine buttons (`target="_blank"`), JSON-LD SoftwareApplication schema markup, and enterprise custom AI development CTA.
+- **Sitemap**: `/tools` added to `corePaths` in `app/sitemap.ts` (weekly frequency, priority 0.9). Verified in generated sitemap for all 3 locales (`/tools`, `/fa/tools`, `/ar/tools`).
+- **Validation**: `npm run lint` PASS (0 errors), `npm run build` PASS (132 static pages generated), `npm run verify:build` PASS (123 HTML pages verified).
+
+## Previous Focus (2026-11-14) — DONE: Trilingual post `what-age-should-kids-start-learning-ai` (id 21) shipped
 - **Post**: «کودکان خود را از چه سنی با مهارت‌های هوش مصنوعی آشنا کنیم؟» — FA base at top of `BLOG_POSTS` in `data/blog.ts`, full EN+AR in `data/translations/blog/whatAgeKidsLearnAi.ts` (`fa: {}` stub required), registered in `data/translations/blog.ts` (import + slug + date map `۲۳ آبان ۱۴۰۵` → November 14, 2026).
 - **Validation**: DoD gate PASS (ran=4 failed=0 skipped=1; postbuild 120 HTML pages, canonical + sitemap + noindex OK).
 - **Junction lesson (rule 16 win)**: reverse-order `insert_line=1` chunks made the duplicated E1 header land mid-file and left the AR faq tail dangling at EOF; fixed via two anchor-based junction edits (duplicate header → AR `faq: [` items 1–5 + `en: {` reopen; dangling tail deleted). Verify structure by reading back junctions + tail before gating.

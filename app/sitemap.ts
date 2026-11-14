@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/services/held-courses", changeFrequency: "weekly", priority: 0.9 },
     { path: "/courses", changeFrequency: "weekly", priority: 0.9 },
     { path: "/courses/held", changeFrequency: "weekly", priority: 0.85 },
+    { path: "/tools", changeFrequency: "weekly", priority: 0.9 },
     { path: "/blog", changeFrequency: "daily", priority: 0.9 },
     { path: "/about", changeFrequency: "monthly", priority: 0.75 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.8 },

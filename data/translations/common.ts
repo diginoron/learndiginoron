@@ -22,6 +22,7 @@ export interface CommonTranslations {
     heldCourses: string;
     heldCoursesDesc: string;
     courses: string;
+    tools: string;
     blog: string;
     about: string;
     contact: string;
@@ -86,6 +87,7 @@ export const COMMON_TRANSLATIONS: Record<Locale, CommonTranslations> = {
       heldCourses: "Held Courses & Case Studies",
       heldCoursesDesc: "Portfolio of workshops delivered to leading industries",
       courses: "Course Catalog",
+      tools: "AI Tools",
       blog: "Articles & Insights",
       about: "About Us",
       contact: "Contact & Consultation",
@@ -148,6 +150,7 @@ export const COMMON_TRANSLATIONS: Record<Locale, CommonTranslations> = {
       heldCourses: "دوره‌های برگزار شده",
       heldCoursesDesc: "سوابق برگزاری در صنایع پتروشیمی، مراکز صنعتی، سازمان‌ها و نهادهای پیشرو...",
       courses: "کاتالوگ دوره‌ها",
+      tools: "ابزارها",
       blog: "مقالات و تحلیل‌ها",
       about: "درباره ما",
       contact: "تماس و مشاوره",
@@ -210,6 +213,7 @@ export const COMMON_TRANSLATIONS: Record<Locale, CommonTranslations> = {
       heldCourses: "الدورات المنجزة والمشاريع",
       heldCoursesDesc: "سجل حافل بالتدريب في كبرى الشركات والمؤسسات الحكومية والخاصة",
       courses: "دليل الدورات التدريبية",
+      tools: "الأدوات",
       blog: "المقالات والتحليلات",
       about: "من نحن",
       contact: "التواصل والاستشارة",

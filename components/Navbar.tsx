@@ -299,6 +299,13 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
             </div>
 
             <Link
+              href={getLocalizedPath("/tools", locale)}
+              className="px-2.5 py-1.5 font-medium text-slate-700 hover:text-cyan-700 hover:bg-slate-50 rounded-lg transition-colors"
+            >
+              <span>{t.nav.tools}</span>
+            </Link>
+
+            <Link
               href={getLocalizedPath("/blog", locale)}
               className="px-2.5 py-1.5 font-medium text-slate-700 hover:text-cyan-700 hover:bg-slate-50 rounded-lg transition-colors"
             >
@@ -429,6 +436,14 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
           </div>
 
           <div className="border-t border-slate-100 pt-1.5 space-y-1">
+            <Link
+              href={getLocalizedPath("/tools", locale)}
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-1.5 text-xs font-medium text-slate-700 hover:text-cyan-700"
+            >
+              {t.nav.tools}
+            </Link>
+
             <Link
               href={getLocalizedPath("/blog", locale)}
               onClick={() => setMobileMenuOpen(false)}
