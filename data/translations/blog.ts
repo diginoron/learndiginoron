@@ -21,6 +21,7 @@ import { banksBlockAiAgentsTranslation } from "./blog/banksBlockAiAgents";
 import { bestAiCourseKidsTeensTranslation } from "./blog/bestAiCourseKidsTeens";
 import { naturalIntelligenceBeforeAiTranslation } from "./blog/naturalIntelligenceBeforeAi";
 import { whatAgeKidsLearnAiTranslation } from "./blog/whatAgeKidsLearnAi";
+import { introducingGemini4HydrogenTranslation } from "./blog/introducingGemini4Hydrogen";
 
 export interface BlogTranslation {
   title: string;
@@ -54,6 +55,7 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "best-ai-course-for-kids-and-teens": bestAiCourseKidsTeensTranslation,
   "natural-intelligence-before-artificial-intelligence": naturalIntelligenceBeforeAiTranslation,
   "what-age-should-kids-start-learning-ai": whatAgeKidsLearnAiTranslation,
+  "introducing-gemini-4-hydrogen": introducingGemini4HydrogenTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
