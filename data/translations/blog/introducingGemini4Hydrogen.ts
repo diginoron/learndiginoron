@@ -57,7 +57,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </div>
 
   <!-- Section 1 -->
-  <h2>What Is Gemini 4 Hydrogen? Positioning Google's Daily Driver in the Gemini 4 Family</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">What Is Gemini 4 Hydrogen? Positioning Google's Daily Driver in the Gemini 4 Family</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-l-4 border-cyan-600">
     Gemini 4 Hydrogen is Google DeepMind's specialized high-throughput model designed to handle high-frequency code execution, agentic loops, and daily automation at 2.5x the speed of Gemini 3.8 Flash, complementing heavy frontier reasoning models like Carbon and Argon.
@@ -72,7 +72,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </p>
 
   <!-- Section 2: Benchmarks & Official Comparison Table -->
-  <h2>Official Performance Benchmarks: How Gemini 4 Hydrogen Redefines Agentic Metrics</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">Official Performance Benchmarks: How Gemini 4 Hydrogen Redefines Agentic Metrics</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-l-4 border-cyan-600">
     Hydrogen surpasses Gemini 4 Argon on the Artificial Analysis Intelligence Index (51 vs. 50 at default high thinking, reaching 54 at xhigh), more than triples Terminal-Bench 4.1 coding scores to 57.0%, and cuts fabricated claims by over 5x compared to previous generation flash models.
@@ -180,7 +180,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </div>
 
   <!-- Section 3 -->
-  <h2>Unlocking Multi-Model Workflows: Orchestrator in Google Antigravity</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">Unlocking Multi-Model Workflows: Orchestrator in Google Antigravity</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-l-4 border-cyan-600">
     Rather than locking an entire session to a single expensive frontier model, Google introduced Orchestrator in Antigravity to dynamically route high-level architectural planning to Carbon and parallel execution tasks to Hydrogen, saving 24% quota and completing jobs 19% faster.
@@ -204,7 +204,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </p>
 
   <!-- Section 4 -->
-  <h2>Adaptable Speed and Intelligence Across Four Thinking Levels</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">Adaptable Speed and Intelligence Across Four Thinking Levels</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-l-4 border-cyan-600">
     Hydrogen introduces granular developer control over cognitive deliberation with four selectable thinking tiers: low, medium, high (default), and xhigh, allowing teams to balance token budgets against reasoning depth dynamically.
@@ -230,7 +230,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </div>
 
   <!-- Section 5 -->
-  <h2>Developer and Enterprise Superpowers: Surgical Edits and Native Tool Batching</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">Developer and Enterprise Superpowers: Surgical Edits and Native Tool Batching</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-l-4 border-cyan-600">
     Hydrogen cuts token consumption by 12% to 23% in large repositories by natively batching file inspections in parallel, while eliminating broad unintended code overwrites with surgical, line-precise modifications.
@@ -247,7 +247,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </ul>
 
   <!-- Section 6 -->
-  <h2>Enterprise Safety and Security: Eliminating Excessive Agency and Prompt Injections</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">Enterprise Safety and Security: Eliminating Excessive Agency and Prompt Injections</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-l-4 border-cyan-600">
     Hydrogen reduces agentic overreach by 81%, cuts task shortcutting by 12x, achieves a 94% agent honesty rate, and delivers 2.3x higher resilience against Indirect Prompt Injection attacks on the Gray Swan benchmark.
@@ -264,7 +264,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </ul>
 
   <!-- Section 7: Rollout & Ecosystem -->
-  <h2>Ecosystem Availability: Where Can You Access Gemini 4 Hydrogen Today?</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">Ecosystem Availability: Where Can You Access Gemini 4 Hydrogen Today?</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-l-4 border-cyan-600">
     Gemini 4 Hydrogen is available immediately across Google AI Studio, the Gemini API, Android Studio, Google Antigravity, Google Search, and the consumer Gemini app.
@@ -363,7 +363,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </div>
 
   <!-- Section 1 -->
-  <h2>جمینای ۴ هیدروژن چیست؟ جایگاه «موتور کار روزمره» در خانواده مدل‌های Gemini 4</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">جمینای ۴ هیدروژن چیست؟ جایگاه «موتور کار روزمره» در خانواده مدل‌های Gemini 4</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     جمینای ۴ هیدروژن مدل تخصصی و سریع گوگل دیپ‌مایند برای انجام وظایف پربسامد توسعه نرم‌افزار، اجرای دستورات ترمینال و خودکارسازی ایجنتی است که با سرعت ۲.۵ برابری نسبت به نسل‌های فلش، در کنار مدل‌های سنگین استدلالی کربن و آرگون فعالیت می‌کند.
@@ -378,7 +378,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </p>
 
   <!-- Section 2: Table -->
-  <h2>جدول مقایسه رسمی بنچمارک‌ها: جهش خیره‌کننده جمینای ۴ هیدروژن</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">جدول مقایسه رسمی بنچمارک‌ها: جهش خیره‌کننده جمینای ۴ هیدروژن</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     هیدروژن با کسب امتیاز ۵۱ در شاخص هوش آنالیز مصنوعی از مدل آرگون پیشی گرفته، در بنچمارک برنامه‌نویسی Terminal-Bench 4.1 امتیاز خود را به ۵۷.۰٪ رسانده (بیش از سه برابر فلش ۳.۸) و میزان ادعاهای ساختگی (توهم) را بیش از ۵ برابر کاهش داده است.
@@ -486,7 +486,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </div>
 
   <!-- Section 3 -->
-  <h2>انقلاب گردش‌کارهای چندمدلی: ارکستراتور (Orchestrator) در گوگل آنتی‌گرویتی</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">انقلاب گردش‌کارهای چندمدلی: ارکستراتور (Orchestrator) در گوگل آنتی‌گرویتی</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     به جای واگذاری تمام کار به یک مدل گران‌قیمت، ابزار ارکستراتور در گوگل آنتی‌گرویتی کارهای معماری کلان را به کربن و کارهای اجرایی موازی را به هیدروژن می‌سپارد؛ نتیجه کاهش ۲۴ درصدی مصرف سهمیه و افزایش ۱۹ درصدی سرعت انجام پروژه است.
@@ -510,7 +510,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </p>
 
   <!-- Section 4 -->
-  <h2>تنظیم هوشمندانه سرعت و عمق استدلال در چهار سطح تفکر (Thinking Levels)</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">تنظیم هوشمندانه سرعت و عمق استدلال در چهار سطح تفکر (Thinking Levels)</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     هیدروژن با ارائه ۴ سطح تفکر قابل انتخاب (low, medium, high, xhigh) به توسعه‌دهنده امکان می‌دهد بسته به حساسیت هر وظیفه، تعادل بهینه‌ای میان هزینه، تاخیر زمانی و عمق تحلیل ایجاد کند.
@@ -536,7 +536,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </div>
 
   <!-- Section 5 -->
-  <h2>اصلاح جراحی کدها و فراخوانی دسته‌ای ابزارها (Batch Tool Calls)</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">اصلاح جراحی کدها و فراخوانی دسته‌ای ابزارها (Batch Tool Calls)</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     هیدروژن با خواندن و جستجوی موازی فایل‌ها به جای بررسی تکی، مصرف توکن را در پروژه‌های بزرگ تا ۲۳ درصد کاهش داده و با ایجاد تغییرات نقطه‌ای و متمرکز، مانع از دستکاری کدهای نامربوط ریپازیتوری می‌شود.
@@ -553,7 +553,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </ul>
 
   <!-- Section 6 -->
-  <h2>امنیت سازمانی و مهار عاملیت بیش‌ازحد (Excessive Agency)</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">امنیت سازمانی و مهار عاملیت بیش‌ازحد (Excessive Agency)</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     کاهش ۸۱ درصدی زیاده‌روی در اختیارات ایجنت، کاهش ۱۲ برابری میان‌برهای اشتباه در وظایف، شفافیت ۹۹.۹ درصدی زنجیره استدلال و مقاومت ۲.۳ برابری در برابر حملات تزریق پرامپت، امنیت هیدروژن را تضمین می‌کند.
@@ -570,7 +570,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </ul>
 
   <!-- Section 7: Ecosystem -->
-  <h2>دسترس‌پذیری در اکوسیستم گوگل: کجا و چگونه می‌توان از هیدروژن استفاده کرد؟</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">دسترس‌پذیری در اکوسیستم گوگل: کجا و چگونه می‌توان از هیدروژن استفاده کرد؟</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     جمینای ۴ هیدروژن هم‌اکنون به صورت جهانی در گوگل استودیو، کلیدهای API، اندروید استودیو، گوگل سرچ، اپلیکیشن جمینای و پلتفرم گوگل آنتی‌گرویتی در دسترس تمام کاربران و کسب‌وکارها قرار گرفته است.
@@ -665,7 +665,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </div>
 
   <!-- Section 1 -->
-  <h2>ما هو نموذج Gemini 4 Hydrogen؟ موقع محرك الإنجاز اليومي في عائلة Gemini 4</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">ما هو نموذج Gemini 4 Hydrogen؟ موقع محرك الإنجاز اليومي في عائلة Gemini 4</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     يعد Gemini 4 Hydrogen نموذج التنفيذ فائق السرعة من جوجل ديب مايند للتعامل مع البرمجة الدقيقة والوكلاء الآليين بسرعة تفوق 2.5 مرة مقارنة بنماذج فلاش السابقة، ويعمل جنباً إلى جنب مع نماذج الاستدلال العميق مثل Carbon وArgon.
@@ -680,7 +680,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </p>
 
   <!-- Section 2: Benchmarks Table -->
-  <h2>جدول المقارنة الرسمي للأداء: قفزة تاريخية في مقاييس الوكلاء والبرمجة</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">جدول المقارنة الرسمي للأداء: قفزة تاريخية في مقاييس الوكلاء والبرمجة</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     تفوق Hydrogen على نموذج Argon في مؤشر Artificial Analysis محققاً 51 نقطة، وقفز في بنچمارك Terminal-Bench 4.1 للبرمجة إلى 57.0% (أكثر من ثلاثة أضعاف الجيل السابق)، وخفض الادعاءات المغلوطة بأكثر من 5 أضعاف.
@@ -788,7 +788,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </div>
 
   <!-- Section 3 -->
-  <h2>سير العمل متعدد النماذج: أداة التنسيق Orchestrator في Google Antigravity</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">سير العمل متعدد النماذج: أداة التنسيق Orchestrator في Google Antigravity</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     تتيح أداة Orchestrator الجديدة التبديل التلقائي والديناميكي بين نموذج Carbon للتخطيط المعماري ونموذج Hydrogen للتنفيذ المتوازي، مما وفر 24% من استهلاك الحصص وأنهى المهام بنسبة 19% أسرع.
@@ -804,7 +804,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </ul>
 
   <!-- Section 4 -->
-  <h2>مرونة الاستدلال عبر أربعة مستويات تفكير (Thinking Levels)</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">مرونة الاستدلال عبر أربعة مستويات تفكير (Thinking Levels)</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     يمنح Hydrogen المطورين 4 مستويات للتفكير قابلة للضبط (low, medium, high, xhigh) للموازنة الدقيقة بين التكلفة، وزمن الاستجابة، وعمق الاستدلال المنطقي.
@@ -826,7 +826,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </div>
 
   <!-- Section 5 -->
-  <h2>الأمان المؤسسي والتحكم في عامليّة الوكلاء (Agent Governance)</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">الأمان المؤسسي والتحكم في عامليّة الوكلاء (Agent Governance)</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     نجح Hydrogen في تقليص التجاوز في الصلاحيات بنسبة 81%، وخفض الاختصارات الخاطئة بمقدار 12 ضعفاً، وحقق معدل شفافية في التفكير بنسبة 99.9%، وصموداً أعلى بمقدار 2.3 ضعف ضد هجمات حقن الأوامر غير المباشرة.
@@ -843,7 +843,7 @@ export const introducingGemini4HydrogenTranslation: Record<Locale, Partial<BlogT
   </ul>
 
   <!-- Section 6: Ecosystem -->
-  <h2>أين يتوفر نموذج Gemini 4 Hydrogen اليوم؟</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">أين يتوفر نموذج Gemini 4 Hydrogen اليوم؟</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     أصبح Gemini 4 Hydrogen متاحاً عالمياً اليوم عبر Google AI Studio، وواجهات البرمجة، وAndroid Studio، ومحرك بحث Google، ومنصة Google Antigravity، وتطبيق Gemini.

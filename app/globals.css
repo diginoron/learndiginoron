@@ -114,3 +114,32 @@
 .animate-pulse-glow {
   animation: pulseGlow 4s ease-in-out infinite;
 }
+
+/* Article & Blog Typography */
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5 {
+  font-weight: 800 !important;
+  color: #0f172a;
+  letter-spacing: -0.015em;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose h4 {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+

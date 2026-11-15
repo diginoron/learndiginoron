@@ -44,7 +44,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </div>
 
   <!-- Section 1 -->
-  <h2>جمینای ۴ هیدروژن چیست؟ جایگاه «موتور کار روزمره» در خانواده مدل‌های Gemini 4</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">جمینای ۴ هیدروژن چیست؟ جایگاه «موتور کار روزمره» در خانواده مدل‌های Gemini 4</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     جمینای ۴ هیدروژن مدل تخصصی و سریع گوگل دیپ‌مایند برای انجام وظایف پربسامد توسعه نرم‌افزار، اجرای دستورات ترمینال و خودکارسازی ایجنتی است که با سرعت ۲.۵ برابری نسبت به نسل‌های فلش، در کنار مدل‌های سنگین استدلالی کربن و آرگون فعالیت می‌کند.
@@ -59,7 +59,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </p>
 
   <!-- Section 2: Table -->
-  <h2>جدول مقایسه رسمی بنچمارک‌ها: جهش خیره‌کننده جمینای ۴ هیدروژن</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">جدول مقایسه رسمی بنچمارک‌ها: جهش خیره‌کننده جمینای ۴ هیدروژن</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     هیدروژن با کسب امتیاز ۵۱ در شاخص هوش آنالیز مصنوعی از مدل آرگون پیشی گرفته، در بنچمارک برنامه‌نویسی Terminal-Bench 4.1 امتیاز خود را به ۵۷.۰٪ رسانده (بیش از سه برابر فلش ۳.۸) و میزان ادعاهای ساختگی (توهم) را بیش از ۵ برابر کاهش داده است.
@@ -167,7 +167,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </div>
 
   <!-- Section 3 -->
-  <h2>انقلاب گردش‌کارهای چندمدلی: ارکستراتور (Orchestrator) در گوگل آنتی‌گرویتی</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">انقلاب گردش‌کارهای چندمدلی: ارکستراتور (Orchestrator) در گوگل آنتی‌گرویتی</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     به جای واگذاری تمام کار به یک مدل گران‌قیمت، ابزار ارکستراتور در گوگل آنتی‌گرویتی کارهای معماری کلان را به کربن و کارهای اجرایی موازی را به هیدروژن می‌سپارد؛ نتیجه کاهش ۲۴ درصدی مصرف سهمیه و افزایش ۱۹ درصدی سرعت انجام پروژه است.
@@ -191,7 +191,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </p>
 
   <!-- Section 4 -->
-  <h2>تنظیم هوشمندانه سرعت و عمق استدلال در چهار سطح تفکر (Thinking Levels)</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">تنظیم هوشمندانه سرعت و عمق استدلال در چهار سطح تفکر (Thinking Levels)</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     هیدروژن با ارائه ۴ سطح تفکر قابل انتخاب (low, medium, high, xhigh) به توسعه‌دهنده امکان می‌دهد بسته به حساسیت هر وظیفه، تعادل بهینه‌ای میان هزینه، تاخیر زمانی و عمق تحلیل ایجاد کند.
@@ -217,7 +217,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </div>
 
   <!-- Section 5 -->
-  <h2>اصلاح جراحی کدها و فراخوانی دسته‌ای ابزارها (Batch Tool Calls)</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">اصلاح جراحی کدها و فراخوانی دسته‌ای ابزارها (Batch Tool Calls)</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     هیدروژن با خواندن و جستجوی موازی فایل‌ها به جای بررسی تکی، مصرف توکن را در پروژه‌های بزرگ تا ۲۳ درصد کاهش داده و با ایجاد تغییرات نقطه‌ای و متمرکز، مانع از دستکاری کدهای نامربوط ریپازیتوری می‌شود.
@@ -234,7 +234,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </ul>
 
   <!-- Section 6 -->
-  <h2>امنیت سازمانی و مهار عاملیت بیش‌ازحد (Excessive Agency)</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">امنیت سازمانی و مهار عاملیت بیش‌ازحد (Excessive Agency)</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     کاهش ۸۱ درصدی زیاده‌روی در اختیارات ایجنت، کاهش ۱۲ برابری میان‌برهای اشتباه در وظایف، شفافیت ۹۹.۹ درصدی زنجیره استدلال و مقاومت ۲.۳ برابری در برابر حملات تزریق پرامپت، امنیت هیدروژن را تضمین می‌کند.
@@ -251,7 +251,7 @@ export const BLOG_POSTS: BlogPost[] = [
   </ul>
 
   <!-- Section 7: Ecosystem -->
-  <h2>دسترس‌پذیری در اکوسیستم گوگل: کجا و چگونه می‌توان از هیدروژن استفاده کرد؟</h2>
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">دسترس‌پذیری در اکوسیستم گوگل: کجا و چگونه می‌توان از هیدروژن استفاده کرد؟</h2>
 
   <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
     جمینای ۴ هیدروژن هم‌اکنون به صورت جهانی در گوگل استودیو، کلیدهای API، اندروید استودیو، گوگل سرچ، اپلیکیشن جمینای و پلتفرم گوگل آنتی‌گرویتی در دسترس تمام کاربران و کسب‌وکارها قرار گرفته است.
