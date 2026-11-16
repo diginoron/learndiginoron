@@ -1,6 +1,17 @@
 # Active Context
 
-## Current Focus (2026-11-14) — DONE: Dedicated AI Tools page & navigation menu integration
+## Current Focus (2026-11-17) — DONE: 6-card Course Advantages section on `/[locale]/services/kids-and-teens` (fa/en/ar)
+- **Feature**: Added the `مزیت‌های دوره‌های ما` / `Advantages of Our Courses` / `مميزات دوراتنا التدريبية` 6-box section to `app/[locale]/services/kids-and-teens/page.tsx` right below the hero header across all three locales (`fa`, `en`, `ar`).
+- **Cards**:
+  1. AI Entrepreneurship Focus (`تمرکز بر کارآفرینی هوش مصنوعی`)
+  2. Real-World Projects Focus (`تمرکز بر پروژه‌های واقعی`)
+  3. Continuous Course Support (`پشتیبانی دوره`)
+  4. Real Future Needs Focus (`تمرکز بر نیازهای واقعی`)
+  5. Proven Track Record (`برگزاری دوره‌های موفق`)
+  6. Up-to-Date Tools (`استفاده از به‌روزترین ابزارها`)
+- **UI/UX & i18n**: Responsive 3-column grid (`grid-cols-1 md:grid-cols-2 lg:grid-cols-3`) of glass-panel cards with color-coded `lucide-react` icons, pill tags, subtle radial corner glows, and hover accent bars, plus `getDirection(locale)` direction-aware border accent on `#kids-courses`.
+
+## Previous Focus (2026-11-14) — DONE: Dedicated AI Tools page & navigation menu integration
 - **Feature**: Added "ابزارها" / "AI Tools" / "الأدوات" to header and footer navigation (desktop & mobile) placed right before Articles/Blog.
 - **Pages**: New trilingual `/tools` route (`app/[locale]/tools/page.tsx` + `data/translations/tools.ts`).
   - Persian (`fa`): 4 tools:
