@@ -1,6 +1,14 @@
 # Active Context
 
-## Current Focus (2026-11-17) — DONE: 6-card Course Advantages section on `/[locale]/services/kids-and-teens` (fa/en/ar)
+## Current Focus (2026-11-17) — DONE: Trilingual post `iran-future-of-artificial-intelligence` (id 23) shipped
+- **Post**: «نقش آینده ایران در هوش مصنوعی» — FA base at top of `BLOG_POSTS` in `data/blog.ts` (featured, category `trends`, date `۲۶ آبان ۱۴۰۵`, 16-min read), full EN+AR in `data/translations/blog/iranAiFuture.ts` (`fa: {}` stub; AR `dir="rtl"` + `border-r-4`, `/ar/...` CTAs; EN unprefixed). Registered in `data/translations/blog.ts` (import + slug entry + date map `۲۶ آبان ۱۴۰۵` → November 17, 2026 — date map entry was missing and added this session).
+- **Cover image**: `public/images/blog/iran-copper-mining-ai.jpg` = Sungun Copper Mine, Vahid Abdi / Fars News (CC BY 4.0), via Wikimedia Commons — **known-low-res placeholder (246×180, 10KB)**; full 1050×700 blocked by Wikimedia 429 on this IP (all proxies/wayback failed). Replace later via VPN/direct URL `https://upload.wikimedia.org/wikipedia/commons/0c/2a/Sungun_Copper_Mine_2019-08-13_09.jpg` (correct MD5 hash path is `/0c/2a/`, not `/0/0c/`).
+- **Bug caught at gate time (rule 16)**: the `en` block in `iranAiFuture.ts` was missing its closing `},` before `fa: {}` — first gate run's earlier state would fail typecheck; fixed, then gate re-run.
+- **Validation**: DoD gate PASS ×2 (final: ran=4 failed=0 skipped=1; typecheck 3.4s, lint 6.7s, build 26.3s; postbuild 129 HTML pages, canonical+sitemap+noindex OK). Rendered-output check done on built HTML for all 3 locales (`/en|fa|ar/blog/iran-future-of-artificial-intelligence.html` — locale-correct content/CTAs, cover image srcSet, credit line).
+- **Committed**: `273f605` «Add trilingual blog post: Iran's future role in AI (id 23)» (4 files: `data/blog.ts`, `data/translations/blog.ts`, `data/translations/blog/iranAiFuture.ts`, `public/images/blog/iran-copper-mining-ai.jpg`) and pushed to `main` (`2fc5c9..273f605`). Scratch scripts are gitignored — not committed.
+- **Gate tooling win**: `scratch/run-dod-gate.ps1` (Start-Transcript wrapper, in-process `-File` run) captures full gate output reliably — reuse it for every future gate run; poll `scratch/dod-gate-log.txt` with varied tail reads only.
+
+## Previous Focus (2026-11-17) — DONE: 6-card Course Advantages section on `/[locale]/services/kids-and-teens` (fa/en/ar)
 - **Feature**: Added the `مزیت‌های دوره‌های ما` / `Advantages of Our Courses` / `مميزات دوراتنا التدريبية` 6-box section to `app/[locale]/services/kids-and-teens/page.tsx` right below the hero header across all three locales (`fa`, `en`, `ar`).
 - **Cards**:
   1. AI Entrepreneurship Focus (`تمرکز بر کارآفرینی هوش مصنوعی`)
