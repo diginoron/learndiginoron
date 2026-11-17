@@ -22,6 +22,7 @@ import { bestAiCourseKidsTeensTranslation } from "./blog/bestAiCourseKidsTeens";
 import { naturalIntelligenceBeforeAiTranslation } from "./blog/naturalIntelligenceBeforeAi";
 import { whatAgeKidsLearnAiTranslation } from "./blog/whatAgeKidsLearnAi";
 import { introducingGemini4HydrogenTranslation } from "./blog/introducingGemini4Hydrogen";
+import { iranAiFutureTranslation } from "./blog/iranAiFuture";
 
 export interface BlogTranslation {
   title: string;
@@ -56,9 +57,11 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "natural-intelligence-before-artificial-intelligence": naturalIntelligenceBeforeAiTranslation,
   "what-age-should-kids-start-learning-ai": whatAgeKidsLearnAiTranslation,
   "introducing-gemini-4-hydrogen": introducingGemini4HydrogenTranslation,
+  "iran-future-of-artificial-intelligence": iranAiFutureTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
+  "۲۶ آبان ۱۴۰۵": { en: "November 17, 2026", fa: "۲۶ آبان ۱۴۰۵", ar: "١٧ نوفمبر ٢٠٢٦" },
   "۲۳ آبان ۱۴۰۵": { en: "November 14, 2026", fa: "۲۳ آبان ۱۴۰۵", ar: "١٤ نوفمبر ٢٠٢٦" },
   "۲۱ آبان ۱۴۰۵": { en: "November 12, 2026", fa: "۲۱ آبان ۱۴۰۵", ar: "١٢ نوفمبر ٢٠٢٦" },
   "۱۲ آبان ۱۴۰۵": { en: "November 3, 2026", fa: "۱۲ آبان ۱۴۰۵", ar: "٣ نوفمبر ٢٠٢٦" },
