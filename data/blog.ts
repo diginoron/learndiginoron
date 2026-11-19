@@ -21,6 +21,314 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "25",
+    slug: "alphagenome-ai-decoding-human-genome",
+    title: "الفاجنوم گوگل و رمزگشایی ژنوم انسان؛ هوش مصنوعی چگونه جهش عامل بیماری را از دل ۹ میلیارد گزینه پیدا می‌کند؟",
+    excerpt: "گوگل دیپ‌مایند با مدل الفاجنوم، دنباله‌ای ۱ میلیون جفت‌بازی از DNA را می‌گیرد و هزاران پیش‌بینی از اثر جهش‌ها تولید می‌کند؛ اطلس الفاجنوم نیز اثر هر ۹ میلیارد تغییر تک‌حرفی ژنوم انسان را با امتیاز AVI برای پژوهشگران رمزگشایی کرده است.",
+    content: `<div class="space-y-8 text-slate-800 leading-relaxed">
+
+  <!-- Hero Answer (50-70 words) -->
+  <div class="p-6 bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-2xl shadow-sm">
+    <h3 class="text-lg font-bold text-emerald-900 mb-2">پاسخ سریع و خلاصه مدیریتی:</h3>
+    <p class="text-sm text-slate-700 leading-relaxed font-medium">
+      <strong>الفاجنوم (AlphaGenome)</strong> مدل هوش مصنوعی گوگل دیپ‌مایند است که دنباله‌ای ۱ میلیون جفت‌بازی از DNA را می‌گیرد و در هر اجرا هزاران پیش‌بینی مولکولی از اثر تغییرات ژنتیکی تولید می‌کند. ژنوم انسان ۳ میلیارد جفت‌باز دارد و هر حرف آن می‌تواند به سه حرف دیگر تبدیل شود؛ یعنی ۹ میلیارد تغییر تک‌حرفی ممکن. اطلس الفاجنوم (AlphaGenome Atlas) اثر همه این ۹ میلیارد تغییر را با یک امتیاز خوانا به نام AVI پیش‌بینی کرده تا پژوهشگران جهش عامل بیماری را — از میان تا ۴ میلیون گونه در یک بیمار — در چند دقیقه به جای چند سال پیدا کنند.
+    </p>
+  </div>
+
+  <!-- CTA 1 (Strategic Early Placement) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">آیا سازمان شما در حوزه سلامت، دارو یا زیست‌فناوری می‌خواهد از موج مدل‌های علمی هوش مصنوعی عقب نماند؟</p>
+    <a href="/fa/services/enterprise-ai" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تحول هوش مصنوعی سازمانی دیجی نورون
+    </a>
+  </div>
+
+  <!-- Section 1 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">الفاجنوم چیست و چرا رمزگشایی ژنوم انسان یک مسئله هوش مصنوعی است؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    الفاجنوم مدل هوش مصنوعی گوگل دیپ‌مایند است که ژنوم را به مثابه یک زبان می‌خواند: دنباله‌ای از حروف A و T و C و G که دستورالعمل بدن انسان را می‌نویسد. این مدل با پیش‌بینی اثر تغییرات این زبان، پژوهش زیست‌پزشکی را از «خواندن DNA» به «فهم معنای DNA» می‌رساند.
+  </p>
+
+  <p>
+    ژنوم شما دفترچه راهنمای بدنتان است: نقشه‌ای از ۳ میلیارد جفت‌باز DNA که عملکرد بدن را تنظیم می‌کند. از آنجا که بخشی از این DNA مسئول روشن و خاموش کردن ژن‌هاست، یک تغییر کوچک می‌تواند مرز میان ابتلا به یک بیماری و مصون ماندن از آن باشد. اما تعیین اینکه کدام تغییر عامل بیماری است، مثل یافتن سوزن در کاهدان است. گوگل این مسئله را در قالب سری «از یک دانشمند بپرسید» با <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/alphagenome-disease-research/" target="_blank" rel="noopener noreferrer" class="text-emerald-700 underline font-semibold">گفت‌وگویی باژیگا اوسک، دانشمند پژوهشگر گوگل دیپ‌مایند و سرپرست ابتکار ژنومیکس</a> تشریح کرده است.
+  </p>
+
+  <p>
+    الفاجنوم در ژوئن ۲۰۲۵ معرفی شد و در کمی بیش از یک سال به موتور پیش‌بینی جهش در پروژه‌های علمی چند سراسر جهان تبدیل شده است. این رویکرد با نسل مدل‌های زبانی مانند <a href="/fa/blog/introducing-gemini-4-neon" class="text-emerald-700 underline font-semibold">جمینای ۴ نئون</a> هم‌خانواده است: شبکه‌های عصبی عمیق که به جای متن و تصویر، توالی زیستی و داده مولکولی را یاد می‌گیرند. همان مهندسی‌ای که مدل‌های زبانی را ساخت، اکنون «دستورالعمل حیات» را رمزگشایی می‌کند.
+  </p>
+
+  <!-- Section 2 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">چرا یافتن جهش عامل بیماری مثل یافتن سوزن در کاهدان است؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    در ژنوم انسان ۳ میلیارد جفت‌باز وجود دارد و هر حرف را می‌توان با سه حرف دیگر جایگزین کرد؛ یعنی ۹ میلیارد تغییر تک‌حرفی ممکن. بسیاری از بیماری‌های ژنتیکی فقط با یکی از همین تغییرات رخ می‌دهند و هیچ آزمایشگاهی وقت و بودجه اجرای میلیاردها پژوهش جداگانه را ندارد.
+  </p>
+
+  <p>
+    مقیاس مسئله را با یک مثال روشن می‌شود دید: DNA یک بیمار مبتلا به بیماری نادر را توالی‌یابی کنید و ممکن است با تا ۴ میلیون گونه (واریانت) مواجه شوید — یعنی ۴ میلیون نقطه تفاوت با ژنوم مرجع انسان. با فهرست کردن فقط گونه‌های نادر، باز هم صدها تا هزاران گزینه باقی می‌ماند. پژوهش آزمایشگاهی (wet-lab) بهترین راه اثبات است، اما یک کشف واحد می‌تواند سال‌ها زمان و بودجه سنگین بخواهد.
+  </p>
+
+  <p>
+    این دقیقاً همان جایی است که هوش مصنوعی معنا پیدا می‌کند: به جای آزمایش تک‌تک گزینه‌ها در دنیای واقعی، یک مدل آموزش‌دیده اثر محتمل هر تغییر را در چند دقیقه پیش‌بینی می‌کند و فهرست هزاران گزینه را به یک صف اولویت‌بندی‌شده و کوتاه تبدیل می‌کند. زمان پژوهشگر از «جستجو» به «کشف» منتقل می‌شود.
+  </p>
+
+  <!-- Section 3 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">الفاجنوم چگونه کار می‌کند؟ از ۱ میلیون حرف تا هزاران پیش‌بینی</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    الفاجنوم یک دنباله جزئی DNA به طول ۱ میلیون جفت‌باز را می‌گیرد و در هر اجرا هزاران پیش‌بینی تولید می‌کند: از میزان روشن شدن ژن‌ها گرفته تا ساختارهای مولکولی. مقایسه پیش‌بینی‌های «قبل و بعد» یک تغییر، به دانشمند می‌گوید آن تغییر چه بلایی سر سلول می‌آورد.
+  </p>
+
+  <p>
+    حروف A (آدنین)، T (تیمین)، C (سیتوزین) و G (گوانین) یک الفبای زیستی می‌سازند که دستورالعمل ژنتیکی هر انسان را املا می‌کند. علوم زیستی امروز می‌تواند هر ۳ میلیارد جفت‌باز را بخواند، اما «معنا»ی بخش بزرگی از این کد — به‌ویژه «ماده تاریک» غیرکدکننده که بیان ژن و ریسک بیماری را تنظیم می‌کند — هنوز به طور کامل رمزگشایی نشده است. الفاجنوم دقیقاً همین شکاف معنایی را هدف می‌گیرد: یادگیری گرامر ژنوم از میلیون‌ها اندازه‌گیری آزمایشگاهی، و سپس پیش‌بینی اثر جهش‌ها در مقیاسی که آزمایشگاه نمی‌تواند.
+  </p>
+
+  <!-- Section 4 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">اطلس الفاجنوم و امتیاز AVI چیست؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    اطلس الفاجنوم (AlphaGenome Atlas) که در سپتامبر ۲۰۲۶ معرفی شد، یک مجموعه‌داده عظیم است: نتیجه پیش‌بینی اثر هر ۹ میلیارد تغییر تک‌حرفی ژنوم انسان. هر واریانت یک امتیاز خوانا به نام AVI (امتیاز اثر واریانت الفاجنوم) می‌گیرد که نشان می‌دهد چقدر احتمال دارد مختل‌کننده باشد.
+  </p>
+
+  <p>
+    پیش از اطلس، یک پژوهشگر برای برآورد اثر یک جهش باید ابزارهای متعدد را کنار هم می‌گذاشت یا منتظر نتیجه آزمایشگاه می‌ماند. حالا با یک جست‌وجو، امتیاز AVI آن جهش در سراسر ژنوم — و اثرش روی بافت‌ها و مکانیسم‌های مولکولی — در دسترس است. نتیجه: صف اولویت‌بندی آزمایش‌ها در چند دقیقه ساخته می‌شود و بودجه پژوهش صرف پرامیدترین گزینه‌ها می‌شود. این همان الگویی است که در سایر حوزه‌های هوش مصنوعی هم دیده‌ایم: مدل مرزی اول، و بعد ابزارها و اطلس‌هایی که قدرتش را همگانی می‌کنند؛ همان مسیری که در <a href="/fa/blog/introducing-gemini-4-neon" class="text-emerald-700 underline font-semibold">تحلیل ما از خانواده Gemini 4</a> نیز ردیابی کردیم.
+  </p>
+
+  <!-- Section 5 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">نتایج واقعی: از دانشگاه اکستر تا اینستیتوت برد</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    الفاجنوم هنوز جوان است، اما نتایج ملموس داده است: گرت هاوکس در دانشگاه اکستر فهرست ۱ میلیارد واریانت را با تمرکز بر پرتأثیرترین ۱٪ به ۱۹ گروه واریانت مرتبط با شاخص توده بدنی (BMI) رساند، و لورا کاویل در اینستیتوت برد با امتیاز AVI یک واریانت کلیدی در ژن اختلالات عصب‌توسعه‌ای را شناسایی و پرونده یک بیماری نادر حل‌نشده را حل کرد.
+  </p>
+
+  <p>
+    این دو نمونه، دو الگوی استفاده مکمل را نشان می‌دهند. الگوی نخست، غربالگری کلان است: از میان میلیاردها گزینه، فقط یک درصد بالای جدول بررسی می‌شود و ۱۹ گروه واریانت اولویت‌دار برای پژوهش چاقی و متابولیسم استخراج می‌شود. الگوی دوم، حل پرونده بالینی است: در بیماری‌های نادر حل‌نشده، امتیاز AVI یک واریانت حیاتی را در ژنی مرتبط با اختلالات عصب‌توسعه‌ای بالا کشید و شواهد پشتیبان لازم برای ادامه مسیر — و در نهایت حل پرونده — را فراهم کرد. سال‌ها کار آزمایشگاهی، به چند ساعت تحلیل کامپیوتری تبدیل شده است.
+  </p>
+
+  <!-- Comparison Table -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">مقایسه الفاجنوم، اطلس الفاجنوم و الفاجنوم ۲</h2>
+  <div class="overflow-x-auto">
+    <table class="min-w-full text-sm border border-slate-200 rounded-xl overflow-hidden">
+      <thead>
+        <tr class="bg-slate-900 text-white">
+          <th class="p-3.5 text-right font-bold border border-slate-700">ابزار</th>
+          <th class="p-3.5 text-right font-bold border border-slate-700">زمان معرفی</th>
+          <th class="p-3.5 text-right font-bold border border-slate-700">چه می‌کند؟</th>
+          <th class="p-3.5 text-right font-bold border border-slate-700">آمار کلیدی</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200 bg-white">
+        <tr class="hover:bg-slate-50 transition-colors">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">AlphaGenome</td>
+          <td class="p-3.5 font-semibold text-emerald-800 border border-slate-200">ژوئن ۲۰۲۵</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">دنباله ۱ میلیون جفت‌بازی DNA را می‌گیرد و هزاران پیش‌بینی مولکولی از اثر تغییرات تولید می‌کند.</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">۱ میلیون جفت‌باز ورودی؛ هزاران پیش‌بینی در هر اجرا</td>
+        </tr>
+        <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">AlphaGenome Atlas</td>
+          <td class="p-3.5 font-semibold text-emerald-800 border border-slate-200">سپتامبر ۲۰۲۶</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">اثر همه تغییرات تک‌حرفی ژنوم را از پیش محاسبه کرده؛ پژوهشگر فقط جست‌وجو می‌کند و امتیاز AVI می‌گیرد.</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">پوشش هر ۹ میلیارد تغییر تک‌حرفی ژنوم انسان</td>
+        </tr>
+        <tr class="hover:bg-slate-50 transition-colors">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">AlphaGenome 2</td>
+          <td class="p-3.5 font-semibold text-emerald-800 border border-slate-200">پاییز ۲۰۲۶</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">از میانگین‌های سطح بافت فراتر می‌رود و اثر جهش را روی هر نوع سلول به‌صورت جداگانه پیش‌بینی می‌کند.</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">تفکیک نوع سلولی؛ دقت بالا در واریانت‌های با اثر قوی</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Section 6 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">الفاجنوم ۲ و هدف نهایی: شبیه‌سازی دیجیتال سلول انسان</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    الفاجنوم ۲ محدودیت کلیدی نسل قبل را حل می‌کند: تخصصی‌شدن بر اساس نوع سلول. مدل قبلی عمدتاً روی داده بافت‌های کامل و رده‌های سلولی آموزش دیده بود؛ در حالی که هر نوع سلول نقش خاص خودش را دارد و می‌تواند در بیماری از کار بیفتد. الفاجنوم ۲ نشان می‌دهد یک جهش دقیقاً کدام سلول‌ها را مختل می‌کند.
+  </p>
+
+  <p>
+    تیم ژنومیکس گوگل دیپ‌مایند دو مسیر پیش رو را همزمان می‌راند: در کوتاه‌مدت، فهم بهتر «گرامر ژنوم» و پیش‌بینی دقیق اثر جهش‌ها همراه با سنجش میزان اطمینان مدل به هر پیش‌بینی؛ و در بلندمدت، ساخت شبیه‌سازی دیجیتال کاملاً کارکردی از یک سلول انسان. چنین شبیه‌سازی‌ای به پژوهشگران امکان می‌دهد مکانیسم بیماری را به‌صورت محاسباتی مدل کنند، شرایط ژنتیکی نادر را بفهمند و داروهای کاندید را پیش از هر آزمایش انسانی بیازمایند.
+  </p>
+
+  <p>
+    مهم است یادآوری شود که طبق تأکید خود تیم سازنده، هر پیش‌بینی الفاجنوم باید در کنار منابع دیگر تفسیر شود؛ این ابزار جایگزین آزمایش علمی نیست، بلکه مسیر رسیدن به آزمایش درست را کوتاه می‌کند.
+  </p>
+
+  <!-- Section 7 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">اثر الفاجنوم بر زندگی روزمره: سلامت، دارو و کشاورزی</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    الفاجنوم ما را از «خواندن DNA» به «فهم مکانیسم مولکولی بیماری» می‌رساند و سه اثر عملی دارد: تشخیص سریع‌تر و درمان شخصی‌شده بیماران مبتلا به اختلالات ژنتیکی نادر، تسریع خط کشف دارو با شناسایی سریع‌تر اهداف درمانی پراحتمال، و حتی کمک به تولید محصولات کشاورزی مقاوم به اقلیم.
+  </p>
+
+  <p>
+    برای شرکت‌های دارویی، یعنی کوتاه‌تر شدن چرخه گران‌شناس اعتبارسنجی اهداف درمانی. برای بیماران مبتلا به بیماری‌های نادر بی‌نام‌و‌نشانه، یعنی پایان یافتن «سفر تشخیصی» چندساله. و برای کشاورزی، یعنی به‌نژادی هدفمند در برابر خشکسالی و گرما. این تحول فقط یک داستان فناورانه نیست؛ فرصتی اقتصادی و آموزشی است برای نسل تازه‌ای از متخصصانی که هم زیست‌شناسی می‌فهمند و هم داده. اگر نگاه کلان به این موج دارید، <a href="/fa/blog/enterprise-ai-transformation-diginoron-model" class="text-emerald-700 underline font-semibold">مدل تحول هوش مصنوعی سازمانی دیجی نورون</a> نقطه شروع خوبی است و مقاله <a href="/fa/blog/future-of-ai-in-education-2026" class="text-emerald-700 underline font-semibold">آینده هوش مصنوعی در آموزش تا ۲۰۲۶</a> نشان می‌دهد این مهارت‌ها از کجا ساخته می‌شوند.
+  </p>
+
+  <!-- CTA 2 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">برای پیاده‌سازی راهکارهای هوش مصنوعی در سازمان شما، از ایده تا اجرا کنار شما هستیم.</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      تماس با تیم دیجی نورون
+    </a>
+  </div>
+
+  <!-- Pitfalls / Misconceptions -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">۵ اشتباه رایج درباره الفاجنوم و پیش‌بینی ژنتیکی</h2>
+  <ul class="list-disc pr-6 space-y-3 text-slate-700">
+    <li><strong>«الفاجنوم تشخیص پزشکی می‌دهد.»</strong> خیر؛ این ابزار پژوهشی است که اثر محتمل جهش‌ها را پیش‌بینی می‌کند و خروجی آن باید در کنار شواهد بالینی و آزمایشگاهی تفسیر شود، نه به‌جای آن‌ها.</li>
+    <li><strong>«دیگر آزمایشگاه لازم نیست.»</strong> اشتباه است؛ پژوهش آزمایشگاهی (wet-lab) همچنان مرجع اثبات است. الفاجنوم فقط ترتیب آزمایش‌ها را بهینه می‌کند تا پول و زمان صرف پرامیدترین گزینه‌ها شود.</li>
+    <li><strong>«پیش‌بینی‌های مدل صددرصد قطعی‌اند.»</strong> خیر؛ تیم سازنده صراحتاً روی سنجش میزان اطمینان (Confidence) کار می‌کند و می‌گوید واریانت‌های با اثر قوی دقت بالایی دارند، اما تفسیر مستقل و مقایسه با منابع دیگر الزامی است.</li>
+    <li><strong>«الفاجنوم کل ژنوم ۳ میلیاردی را یک‌جا می‌خواند.»</strong> نه؛ ورودی مدل دنباله‌ای ۱ میلیون جفت‌بازی است و قدرت اصلی آن هزاران پیش‌بینی موازی روی همین پنجره است؛ بررسی کل ژنوم از طریق اطلس الفاجنوم انجام شده است.</li>
+    <li><strong>«این فناوری فقط برای بیولوژیست‌هاست.»</strong> خیر؛ موتور اصلی آن مدل‌سازی داده و یادگیری عمیق است و رشد آن به نیروی انسانی مشترکِ زیست‌پزشکی و هوش مصنوعی نیاز دارد — مهارتی که از مسیرهای آموزشی مثل <a href="/fa/blog/why-kids-should-learn-ai-early" class="text-emerald-700 underline font-semibold">یادگیری زودهنگام هوش مصنوعی</a> ساخته می‌شود.</li>
+  </ul>
+
+  <!-- Voice Search Q&As -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">جست‌وجوهای صوتی کاربران درباره الفاجنوم</h2>
+  <div class="space-y-4">
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">الفاجنوم چیست و کارش چیست؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        الفاجنوم مدل هوش مصنوعی گوگل دیپ‌مایند است که دنباله‌ای ۱ میلیون جفت‌بازی از DNA را می‌گیرد و هزاران پیش‌بینی از اثر تغییرات ژنتیکی تولید می‌کند تا پژوهشگران جهش عامل بیماری را سریع‌تر پیدا کنند.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">اطلس الفاجنوم چه تفاوتی با الفاجنوم دارد؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        اطلس الفاجنوم مجموعه‌داده‌ای است که اثر هر ۹ میلیارد تغییر تک‌حرفی ژنوم انسان از پیش در آن محاسبه شده؛ پژوهشگر به جای اجرای مدل، فقط امتیاز AVI هر واریانت را جست‌وجو و اولویت‌بندی می‌کند.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">آیا الفاجنوم بیماری‌های ژنتیکی را درمان می‌کند؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        نه مستقیماً؛ الفاجنوم ابزار پژوهشی است و به تشخیص سریع‌تر، درمان شخصی‌شده و کشف دارو سرعت می‌دهد، اما درمان نهایی همچنان به آزمایش بالینی و تصمیم پزشک وابسته است.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">ژنوم انسان چند میلیارد جفت‌باز DNA دارد؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        ژنوم انسان ۳ میلیارد جفت‌باز DNA دارد که با چهار حرف A و T و C و G نوشته می‌شود؛ چون هر حرف می‌تواند با سه حرف دیگر جایگزین شود، ۹ میلیارد تغییر تک‌حرفی ممکن وجود دارد.
+      </p>
+    </div>
+  </div>
+
+  <!-- CTA 3 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">آینده سازمان شما با مدل‌های علمی هوش مصنوعی ساخته می‌شود؛ از امروز شروع کنید.</p>
+    <a href="/fa/services/enterprise-ai" style="padding: 0.95rem 2.8rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background: #0284c7; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);">
+      مشاهده خدمات هوش مصنوعی سازمانی دیجی نورون
+    </a>
+  </div>
+
+  <!-- FAQ -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پرسش‌های متداول درباره الفاجنوم گوگل</h2>
+  <div class="space-y-4">
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۱. الفاجنوم چیست و چه زمانی معرفی شد؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        الفاجنوم مدل هوش مصنوعی گوگل دیپ‌مایند برای پیش‌بینی اثر جهش‌های ژنتیکی است که در ژوئن ۲۰۲۵ معرفی شد؛ این مدل دنباله‌ای ۱ میلیون جفت‌بازی از DNA را می‌گیرد و در هر اجرا هزاران پیش‌بینی مولکولی تولید می‌کند.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۲. امتیاز AVI در اطلس الفاجنوم چیست؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        امتیاز AVI (امتیاز اثر واریانت الفاجنوم) یک عدد خوانا برای هر واریانت ژنتیکی است که اثر محتمل آن را در سراسر ژنوم نشان می‌دهد؛ اطلس الفاجنوم این امتیاز را برای هر ۹ میلیارد تغییر تک‌حرفی ژنوم انسان از پیش محاسبه کرده است.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۳. الفاجنوم ۲ چه تفاوتی با نسخه اول دارد؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        الفاجنوم ۲ محدودیت «تخصصی‌شدن نوع سلولی» را حل می‌کند: به جای میانگین‌گیری در سطح بافت، پیش‌بینی می‌کند هر جهش دقیقاً کدام نوع سلول را مختل می‌کند و به این ترتیب عوامل سلولی بیماری را مشخص‌تر نشان می‌دهد.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۴. نتایج واقعی استفاده از الفاجنوم چیست؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        گرت هاوکس در دانشگاه اکستر با غربالگری ۱ میلیارد واریانت و تمرکز بر پرتأثیرترین ۱٪، به ۱۹ گروه واریانت مرتبط با شاخص توده بدنی رسید؛ لورا کاویل در اینستیتوت برد با امتیاز AVI واریانت کلیدی ژنی مرتبط با اختلالات عصب‌توسعه‌ای را شناسایی و پرونده یک بیماری نادر را حل کرد.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۵. هدف نهایی گوگل دیپ‌مایند در زیست‌شناسی چیست؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        در کوتاه‌مدت، فهم دقیق گرامر ژنوم و پیش‌بینی اثر جهش‌ها همراه با سنجش اطمینان مدل؛ و در بلندمدت، ساخت شبیه‌سازی دیجیتال کاملاً کارکردی از سلول انسان برای مدل‌سازی محاسباتی مکانیسم بیماری و آزمایش داروهای کاندید.
+      </p>
+    </div>
+  </div>
+
+  <!-- Author Box -->
+  <div class="p-6 bg-slate-900 text-white rounded-2xl shadow-lg border border-slate-800">
+    <div class="flex flex-col sm:flex-row items-center gap-5">
+      <div class="w-16 h-16 rounded-full bg-emerald-500/20 border-2 border-emerald-400 flex items-center justify-center text-emerald-300 font-bold text-xl shrink-0">
+        DN
+      </div>
+      <div class="text-center sm:text-right space-y-2">
+        <h4 class="text-lg font-bold text-white">درباره نویسنده و مرجعیت محتوا:</h4>
+        <p class="text-sm text-emerald-300 font-semibold">
+          گروه تخصصی دیجی نورون — بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی
+        </p>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          گروه تخصصی دیجی نورون، متشکل از اعضای هیئت‌علمی دانشگاه و مهندسان داده صنعت، با بیش از ۵ سال سابقه اجرای پروژه‌های هوش مصنوعی، این تحلیل را بر پایه گفت‌وگوی رسمی وبلاگ گوگل با تیم ژنومیکس گوگل دیپ‌مایند و داده‌های منتشرشده الفاجنوم و اطلس الفاجنوم تدوین کرده است.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-xs text-slate-400 text-center">تصویر جلد: آرت هدر رسمی مقاله الفاجنوم — منبع: وبلاگ رسمی گوگل (blog.google).</p>
+
+</div>`,
+    category: "trends",
+    categoryName: "روندها و اخبار AI",
+    author: {
+      name: "گروه تخصصی دیجی نورون",
+      role: "بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی",
+      avatar: "/images/instructors/karimi.jpg"
+    },
+    date: "۲۸ آبان ۱۴۰۵",
+    readTime: "۱۵ دقیقه",
+    image: "/images/blog/alphagenome-blog-header.jpg",
+    featured: true,
+    tags: [
+      "الفاجنوم",
+      "AlphaGenome",
+      "گوگل دیپ‌مایند",
+      "ژنومیکس",
+      "هوش مصنوعی در پزشکی",
+      "اطلس الفاجنوم",
+      "کشف دارو با هوش مصنوعی"
+    ],
+    faq: [
+      {
+        question: "الفاجنوم چیست و چه زمانی معرفی شد؟",
+        answer: "الفاجنوم مدل هوش مصنوعی گوگل دیپ‌مایند برای پیش‌بینی اثر جهش‌های ژنتیکی است که در ژوئن ۲۰۲۵ معرفی شد؛ این مدل دنباله‌ای ۱ میلیون جفت‌بازی از DNA را می‌گیرد و در هر اجرا هزاران پیش‌بینی مولکولی تولید می‌کند."
+      },
+      {
+        question: "امتیاز AVI در اطلس الفاجنوم چیست؟",
+        answer: "امتیاز AVI (امتیاز اثر واریانت الفاجنوم) یک عدد خوانا برای هر واریانت ژنتیکی است که اثر محتمل آن را در سراسر ژنوم نشان می‌دهد؛ اطلس الفاجنوم این امتیاز را برای هر ۹ میلیارد تغییر تک‌حرفی ژنوم انسان از پیش محاسبه کرده است."
+      },
+      {
+        question: "الفاجنوم ۲ چه تفاوتی با نسخه اول دارد؟",
+        answer: "الفاجنوم ۲ محدودیت «تخصصی‌شدن نوع سلولی» را حل می‌کند: به جای میانگین‌گیری در سطح بافت، پیش‌بینی می‌کند هر جهش دقیقاً کدام نوع سلول را مختل می‌کند و به این ترتیب عوامل سلولی بیماری را مشخص‌تر نشان می‌دهد."
+      },
+      {
+        question: "نتایج واقعی استفاده از الفاجنوم چیست؟",
+        answer: "گرت هاوکس در دانشگاه اکستر با غربالگری ۱ میلیارد واریانت و تمرکز بر پرتأثیرترین ۱٪، به ۱۹ گروه واریانت مرتبط با شاخص توده بدنی رسید؛ لورا کاویل در اینستیتوت برد با امتیاز AVI واریانت کلیدی ژنی مرتبط با اختلالات عصب‌توسعه‌ای را شناسایی و پرونده یک بیماری نادر را حل کرد."
+      },
+      {
+        question: "هدف نهایی گوگل دیپ‌مایند در زیست‌شناسی چیست؟",
+        answer: "در کوتاه‌مدت، فهم دقیق گرامر ژنوم و پیش‌بینی اثر جهش‌ها همراه با سنجش اطمینان مدل؛ و در بلندمدت، ساخت شبیه‌سازی دیجیتال کاملاً کارکردی از سلول انسان برای مدل‌سازی محاسباتی مکانیسم بیماری و آزمایش داروهای کاندید."
+      }
+    ]
+  },
+  {
     id: "24",
     slug: "introducing-gemini-4-neon",
     title: "معرفی جمینای ۴ نئون (Gemini 4 Neon): تعادل طلایی هوش مرزی، سرعت و هزینه در خانواده Gemini 4",
