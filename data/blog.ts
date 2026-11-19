@@ -21,6 +21,350 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "24",
+    slug: "introducing-gemini-4-neon",
+    title: "معرفی جمینای ۴ نئون (Gemini 4 Neon): تعادل طلایی هوش مرزی، سرعت و هزینه در خانواده Gemini 4",
+    excerpt: "گوگل جمینای ۴ نئون را با امتیاز ۶۱ در شاخص هوش Artificial Analysis، رتبه ۱ شاخص ایجنت کدنویسی، کانتکست ۱ میلیون توکن و هزینه تا ۸۰٪ کمتر نسبت به مدل‌های رقیب معرفی کرد؛ مدلی که عمق کربن و سرعت هیدروژن را با هم دارد.",
+    content: `<div class="space-y-8 text-slate-800 leading-relaxed">
+
+  <!-- Hero Answer (50-70 words) -->
+  <div class="p-6 bg-gradient-to-br from-cyan-50 to-blue-50 border border-cyan-200 rounded-2xl shadow-sm">
+    <h3 class="text-lg font-bold text-cyan-900 mb-2">پاسخ سریع و خلاصه مدیریتی:</h3>
+    <p class="text-sm text-slate-700 leading-relaxed font-medium">
+      <strong>جمینای ۴ نئون (Gemini 4 Neon)</strong> سومین مدل تخصصی خانواده Gemini 4 گوگل دیپ‌مایند است که هوش مرزی (Frontier-Level) را با تکمیل سریع وظایف سرتاسری در مهندسی نرم‌افزار پیچیده، کار دانشی و گردش‌کارهای علمی ترکیب می‌کند. این مدل با امتیاز ۶۱ در شاخص هوش Artificial Analysis (رتبه ۳ کلی)، رتبه ۱ در شاخص ایجنت کدنویسی، پنجره زمینه ۱ میلیون توکن و قیمت ۳ دلار ورودی و ۱۵ دلار خروجی به ازای هر میلیون توکن، هزینه هر وظیفه را تا ۳۲٪ نسبت به کربن و تا ۸۰٪ نسبت به مدل‌های رقیب کاهش می‌دهد.
+    </p>
+  </div>
+
+  <!-- CTA 1 (Strategic Early Placement) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">آیا سازمان شما می‌خواهد از جدیدترین مدل‌های مرزی گوگل برای هوشمندسازی گردش‌کارهای خود بهره بگیرد؟</p>
+    <a href="/fa/services/enterprise-ai" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تحول هوش مصنوعی سازمانی دیجی نورون
+    </a>
+  </div>
+
+  <!-- Section 1 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">جمینای ۴ نئون چیست و چرا سومین عضو خانواده Gemini 4 نقطه عطفی است؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    جمینای ۴ نئون مدلی است که برای گردش‌کارهای پرتکرار و پیچیده سازمانی ساخته شده: کدنویسی در سطح تولید، استدلال تحلیلی و بهره‌وری علمی؛ با هوشی در سطح مدل‌های بزرگ‌تر اما سریع‌تر و به‌مراتب ارزان‌تر. گوگل آن را «تعادل عمق و بهره‌وری» در خانواده Gemini 4 معرفی می‌کند.
+  </p>
+
+  <p>
+    در تاریخ ۲۷ آبان ۱۴۰۵ (۱۸ نوامبر ۲۰۲۶)، کورای کاووکچوغلو (Koray Kavukcuoglu)، معاون ارشد گوگل دیپ‌مایند و معمار ارشد هوش مصنوعی گوگل، در <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" target="_blank" rel="noopener noreferrer" class="text-cyan-700 underline font-semibold">پیام رسمی معرفی Gemini 4 Neon</a> اعلام کرد این مدل هوش مرزی را با تکمیل سریع وظایف سرتاسری (End-to-End) در سه حوزه مهندسی نرم‌افزار پیچیده، کار دانشی و گردش‌کارهای علمی عرضه می‌کند. برای درک جایگاه نئون، بد نیست بدانید پیش از این، <a href="/fa/blog/introducing-gemini-4-hydrogen" class="text-cyan-700 underline font-semibold">جمینای ۴ هیدروژن</a> به عنوان موتور اجرایی سریع کارهای روزمره و جمینای ۴ کربن به عنوان پرچمدار پروژه‌های بلندمدت و سنگین معرفی شده بودند.
+  </p>
+
+  <p>
+    نکته کلیدی درباره نئون این است که گوگل به جای سرعت صرف یا هوش صرف، روی <strong>«اقتصاد هر وظیفه» (Cost per Task)</strong> شرط بسته است: مدلی که بتواند سهم شیر از کارهای پربسامد سازمانی — از دیباگ چندفایلی تا تحلیل مالی و حقوقی — را با کیفیتی نزدیک به مدل‌های غول‌پیکر، اما با کسری از زمان و هزینه انجام دهد.
+  </p>
+
+  <!-- Section 2: Benchmark Table -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">جدول مقایسه بنچمارک‌های رسمی: نئون در برابر کربن، هیدروژن و مدل‌های رقیب</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    نئون با امتیاز ۶۱ در شاخص هوش Artificial Analysis (سطح تفکر xhigh) در رتبه ۳ کلی دنیا و در رتبه ۲ شاخص Vals نشسته است؛ در بنچمارک کدنویسی ایجنتی Artificial Analysis رتبه ۱ (۵۸.۶) را گرفته و در Terminal-Bench 4.1 به ۶۵.۲٪ رسیده است — اعدادی که مدل‌های بزرگ‌تر و کندتر را پشت سر می‌گذارد.
+  </p>
+
+  <p>
+    اعداد رسمی اعلام‌شده توسط گوگل دیپ‌مایند نشان می‌دهد نئون در مرز فناوری (Pareto Frontier) میان هوش و هزینه قرار دارد. جدول زیر مهم‌ترین بنچمارک‌های اعلام‌شده را خلاصه می‌کند:
+  </p>
+
+  <div class="overflow-x-auto my-6">
+    <table class="w-full text-sm text-right border-collapse border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+      <thead class="bg-gradient-to-r from-slate-900 to-cyan-900 text-white font-semibold">
+        <tr>
+          <th class="p-3.5 border border-slate-700">شاخص / بنچمارک</th>
+          <th class="p-3.5 border border-slate-700 bg-cyan-800">جمینای ۴ نئون</th>
+          <th class="p-3.5 border border-slate-700">مقایسه / رقیب</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-200 bg-white">
+        <tr class="hover:bg-slate-50 transition-colors">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">شاخص هوش Artificial Analysis (سطح xhigh)</td>
+          <td class="p-3.5 font-semibold text-cyan-800 border border-slate-200">۶۱ — رتبه ۳ کلی</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">پشت مدل‌های بزرگ‌تر و کندتر</td>
+        </tr>
+        <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">شاخص ایجنت کدنویسی Artificial Analysis</td>
+          <td class="p-3.5 font-semibold text-cyan-800 border border-slate-200">۵۸.۶ — رتبه ۱ کلی</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">بهترین در کلاس خود</td>
+        </tr>
+        <tr class="hover:bg-slate-50 transition-colors">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">Terminal-Bench 4.1 (کدنویسی ترمینال)</td>
+          <td class="p-3.5 font-semibold text-cyan-800 border border-slate-200">۶۵.۲٪</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">رقابتی با مدل‌های برتر کلاس</td>
+        </tr>
+        <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">SWE-sweep (در هارنس گوگل آنتی‌گرویتی)</td>
+          <td class="p-3.5 font-semibold text-cyan-800 border border-slate-200">۳۹.۰٪ — رکورد روز (SOTA)</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">بیش از ۳ برابر حالت mini-SWE (۱۲.۸٪)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+        <tr class="hover:bg-slate-50 transition-colors">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">شاخص Vals (کار دانشی سازمانی)</td>
+          <td class="p-3.5 font-semibold text-cyan-800 border border-slate-200">۷۰.۹٪ — رتبه ۲</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">روی مرز Pareto</td>
+        </tr>
+        <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">SEC-bench Pro (کشف آسیب‌پذیری)</td>
+          <td class="p-3.5 font-semibold text-cyan-800 border border-slate-200">۹۰.۵٪ — رکورد روز</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">با حدود نصف هزینه هر چالش</td>
+        </tr>
+        <tr class="hover:bg-slate-50 transition-colors">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">Agent Arena Index (ایجنت‌های دنیای واقعی)</td>
+          <td class="p-3.5 font-semibold text-cyan-800 border border-slate-200">۱۳۳۶ — رتبه ۲ جهانی</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">بیش از ۴۲۰۰ نشست ایجنتی واقعی</td>
+        </tr>
+        <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">قیمت (هر میلیون توکن)</td>
+          <td class="p-3.5 font-semibold text-cyan-800 border border-slate-200">ورودی ۳ دلار / خروجی ۱۵ دلار</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">ورودی کش‌شده فقط ۰.۱۵ دلار (تخفیف ۹۵٪)</td>
+        </tr>
+        <tr class="hover:bg-slate-50 transition-colors">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">هزینه هر وظیفه</td>
+          <td class="p-3.5 font-semibold text-cyan-800 border border-slate-200">۳۲٪ کمتر از کربن (سطح High)</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">۵۰ تا ۸۰٪ کمتر از مدل‌های مرزی رقیب</td>
+        </tr>
+        <tr class="hover:bg-slate-50 transition-colors bg-slate-50/50">
+          <td class="p-3.5 font-bold text-slate-900 border border-slate-200">پنجره زمینه (Context Window)</td>
+          <td class="p-3.5 font-semibold text-cyan-800 border border-slate-200">۱ میلیون توکن</td>
+          <td class="p-3.5 text-slate-600 border border-slate-200">سنتز اسپردشیت، PDF، صدا و ویدئو در یک پنجره</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Section 3 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">کد آماده تولید: نئون به عنوان ارکستراتور ایجنت‌های هیدروژن</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    نئون برای گردش‌کارهای ایجنتی طولانی‌مدت مهندسی شده: عملکرد خود را در وظایف پیچیده و پرمصرف-ابزار به صورت سرتاسری حفظ می‌کند و می‌تواند به عنوان ارکستراتوری سریع و با قضاوت بالا، ایجنت‌های موازی هیدروژن را در گوگل آنتی‌گرویتی هدایت کند.
+  </p>
+
+  <p>
+    در معماری پیشنهادی گوگل، نئون خواندن‌های تکراری فایل‌ها را حذف می‌کند، پیشرفت کار را به‌صورت زنده گزارش می‌دهد و در نشست‌های طولانی، فشرده‌سازی زمینه (Context Compaction) را به‌شکل قابل‌اعتماد مدیریت می‌کند. نتیجه در عمل: دیباگ و ریفکتور چندفایلی در سراسر ریپازیتوری با تغییرات جراحی‌گونه و نقطه‌ای، بدون دستکاری کدهای سالم. امتیاز ۴۶.۲٪ در FrontierCode 2.0 (سطح پیش‌فرض High) و رکورد ۳۹.۰٪ در SWE-sweep داخل آنتی‌گرویتی نشان می‌دهد هارنس حرفه‌ای چقدر روی خروجی نهایی مدل اثر دارد.
+  </p>
+
+  <!-- Section 4 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">چهار سطح تفکر و اقتصاد هزینه هر وظیفه</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    نئون با چهار سطح تفکر (Thinking Levels) به تیم‌ها امکان می‌دهد هوش و مصرف توکن را دقیقاً با نیاز هر وظیفه تنظیم کنند؛ در سطح پیش‌فرض High، هزینه هر وظیفه ۳۲٪ کمتر از کربن است و در سطح xhigh نیز بیش از ۳۶٪ ارزان‌تر از رقبای مرزی در بالاترین تنظیم آن‌ها عمل می‌کند.
+  </p>
+
+  <p>
+    سطوح تفکر نئون به‌صورت پلکانی و قابل پیش‌بینی مقیاس می‌شوند:
+  </p>
+
+  <ul class="list-disc pr-6 space-y-2 text-slate-700">
+    <li><strong>سطح High (پیش‌فرض):</strong> تعادل بهینه برای توسعه نرم‌افزار، ایجنت‌ها و تحلیل روزمره — نئون اینجا هم روی مرز Pareto شاخص Vals و Agent Arena است با ۵۰ تا ۸۰٪ هزینه کمتر به ازای هر وظیفه نسبت به مدل‌های مرزی رقیب.</li>
+    <li><strong>سطح xhigh:</strong> عمیق‌ترین استدلال چندمرحله‌ای برای سنگین‌ترین بارهای مهندسی، تحلیلی و علمی — نئون بالاترین امتیاز هوش خود (۶۱ در شاخص Artificial Analysis) را همین‌جا ثبت می‌کند.</li>
+    <li><strong>ورودی کش‌شده با تخفیف ۹۵٪:</strong> گردش‌کارهایی که سند یا کد ثابت را بارها پرس‌وجو می‌کنند، به جای ۳ دلار فقط ۰.۱۵ دلار به ازای هر میلیون توکن ورودی پرداخت می‌کنند — مزیت بزرگی برای سیستم‌های RAG و دستیارهای اسناد سازمانی.</li>
+  </ul>
+
+  <!-- CTA 2 (Mid-Page Conversion) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">می‌خواهید بدانید ترکیب نئون و هیدروژن چه صرفه‌جویی‌ای برای گردش‌کارهای سازمان شما دارد؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      تماس با مهندسان هوش مصنوعی دیجی نورون
+    </a>
+  </div>
+
+  <!-- Section 5 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">دفاع سایبری مرزی: از کشف آسیب‌پذیری تا وصله‌سازی خودکار</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    نسخه «نئون برای دفاع سایبری» در همه چالش‌های آسان، متوسط و سخت AutoBaxBench کد امن‌تری نسبت به کربن تولید می‌کند (رکورد ۷۶٪ در سطح سخت)، در WebExploitBench 1.2 با ۵۱.۲۶٪ رکورد روز را با نصف هزینه مدل‌های رقیب ثبت کرده و در چرخه کامل سخت‌سازی کد — کشف، اعتبارسنجی و وصله — عملکردی مرزی دارد.
+  </p>
+
+  <p>
+    با مقیاس‌پذیری کدنویسی ایجنتی، تولید کد امن از همان ابتدا حیاتی شده است. عملکرد نئون در چرخه دفاع سایبری بر اساس بنچمارک‌های اعلامی گوگل:
+  </p>
+
+  <ul class="list-disc pr-6 space-y-2 text-slate-700">
+    <li><strong>کشف آسیب‌پذیری‌ها:</strong> رکورد روز در <a href="https://sec-bench.github.io/" target="_blank" rel="noopener noreferrer" class="text-cyan-700 underline font-semibold">SEC-bench Pro</a> با امتیاز ۹۰.۵٪ و هزینه‌ای حدود نصف هر چالش نسبت به مدل‌های بزرگ.</li>
+    <li><strong>اعتبارسنجی ریسک از طریق اکسپلویت:</strong> عملکرد مرزی در ExploitGym با مصرف نصف توکن کربن — تا مدافعان بفهمند کدام آسیب‌پذیری واقعاً قابل بهره‌برداری است و اولویت وصله را درست تعیین کنند.</li>
+    <li><strong>وصله‌سازی آسیب‌پذیری‌ها:</strong> امتیاز ۷۰.۷٪ در CWE-bench v2 کولینر با ۳.۴٪ بهبود نسبت به کربن — یعنی اصلاح ریشه‌ای مشکل، نه فقط مسکول کردن علامت.</li>
+    <li><strong>دسترس‌پذیری برای مدافعان:</strong> نسخه سایبری نئون در روزهای آینده از طریق <a href="https://deepmind.google/fairwind-program/" target="_blank" rel="noopener noreferrer" class="text-cyan-700 underline font-semibold">برنامه Fairwind گوگل دیپ‌مایند</a> در دسترس مدافعان معتمد قرار می‌گیرد.</li>
+  </ul>
+
+  <!-- Section 6 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">امنیت و اجرای قابل‌اعتماد: کم‌ترین نرخ ساختگی و صفر تقلب</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    نئون روی پشته امنیتی Gemini 4 ساخته شده: با حفاظت هم‌تراز کربن در برابر سوءاستفاده‌های شدید سایبری و زیست‌امنیتی، در بنچمارک Gray Swan با روشن بودن محافظت‌های بلادرنگ، همه حملات تزریق پرامپت غیرمستقیم را دفع کرد (نرخ موفقیت حمله ۰.۰٪) و کم‌ترین نرخ ساختگی تاریخ خانواده Gemini را در تست‌های داخلی آنتی‌گرویتی ثبت کرده است.
+  </p>
+
+  <p>
+    برای مدلی که قرار است کارهای حساس و طولانی‌مدت تولیدی را بر عهده بگیرد، سه معیار امنیتی نئون اهمیت ویژه‌ای برای سازمان‌ها دارد:
+  </p>
+
+  <ul class="list-disc pr-6 space-y-2 text-slate-700">
+    <li><strong>انضباط ایجنتی:</strong> تقلب صفر درصدی در Terminal-Bench 4.0، میان‌بر زدن فقط در ۲.۴۵٪ وظایف (کم‌ترین نرخ بین همه مدل‌های Gemini 4)، نرخ اقدام ناهم‌تراز فقط ۰.۰۹٪ و نرخ قبولی ۹۹.۲٪ در ارزیابی صداقت ایجنت.</li>
+    <li><strong>حد صحیح سرویس‌دهی:</strong> نسبت به کربن، کم‌سرویسی (Under-service) ۴۳ تا ۵۶٪ و فراتر رفتن از محدوده (Overreach) ۱۵ تا ۳۵٪ کاهش یافته — یعنی کار کامل انجام می‌شود ولی از مرزهای کاربر عبور نمی‌کند.</li>
+    <li><strong>سوءاستفاده کمتر، امتناع هوشمندتر:</strong> با وجود قابلیت مرزی در قالب مدلی سریع‌تر و ارزان‌تر، تنها ۱.۹۸٪ وظایف Terminal-Bench 4.0 و ۰٪ وظایف Terminal-Bench Science را رد کرده است؛ یعنی امنیت بدون فلج‌کردن کار قانونی.</li>
+  </ul>
+
+  <!-- Section 7 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">کار دانشی و تحلیل عمیق در اپلیکیشن جمینای</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-cyan-600">
+    در اپ جمینای، نئون نوشتن‌های ساختارمند و طبیعی تولید می‌کند، آپلودها مثل اسپردشیت، PDF و عکس را دقیق‌تر می‌خواند، از جیمیل و داکیومنتس جزئیات مرتبط استخراج می‌کند و Tasksهای چندمرحله‌ای سنگین را سریع‌تر از مدل‌های بزرگ‌تر اجرا می‌کند — با مصرف کمتر از سهمیه اشتراک.
+  </p>
+
+  <p>
+    سه کاربرد عملی برای کاربران حرفه‌ای: نخست، تبدیل مطالب انبوه به گزارش و خلاصه‌های کاربردی برای مدیریت دانش سازمانی؛ دوم، تحقیق و تحلیل به‌هنگام برای موضوعات پویا مثل مقایسه قیمت عرضه‌کنندگان پیش از خرید بزرگ یا تدوین بریفینگ بازار؛ و سوم، واگذاری کارهای خسته‌کننده چندمرحله‌ای به Tasks — مثل تحلیل صورت‌حساب‌ها برای یافتن علت جهش هزینه یا تطبیق چند رسید برای پیگیری بازپرداخت. اگر نقشه کلان هوشمندسازی سازمانتان را می‌خواهید، <a href="/fa/blog/enterprise-ai-transformation-diginoron-model" class="text-cyan-700 underline font-semibold">مدل تحول هوش مصنوعی سازمانی دیجی نورون</a> نقطه شروع خوبی است.
+  </p>
+
+  <!-- Section 8: Common Pitfalls -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">۵ اشتباه رایج سازمان‌ها در انتخاب مدل هوش مصنوعی</h2>
+
+  <ol class="list-decimal pr-6 space-y-3 text-slate-700">
+    <li><strong>همیشه انتخاب گران‌ترین مدل:</strong> برای کارهای پربسامد روزمره، نئون با ۳۲٪ هزینه کمتر نسبت به کربن تقریباً همان کیفیت را می‌دهد؛ پرداخت بیشتر فقط برای وظایف واقعاً بلندمدت و پیچیده منطقی است.</li>
+    <li><strong>نادیده گرفتن سطح تفکر:</strong> اجرای همه چیز در سطح xhigh یعنی هزینه بیشتر بدون نیاز واقعی؛ سطح پیش‌فرض High برای اغلب گردش‌کارها روی مرز Pareto است.</li>
+    <li><strong>سوءتفاهم درباره «سریع»:</strong> نئون جایگزین کربن برای پروژه‌های سخت بلندمدت نیست؛ نئون تعادل عمق-بهره‌وری است و هیدروژن همچنان موتور اجرای فوق‌سریع روزمره است.</li>
+    <li><strong>فراموش کردن تخفیف ورودی کش‌شده:</strong> بدون طراحی درست پرامپت‌های کش‌شدنی، از تخفیف ۹۵٪ ورودی استفاده نمی‌کنید و صورتحساب توکن بی‌جهت بالا می‌رود.</li>
+    <li><strong>بررسی نکردن هارنس اجرا:</strong> امتیاز SWE-sweep نئون از ۱۲.۸٪ در هارنس mini به ۳۹.۰٪ در آنتی‌گرویتی می‌رسد؛ بنچمارک را همیشه در بستر ابزار واقعی خودتان ارزیابی کنید.</li>
+  </ol>
+
+  <!-- Voice Search Q&As -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پاسخ کوتاه برای جستجوی صوتی</h2>
+
+  <div class="space-y-3 my-6">
+    <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+      <p class="font-bold text-slate-900 mb-1">جمینای ۴ نئون چیست؟</p>
+      <p class="text-sm text-slate-700">سومین مدل تخصصی گوگل دیپ‌مایند در خانواده Gemini 4 است که هوش مرزی را با سرعت و هزینه کم برای کدنویسی، تحلیل و کار دانشی ترکیب می‌کند.</p>
+    </div>
+    <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+      <p class="font-bold text-slate-900 mb-1">قیمت جمینای ۴ نئون چقدر است؟</p>
+      <p class="text-sm text-slate-700">۳ دلار به ازای هر میلیون توکن ورودی و ۱۵ دلار برای خروجی؛ ورودی کش‌شده فقط ۰.۱۵ دلار است و پنجره زمینه ۱ میلیون توکن دارد.</p>
+    </div>
+    <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+      <p class="font-bold text-slate-900 mb-1">تفاوت نئون با کربن و هیدروژن چیست؟</p>
+      <p class="text-sm text-slate-700">کربن برای سخت‌ترین پروژه‌های بلندمدت، هیدروژن برای اجرای سریع روزمره و نئون برای تعادل عمق و بهره‌وری در گردش‌کارهای پیچیده و پربسامد طراحی شده است.</p>
+    </div>
+  </div>
+
+  <!-- CTA 3 (Final Enterprise Call to Action) -->
+  <div style="text-align: center; margin: 3rem 0; padding: 2rem; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 14px; color: white;">
+    <h3 style="font-size: 1.4rem; font-weight: bold; margin-bottom: 0.8rem; color: #38bdf8;">استقرار گردش‌کارهای ایجنتی با مدل‌های Gemini 4 در دیجی نورون</h3>
+    <p style="font-size: 1rem; margin-bottom: 1.5rem; color: #cbd5e1; max-width: 650px; margin-left: auto; margin-right: auto;">
+      متخصصان دیجی نورون معماری چندمدلی (کربن + نئون + هیدروژن) را متناسب با بار کاری و بودجه سازمان شما طراحی و پیاده‌سازی می‌کنند. نقشه راه هوشمندسازی خود را همین امروز دریافت کنید.
+    </p>
+    <a href="/fa/services/enterprise-ai" style="padding: 0.95rem 2.8rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background: #0284c7; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);">
+      مشاهده خدمات هوش مصنوعی سازمانی دیجی نورون
+    </a>
+  </div>
+
+  <!-- FAQ Section -->
+  <h2>سوالات متداول درباره جمینای ۴ نئون</h2>
+
+  <div class="grid grid-cols-1 gap-4">
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۱. جمینای ۴ نئون چیست و چه تفاوتی با کربن و هیدروژن دارد؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        جمینای ۴ نئون مدلی برای گردش‌کارهای پیچیده و پربسامد است: کدنویسی در سطح تولید، استدلال تحلیلی و بارهای سازمانی. کربن سخت‌ترین پروژه‌های بلندمدت را حل می‌کند، هیدروژن اجرای سریع روزمره را بر عهده دارد و نئون نقطه تعادل عمق و بهره‌وری است — هوشی مرزی، سریع‌تر و ارزان‌تر.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۲. قیمت و شرایط فنی جمینای ۴ نئون چگونه است؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        قیمت ۳ دلار به ازای هر میلیون توکن ورودی، ۰.۱۵ دلار برای ورودی کش‌شده (تخفیف ۹۵٪) و ۱۵ دلار برای هر میلیون توکن خروجی است؛ پنجره زمینه ۱ میلیون توکن دارد و در هزینه هر وظیفه، ۳۲٪ از کربن و ۵۰ تا ۸۰٪ از مدل‌های مرزی رقیب ارزان‌تر است.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۳. عملکرد نئون در بنچمارک‌ها چقدر است؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        امتیاز ۶۱ در شاخص هوش Artificial Analysis (رتبه ۳ کلی)، رتبه ۲ در شاخص Vals با ۷۰.۹٪، رتبه ۱ در شاخص ایجنت کدنویسی Artificial Analysis با ۵۸.۶، امتیاز ۶۵.۲٪ در Terminal-Bench 4.1 و رکورد ۳۹.۰٪ در SWE-sweep داخل گوگل آنتی‌گرویتی.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۴. چگونه می‌توان به جمینای ۴ نئون دسترسی پیدا کرد؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        توسعه‌دهندگان از طریق Gemini API در Google AI Studio و Android Studio؛ سازمان‌ها در Gemini for business (از طریق API یا منوی مدل) و آنتی‌گرویتی؛ کاربران عادی مشترک Pro و Ultra از منوی مدل در اپ جمینای؛ و مدافعان سایبری واجد شرایط از طریق برنامه Fairwind.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۵. آیا نئون برای امنیت سایبری سازمانی مناسب است؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        بله؛ نسخه «نئون برای دفاع سایبری» در چرخه کشف (SEC-bench Pro با ۹۰.۵٪)، اعتبارسنجی (ExploitGym با نصف توکن کربن) و وصله‌سازی (CWE-bench v2 با ۷۰.۷٪) عملکرد مرزی دارد، در بنچمارک Gray Swan نرخ موفقیت حمله ۰.۰٪ ثبت کرد و از طریق برنامه Fairwind در دسترس مدافعان معتمد قرار می‌گیرد.
+      </p>
+    </div>
+  </div>
+
+  <!-- Author Box -->
+  <div class="p-6 bg-slate-900 text-white rounded-2xl shadow-lg border border-slate-800">
+    <div class="flex flex-col sm:flex-row items-center gap-5">
+      <div class="w-16 h-16 rounded-full bg-cyan-500/20 border-2 border-cyan-400 flex items-center justify-center text-cyan-300 font-bold text-xl shrink-0">
+        DN
+      </div>
+      <div class="text-center sm:text-right space-y-2">
+        <h4 class="text-lg font-bold text-white">درباره نویسنده و مرجعیت محتوا:</h4>
+        <p class="text-sm text-cyan-300 font-semibold">
+          گروه تخصصی دیجی نورون — بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی
+        </p>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          گروه تخصصی دیجی نورون، متشکل از اعضای هیئت‌علمی دانشگاه و مهندسان داده صنعت، با بیش از ۵ سال سابقه اجرای پروژه‌های هوش مصنوعی در صنایع نفت، گاز و پتروشیمی، آب و فاضلاب، مدیریت شهری و خرده‌فروشی بزرگ، این تحلیل را بر پایه اعلامیه رسمی گوگل دیپ‌مایند، کارت مدل Gemini 4 Neon و بنچمارک‌های مستقل تدوین کرده است.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-xs text-slate-400 text-center">تصویر جلد: آرت هدر رسمی معرفی Gemini 4 Neon — منبع: وبلاگ رسمی گوگل (blog.google).</p>
+
+</div>`,
+    category: "trends",
+    categoryName: "روندها و اخبار AI",
+    author: {
+      name: "گروه تخصصی دیجی نورون",
+      role: "بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی",
+      avatar: "/images/instructors/karimi.jpg"
+    },
+    date: "۲۷ آبان ۱۴۰۵",
+    readTime: "۱۴ دقیقه",
+    image: "/images/blog/gemini-4-neon__blog-header__sm.width-2200.format-webp.webp",
+    featured: true,
+    tags: [
+      "جمینای ۴ نئون",
+      "Gemini 4 Neon",
+      "گوگل دیپ‌مایند",
+      "هوش مصنوعی ایجنتی",
+      "Google Antigravity",
+      "امنیت سایبری هوش مصنوعی",
+      "مدل‌های هوش مصنوعی ۲۰۲۶"
+    ],
+    faq: [
+      {
+        question: "جمینای ۴ نئون چیست و چه تفاوتی با کربن و هیدروژن دارد؟",
+        answer: "جمینای ۴ نئون مدلی برای گردش‌کارهای پیچیده و پربسامد است: کدنویسی در سطح تولید، استدلال تحلیلی و بارهای سازمانی. کربن سخت‌ترین پروژه‌های بلندمدت را حل می‌کند، هیدروژن اجرای سریع روزمره را بر عهده دارد و نئون نقطه تعادل عمق و بهره‌وری است — هوشی مرزی، سریع‌تر و ارزان‌تر."
+      },
+      {
+        question: "قیمت و شرایط فنی جمینای ۴ نئون چگونه است؟",
+        answer: "قیمت ۳ دلار به ازای هر میلیون توکن ورودی، ۰.۱۵ دلار برای ورودی کش‌شده (تخفیف ۹۵٪) و ۱۵ دلار برای هر میلیون توکن خروجی است؛ پنجره زمینه ۱ میلیون توکن دارد و در هزینه هر وظیفه، ۳۲٪ از کربن و ۵۰ تا ۸۰٪ از مدل‌های مرزی رقیب ارزان‌تر است."
+      },
+      {
+        question: "عملکرد نئون در بنچمارک‌ها چقدر است؟",
+        answer: "امتیاز ۶۱ در شاخص هوش Artificial Analysis (رتبه ۳ کلی)، رتبه ۲ در شاخص Vals با ۷۰.۹٪، رتبه ۱ در شاخص ایجنت کدنویسی Artificial Analysis با ۵۸.۶، امتیاز ۶۵.۲٪ در Terminal-Bench 4.1 و رکورد ۳۹.۰٪ در SWE-sweep داخل گوگل آنتی‌گرویتی."
+      },
+      {
+        question: "چگونه می‌توان به جمینای ۴ نئون دسترسی پیدا کرد؟",
+        answer: "توسعه‌دهندگان از طریق Gemini API در Google AI Studio و Android Studio؛ سازمان‌ها در Gemini for business (از طریق API یا منوی مدل) و آنتی‌گرویتی؛ کاربران عادی مشترک Pro و Ultra از منوی مدل در اپ جمینای؛ و مدافعان سایبری واجد شرایط از طریق برنامه Fairwind."
+      },
+      {
+        question: "آیا نئون برای امنیت سایبری سازمانی مناسب است؟",
+        answer: "بله؛ نسخه «نئون برای دفاع سایبری» در چرخه کشف (SEC-bench Pro با ۹۰.۵٪)، اعتبارسنجی (ExploitGym با نصف توکن کربن) و وصله‌سازی (CWE-bench v2 با ۷۰.۷٪) عملکرد مرزی دارد، در بنچمارک Gray Swan نرخ موفقیت حمله ۰.۰٪ ثبت کرد و از طریق برنامه Fairwind در دسترس مدافعان معتمد قرار می‌گیرد."
+      }
+    ]
+  },
+
+  {
     id: "23",
     slug: "iran-future-of-artificial-intelligence",
     title: "چرا ایران در آینده هوش مصنوعی جهان جایگاهی بزرگ خواهد داشت؟",
