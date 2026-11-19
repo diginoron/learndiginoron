@@ -42,7 +42,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       post.slug === "banks-block-ai-agents-open-banking" ||
       post.slug === "introducing-gemini-4-hydrogen" ||
       post.slug === "introducing-gemini-4-neon" ||
-      post.slug === "alphagenome-ai-decoding-human-genome";
+      post.slug === "alphagenome-ai-decoding-human-genome" ||
+      post.slug === "google-project-suncatcher-ai-in-space";
     return {
       path: `/blog/${post.slug}`,
       changeFrequency: (isPillar || post.featured) ? ("daily" as const) : ("weekly" as const),

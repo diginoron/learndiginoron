@@ -21,6 +21,317 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "26",
+    slug: "google-project-suncatcher-ai-in-space",
+    title: "پروژه سانکتچر گوگل و همکاری با Blue Origin؛ هوش مصنوعی چگونه دیتاسنترها را به مدار زمین می‌برد؟",
+    excerpt: "گوگل اولین پرتاب سنگین پروژه سانکتچر را در بهار ۲۰۲۹ با موشک New Glenn شرکت Blue Origin اجرا می‌کند؛ ماهواره‌هایی با ظرفیت یک رک دیتاسنتر در مدار آفتاب‌آهنگ که توان محاسبات هوش مصنوعی را از انرژی خورشیدی مدار تأمین می‌کنند.",
+    content: `<div class="space-y-8 text-slate-800 leading-relaxed">
+
+  <!-- Hero Answer (50-70 words) -->
+  <div class="p-6 bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-2xl shadow-sm">
+    <h3 class="text-lg font-bold text-emerald-900 mb-2">پاسخ سریع و خلاصه مدیریتی:</h3>
+    <p class="text-sm text-slate-700 leading-relaxed font-medium">
+      <strong>پروژه سانکتچر (Project Suncatcher)</strong> ایده بلندپروازانه گوگل برای انتقال بخشی از زیرساخت محاسبات هوش مصنوعی به فضا است. طبق اعلام رسمی وبلاگ گوگل (۲۰ نوامبر ۲۰۲۶)، اولین پرتاب سنگین این پروژه در بهار ۲۰۲۹ (سه‌ماهه اول سال) با موشک سنگین New Glenn شرکت Blue Origin انجام می‌شود؛ ماهواره‌هایی که هرکدام تقریباً ظرفیت یک رک دیتاسنتر را دارند و در مدار آفتاب‌آهنگ (Sun-Synchronous Orbit) مستقر می‌شوند تا انرژی خورشیدی فراوان مدار، توان محاسبات AI را پایدار تأمین کند.
+    </p>
+  </div>
+
+  <!-- CTA 1 (Strategic Early Placement) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">آیا سازمان شما برای موج بعدی زیرساخت هوش مصنوعی — از دیتاسنتر زمینی تا محاسبات ابری و فراتر از آن — برنامه راهبردی دارد؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تخصصی تحول هوش مصنوعی دیجی نورون
+    </a>
+  </div>
+
+  <!-- Section 1 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پروژه سانکتچر چیست و چرا گوگل به فضا نگاه می‌کند؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    پروژه سانکتچر «پروژه‌ای بلندمدت» (Moonshot) گوگل برای مقیاس‌پذیری زیرساخت هوش مصنوعی در فضا است؛ با این منطق که خورشید در مدار زمین انرژی فراوان و تقریباً بی‌پایانی ارائه می‌دهد و می‌تواند موتور محاسباتی مدل‌های AI را بدون فشار بر شبکه برق زمین تغذیه کند.
+  </p>
+
+  <p>
+    گوگل این خبر را در یادداشت رسمی خود با امضای تراویس بیلز، مدیر ارشد واحد «Paradigms of Intelligence» منتشر کرد و آن را «نقطه عطفی حیاتی در نقشه راه بلندمدت» شرکت برای گسترش مرزهای محاسبات توصیف کرده است. این اعلامیه در ادامه همکاری‌های جاری گوگل با شرکای ماهواره‌ای و پرتاب فضایی منتشر شد و نشان می‌دهد بحث «محاسبات در فضا» برای گوگل دیگر یک تمرین نظری نیست، بلکه بخشی از نقشه راه عملیاتی زیرساخت است.
+  </p>
+
+  <p>
+    برای درک مقیاس ماجرا کافی است یادآوری کنیم مدل‌های زبانی نسل جدید مثل <a href="/fa/blog/introducing-gemini-4-neon" class="text-emerald-700 underline font-semibold">Gemini 4 Neon</a> و کلسترهای آموزشی روزبه‌روز بزرگ‌تر می‌شوند و گلوگاه اصلی دیگر تراشه نیست؛ انرژی و خنک‌کاری است. سانکتچر پاسخ گوگل به همین گلوگاه است: اگر مصرف محاسبات بی‌رویه رشد می‌کند، منبع انرژی را باید جایی برد که خورشید ۲۴ ساعته می‌تابد.
+  </p>
+
+  <!-- Section 2 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">چرا انرژی خورشیدی مدار، پاسخ گلوگاه انرژی هوش مصنوعی است؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    در مدار آفتاب‌آهنگ، ماهواره تقریباً هیچ شبی را تجربه نمی‌کند و پنل‌های خورشیدی آن پیوسته در معرض تابش قرار دارند. گوگل دقیقاً به همین «انرژی خورشیدی فراوان در مدار» به‌عنوان مزیت اصلی سانکتچر اشاره می‌کند؛ منبعی که دیتاسنترهای زمینی با همه پیشرفت‌ها به آن دسترسی ندارند.
+  </p>
+
+  <p>
+    دیتاسنترهای امروزی با چند چالش جدی روبه‌رو هستند: سقف توان شبکه برق، هزینه زمین و آب خنک‌کاری، و فشار جوامع محلی. برای همین شرکت‌های بزرگ فناوری سراغ انرژی‌های جایگزین و قراردادهای خرید برق تمیز رفته‌اند — مسیری که تحولات نسل‌های جدید مدل‌های گوگل مثل <a href="/fa/blog/introducing-gemini-4-hydrogen" class="text-emerald-700 underline font-semibold">Gemini 4 Hydrogen</a> نیز نشان می‌دهد. سانکتچر همین منطق را یک قدم جلوتر می‌برد: به‌جای انتقال انرژی به ماشین‌ها، ماشین‌ها را به منبع انرژی می‌برد.
+  </p>
+
+  <p>
+    این رویکرد قرار نیست در افق کوتاه‌مدت دیتاسنترها را بی‌مصرف کند؛ بلکه در بلندمدت لایه مکملی برای بارهای محاسباتی خاص تعریف می‌کند. اما جهت‌گیری استراتژیک روشن است: رقابت هوش مصنوعی در دهه آینده، رقابت «برق و مکان» هم خواهد بود، نه فقط رقابت مدل و داده.
+  </p>
+
+  <!-- Section 3 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پرتاب بهاری ۲۰۲۹ با موشک سنگین New Glenn چه اتفاقی است؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    طبق اعلام گوگل، در سه‌ماهه اول ۲۰۲۹ (بهار ۲۰۲۹) موشک سنگین New Glenn شرکت Blue Origin یک پرتاب اختصاصی برای سانکتچر انجام می‌دهد و ماهواره‌های پروژه را در مدار آفتاب‌آهنگ مستقر می‌کند. این اولین پرتاب سنگین (Heavy-Lift) پروژه است.
+  </p>
+
+  <p>
+    نکته مهم واژه «پرتاب اختصاصی» (Dedicated Launch) است: کل ظرفیت این مأموریت New Glenn فقط برای ماهواره‌های سانکتچر کنار گذاشته شده، نه یک بار کمکی در میان محموله‌های دیگر. این یعنی گوگل و Blue Origin عملاً برنامه عملیاتی چندساله‌ای برای این پروژه تعریف کرده‌اند و برنامه پرتاب به تقویم خاصی گره خورده است. جزئیات کامل را می‌توانید در <a href="https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/" target="_blank" rel="noopener noreferrer" class="text-emerald-700 underline font-semibold">اعلامیه رسمی وبلاگ گوگل</a> بخوانید.
+  </p>
+
+  <p>
+    New Glenn درخور این مأموریت انتخاب شده چون در کلاس موشک‌های سنگین‌برد قرار می‌گیرد — همان کلاسی که برای قرار دادن چند ماهواره هم‌زمان در یک مدار مشخص لازم است. مشخصات فنی این موشک را می‌توانید در <a href="https://www.blueorigin.com/new-glenn" target="_blank" rel="noopener noreferrer" class="text-emerald-700 underline font-semibold">صفحه رسمی New Glenn شرکت Blue Origin</a> دنبال کنید.
+  </p>
+
+  <!-- Section 4 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">ماهواره‌ای با ظرفیت یک رک دیتاسنتر یعنی چه؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    گوگل می‌گوید هر ماهواره سانکتچر تقریباً ظرفیت یک رک (Rack) دیتاسنتر را دارد؛ یعنی همان واحدی که روی زمین قفسه‌ای از سرورها در یک سالن دیتاسنتر است. یعنی گوگل واحد محاسباتی را نه در مقیاس ایده‌آلیستی، بلکه در مقیاس قابل‌حمل با پرتاب امروزی تعریف کرده است.
+  </p>
+
+  <p>
+    این انتخاب مقیاس، خبر را از یک شعار تبلیغاتی جدا می‌کند. به‌جای وعده «دیتاسنتر فضایی» غول‌آسا، گوگل از واحدهای رک‌محور حرف می‌زند که با موشک‌های سنگین‌برد امروزی قابل پرتاب‌اند و در کنار هم می‌توانند به صورت دسته‌دسته (Constellation) مقیاس بگیرند. مسیر رشد از چند رک در یک مأموریت به خوشه‌های بزرگ‌تر، دقیقاً همان الگویی است که صنعت ماهواره‌ای برای مخابرات طی کرده است.
+  </p>
+
+  <!-- Section 5 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">مقایسه: دیتاسنتر زمینی یا محاسبات فضایی سانکتچر؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    دیتاسنتر زمینی امروز جریان اصلی است: ارزان‌تر برای استقرار، قابل ارتقا و نزدیک به کاربر. سانکتچر هنوز در آغاز راه است اما مزیت انرژی پیوسته خورشیدی و بی‌نیازی از زمین، آب و شبکه برق را دارد. این جدول تصویر صادقانه‌ای از هر دو طرف می‌دهد.
+  </p>
+
+  <div class="overflow-x-auto my-6">
+    <table class="w-full text-sm border border-slate-300 rounded-lg overflow-hidden">
+      <thead>
+        <tr class="bg-slate-900 text-white text-right">
+          <th class="p-3 border-b border-slate-700">معیار</th>
+          <th class="p-3 border-b border-slate-700">دیتاسنتر زمینی</th>
+          <th class="p-3 border-b border-slate-700">محاسبات فضایی (سانکتچر)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white">
+          <td class="p-3 border-b font-bold">منبع انرژی</td>
+          <td class="p-3 border-b">شبکه برق + انرژی‌های تجدیدپذیر قراردادی</td>
+          <td class="p-3 border-b">خورشید با تابش تقریباً پیوسته در مدار آفتاب‌آهنگ</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="p-3 border-b font-bold">مقیاس واحد استقرار</td>
+          <td class="p-3 border-b">از اتاق سرور تا هزاران رک در یک سایت</td>
+          <td class="p-3 border-b">هر ماهواره ≈ یک رک دیتاسنتر (طبق اعلام گوگل)</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="p-3 border-b font-bold">بلوغ فنی</td>
+          <td class="p-3 border-b">کاملاً جاافتاده و جریان اصلی</td>
+          <td class="p-3 border-b">آغاز راه؛ اولین پرتاب سنگین در بهار ۲۰۲۹</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="p-3 border-b font-bold">وابستگی زیرساختی</td>
+          <td class="p-3 border-b">زمین، آب خنک‌کاری، شبکه برق، فیبر</td>
+          <td class="p-3 border-b">پرتاب فضایی، ارتباطات ماهواره‌ای، دوام سخت‌افزار در فضا</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="p-3 border-b font-bold">نگرانی زیست‌محیطی محلی</td>
+          <td class="p-3 border-b">مصرف آب و برق، فشار بر جامعه محلی</td>
+          <td class="p-3 border-b">بدون فشار بر شبکه زمین؛ چالش اصلی فضایلربازی و آلودگی مداری</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA 2 (Mid-Content) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0fff4 0%, #e6faee 100%); border-radius: 12px; border: 1px solid #b7e4c7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #14532d;">می‌خواهید تیم‌های فنی و مدیریتی شما زبان زیرساخت هوش مصنوعی — از GPU و انرژی تا معماری ابری — را در سطح تصمیم‌گیری بفهمند؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0f766e; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(15,118,110,0.25);">
+      گفت‌وگو با مشاوران دیجی نورون
+    </a>
+  </div>
+
+  <!-- Section 6 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">موانع پیش‌رو: چه چیزی باید حل شود تا محاسبات فضایی واقعی شود؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    سانکتچر یک «Moonshot» است، نه یک محصول سال بعد. پیش از آنکه محاسبات فضایی تجاری شود، باید سه لایه حل شود: دوام سخت‌افزار در تابش فضایی، ارتباط پرسرعت بین ماهواره‌ها، و اقتصادی‌شدن خودِ پرتاب. پرتاب ۲۰۲۹ دقیقاً برای یادگیری روی همین لایه‌ها طراحی شده است.
+  </p>
+
+  <p>
+    نکته مثبت این است که صنعت پرتاب فضا در چند سال اخیر با بازگشت‌پذیربودن بوسترها و افزایش نرخ پرتاب، هزینه هر کیلوگرم محموله را به‌طور چشمگیری پایین آورده — روندی که همکاری گوگل با یک شرکت پرتاب اختصاصی مثل Blue Origin را منطقی می‌کند. اما حتی با کاهش هزینه پرتاب، تعمیر و ارتقا در فضا به‌سادگی زمین نیست؛ بنابراین طراحی سخت‌افزار باید از ابتدا برای دوام چندساله و کارایی انرژی بالا انجام شود.
+  </p>
+
+  <p>
+    برای سازمان‌ها پیام روشنی دارد: پیش‌بینی‌های زیرساختی بلندمدت را با سناریوهای متفاوت بسازید. اگر محاسبات فضایی به موفقیت برسد، در افق ۵ تا ۱۰ ساله بخشی از ظرفیت آموزش مدل‌ها از فضا تأمین می‌شود و اقتصاد سرویس‌های ابری دوباره شکل می‌گیرد — همان‌طور که خود مدل‌های هوش مصنوعی نیز در <a href="/fa/blog/future-of-ai-in-education-2026" class="text-emerald-700 underline font-semibold">آینده آموزش و یادگیری</a> بازتعریف شده‌اند.
+  </p>
+
+  <!-- Section 7 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">این خبر برای مدیران و علاقه‌مندان ایرانی چه معنایی دارد؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    پیام اصلی، آگاهی از جهت بازار است: انرژی و زیرساخت، میدان رقابت بعدی هوش مصنوعی‌اند. مدیران باید ظرفیت محاسباتی و مهارت تیم‌هایشان را به‌گونه‌ای بسازند که به تغییر منابع عرضه محاسبات مقاوم باشند؛ و دانش‌پژوهان باید هر دو سوی معادله — مدل و زیرساخت — را بیاموزند.
+  </p>
+
+  <p>
+    برای تیم‌های شرکتی، این خبر بهانه‌ای است برای مرور راهبرد هوش مصنوعی سازمانی: چقدر از بار کاری شما به ابر وابسته است؟ اگر هزینه یا دسترسی محاسبات تغییر کرد، لایه جایگزین شما چیست؟ مسیر عملی برای این آمادگی، <a href="/fa/blog/corporate-ai-transformation-guide" class="text-emerald-700 underline font-semibold">راهنمای تحول هوش مصنوعی سازمانی</a> است که چارچوب گام‌به‌گام آن را پوشش داده‌ایم.
+  </p>
+
+  <p>
+    و برای نسل جوان: زیرساخت هوش مصنوعی فقط سرور و کابل نیست؛ مهندسی ماهواره، مدیریت انرژی، شبکه و نرم‌افزار توزیع‌شده همه در این تصویر نقش دارند. کسی که امروز برنامه‌نویسی و مفاهیم AI را یاد می‌گیرد، در دهه آینده می‌تواند در هر لایه‌ای از این پشته — حتی لایه‌ای که به مدار می‌رود — نقش‌آفرینی کند.
+  </p>
+
+  <!-- Pitfalls (Common Mistakes) -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">۵ اشتباه رایج در تفسیر خبر سانکتچر</h2>
+
+  <ol class="list-decimal pr-6 space-y-3 my-4">
+    <li><strong>اشتباه اول — آن را یک محصول امسال دیدن:</strong> سانکتچر یک برنامه بلندمدت با اولین پرتاب در بهار ۲۰۲۹ است؛ هر تفسیری از «دیتاسنتر گوگل در فضا از سال آینده» نادرست است.</li>
+    <li><strong>اشتباه دوم — برابر دانستن رک با دیتاسنتر:</strong> هر ماهواره ظرفیت «یک رک» را دارد؛ نه یک سالن کامل. مقیاس‌پذیری در بلندمدت و از طریق دسته‌های ماهواره رخ می‌دهد.</li>
+    <li><strong>اشتباه سوم — نادیده گرفتن نقش مدار:</strong> مزیت اصلی پروژه به مدار آفتاب‌آهنگ گره خورده است؛ هر مدار دیگری معنای انرژی متفاوتی دارد.</li>
+    <li><strong>اشتباه چهارم — دیدن پرتاب به‌عنوان یک قرارداد خرید:</strong> پرتاب اختصاصی با New Glenn یعنی برنامه عملیاتی چندساله دو شرکت، نه یک تبلیغ کوتاه‌مدت.</li>
+    <li><strong>اشتباه پنجم — بی‌توجهی به متغیر انرژی در راهبرد AI:</strong> اگر ملاک تصمیم‌گیری سازمان شما فقط مدل و نرم‌افزار است، گلوگاه واقعی هزینه و پایداری — یعنی انرژی — از دید شما پنهان مانده است.</li>
+  </ol>
+
+  <!-- Voice Search Q&As -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پرسش‌های متداول جست‌وجوی صوتی</h2>
+
+  <div class="space-y-4">
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">گوگل قرار است هوش مصنوعی را به فضا ببرد؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        بله؛ با پروژه سانکتچر. گوگل اعلام کرده اولین پرتاب سنگین این پروژه در بهار ۲۰۲۹ با موشک New Glenn شرکت Blue Origin انجام می‌شود و ماهواره‌هایی با ظرفیت هرکدام تقریباً یک رک دیتاسنتر در مدار آفتاب‌آهنگ مستقر خواهند شد.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">چرا گوگل می‌خواهد دیتاسنتر را در فضا بسازد؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        چون انرژی خورشیدی در مدار فراوان و تقریباً پیوسته است و می‌تواند رشد بی‌وقفه محاسبات هوش مصنوعی را بدون فشار بر شبکه برق، زمین و آبِ زمین تأمین کند؛ گوگل این را راه مقیاس‌پذیری بلندمدت زیرساخت AI می‌داند.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">موشک پرتاب سانکتچر چیست و چه زمانی است؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        موشک سنگین New Glenn از شرکت Blue Origin و زمان پرتاب سه‌ماهه اول ۲۰۲۹ (بهار ۲۰۲۹) است؛ این پرتاب اختصاصی فقط برای ماهواره‌های سانکتچر انجام می‌شود.
+      </p>
+    </div>
+  </div>
+
+  <!-- CTA 3 (Closing) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%); border-radius: 12px; border: 1px solid #c7d2fe;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1e1b4b;">نقشه راه هوش مصنوعی سازمان شما برای دهه‌ای که زیرساختش عوض می‌شود، آماده است؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #4338ca; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(67,56,202,0.25);">
+      شروع مشاوره تحول هوش مصنوعی با دیجی نورون
+    </a>
+  </div>
+
+  <!-- FAQ (feeds page-level JSON-LD) -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">سؤالات متداول درباره پروژه سانکتچر</h2>
+
+  <div class="space-y-4">
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۱. پروژه سانکتچر گوگل چیست؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        پروژه سانکتچر (Project Suncatcher) ایده بلندمدت گوگل برای مقیاس‌پذیری زیرساخت هوش مصنوعی در فضا با بهره‌گیری از انرژی خورشیدی فراوان مدار زمین است؛ گوگل آن را نقطه عطفی حیاتی در نقشه راه بلندمدت خود برای آینده محاسبات می‌نامد.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۲. اولین پرتاب سنگین سانکتچر چه زمانی و با چه موشکی انجام می‌شود؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        در سه‌ماهه اول ۲۰۲۹ (بهار ۲۰۲۹)، موشک سنگین New Glenn شرکت Blue Origin یک پرتاب اختصاصی برای استقرار ماهواره‌های سانکتچر در مدار آفتاب‌آهنگ اجرا می‌کند؛ این اولین پرتاب سنگین پروژه است.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۳. ظرفیت هر ماهواره سانکتچر چقدر است؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        طبق اعلام گوگل، هر ماهواره سانکتچر تقریباً ظرفیت یک رک (Rack) دیتاسنتر را دارد؛ یعنی واحد محاسباتی که روی زمین در قفسه‌های استاندارد دیتاسنتر مستقر می‌شود.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۴. چرا مدار آفتاب‌آهنگ برای محاسبات هوش مصنوعی انتخاب شده؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        چون در این مدار ماهواره تقریباً دائماً در معرض تابش خورشید قرار دارد و پنل‌های خورشیدی توان پایدار و تقریباً بدون وقفه تولید می‌کنند؛ همان ویژگی‌ای که گوگل آن را «انرژی خورشیدی فراوان در مدار» می‌نامد.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۵. آیا محاسبات فضایی جایگزین دیتاسنترهای زمینی می‌شود؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        در افق نزدیک خیر؛ سانکتچر یک برنامه بلندمدت و مکمل است. پرتاب ۲۰۲۹ گامی آزمایشی-عملیاتی روی نقشه راه است و دیتاسنترهای زمینی تا سال‌ها بار اصلی آموزش و اجرای مدل‌های هوش مصنوعی را بر عهده دارند.
+      </p>
+    </div>
+  </div>
+
+  <!-- Author Box -->
+  <div class="p-6 bg-slate-900 text-white rounded-2xl shadow-lg border border-slate-800">
+    <div class="flex flex-col sm:flex-row items-center gap-5">
+      <div class="w-16 h-16 rounded-full bg-emerald-500/20 border-2 border-emerald-400 flex items-center justify-center text-emerald-300 font-bold text-xl shrink-0">
+        DN
+      </div>
+      <div class="text-center sm:text-right space-y-2">
+        <h4 class="text-lg font-bold text-white">درباره نویسنده و مرجعیت محتوا:</h4>
+        <p class="text-sm text-emerald-300 font-semibold">
+          گروه تخصصی دیجی نورون — بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی
+        </p>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          گروه تخصصی دیجی نورون، متشکل از اعضای هیئت‌علمی دانشگاه و مهندسان داده صنعت، با بیش از ۵ سال سابقه اجرای پروژه‌های هوش مصنوعی، این تحلیل را بر پایه اعلامیه رسمی وبلاگ گوگل درباره همکاری با Blue Origin در پروژه سانکتچر (۲۰ نوامبر ۲۰۲۶) و اطلاعات عمومی منتشرشده درباره موشک New Glenn تدوین کرده است.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-xs text-slate-400 text-center">تصویر جلد: آرت‌ورک موجود آرشیو دیجی نورون؛ منبع خبری: وبلاگ رسمی گوگل (blog.google).</p>
+</div>`,
+    category: "trends",
+    categoryName: "روندها و اخبار AI",
+    author: {
+      name: "گروه تخصصی دیجی نورون",
+      role: "بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی",
+      avatar: "/images/instructors/karimi.jpg"
+    },
+    date: "۲۹ آبان ۱۴۰۵",
+    readTime: "۱۴ دقیقه",
+    image: "/images/blog/ai-future.jpg",
+    featured: true,
+    tags: [
+      "پروژه سانکتچر",
+      "گوگل",
+      "Blue Origin",
+      "زیرساخت هوش مصنوعی",
+      "محاسبات فضایی",
+      "انرژی خورشیدی"
+    ],
+    faq: [
+      {
+        question: "پروژه سانکتچر گوگل چیست؟",
+        answer: "پروژه سانکتچر (Project Suncatcher) ایده بلندمدت گوگل برای مقیاس‌پذیری زیرساخت هوش مصنوعی در فضا با بهره‌گیری از انرژی خورشیدی فراوان مدار زمین است؛ گوگل آن را نقطه عطفی حیاتی در نقشه راه بلندمدت خود برای آینده محاسبات می‌نامد."
+      },
+      {
+        question: "اولین پرتاب سنگین سانکتچر چه زمانی و با چه موشکی انجام می‌شود؟",
+        answer: "در سه‌ماهه اول ۲۰۲۹ (بهار ۲۰۲۹)، موشک سنگین New Glenn شرکت Blue Origin یک پرتاب اختصاصی برای استقرار ماهواره‌های سانکتچر در مدار آفتاب‌آهنگ اجرا می‌کند؛ این اولین پرتاب سنگین پروژه است."
+      },
+      {
+        question: "ظرفیت هر ماهواره سانکتچر چقدر است؟",
+        answer: "طبق اعلام گوگل، هر ماهواره سانکتچر تقریباً ظرفیت یک رک (Rack) دیتاسنتر را دارد؛ یعنی واحد محاسباتی که روی زمین در قفسه‌های استاندارد دیتاسنتر مستقر می‌شود."
+      },
+      {
+        question: "چرا مدار آفتاب‌آهنگ برای محاسبات هوش مصنوعی انتخاب شده؟",
+        answer: "چون در این مدار ماهواره تقریباً دائماً در معرض تابش خورشید قرار دارد و پنل‌های خورشیدی توان پایدار و تقریباً بدون وقفه تولید می‌کنند؛ همان ویژگی‌ای که گوگل آن را «انرژی خورشیدی فراوان در مدار» می‌نامد."
+      },
+      {
+        question: "آیا محاسبات فضایی جایگزین دیتاسنترهای زمینی می‌شود؟",
+        answer: "در افق نزدیک خیر؛ سانکتچر یک برنامه بلندمدت و مکمل است. پرتاب ۲۰۲۹ گامی آزمایشی-عملیاتی روی نقشه راه است و دیتاسنترهای زمینی تا سال‌ها بار اصلی آموزش و اجرای مدل‌های هوش مصنوعی را بر عهده دارند."
+      }
+    ],
+  },
+
+  {
     id: "25",
     slug: "alphagenome-ai-decoding-human-genome",
     title: "الفاجنوم گوگل و رمزگشایی ژنوم انسان؛ هوش مصنوعی چگونه جهش عامل بیماری را از دل ۹ میلیارد گزینه پیدا می‌کند؟",

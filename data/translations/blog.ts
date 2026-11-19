@@ -25,6 +25,7 @@ import { introducingGemini4HydrogenTranslation } from "./blog/introducingGemini4
 import { iranAiFutureTranslation } from "./blog/iranAiFuture";
 import { introducingGemini4NeonTranslation } from "./blog/introducingGemini4Neon";
 import { alphaGenomeTranslation } from "./blog/alphaGenome";
+import { googleProjectSuncatcherTranslation } from "./blog/googleProjectSuncatcher";
 
 export interface BlogTranslation {
   title: string;
@@ -62,9 +63,11 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "iran-future-of-artificial-intelligence": iranAiFutureTranslation,
   "introducing-gemini-4-neon": introducingGemini4NeonTranslation,
   "alphagenome-ai-decoding-human-genome": alphaGenomeTranslation,
+  "google-project-suncatcher-ai-in-space": googleProjectSuncatcherTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
+  "۲۹ آبان ۱۴۰۵": { en: "November 20, 2026", fa: "۲۹ آبان ۱۴۰۵", ar: "٢٠ نوفمبر ٢٠٢٦" },
   "۲۸ آبان ۱۴۰۵": { en: "November 19, 2026", fa: "۲۸ آبان ۱۴۰۵", ar: "١٩ نوفمبر ٢٠٢٦" },
   "۲۷ آبان ۱۴۰۵": { en: "November 18, 2026", fa: "۲۷ آبان ۱۴۰۵", ar: "١٨ نوفمبر ٢٠٢٦" },
   "۲۶ آبان ۱۴۰۵": { en: "November 17, 2026", fa: "۲۶ آبان ۱۴۰۵", ar: "١٧ نوفمبر ٢٠٢٦" },
