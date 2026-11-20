@@ -21,6 +21,335 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "27",
+    slug: "google-ai-restore-giant-kelp-forests",
+    title: "هوش مصنوعی برای نجات جنگل‌های کلپ؛ چگونه گوگل و CSIRO با DeepVariant آینده اقیانوس را بازسازی می‌کنند؟",
+    excerpt: "گوگل و CSIRO استرالیا با هوش مصنوعی و ژنومیک، DNA ۶۰۰ نمونه کلپ غول‌پیکر تاسمانی را رمزگشایی کردند تا جنگل‌های مقاوم به گرمای اقیانوس بازسازی شود؛ جمعیت کلپ فقط ۵٪ گذشته است.",
+    content: `<div class="space-y-8 text-slate-800 leading-relaxed">
+
+  <!-- Hero Answer (50-70 words) -->
+  <div class="p-6 bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-2xl shadow-sm">
+    <h3 class="text-lg font-bold text-emerald-900 mb-2">پاسخ سریع و خلاصه مدیریتی:</h3>
+    <p class="text-sm text-slate-700 leading-relaxed font-medium">
+      <strong>هوش مصنوعی فقط چت‌بات نیست؛ حالا برای نجات اقیانوس هم به میدان آمده است.</strong> طبق اعلام رسمی وبلاگ گوگل (۱۲ نوامبر ۲۰۲۶، هم‌زمان با آغاز COP31)، گوگل در همکاری با سازمان علمی ملی استرالیا (CSIRO) دو ژنوم مرجع باکیفیت برای کلپ غول‌پیکر استرالیایی منتشر کرده و نسخه‌ای از ابزار متن‌باز DeepVariant را برای تحلیل DNA کلپ آموزش داده است؛ DNA ۶۰۰ نمونه وحشی از ۴۰ نقطه ساحل تاسمانی — جایی که جمعیت کلپ تنها ۵٪ از سطح تاریخی خود باقی مانده — توالی‌یابی و تحلیل شده است.
+    </p>
+  </div>
+
+  <!-- CTA 1 (Strategic Early Placement) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">آیا ارزش واقعی هوش مصنوعی در سازمان شما فراتر از چت‌بات تعریف شده است؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تخصصی تحول هوش مصنوعی دیجی نورون
+    </a>
+  </div>
+
+  <!-- Section 1 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">جنگل کلپ غول‌پیکر چیست و چرا در حال ناپدید شدن است؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    جنگل‌های کلپ غول‌پیکر، جنگل‌های زیردریایی‌ای هستند که سواحل را محافظت می‌کنند، زیستگاه هزاران گونه دریایی‌اند و پایه زیست‌بوم ساحلی به شمار می‌روند؛ اما به‌دلیل گرم‌شدن اقیانوس در سراسر جهان در حال ناپدیدشدن‌اند و در سواحل تاسمانی استرالیا فقط حدود ۵٪ از سطح تاریخی خود باقی مانده است.
+  </p>
+
+  <p>
+    گوگل این خبر را هم‌زمان با آغاز COP31 (کنفرانس تغییرات اقلیمی سازمان ملل) منتشر کرد و آن را حاصل همکاری پژوهشی با <a href="https://www.csiro.au/" target="_blank" rel="noopener noreferrer" class="text-emerald-700 underline font-semibold">CSIRO</a>، سازمان علمی ملی استرالیا، توصیف کرده است. این پروژه ترکیبی از دو حوزه است که معمولاً جدا از هم دیده می‌شوند: ژنومیک (شناخت کامل DNA یک گونه) و هوش مصنوعی (تحلیل سریع و مقیاس‌پذیر داده‌های عظیم ژنتیکی).
+  </p>
+
+  <p>
+    اهمیت داستان در این است که «احیای محیط زیست با هوش مصنوعی» دیگر شعار تبلیغاتی نیست؛ داده‌های واقعی منتشر شده‌اند: دو ژنوم مرجع رسمی، ۶۰۰ نمونه توالی‌یابی‌شده و نقشه‌ای از تنوع ژنتیکی کلپ تاسمانی. این همان زبان داده‌محوری است که در پروژه‌های جدی هوش مصنوعی — از <a href="/fa/blog/alphagenome-ai-decoding-human-genome" class="text-emerald-700 underline font-semibold">رمزگشایی ژنوم انسان با AlphaGenome</a> تا تحلیل اکوسیستم‌های دریایی — معیار حرف‌زدن است.
+  </p>
+
+  <!-- Section 2 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">همکاری گوگل و CSIRO دقیقاً چه کاری انجام داده است؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    تیم گوگل و CSIRO دو ژنوم مرجع باکیفیت برای کلپ غول‌پیکر استرالیایی منتشر کرده‌اند و نسخه‌ای از ابزار متن‌باز DeepVariant گوگل را برای تحلیل DNA کلپ آموزش داده‌اند؛ در این مسیر ۶۰۰ نمونه وحشی کلپ که از ۴۰ نقطه در امتداد ساحل تاسمانی جمع‌آوری شده بود، توالی‌یابی و تحلیل شد.
+  </p>
+
+  <p>
+    دو دستاورد در این اعلامیه از هم تفکیک‌پذیرند: نخست، انتشار دو «ژنوم مرجع» که زیرساخت علمی کارهای ژنتیک حفاظتی آینده است؛ و دوم، به‌کارگیری DeepVariant برای استخراج تغییرات ژنتیکی از ۶۰۰ نمونه — داده‌ای که نشان می‌دهد کدام جمعیت‌های کلپ چه ابزارهای ژنتیکی‌ای برای زنده‌ماندن در آب گرم‌تر در اختیار دارند.
+  </p>
+
+  <p>
+    این تلاش بخشی از «ابتکار Digital Futures» گوگل استرالیاست؛ برنامه‌ای که پروژه‌های فناوری‌محور را با چالش‌های واقعی استرالیا پیوند می‌زند. جزئیات کامل پروژه را می‌توانید در <a href="https://blog.google/company-news/outreach-and-initiatives/sustainability/saving-giant-kelp-australia/" target="_blank" rel="noopener noreferrer" class="text-emerald-700 underline font-semibold">اعلامیه رسمی وبلاگ گوگل</a> بخوانید.
+  </p>
+
+  <!-- Section 3 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">DeepVariant چیست و چرا نقش کلیدی در این پروژه دارد؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    DeepVariant ابزار متن‌باز گوگل برای شناسایی تغییرات ژنتیکی (Variant Calling) از داده‌های خام توالی‌یابی است؛ در پروژه کلپ، نسخه‌ای از همین ابزار برای تحلیل DNA کلپ غول‌پیکر آموزش داده شد تا تنوع ژنتیکی ۶۰۰ نمونه با دقت و سرعت مقیاس‌پذیر استخراج شود.
+  </p>
+
+  <p>
+    نکته جالب این است که DeepVariant اصلاً برای انسان ساخته شده بود؛ ابزاری ژنومیک که اعتبار علمی‌اش را در جامعه ژنتیک انسانی کسب کرده و کد آن به‌صورت متن‌باز در <a href="https://github.com/google/deepvariant" target="_blank" rel="noopener noreferrer" class="text-emerald-700 underline font-semibold">مخزن رسمی GitHub گوگل</a> در دسترس است. استفاده دوباره از آن روی یک گونه دریایی نشان می‌دهد ابزارهای هوش مصنوعی خوب، مرز «دامنه کاربرد» را نمی‌شناسند: همان موتور تحلیل، هم ژنوم انسان را می‌فهمد و هم ژنوم یک جلبک غول‌پیکر.
+  </p>
+
+  <p>
+    برای سازمان‌ها این الگو آشناست: ارزش یک ابزار هوش مصنوعی زمانی چندبرابر می‌شود که به‌جای راه‌حل سفارشی و یک‌بارمصرف، از فناوری اثبات‌شده و بازاستفاده‌پذیر شروع کنید — همان منطقی که در <a href="/fa/blog/why-managers-employees-must-learn-ai-beyond-content-creation" class="text-emerald-700 underline font-semibold">کاربرد حرفه‌ای هوش مصنوعی فراتر از تولید محتوا</a> تعقیب می‌شود.
+  </p>
+
+  <!-- Section 4 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">ژنوم مرجع چیست و چرا بدون آن بازسازی جنگل ممکن نیست؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    ژنوم مرجع، نقشه کامل و باکیفیت DNA یک گونه است؛ مثل نقشه پایه‌ای که همه تحلیل‌های بعدی به آن ارجاع می‌خورند. دو ژنوم مرجع منتشرشده برای کلپ استرالیایی، مبنای «ژنتیک حفاظتی» این پروژه شد تا مشخص شود کدام نمونه‌ها ژن‌های مقاومت به گرما را حمل می‌کنند.
+  </p>
+
+  <p>
+    بدون مرجع، داده ۶۰۰ نمونه فقط انبوهی از توالی خام است؛ با مرجع، هر نمونه قابل مقایسه، رده‌بندی و نقشه‌برداری ژنتیکی می‌شود. این همان الگویی است که در ژنومیک انسان با پروژه‌های مرجع جهانی شکل گرفت و حالا برای نخستین‌بار با این کیفیت در خدمت احیای یک زیست‌بوم دریایی قرار گرفته است.
+  </p>
+
+  <!-- Comparison Table -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">مقایسه: بازسازی سنتی جنگل یا بازسازی مبتنی بر هوش مصنوعی و ژنومیک؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    روش سنتی، نهال یا اسپور در دسترس را می‌کارد و امیدوار است؛ روش داده‌محور، ابتدا ژنتیک جمعیت‌ها را می‌فهمد و سپس متنوع‌ترین و گرماترین‌پسندترین نمونه‌ها را برای تلاقی و کاشت انتخاب می‌کند. تفاوت، تفاوت بخت‌آزمایی با مهندسی است.
+  </p>
+
+  <div class="overflow-x-auto my-6">
+    <table class="w-full text-sm border border-slate-300 rounded-lg overflow-hidden">
+      <thead>
+        <tr class="bg-slate-900 text-white text-right">
+          <th class="p-3 border-b border-slate-700">معیار</th>
+          <th class="p-3 border-b border-slate-700">بازسازی سنتی</th>
+          <th class="p-3 border-b border-slate-700">بازسازی با AI و ژنومیک (رویکرد گوگل-CSIRO)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white">
+          <td class="p-3 border-b font-bold">مبنای انتخاب نمونه</td>
+          <td class="p-3 border-b">در دسترس‌بودن و ظاهر سلامت</td>
+          <td class="p-3 border-b">داده ژنتیکی: تنوع و ژن‌های مقاومت به گرما</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="p-3 border-b font-bold">سرعت تحلیل</td>
+          <td class="p-3 border-b">سال‌ها مشاهده میدانی و آزمون‌وخطا</td>
+          <td class="p-3 border-b">تحلیل ۶۰۰ نمونه از ۴۰ نقطه با DeepVariant در مقیاس کوتاه</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="p-3 border-b font-bold">تنوع ژنتیکی</td>
+          <td class="p-3 border-b">عملاً نامعلوم و شانسی</td>
+          <td class="p-3 border-b">سنجیده و مستند با ژنوم مرجع</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="p-3 border-b font-bold">ریسک شکست کاشت مجدد</td>
+          <td class="p-3 border-b">بالا؛ موج گرمای بعدی می‌تواند کل کاشت را از بین ببرد</td>
+          <td class="p-3 border-b">کاهش‌یافته با انتخاب نمونه‌های گرماترین‌پسند</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="p-3 border-b font-bold">قابلیت تکرار برای گونه‌های دیگر</td>
+          <td class="p-3 border-b">پروژه‌محور و وابسته به تجربه محلی</td>
+          <td class="p-3 border-b">الگوی قابل تکرار: ابزار متن‌باز + ژنوم مرجع + داده میدانی</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA 2 (Mid-Content) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0fff4 0%, #e6faee 100%); border-radius: 12px; border: 1px solid #b7e4c7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #14532d;">می‌خواهید تیم شما «تفکر داده‌محور» را نه در حد شعار، بلکه در سطح ابزار و فرایند تجربه کند؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0f766e; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(15,118,110,0.25);">
+      گفت‌وگو با مشاوران دیجی نورون
+    </a>
+  </div>
+
+  <!-- Section 5 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">از آنالیز DNA تا کاشت جنگل: نتیجه عملی پروژه چیست؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    خروجی نهایی تحلیل ژنتیکی و مطالعات آزمایشگاهی تلاقی‌گری، بازکاشت جنگل‌های کلپ با نمونه‌های متنوع و مقاوم به گرماست؛ یعنی نه فقط کاشت دوباره، بلکه کاشت نسخه‌ای که شانس زنده‌ماندن در اقیانوس گرم‌شده دارد.
+  </p>
+
+  <p>
+    گوگل صراحتاً تأکید کرده که تحلیل ژنتیک و مطالعات تلاقی آزمایشگاهی شرکای پژوهشی، «زمینه‌ساز یک نتیجه واقعی» است: جنگل‌های کلپی که با نمونه‌های متنوع و گرماترین‌پسند دوباره کاشته می‌شوند. این رویکرد، حل مسئله را از «توصیف بحران» به «مهندسی راه‌حل» منتقل می‌کند.
+  </p>
+
+  <!-- Section 6: 5 Pitfalls -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پنج اشتباه رایج درباره هوش مصنوعی و احیای محیط زیست</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    پیش از آنکه از این خبر نتیجه‌گیری اشتباه کنید، این پنج برداشت رایج را اصلاح کنید؛ هرکدام در جلسات مدیریتی و بحث‌های عمومی مرتباً تکرار می‌شوند و مانع درک واقعی ارزش هوش مصنوعی می‌شوند.
+  </p>
+
+  <div class="space-y-4">
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۱. «هوش مصنوعی یعنی چت‌بات و تولید متن»</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        DeepVariant هیچ ربطی به مدل‌های زبانی ندارد؛ ابزار تخصصی تحلیل داده ژنتیکی است. بزرگ‌ترین ارزش هوش مصنوعی در حوزه‌های تخصصی — ژنومیک، انرژی، صنعت — ساخته می‌شود، نه فقط در تولید محتوای عمومی.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۲. «حالا ربات جای غواص و پژوهشگر را می‌گیرد»</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        اتفاق برعکس است: نمونه‌برداری میدانی از ۴۰ نقطه ساحل تاسمانی کار انسانی بوده و هوش مصنوعی لایه تحلیل را تقویت کرده است. الگوی پایدار، «انسان + AI» است، نه جایگزینی.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۳. «کاشت دوباره کافی است؛ چرا همه این ابزارها؟»</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        چون کاشت بدون تنوع ژنتیکی و مقاومت گرمایی، با اولین موج گرمای بعدی از بین می‌رود. کل کلپِ تاسمانی همین‌طور به ۵٪ رسیده است؛ بازسازی باید با داده انجام شود، نه با امید.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۴. «این فقط یک پروژه تبلیغاتی هم‌زمان با COP31 است»</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        محصول پروژه داده‌های قابل‌راستی‌آزمایی است: دو ژنوم مرجع منتشرشده و تحلیل ۶۰۰ نمونه واقعی؛ دارایی‌هایی که پژوهشگران مستقل هم از آن‌ها استفاده می‌کنند. تبلیغات حاشیه است، نه محتوا.
+      </p>
+    </div>
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۵. «این فناوری فقط در دسترس غول‌های فناوری است»</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        قلب پروژه — DeepVariant — متن‌باز و رایگان است. مرز اصلی، دسترسی به ابزار نیست؛ دسترسی به تفکر داده‌محور و مهارت استفاده از ابزار است؛ و این دقیقاً همان چیزی است که با آموزش ساخته می‌شود.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 7 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">درس این خبر برای سازمان‌ها و علاقه‌مندان ایرانی چیست؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    پیام عملی ساده است: ارزش واقعی هوش مصنوعی وقتی ظاهر می‌شود که یک ابزار تخصصی اثبات‌شده، روی مسئله‌ای بزرگ و داده‌دار اجرا شود؛ همین منطق برای کسب‌وکار شما هم صادق است — از تحلیل داده مشتری تا بهینه‌سازی فرایندهای صنعتی.
+  </p>
+
+  <p>
+    برای مدیران، این پروژه یک الگوی اجرایی کامل ارائه می‌دهد: ابزار اثبات‌شده (DeepVariant) + داده میدانی باکیفیت (۶۰۰ نمونه) + همکاری تخصصی (CSIRO) = نتیجه قابل‌اندازه‌گیری. هیچ‌کدام از این سه ضلع به تنهایی کافی نبود. برای علاقه‌مندان و دانشجویان هم پیام روشن است: آینده با کسانی است که هم زبان مسئله را می‌فهمند و هم زبان ابزارهای هوش مصنوعی را — از تحلیل ژنوم تا <a href="/fa/blog/natural-intelligence-before-artificial-intelligence" class="text-emerald-700 underline font-semibold">هوش طبیعی در طبیعت</a>.
+  </p>
+
+  <p>
+    اگر می‌خواهید بدانید هوش مصنوعی چگونه در مقیاس‌های بزرگ‌تر — از ژنوم انسان تا زیرساخت فضایی — بازتعریف می‌شود، مقاله‌های <a href="/fa/blog/alphagenome-ai-decoding-human-genome" class="text-emerald-700 underline font-semibold">AlphaGenome و رمزگشایی ژنوم انسان</a> و <a href="/fa/blog/google-project-suncatcher-ai-in-space" class="text-emerald-700 underline font-semibold">دیتاسنترهای فضایی پروژه سانکتچر</a> را از دست ندهید.
+  </p>
+
+  <!-- Voice Search Q&As -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پرسش‌های صوتی کاربران درباره این پروژه</h2>
+
+  <div class="space-y-4">
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">هوش مصنوعی چگونه به نجات جنگل‌های کلپ کمک می‌کند؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        با تحلیل سریع و دقیق DNA ۶۰۰ نمونه کلپ تاسمانی توسط نسخه‌ای از ابزار DeepVariant گوگل؛ نتیجه، شناسایی نمونه‌های متنوع و مقاوم به گرماست که برای تلاقی و بازکاشت جنگل‌های پایدار استفاده می‌شوند.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">DeepVariant گوگل چیست؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        ابزار متن‌باز گوگل برای شناسایی تغییرات ژنتیکی از داده‌های توالی‌یابی است؛ ابتدا برای ژنوم انسان ساخته شد و حالا در پروژه کلپ برای تحلیل DNA یک گونه دریایی به‌کار گرفته شده است.
+      </p>
+    </div>
+  </div>
+
+  <!-- CTA 3 (Closing) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%); border-radius: 12px; border: 1px solid #c7d2fe;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1e1b4b;">نقشه راه هوش مصنوعی سازمان شما — فراتر از چت‌بات — آماده است؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #4338ca; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(67,56,202,0.25);">
+      شروع مشاوره تحول هوش مصنوعی با دیجی نورون
+    </a>
+  </div>
+
+  <!-- FAQ (feeds page-level JSON-LD) -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">سؤالات متداول درباره هوش مصنوعی و احیای جنگل‌های کلپ</h2>
+
+  <div class="space-y-4">
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۱. گوگل و CSIRO در پروژه جنگل کلپ چه کاری انجام دادند؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        دو ژنوم مرجع باکیفیت برای کلپ غول‌پیکر استرالیایی منتشر کردند و نسخه‌ای از ابزار متن‌باز DeepVariant گوگل را برای تحلیل DNA کلپ آموزش دادند؛ ۶۰۰ نمونه وحشی از ۴۰ نقطه ساحل تاسمانی توالی‌یابی و تحلیل شد.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۲. DeepVariant چیست و چه کاربردی دارد؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        ابزار متن‌باز گوگل برای شناسایی تغییرات ژنتیکی از داده‌های خام توالی‌یابی است؛ ابتدا برای ژنوم انسان توسعه یافت و در پروژه کلپ برای نخستین‌بار در این مقیاس روی یک گونه دریایی به‌کار گرفته شد.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۳. چرا کلپ غول‌پیکر تاسمانی در خطر انقراض است؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        گرم‌شدن اقیانوس جمعیت کلپ غول‌پیکر تاسمانی را به حدود ۵٪ از سطح تاریخی‌اش کاهش داده است؛ جنگل‌های کلپ نقش حیاتی در محافظت از سواحل، زیستگاه گونه‌ها و پایداری زیست‌بوم دریایی دارند.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۴. ژنوم مرجع چیست و چه فایده‌ای دارد؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        نقشه کامل و باکیفیت DNA یک گونه است که همه تحلیل‌های ژنتیکی بعدی به آن ارجاع می‌خورند؛ با دو ژنوم مرجع کلپ، پژوهشگران می‌توانند تنوع و ژن‌های مقاومت به گرما را در ۶۰۰ نمونه به‌دقت بشناسند.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۵. نتیجه نهایی این پروژه چیست؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        بازکاشت جنگل‌های کلپ با نمونه‌های متنوع و مقاوم به گرما؛ تحلیل ژنتیک و مطالعات تلاقی آزمایشگاهی، زمینه کاشت جنگل‌هایی را فراهم می‌کند که در اقیانوس گرم‌شده شانس زنده‌ماندن واقعی دارند.
+      </p>
+    </div>
+  </div>
+
+  <!-- Author Box -->
+  <div class="p-6 bg-slate-900 text-white rounded-2xl shadow-lg border border-slate-800">
+    <div class="flex flex-col sm:flex-row items-center gap-5">
+      <div class="w-16 h-16 rounded-full bg-emerald-500/20 border-2 border-emerald-400 flex items-center justify-center text-emerald-300 font-bold text-xl shrink-0">
+        DN
+      </div>
+      <div class="text-center sm:text-right space-y-2">
+        <h4 class="text-lg font-bold text-white">درباره نویسنده و مرجعیت محتوا:</h4>
+        <p class="text-sm text-emerald-300 font-semibold">
+          گروه تخصصی دیجی نورون — بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی
+        </p>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          گروه تخصصی دیجی نورون، متشکل از اعضای هیئت‌علمی دانشگاه و مهندسان داده صنعت، با بیش از ۵ سال سابقه اجرای پروژه‌های هوش مصنوعی در صنایع پتروشیمی، آب و شهری، این تحلیل را بر پایه اعلامیه رسمی وبلاگ گوگل درباره همکاری با CSIRO در احیای جنگل‌های کلپ (۱۲ نوامبر ۲۰۲۶) و اطلاعات عمومی منتشرشده درباره ابزار متن‌باز DeepVariant تدوین کرده است.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-xs text-slate-400 text-center">تصویر جلد: تصویر رسمی مقاله وبلاگ گوگل؛ منبع خبری: وبلاگ رسمی گوگل (blog.google).</p>
+</div>`,
+    category: "trends",
+    categoryName: "روندها و اخبار AI",
+    author: {
+      name: "گروه تخصصی دیجی نورون",
+      role: "بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی",
+      avatar: "/images/instructors/karimi.jpg"
+    },
+    date: "۳۰ آبان ۱۴۰۵",
+    readTime: "۱۳ دقیقه",
+    image: "/images/blog/google-ai-giant-kelp-forest.webp",
+    featured: true,
+    tags: [
+      "هوش مصنوعی",
+      "گوگل",
+      "CSIRO",
+      "DeepVariant",
+      "ژنومیک",
+      "محیط زیست",
+      "جنگل کلپ"
+    ],
+    faq: [
+      {
+        question: "گوگل و CSIRO در پروژه جنگل کلپ چه کاری انجام دادند؟",
+        answer: "دو ژنوم مرجع باکیفیت برای کلپ غول‌پیکر استرالیایی منتشر کردند و نسخه‌ای از ابزار متن‌باز DeepVariant گوگل را برای تحلیل DNA کلپ آموزش دادند؛ ۶۰۰ نمونه وحشی از ۴۰ نقطه ساحل تاسمانی توالی‌یابی و تحلیل شد."
+      },
+      {
+        question: "DeepVariant چیست و چه کاربردی دارد؟",
+        answer: "ابزار متن‌باز گوگل برای شناسایی تغییرات ژنتیکی از داده‌های خام توالی‌یابی است؛ ابتدا برای ژنوم انسان توسعه یافت و در پروژه کلپ روی یک گونه دریایی به‌کار گرفته شد."
+      },
+      {
+        question: "چرا کلپ غول‌پیکر تاسمانی در خطر انقراض است؟",
+        answer: "گرم‌شدن اقیانوس جمعیت کلپ غول‌پیکر تاسمانی را به حدود ۵٪ از سطح تاریخی‌اش کاهش داده است؛ جنگل‌های کلپ نقش حیاتی در محافظت از سواحل و پایداری زیست‌بوم دریایی دارند."
+      },
+      {
+        question: "ژنوم مرجع چیست و چه فایده‌ای دارد؟",
+        answer: "نقشه کامل و باکیفیت DNA یک گونه است که همه تحلیل‌های ژنتیکی بعدی به آن ارجاع می‌خورند؛ با دو ژنوم مرجع کلپ، پژوهشگران تنوع و ژن‌های مقاومت به گرما را در ۶۰۰ نمونه به‌دقت می‌شناسند."
+      },
+      {
+        question: "نتیجه نهایی این پروژه چیست؟",
+        answer: "بازکاشت جنگل‌های کلپ با نمونه‌های متنوع و مقاوم به گرما؛ تحلیل ژنتیک و مطالعات تلاقی آزمایشگاهی، زمینه کاشت جنگل‌هایی را فراهم می‌کند که در اقیانوس گرم‌شده شانس زنده‌ماندن واقعی دارند."
+      }
+    ]
+  },
+  {
     id: "26",
     slug: "google-project-suncatcher-ai-in-space",
     title: "پروژه سانکتچر گوگل و همکاری با Blue Origin؛ هوش مصنوعی چگونه دیتاسنترها را به مدار زمین می‌برد؟",
