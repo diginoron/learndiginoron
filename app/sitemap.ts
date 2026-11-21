@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/services/enterprise-ai", changeFrequency: "weekly", priority: 0.95 },
     { path: "/services/international-trade-ai", changeFrequency: "weekly", priority: 0.95 },
     { path: "/services/corporate", changeFrequency: "weekly", priority: 0.9 },
+    { path: "/services/executive-ai-courses", changeFrequency: "weekly", priority: 0.9 },
     { path: "/services/kids-and-teens", changeFrequency: "weekly", priority: 0.85 },
     { path: "/services/held-courses", changeFrequency: "weekly", priority: 0.9 },
     { path: "/courses", changeFrequency: "weekly", priority: 0.9 },

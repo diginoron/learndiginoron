@@ -19,7 +19,8 @@ import {
   Award,
   ArrowRight,
   ArrowLeft,
-  Globe
+  Globe,
+  Crown
 } from "lucide-react";
 import { Locale, getDirection, getLocalizedPath } from "@/lib/i18n";
 import { COMMON_TRANSLATIONS } from "@/data/translations/common";
@@ -236,6 +237,22 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
                   <div className="p-2 bg-white border border-slate-200 rounded-xl shadow-xl backdrop-blur-xl">
                     <div className="space-y-0.5 text-xs">
                       <Link
+                        href={getLocalizedPath("/services/executive-ai-courses", locale)}
+                        className="flex items-center gap-2.5 p-2 hover:bg-indigo-50 rounded-lg transition-colors group"
+                      >
+                        <Crown className="w-4 h-4 text-indigo-600 shrink-0" />
+                        <div>
+                          <div className="font-bold text-[12px] text-slate-800 group-hover:text-indigo-700 flex items-center gap-1.5">
+                            <span>{t.nav.executiveCourses}</span>
+                            <span className="text-[9px] px-1 rounded bg-indigo-500 text-white font-bold font-mono">NEW</span>
+                          </div>
+                          <div className="text-[10px] text-slate-500">
+                            {t.nav.executiveCoursesDesc}
+                          </div>
+                        </div>
+                      </Link>
+
+                      <Link
                         href={getLocalizedPath("/services/corporate", locale)}
                         className="flex items-center gap-2.5 p-2 hover:bg-purple-50 rounded-lg transition-colors group"
                       >
@@ -402,6 +419,17 @@ export default function Navbar({ locale = "en" }: NavbarProps) {
               <span>{t.nav.academyDropdown}</span>
             </div>
             
+            <Link
+              href={getLocalizedPath("/services/executive-ai-courses", locale)}
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center gap-2 px-5 py-1.5 text-xs font-medium text-slate-700 hover:text-indigo-700"
+            >
+              <span className="flex items-center gap-1.5">
+                {t.nav.executiveCourses}
+                <span className="text-[9px] px-1 py-0.5 bg-indigo-200 text-indigo-900 rounded font-bold font-mono">NEW</span>
+              </span>
+            </Link>
+
             <Link
               href={getLocalizedPath("/services/corporate", locale)}
               onClick={() => setMobileMenuOpen(false)}

@@ -14,7 +14,8 @@ import {
   Compass, 
   Award,
   BookOpen,
-  Globe
+  Globe,
+  Crown
 } from "lucide-react";
 import { Locale, getDirection, getLocalizedPath } from "@/lib/i18n";
 import { COMMON_TRANSLATIONS } from "@/data/translations/common";
@@ -139,6 +140,15 @@ export default function Footer({ locale = "en" }: FooterProps) {
               {t.nav.academyDropdown}
             </h4>
             <ul className="space-y-2 text-xs">
+              <li>
+                <Link 
+                  href={getLocalizedPath("/services/executive-ai-courses", locale)} 
+                  className="hover:text-cyan-300 transition-colors flex items-center gap-2"
+                >
+                  <Crown className="w-3.5 h-3.5 text-indigo-400" />
+                  <span>{t.nav.executiveCourses}</span>
+                </Link>
+              </li>
               <li>
                 <Link 
                   href={getLocalizedPath("/services/corporate", locale)} 

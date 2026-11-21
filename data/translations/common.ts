@@ -17,6 +17,8 @@ export interface CommonTranslations {
     internationalTradeAIDesc: string;
     corporateTraining: string;
     corporateTrainingDesc: string;
+    executiveCourses: string;
+    executiveCoursesDesc: string;
     kidsAndTeens: string;
     kidsAndTeensDesc: string;
     heldCourses: string;
@@ -82,6 +84,8 @@ export const COMMON_TRANSLATIONS: Record<Locale, CommonTranslations> = {
       internationalTradeAIDesc: "AI Agents for Global Trade Law, Smart Marketing, Logistics & Customs, and Cross-Border Settlement",
       corporateTraining: "Corporate AI Academy",
       corporateTrainingDesc: "Specialized in-house workshops for executives and specialists",
+      executiveCourses: "Private Courses for Executives",
+      executiveCoursesDesc: "Confidential AI mastery for managers & organizational leaders",
       kidsAndTeens: "Kids & Teens Academy",
       kidsAndTeensDesc: "Practical AI creativity and logic for the next generation",
       heldCourses: "Held Courses & Case Studies",
@@ -145,6 +149,8 @@ export const COMMON_TRANSLATIONS: Record<Locale, CommonTranslations> = {
       internationalTradeAIDesc: "ایجنت‌های هوشمند حقوق تجارت، بازاریابی صادراتی، لجستیک و گمرک، و تسویه مالی بین‌الملل",
       corporateTraining: "آموزش هوش مصنوعی سازمانی",
       corporateTrainingDesc: "دوره‌ها و کارگاه‌های تخصصی برای مدیران و کارشناسان صنایع",
+      executiveCourses: "دوره‌های خصوصی مدیران",
+      executiveCoursesDesc: "آموزش هوش مصنوعی ویژه مدیران و رهبران سازمان‌ها",
       kidsAndTeens: "آموزش کودکان و نوجوانان",
       kidsAndTeensDesc: "پرورش خلاقیت، تفکر الگوریتمی و سواد هوش مصنوعی نسل نو",
       heldCourses: "دوره‌های برگزار شده",
@@ -208,6 +214,8 @@ export const COMMON_TRANSLATIONS: Record<Locale, CommonTranslations> = {
       internationalTradeAIDesc: "وكلاء الذكاء الاصطناعي للقانون التجاري، التسويق الذكي، الجمارك، والتمويل والتسوية الدولية",
       corporateTraining: "التدريب المؤسسي المتخصص",
       corporateTrainingDesc: "ورش عمل مخصصة للمديرين التنفيذيين والخبراء والمهندسين",
+      executiveCourses: "الدورات الخاصة للمديرين",
+      executiveCoursesDesc: "إتقان الذكاء الاصطناعي للقيادات والمديرين التنفيذيين",
       kidsAndTeens: "أكاديمية الأطفال واليافعين",
       kidsAndTeensDesc: "تنمية التفكير الابتكاري والبرمجة بالذكاء الاصطناعي للجيل القادم",
       heldCourses: "الدورات المنجزة والمشاريع",
