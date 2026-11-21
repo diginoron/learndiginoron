@@ -21,6 +21,348 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "28",
+    slug: "watch-duty-gemini-wildfire-alerts",
+    title: "هوش مصنوعی در میدان آتش؛ چگونه Watch Duty با Gemini هشدار حریق جنگل را به زیر ۳۰ ثانیه رساند؟",
+    excerpt: "Watch Duty با ابزار Gemini رادیو حریق پرنویز را به متن تبدیل و گزارش آتش را در کمتر از ۳۰ ثانیه شناسایی می‌کند؛ نرخ خطای کلمه از ۳۸٪ به ۲۲٫۳۴٪ کاهش یافت.",
+    content: `<div class="space-y-8 text-slate-800 leading-relaxed">
+
+  <!-- Hero Answer (50-70 words) -->
+  <div class="p-6 bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 rounded-2xl shadow-sm">
+    <h3 class="text-lg font-bold text-orange-900 mb-2">پاسخ سریع و خلاصه مدیریتی:</h3>
+    <p class="text-sm text-slate-700 leading-relaxed font-medium">
+      <strong>هوش مصنوعی حالا در میدان واقعی نجات جان انسان‌ها کار می‌کند.</strong> طبق اعلام رسمی وبلاگ گوگل (۲۰ نوامبر ۲۰۲۶)، تیم فلووشیپ Google.org شش ماه تمام در کنار اپ غیرانتفاعی Watch Duty ابزاری مبتنی بر Gemini ساخت که رادیو آنالوگ پرنویز آتش‌نشانی را به متن تمیز و جست‌وجوپذیر تبدیل می‌کند؛ نتیجه: شناسایی گزارش آتش جدید در کمتر از ۳۰ ثانیه، کاهش نرخ خطای کلمه از ۳۸٪ به ۲۲٫۳۴٪ و نخستین هشدار بحرانی شبانه تاریخ این پلتفرم در حریق Railroad واشنگتن.
+    </p>
+  </div>
+
+  <!-- Section 1 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">Watch Duty چیست و چرا هر ثانیه در حریق جنگل اهمیت دارد؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-orange-600">
+    Watch Duty یک اپلیکیشن غیرانتفاعی هشدار حریق است که توسط آتش‌نشان‌های فعال و بازنشسته، اپراتورهای مخابرات اضطراری و نیروهای واکنش اول اداره می‌شود و مخاطبانش در یک سال گذشته از مرز ۱۶ میلیون نفر گذشت؛ وقتی آتش شروع می‌شود، دقیقه‌ها تعیین می‌کنند مردم سالم تخلیه شوند یا نه.
+  </p>
+
+  <!-- CTA 1 (Strategic Early Placement) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">آیا ارزش واقعی هوش مصنوعی در سازمان شما فراتر از چت‌بات تعریف شده است؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تخصصی تحول هوش مصنوعی دیجی نورون
+    </a>
+  </div>
+
+  <p>
+    این خبر را هم‌زمان با فصل آتش‌سوزی منتشر شد و نشان می‌دهد «هوش مصنوعی برای امنیت جان انسان» دیگر آزمایشگاهی نیست: یک ابزار عملیاتی روزانه با اعداد منتشرشده — ۳۰ ثانیه شناسایی، ۴۰۰ کانال فعال، ۲۰۰ ساعت گفتار در روز — که هم‌اکنون در حال کار است. این همان زبان داده‌محوری است که در پروژه‌های جدی هوش مصنوعی، از <a href="/fa/blog/alphagenome-ai-decoding-human-genome" class="text-orange-700 underline font-semibold">رمزگشایی ژنوم انسان با AlphaGenome</a> تا <a href="/fa/blog/google-ai-restore-giant-kelp-forests" class="text-orange-700 underline font-semibold">احیای جنگل‌های کلپ با DeepVariant</a>، معیار حرف‌زدن است.
+  </p>
+
+  <!-- Section 2 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">چالش: خبر آتش هنوز روی رادیو آنالوگ دهه‌های قدیم سفر می‌کند</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-orange-600">
+    در بخش بزرگی از آمریکا، نخستین خبر یک آتش‌سوزی تازه هنوز روی رادیو آنالوگ VHF چند دهه‌ای ارسال می‌شود؛ صدایی پر از نویز موتور، باد، استاتیک و اصطلاحات تاکتیکی سریع که فهمیدنش حتی برای انسان دشوار است. گزارشگران Watch Duty پیش‌تر حداکثر ۲۰ کانال را به‌صورت دستی پایش می‌کردند.
+  </p>
+
+  <p>
+    چرا این سخت است؟ چون نویز موتور، باد و اصطلاحات تاکتیکی سریع، مدل‌های عمومی پیاده‌سازی صدا را به‌شدت خطانمای می‌کند؛ به همین دلیل نرخ خطای کلمه روی این صدا پیش‌تر حدود ۳۸٪ بود — یعنی از هر سه کلمه، بیش از یکی اشتباه. داوطلبان Watch Duty برای پوشش مناطق مختلف باید تا ۲۰ کانال رادیویی را به‌صورت هم‌زمان و دستی پایش می‌کردند؛ کاری خسته‌کننده، خطاخیز و عملاً ناممکن برای پوشش شبانه‌روزی همه مناطق.
+  </p>
+
+  <!-- Section 3 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">ابزار Gemini چگونه ساخته شد؟ شش ماه همزیستی با آتش‌نشان‌ها</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-orange-600">
+    تیمی از مهندسان و پژوهشگران گوگل به‌مدت شش ماه به‌صورت تمام‌وقت در کنار Watch Duty مستقر شدند و با حمایت بلاعوض فلووشیپ Google.org، روی بیش از ۲۰ هزار ساعت ضبط رادیویی گذشته، ابزاری مبتنی بر Gemini ساختند که نویز سنگین را حذف و اصطلاحات تخصصی آتش‌نشانی را به متن تمیز و جست‌وجوپذیر تبدیل می‌کند.
+  </p>
+
+  <p>
+    الگوی همکاری هم قابل‌توجه است: فلووشیپ Google.org یعنی متخصصان گوگل به‌صورت بلاعوض و تمام‌وقت به یک سازمان غیرانتفاعی پیوسته‌اند. Watch Duty را آتش‌نشان‌های فعال و بازنشسته، اپراتورهای مخابرات اضطراری و نیروهای واکنش اول اداره می‌کنند و همین دانش عملیاتی، فیدبک آموزش مدل شد. وب‌سایت رسمی پروژه در <a href="https://www.watchduty.org/" target="_blank" rel="noopener noreferrer" class="text-orange-700 underline font-semibold">watchduty.org</a> در دسترس است.
+  </p>
+
+  <p>
+    این اولین همکاری دو طرف نیست: در سال ۲۰۲۴، Google.org مبلغ ۲ میلیون دلار بودجه و ۳۰۰ هزار دلار اعتبار Google Cloud به Watch Duty داد تا داده‌های ماهواره‌ای، دوربینی و رادیویی برای راستی‌آزمایی آتش‌های جدید گردآوری شود؛ و در حریق‌های پالیسیدز، ایتون، هرست و اتو، Google Search اطلاعات Watch Duty را در هشدارهای SOS در کنار راهنمای رسمی اضطراری نمایش داد.
+  </p>
+
+  <p>
+    نکته کلیدی برای هر سازمانی همین‌جاست: مدل عمومی Gemini یک‌شبه این نتیجه را نمی‌داد؛ ارزش واقعی از «تنظیم روی داده تخصصی» بیرون آمد — همان منطقی که در <a href="/fa/blog/why-teach-kids-ai-entrepreneurship-not-ai-engineering" class="text-orange-700 underline font-semibold">کارآفرینی هوش مصنوعی در برابر مهندسی صرف</a> تعقیب می‌شود: ابزار عمومی ارزان است، اما راه‌حل مسئله‌ی واقعی در ترکیب داده + دامنه + ابزار ساخته می‌شود. جزئیات کامل همکاری در <a href="https://blog.google/company-news/outreach-and-initiatives/google-org/watch-duty-gemini-tool/" target="_blank" rel="noopener noreferrer" class="text-orange-700 underline font-semibold">اعلامیه رسمی وبلاگ گوگل</a> منتشر شده است.
+  </p>
+
+  <!-- Section 4 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">نتایج به زبان عدد: ابزار Gemini دقیقاً چه چیزی را تغییر داد؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-orange-600">
+    در کل شبکه Watch Duty، ابزار جدید گزارش آتش را در کمتر از ۳۰ ثانیه به گزارشگران علامت‌گذاری می‌کند، نرخ خطای کلمه روی صدای خراب VHF را از ۳۸٪ به ۲۲٫۳۴٪ کاهش داده، روزانه بیش از ۲۰۰ ساعت گفتار رادیویی را از حدود ۴۰۰ کانال فعال پیاده‌سازی می‌کند و رضایت داوطلبان از ابزارهای پیاده‌سازی صدا را از ۳۵٫۳٪ به ۹۲٫۳٪ رسانده است.
+  </p>
+
+  <p>
+    این اعداد سه پیام دارند. نخست، مسئله «گوش‌دادن» عملاً حل شد: مناطقی که هیچ سیستم خودکار کشف مخابره نداشتند، حالا سیگنال ۳۰ ثانیه‌ای می‌گیرند و آتش جدید فقط به این دلیل که «کسی مشغول گوش‌دادن نبود» از دست نمی‌رود. دوم، دقت روی سخت‌ترین نوع صدا به سطح قابل‌اتکا رسید — کاهش ۱۵٫۶۶ واحد درصدی نرخ خطا یعنی ده‌ها کلمه درست‌تر در هر گزارش تاکتیکی. سوم، سیستم برای مقیاس طراحی و تست شده: بیش از ۱۰ هزار کانال هم‌زمان، نه فقط ۴۰۰ کانال فعلی.
+  </p>
+
+  <!-- Section 5 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">آزمون واقعی: حریق Railroad و نخستین هشدار بحرانی شبانه</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-orange-600">
+    در جولای ۲۰۲۶، حریق سریع Railroad در واشنگتن شبانه شعله‌ور شد؛ ابزار Gemini نخستین گزارش ۹۱۱ را مستقیم از صدای نویزدار رادیو پیاده‌سازی و در کمتر از ۳۰ ثانیه علامت‌گذاری کرد. نتیجه، نخستین Critical Alert شبانه تاریخ Watch Duty بود — هشداری که حالت «مزاحم نشوید» گوش‌ها را هم می‌شکند.
+  </p>
+
+  <p>
+    اهمیت این رخداد در جزئیات آن است: تا پیش از این، شبی مثل شب حریق Railroad یعنی «هیچ‌کس بیدار نیست و هیچ‌کس رادیو گوش نمی‌دهد». ابزار دقیقاً همین نقطه کور را بست؛ گزارشگران زمان کافی برای راستی‌آزمایی آتش و انتشار هشدار را پیدا کردند و ساکنان پیش از رسیدن شعله به خانه‌ها تخلیه شدند. گوگل این رخداد را «اثبات آنچه شناسایی سریع‌تر وقتی جامعه‌ها خواب‌اند معنا دارد» توصیف کرده است.
+  </p>
+
+  <p>
+    نکته فنی مهم برای علاقه‌مندان: این هشدارها از طریق Firebase Cloud Messaging ارسال می‌شوند و وقتی مخاطبان Watch Duty در یک سال به بیش از ۱۶ میلیون نفر رسید، Google Cloud سقف پیام‌رسانی هم‌زمان را از ۶۰۰ هزار به ۱ میلیون پیام افزایش داد تا هشدارها بدون تأخیر تحویل شوند. زیرساخت هشدار اضطراری، خودش یک مسئله مهندسی مقیاس است.
+  </p>
+
+  <!-- Comparison Table -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">مقایسه: پایش دستی رادیو یا شنیدن خودکار با هوش مصنوعی؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-orange-600">
+    پایش دستی، شنیدن هم‌زمان حداکثر ۲۰ کانال رادیویی توسط انسان و امید به شنیدن گزارش آتش است؛ شنیدن خودکار، ترجمه بیش از ۲۰۰ ساعت گفتار در روز از حدود ۴۰۰ کانال فعال با قابلیت تست تا ۱۰ هزار کانال است. تفاوت، تفاوت «شانس» با «پوشش تضمینی» است.
+  </p>
+
+  <div class="overflow-x-auto my-6">
+    <table class="w-full text-sm border border-slate-300 rounded-lg overflow-hidden">
+      <thead>
+        <tr class="bg-slate-900 text-white text-right">
+          <th class="p-3 border-b border-slate-700">معیار</th>
+          <th class="p-3 border-b border-slate-700">پایش دستی رادیو (قبل)</th>
+          <th class="p-3 border-b border-slate-700">ابزار Gemini در Watch Duty (بعد)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-white">
+          <td class="p-3 border-b font-bold">سرعت شناسایی گزارش آتش</td>
+          <td class="p-3 border-b">وابسته به گوش‌دادن انسانی به رادیو؛ گاهی با تأخیر دقیقه‌ای یا بیشتر</td>
+          <td class="p-3 border-b">علامت‌گذاری خودکار در کمتر از ۳۰ ثانیه</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="p-3 border-b font-bold">دقت روی صدای نویزدار VHF</td>
+          <td class="p-3 border-b">نرخ خطای کلمه حدود ۳۸٪</td>
+          <td class="p-3 border-b">نرخ خطای کلمه ۲۲٫۳۴٪</td>
+        </tr>
+
+        <tr class="bg-slate-50">
+          <td class="p-3 border-b font-bold">مقیاس پایش</td>
+          <td class="p-3 border-b">گوش‌دادن دستی به حداکثر ۲۰ کانال به‌صورت هم‌زمان</td>
+          <td class="p-3 border-b">ترجمه روزانه بیش از ۲۰۰ ساعت گفتار از حدود ۴۰۰ کانال فعال؛ تست‌شده تا ۱۰ هزار کانال</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="p-3 border-b font-bold">پوشش لحظه‌های خلوت</td>
+          <td class="p-3 border-b">اگر کسی مشغول گوش‌دادن نبود، گزارش آتش از دست می‌رفت</td>
+          <td class="p-3 border-b">علامت‌گذاری خودکار گزارش جدید در کمتر از ۳۰ ثانیه، شبانه‌روزی</td>
+        </tr>
+        <tr class="bg-slate-50">
+          <td class="p-3 border-b font-bold">نقش انسان</td>
+          <td class="p-3 border-b">کشف صوتی فرسوده + راستی‌آزمایی</td>
+          <td class="p-3 border-b">تمرکز صرف بر راستی‌آزمایی و انتشار هشدار</td>
+        </tr>
+        <tr class="bg-white">
+          <td class="p-3 border-b font-bold">رضایت کاربران ابزار</td>
+          <td class="p-3 border-b">۳۵٫۳٪ رضایت گزارشگران از ابزارهای پیاده‌سازی صدا</td>
+          <td class="p-3 border-b">۹۲٫۳٪ رضایت پس از استقرار ابزار Gemini</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA 2 (Mid-Content) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); border-radius: 12px; border: 1px solid #fed7aa;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #7c2d12;">آیا صدای «رادیو نویزدار» سازمان شما — داده‌های خام، گزارش‌های کاغذی، فرایندهای دستی — هنوز به زبان داده ترجمه نشده است؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #ea580c; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(234,88,12,0.25);">
+      گفت‌وگو با مشاوران دیجی نورون
+    </a>
+  </div>
+
+  <!-- Section 6: 5 Pitfalls -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پنج برداشت رایج اشتباه درباره هوش مصنوعی و اضطراری‌ها</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-orange-600">
+    پیش از آنکه از این خبر نتیجه‌گیری اشتباه کنید، این پنج برداشت رایج را اصلاح کنید؛ هرکدام در بحث‌های مدیریتی و عمومی مرتباً تکرار می‌شوند و مانع درک واقعی نقش هوش مصنوعی در سیستم‌های اضطراری می‌شوند.
+  </p>
+
+  <div class="space-y-4">
+
+  <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۱. «هوش مصنوعی یعنی چت‌بات و تولید متن»</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        قلب این پروژه یک مسئله صوتی و عملیاتی است: شنیدن صدای نویزدار رادیو در مقیاس صدها کانال. بزرگ‌ترین ارزش هوش مصنوعی در حوزه‌های تخصصی — اضطراری، صنعت، انرژی — ساخته می‌شود، نه فقط در تولید محتوای عمومی.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۲. «ترجمه خودکار صدا همان پیاده‌سازی ساده Whisper است؛ چه خبر عجیبی دارد؟»</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        صدای رادیو VHF با نویز موتور و باد و اصطلاحات تاکتیکی آتش‌نشانی، برای مدل‌های عمومی جز سخترین ورودی‌هاست؛ به همین دلیل نرخ خطای کلمه روی این صدا معمولاً بالای ۳۸٪ بود. تیم شش‌ماهه گوگل مدل را روی بیش از ۲۰ هزار ساعت ضبط واقعی رادیو آتش‌نشانی تنظیم کرد تا این عدد به ۲۲٫۳۴٪ برسد.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۳. «حالا هوش مصنوعی جای آتش‌نشان‌ها و گزارشگران را می‌گیرد»</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        برعکس؛ ابزار فقط لایه شنیدن را خودکار کرد و تصمیم نهایی انتشار هشدار همچنان با گزارشگران انسانی است. الگوی درست همان «انسان + AI» است: ماشین شنیدن را ارزان می‌کند و انسان را برای راستی‌آزمایی و تصمیم آزاد می‌کند.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۴. «این یک پروژه تبلیغاتی برای مدل Gemini است»</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        سنجه‌های پروژه عملیاتی‌اند: نرخ خطای کلمه روی صدای خراب، ساعات ترجمه‌شده در روز، رضایت داوطلبان و حتی یک هشدار نجات‌دهنده واقعی در حریق Railroad. تبلیغات حاشیه این نتایج است، نه محتوای آن‌ها.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۵. «برای هوش مصنوعی اول باید همه‌چیز دیجیتال و مدرن باشد»</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        برعکس؛ ورودی این پروژه رادیو آنالوگ دهه‌های قدیم بود. بخش بزرگی از ارزش هوش مصنوعی در «پل زدن» روی زیرساخت قدیمی سازمان‌هاست، نه منتظر ماندن برای تعویض کامل آن.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 7 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">درس این خبر برای سازمان‌ها و علاقه‌مندان ایرانی چیست؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-orange-600">
+    پیام عملی این است که هوش مصنوعی وقتی ارزش چندبرابری پیدا می‌کند که روی «زیرساخت قدیمی و نویزدار» سازمان اجرا شود؛ دقیقاً همان‌جایی که رقابت کمی و حاشیه سود بالاست. لایه Gemini این پروژه صرفاً صدای رادیو را تمیز نکرد؛ دانش تخصصی آتش‌نشان‌ها را قابل‌جست‌وجو و مقیاس‌پذیر کرد.
+  </p>
+
+  <p>
+    اعداد پروژه قابل‌راستی‌آزمایی‌اند: سرمایه‌گذاری ۲ میلیون دلاری Google.org در سال ۲۰۲۴ به‌همراه ۳۰۰ هزار دلار اعتبار Google Cloud، تیمی شش‌ماهه از مهندسان گوگل، تحلیل بیش از ۲۰ هزار ساعت ضبط رادیویی و نتیجه‌ای که در یک شب واقعی حریق سنجیده شد. برای شما هم اگر سازمانی کوچک‌تر دارید، همین الگو کار می‌کند: در <a href="/fa/blog/why-managers-employees-must-learn-ai-beyond-content-creation" class="text-orange-700 underline font-semibold">استفاده حرفه‌ای از هوش مصنوعی فراتر از تولید محتوا</a> دیدیم که فرمول برنده، مسئله واقعی + داده واقعی + ابزار اثبات‌شده است.
+  </p>
+
+  <p>
+    اگر می‌خواهید نمونه‌های دیگری از کاربردهای جدی هوش مصنوعی ببینید، مقاله‌های <a href="/fa/blog/google-project-suncatcher-ai-in-space" class="text-orange-700 underline font-semibold">دیتاسنترهای فضایی پروژه سانکتچر</a> و <a href="/fa/blog/alphagenome-ai-decoding-human-genome" class="text-orange-700 underline font-semibold">رمزگشایی ژنوم انسان با AlphaGenome</a> را از دست ندهید.
+  </p>
+
+  </div>
+
+  <!-- Voice Search Q&As -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پرسش‌های صوتی کاربران درباره Watch Duty و Gemini</h2>
+
+  <div class="space-y-4">
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">هوش مصنوعی چگونه به شناسایی سریع‌تر آتش‌سوزی جنگل کمک می‌کند؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        با گوش‌دادن خودکار به رادیو آتش‌نشانی و تبدیل صدای پرنویز به متن توسط ابزار Gemini؛ به این ترتیب گزارش ۹۱۱ دفن‌شده در استاتیک، در کمتر از ۳۰ ثانیه به گزارشگران Watch Duty علامت‌گذاری می‌شود حتی اگر هیچ‌کس مشغول گوش‌دادن نباشد.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">Watch Duty چیست؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        یک اپلیکیشن غیرانتفاعی هشدار حریق است که توسط آتش‌نشان‌های فعال و بازنشسته، اپراتورهای مخابرات اضطراری و نیروهای واکنش اول اداره می‌شود و هشدارهای لحظه‌ای حریق را برای بیش از ۱۶ میلیون کاربر ارسال می‌کند.
+      </p>
+    </div>
+  </div>
+
+  <!-- CTA 3 (Closing) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%); border-radius: 12px; border: 1px solid #c7d2fe;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1e1b4b;">می‌خواهید اولین پروژه هوش مصنوعی واقعی سازمان خود را با نقشه راه اجرا کنید؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #4338ca; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(67,56,202,0.25);">
+      شروع مشاوره تحول هوش مصنوعی با دیجی نورون
+    </a>
+  </div>
+
+  <!-- FAQ (feeds page-level JSON-LD) -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">سؤالات متداول درباره هوش مصنوعی و هشدار سریع حریق جنگل</h2>
+
+  <div class="space-y-4">
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۱. Watch Duty و ابزار Gemini دقیقاً چه می‌کند؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        صدای رادیو آنالوگ پرنویز آتش‌نشانی را به متن تمیز و جست‌وجوپذیر تبدیل می‌کند تا گزارش آتش جدید در کمتر از ۳۰ ثانیه به گزارشگران انسانی علامت‌گذاری شود؛ راستی‌آزمایی و انتشار نهایی هشدار همچنان با انسان‌هاست.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۲. نتایج عددی این ابزار چیست؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        شناسایی مخابره آتش در کمتر از ۳۰ ثانیه، کاهش نرخ خطای کلمه روی صدای VHF از ۳۸٪ به ۲۲٫۳۴٪، پیاده‌سازی روزانه بیش از ۲۰۰ ساعت گفتار از حدود ۴۰۰ کانال فعال (تست‌شده تا ۱۰ هزار کانال) و افزایش رضایت داوطلبان از ۳۵٫۳٪ به ۹۲٫۳٪.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۳. هشدار Critical Alert چیست و چرا مهم است؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        نوعی اعلان فوری است که حتی حالت «مزاحم نشوید» گوش را می‌شکند؛ در حریق شبانه Railroad واشنگتن (جولای ۲۰۲۶) Watch Duty برای نخستین‌بار چنین هشداری را در شب ارسال کرد و به ساکنان فرصت تخلیه پیش از رسیدن شعله داد.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۴. Google.org چه نقشی در این پروژه داشت؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        از طریق فلووشیپ Google.org، تیمی از مهندسان و پژوهشگران گوگل شش ماه تمام‌وقت و بلاعوض در کنار Watch Duty کار کردند و روی بیش از ۲۰ هزار ساعت ضبط رادیویی، ابزار مبتنی بر Gemini را ساختند؛ Google.org پیش‌تر نیز ۲ میلیون دلار بودجه و ۳۰۰ هزار دلار اعتبار ابری داده بود.
+      </p>
+    </div>
+
+    <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="font-bold text-base text-slate-900 mb-2">۵. آیا هوش مصنوعی جای آتش‌نشان‌ها و گزارشگران را می‌گیرد؟</h3>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        خیر؛ ابزار فقط لایه شنیدن را خودکار کرده تا هیچ گزارش آتشی به‌خاطر نبودن شنونده از دست نرود و انسان‌ها برای راستی‌آزمایی و تصمیم نهایی آزاد شوند؛ الگوی موفق، «انسان + هوش مصنوعی» است نه جایگزینی.
+      </p>
+    </div>
+  </div>
+
+  <!-- Author Box -->
+  <div class="p-6 bg-slate-900 text-white rounded-2xl shadow-lg border border-slate-800">
+    <div class="flex flex-col sm:flex-row items-center gap-5">
+      <div class="w-16 h-16 rounded-full bg-orange-500/20 border-2 border-orange-400 flex items-center justify-center text-orange-300 font-bold text-xl shrink-0">
+        DN
+      </div>
+      <div class="text-center sm:text-right space-y-2">
+        <h4 class="text-lg font-bold text-white">درباره نویسنده و مرجعیت محتوا:</h4>
+        <p class="text-sm text-orange-300 font-semibold">
+          گروه تخصصی دیجی نورون — بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی
+        </p>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          گروه تخصصی دیجی نورون، متشکل از اعضای هیئت‌علمی دانشگاه و مهندسان داده صنعت، با بیش از ۵ سال سابقه اجرای پروژه‌های هوش مصنوعی در صنایع پتروشیمی، آب و شهری، این تحلیل را بر پایه اعلامیه رسمی وبلاگ گوگل درباره همکاری Google.org و Watch Duty (۲۰ نوامبر ۲۰۲۶) و اطلاعات عمومی منتشرشده درباره مدل‌های Gemini و زیرساخت Firebase تدوین کرده است.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-xs text-slate-400 text-center">تصویر جلد: تصویر رسمی مقاله وبلاگ گوگل؛ منبع خبری: وبلاگ رسمی گوگل (blog.google).</p>
+</div>`,
+    category: "trends",
+    categoryName: "روندها و اخبار AI",
+    author: {
+      name: "گروه تخصصی دیجی نورون",
+      role: "بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی",
+      avatar: "/images/instructors/karimi.jpg"
+    },
+    date: "۱ آذر ۱۴۰۵",
+    readTime: "۱۴ دقیقه",
+    image: "/images/blog/watch-duty-gemini-wildfire.jpg",
+    featured: true,
+    tags: [
+      "هوش مصنوعی",
+      "گوگل",
+      "Gemini",
+      "Watch Duty",
+      "آتش‌سوزی جنگل‌ها",
+      "Google.org",
+      "ترجمه خودکار صدا"
+    ],
+    faq: [
+      {
+        question: "Watch Duty و ابزار Gemini دقیقاً چه می‌کند؟",
+        answer: "صدای رادیو آنالوگ پرنویز آتش‌نشانی را به متن تمیز و جست‌وجوپذیر تبدیل می‌کند تا گزارش آتش جدید در کمتر از ۳۰ ثانیه به گزارشگران انسانی علامت‌گذاری شود؛ راستی‌آزمایی و انتشار نهایی هشدار همچنان با انسان‌هاست."
+      },
+      {
+        question: "نتایج عددی این ابزار چیست؟",
+        answer: "شناسایی مخابره آتش در کمتر از ۳۰ ثانیه، کاهش نرخ خطای کلمه روی صدای VHF از ۳۸٪ به ۲۲٫۳۴٪، پیاده‌سازی روزانه بیش از ۲۰۰ ساعت گفتار از حدود ۴۰۰ کانال فعال (تست‌شده تا ۱۰ هزار کانال) و افزایش رضایت داوطلبان از ۳۵٫۳٪ به ۹۲٫۳٪."
+      },
+      {
+        question: "هشدار Critical Alert چیست و چرا مهم است؟",
+        answer: "نوعی اعلان فوری است که حتی حالت «مزاحم نشوید» گوش را می‌شکند؛ در حریق شبانه Railroad واشنگتن (جولای ۲۰۲۶) Watch Duty برای نخستین‌بار چنین هشداری را در شب ارسال کرد و به ساکنان فرصت تخلیه پیش از رسیدن شعله داد."
+      },
+      {
+        question: "Google.org چه نقشی در این پروژه داشت؟",
+        answer: "از طریق فلووشیپ Google.org، تیمی از مهندسان و پژوهشگران گوگل شش ماه تمام‌وقت و بلاعوض در کنار Watch Duty کار کردند و روی بیش از ۲۰ هزار ساعت ضبط رادیویی، ابزار مبتنی بر Gemini را ساختند؛ Google.org پیش‌تر نیز ۲ میلیون دلار بودجه و ۳۰۰ هزار دلار اعتبار ابری داده بود."
+      },
+      {
+        question: "آیا هوش مصنوعی جای آتش‌نشان‌ها و گزارشگران را می‌گیرد؟",
+        answer: "خیر؛ ابزار فقط لایه شنیدن را خودکار کرده تا هیچ گزارش آتشی به‌خاطر نبودن شنونده از دست نرود و انسان‌ها برای راستی‌آزمایی و تصمیم نهایی آزاد شوند؛ الگوی موفق، «انسان + هوش مصنوعی» است نه جایگزینی."
+      }
+    ]
+  },
+  {
     id: "27",
     slug: "google-ai-restore-giant-kelp-forests",
     title: "هوش مصنوعی برای نجات جنگل‌های کلپ؛ چگونه گوگل و CSIRO با DeepVariant آینده اقیانوس را بازسازی می‌کنند؟",
