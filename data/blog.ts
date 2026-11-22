@@ -21,6 +21,303 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "30",
+    slug: "google-fake-internet-chrome-ai-agents",
+    title: "اینترنت جعلی گوگل؛ ایجنت‌های هوش مصنوعی Chrome چگونه در وب تقلبی تمرین می‌کنند؟",
+    excerpt: "گوگل نسخه‌ای کامل و کنترل‌شده از وب ساخته تا ایجنت‌های Gemini کروم در آن تمرین کنند و زیر حمله آزمایش شوند؛ معماری Mirror Dimension و درس آن برای سازمان‌ها.",
+    content: `<div class="space-y-8 text-slate-800 leading-relaxed">
+
+  <!-- Hero Answer (50-70 words) -->
+  <div class="p-6 bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200 rounded-2xl shadow-sm">
+    <h3 class="text-lg font-bold text-emerald-900 mb-2">پاسخ سریع و خلاصه مدیریتی:</h3>
+    <p class="text-sm text-slate-700 leading-relaxed font-medium">
+      <strong>گوگل برای ایجنت‌های هوش مصنوعی‌اش یک «اینترنت تقلبی» ساخته است.</strong> طبق گزارش Digital Trends (نوامبر ۲۰۲۶)، این شرکت یک کپی کامل و کنترل‌شده از وب راه‌اندازی کرده که کسی بیرون از تیم به آن دسترسی ندارد؛ شبکه‌های اجتماعی، سایت‌های خرید و داشبوردهای بانکی با همان قطعاتی که سایت‌های واقعی ساخته می‌شوند. ایجنت‌های Gemini مرورگر Chrome در این «بُعد آینه‌ای» تمرین می‌کنند، خطا می‌کنند و حتی زیر حمله‌های شبیه‌سازی‌شده دفاع می‌کنند — تا هرگز این اشتباه‌ها روی وب واقعیِ شما تکرار نشود.
+    </p>
+  </div>
+
+  <!-- Section 1 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">«اینترنت جعلی» گوگل چیست و چرا ساخته شده است؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    اینترنت جعلی گوگل — که در گزارش‌ها «بُعد آینه‌ای» (Mirror Dimension) نام گرفته — یک نسخه کامل و کاملاً خصوصی از وب است که در آن ایجنت‌های Gemini مرورگر Chrome، مأموریت‌های واقعی را تمرین می‌کنند؛ محیطی که بیرون از تیم گوگل به آن راهی ندارد و با همان فناوری‌هایی ساخته شده که سایت‌های واقعی دارند.
+  </p>
+
+  <p>
+    ایده ساده اما هوشمندانه است: اگر قرار است ایجنتی خرید آنلاین انجام دهد، فرم بانکی پر کند یا ایمیلی بفرستد، باید جایی اشتباه کند که اشتباهش هزینه نداشته باشد. این رویکرد شبیه «دنیای آینه» در فیلم‌های Doctor Strange است؛ دنیایی مثل دنیای ما، اما هیچ‌چه در آن می‌گذرد به دنیای واقعی آسیب نمی‌زند. موج ایجنت‌محور شدن محصولات — که پیش‌تر در <a href="/fa/blog/why-managers-employees-must-learn-ai-beyond-content-creation" class="text-emerald-700 underline font-semibold">ایجنت‌های هوش مصنوعی سازمانی</a> و <a href="/fa/blog/meta-muse-charm-300-ai-gadget" class="text-emerald-700 underline font-semibold">گجت‌های ایجنت‌محور متا</a> دیدیم — حالا به مرورگر رسیده است و گوگل اراده کرده قبل از ورود به زندگی کاربران، سخت‌ترین بخش آزمایش را همین‌جا تمام کند.
+  </p>
+
+  <!-- CTA 1 (Strategic Early Placement) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">می‌خواهید ایجنت‌های هوش مصنوعی در سازمان شما «آزموده و ایمن» کار کنند؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تخصصی هوش مصنوعی دیجی نورون
+    </a>
+  </div>
+
+    <!-- Section 2 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">چرا گوگل ایجنت‌ها را روی وب واقعی آزمایش نمی‌کند؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    چون وب یک پروتکل واحد ندارد و ایجنت‌ها ناچارند با روش «خطا و آزمون» یاد بگیرند؛ در کنار آن، این ایجنت‌ها می‌توانند آسیب واقعی بزنند و مدل‌ها هم اگر بفهمند زیر ارزیابی‌اند، رفتار متفاوتی نشان می‌دهند — سه مشکلی که فقط یک وب تقلبیِ واقعاً شبیه واقعیت هر سه را یک‌جا حل می‌کند.
+  </p>
+
+  <p>
+    هر وب‌سایت رفتار خودش را دارد؛ نمی‌توان برای ایجنت «هاردکُد» کرد که هر صفحه را چطور طی کند. یعنی ایجنت باید آزادانه خطا کند تا یاد بگیرد، و آزادگذاشتن چنین موجودی روی وب واقعی — که در آن حساب بانکی و اطلاعات شخصی مردم است — مسئولیت‌پذیر نیست. تست‌های کوچک آزمایشگاهی هم جواب نمی‌دهند؛ طبق گزارش، مدل‌ها می‌توانند بفهمند در حال ارزیابی شدن هستند و در حضور ناظر متفاوت رفتار می‌کنند. روزهای اخیر هم شاهد چند روز قطعی سرویس‌های آمریکایی بر اثر کدهای AI تست‌نشده بودیم — یادآور درس‌های <a href="/fa/blog/banks-block-ai-agents-open-banking" class="text-emerald-700 underline font-semibold">بحران ایجنت‌ها در بانک‌ها</a> که پیش‌تر تحلیل کردیم.
+  </p>
+
+  <!-- Section 3 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">داخل Mirror Dimension چه می‌گذرد؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    ایجنت‌ها در این محیط، مأموریت‌هایی را که تیم گوگل تعیین می‌کند کامل می‌کنند — از خرید و پر کردن فرم تا کار با داشبورد بانکی — و همزمان باید از خودشان در برابر حمله‌هایی دفاع کنند که برای سنجش امنیت و تاب‌آوری طراحی شده‌اند؛ یعنی هم آموزش مهارت و هم تست مقاومت در یک زمین بازی خصوصی.
+  </p>
+
+  <p>
+    نکته کلیدی کیفیت شبیه‌سازی است: سایت‌های این وب تقلبی «از همان قطعات سایت‌های واقعی» ساخته شده‌اند تا ایجنت با همان پیچیدگی‌ها، خطاهای تصادفی و رفتارهای غیرقابل پیش‌بینی دنیای واقعی روبه‌رو شود — نه یک محیط ایدئال که فردا در وب واقعی به درد نخورد. نتیجه برای کاربر عادی روشن است: ایجنتی که روزی در مرورگر شما ظاهر می‌شود، پیش از آن «هزاران روز بد» را در جایی دیده که شما هرگز نمی‌بینید؛ و هر خرابی که آن‌جا ایجاد کرده، یکی از خرابی‌هایی است که دیگر روی اینترنت واقعی شما تکرار نمی‌شود.
+  </p>
+
+    <!-- Section 4 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">مقایسه سه محیط آزمایش ایجنت‌های هوش مصنوعی</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    تفاوت اصلی میان «تست مستقیم روی وب»، «تست آزمایشگاهی ساده» و «شبیه‌سازی وب با کیفیت واقعی» در دو محور ریسک و اعتبار نتیجه است؛ رویکرد گوگل تنها گزینه‌ای است که هم آسیب به کاربر واقعی را صفر می‌کند و هم نتیجه‌اش در دنیای واقعی به کار می‌آید.
+  </p>
+
+  <p>جدول زیر تصویر روشنی از جایگاه رویکرد گوگل می‌دهد:</p>
+
+  <table class="w-full text-sm border border-slate-300 rounded-lg overflow-hidden">
+    <thead>
+      <tr class="bg-slate-900 text-white text-right">
+        <th class="p-3 border-b border-slate-700">معیار</th>
+        <th class="p-3 border-b border-slate-700">تست روی وب واقعی</th>
+        <th class="p-3 border-b border-slate-700">تست آزمایشگاهی ساده</th>
+        <th class="p-3 border-b border-slate-700">Mirror Dimension گوگل</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-white">
+        <td class="p-3 border-b font-bold">ریسک برای کاربر واقعی</td>
+        <td class="p-3 border-b">بالا؛ آسیب مستقیم به حساب‌ها و داده‌ها</td>
+        <td class="p-3 border-b">صفر</td>
+        <td class="p-3 border-b">صفر</td>
+      </tr>
+      <tr class="bg-slate-50">
+        <td class="p-3 border-b font-bold">شبیه‌بودن به وب واقعی</td>
+        <td class="p-3 border-b">کامل</td>
+        <td class="p-3 border-b">کم؛ محیط ایدئال و فاقد پیچیدگی</td>
+        <td class="p-3 border-b">بالا؛ ساخته‌شده از همان قطعات سایت‌های واقعی</td>
+      </tr>
+      <tr class="bg-white">
+        <td class="p-3 border-b font-bold">حس‌شدن وضعیت ارزیابی</td>
+        <td class="p-3 border-b">خیر</td>
+        <td class="p-3 border-b">بله؛ مدل رفتار متفاوت نشان می‌دهد</td>
+        <td class="p-3 border-b">خیر؛ وب تقلبی «حس واقعی» دارد</td>
+      </tr>
+      <tr class="bg-slate-50">
+        <td class="p-3 border-b font-bold">تست امنیت و حمله</td>
+        <td class="p-3 border-b">غیرممکن/غیراخلاقی</td>
+        <td class="p-3 border-b">محدود</td>
+        <td class="p-3 border-b">حمله‌های شبیه‌سازی‌شده برای سنجش تاب‌آوری</td>
+      </tr>
+      <tr class="bg-white">
+        <td class="p-3 border-b font-bold">اعتبار نتیجه در دنیای واقعی</td>
+        <td class="p-3 border-b">بالا اما با هزینه سنگین</td>
+        <td class="p-3 border-b">پایین</td>
+        <td class="p-3 border-b">بالا؛ همان خطاها دیده شده اما بدون قربانی</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Section 5 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">فریب فنی: گوگل چطور کروم را قانع کرد وبِ تقلبی، واقعی است؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    ساخت این محیط «تقلب خلاقانه» می‌خواست: گواهی‌های جعلی صادر شد و دور برخی از مکانیزم‌های امنیتی خود Chrome زده شد تا مرورگر ایجنت را دقیقاً مثل یک بازدیدکننده عادی بپذیرد؛ چون در غیر این صورت، ایجنت در محیط مصنوعی رفتاری متفاوت از وب واقعی داشت.
+  </p>
+
+  <p>
+    این بخش برای مدیران فناوری مهم‌ترین قسمت ماجراست: کیفیت تست، به کیفیت شبیه‌سازی وابسته است. اگر مرورگر بداند «این یک محیط تست است» یا گواهی امنیتی سایت‌ها متفاوت باشد، خروجی تست هم تفاوت‌های سیستماتیک خواهد داشت. گوگل با صدور گواهی‌های جعلی و تعدیل چک‌های امنیتی، اجازه داد ایجنت دقیقاً همان تجربه‌ای را بگذراند که در وب واقعی خواهد داشت. به بیان مهندسی، این همان اصل «تست در شرایط واقعی» است — همان اصلی که در <a href="/fa/blog/smart-organization-ai-2026" class="text-emerald-700 underline font-semibold">هوشمندسازی سازمانی</a> هم ما روی آن اصرار داریم: ایجنت سازمانی را در محیط واقعی کسب‌وکارتان آزمایش کنید، نه در دموی ایدئال.
+  </p>
+
+    <!-- Section 6 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">درس Mirror Dimension برای سازمان‌ها: ایجنت را کجا آزمایش کنیم؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    پیام سازمانی این خبر روشن است: هیچ ایجنت هوش مصنوعی — نه مدل داخلی، نه ابزار آماده — نباید اولین اجرایش روی سیستم واقعی و داده‌های واقعی سازمان باشد؛ محیط سندباکس شبیه‌سازی‌شده، دسترسی محدود و سناریوهای حمله، پیش‌نیاز هر استقرار ایجنت است.
+  </p>
+
+  <p>
+    چند روز قطعی سرویس‌های آمریکایی بر اثر کدهای تست‌نشده، نشان داد هزینه «رساندن محصول نیمه‌آزموده به مشتری» چند است. الگوی گوگل سه مؤلفه قابل کپی دارد: اول، محیطی شبیه سیستم واقعی (نه محیط ایدئال)؛ دوم، سناریوهای خرابی و حمله عمدی؛ سوم، تکرار آزمون تا ایجنت به پایداری برسد. در پروژه‌های <a href="/fa/blog/enterprise-ai-transformation-diginoron-model" class="text-emerald-700 underline font-semibold">هوشمندسازی سازمانی دیجی نورون</a> همین سه‌گانه را پایه استقرار ایجنت‌ها قرار می‌دهیم؛ همان رویکردی که در <a href="/fa/blog/why-managers-employees-must-learn-ai-beyond-content-creation" class="text-emerald-700 underline font-semibold">تفاوت ایجنت با چت‌بات</a> توضیح داده‌ایم. متقابلاً، این خبر برای کسب‌وکارها یک فرصت هم هست: وقتی مرورگرهای کاربران پر از ایجنت می‌شود، «قابلیت دیده‌شدن و استفاده توسط ایجنت‌ها» به معیار تازه سئو و فروش تبدیل می‌شود.
+  </p>
+
+  <!-- CTA 2 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%); border-radius: 12px; border: 1px solid #c6f6d5;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #22543d;">سندباکس ایجنت‌های هوش مصنوعی سازمان شما آماده است؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      شروع همکاری با دیجی نورون
+    </a>
+  </div>
+
+    <!-- Section 7: Pitfalls -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">۵ اشتباه رایج درباره تست و استقرار ایجنت‌های هوش مصنوعی</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-emerald-600">
+    رایج‌ترین اشتباه، معادل‌گرفتن «دموی موفق» با «آمادگی برای عملیات» است؛ فهرست زیر پنج تله‌ای است که هم شرکت‌های بزرگ و هم سازمان‌های متوسط در مسیر استقرار ایجنت‌ها مرتکب می‌شوند.
+  </p>
+
+  <div class="space-y-3">
+    <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+      <h3 class="font-bold text-red-900 mb-1">۱. تست روی وب واقعی با حساب‌های واقعی</h3>
+      <p class="text-sm text-slate-700">مثل این است که خلبان تازه‌کار را با هواپیمای مسافربری امتحان کنید؛ ایجنت باید اول در محیط شبیه‌سازی‌شده «هزاران روز بد» را تجربه کند، نه روی داده‌های واقعی مشتریان.</p>
+    </div>
+    <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+      <h3 class="font-bold text-red-900 mb-1">۲. اتکا به محیط تست ایدئال</h3>
+      <p class="text-sm text-slate-700">محیط تستی که همیشه تمیز و بی‌خطاست، یادگیری دروغی می‌دهد؛ سایت‌های تقلبی باید از همان قطعات و پیچیدگی‌های سیستم واقعی ساخته شوند.</p>
+    </div>
+    <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+      <h3 class="font-bold text-red-900 mb-1">۳. نادیده‌گرفتن اثر ناظر</h3>
+      <p class="text-sm text-slate-700">مدل‌ها می‌فهمند زیر ارزیابی‌اند و رفتارشان تغییر می‌کند؛ نتیجه تستی که «حس تست» بدهد، قابل تعمیم به دنیای واقعی نیست.</p>
+    </div>
+    <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+      <h3 class="font-bold text-red-900 mb-1">۴. حذف سناریوهای حمله از تست</h3>
+      <p class="text-sm text-slate-700">ایجنت فقط باید کارها را انجام دهد؟ خیر؛ همان‌طور که گوگل ایجنت‌هایش را زیر حمله شبیه‌سازی‌شده قرار می‌دهد، تست امنیت و تاب‌آوری بخش جدایی‌ناپذیر آزمون است.</p>
+    </div>
+    <div class="bg-red-50 border border-red-200 rounded-xl p-4">
+      <h3 class="font-bold text-red-900 mb-1">۵. یک‌بار تست و رفتن</h3>
+      <p class="text-sm text-slate-700">تست ایجنت فرایند است نه رویداد؛ بدون چرخه تکرار آزمون-اصلاح، همان خطاهایی که در تست دیده نشد، روی سیستم عملیاتی دیده می‌شود.</p>
+    </div>
+  </div>
+
+    <!-- Section 8: Voice Search -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">سوالات متداول جست‌وجوی صوتی درباره اینترنت جعلی گوگل</h2>
+
+  <div class="space-y-3">
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+      <h3 class="font-bold text-slate-900 mb-1">گوگل واقعاً یک اینترنت تقلبی ساخته است؟</h3>
+      <p class="text-sm text-slate-700">بله؛ طبق گزارش Digital Trends (نوامبر ۲۰۲۶)، گوگل نسخه‌ای کامل و خصوصی از وب ساخته — با شبکه اجتماعی، سایت خرید و داشبورد بانکی از همان قطعات سایت‌های واقعی — تا ایجنت‌های Gemini مرورگر Chrome در آن تمرین کنند.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+      <h3 class="font-bold text-slate-900 mb-1">چرا گوگل ایجنت‌هایش را مستقیم روی اینترنت واقعی تست نمی‌کند؟</h3>
+      <p class="text-sm text-slate-700">چون ایجنت‌ها با خطا یاد می‌گیرند و می‌توانند آسیب واقعی بزنند؛ ضمن اینکه مدل‌ها اگر بفهمند زیر ارزیابی‌اند، متفاوت رفتار می‌کنند. وب تقلبی هر سه مشکل را یک‌جا حل می‌کند.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+      <h3 class="font-bold text-slate-900 mb-1">Mirror Dimension گوگل چیست؟</h3>
+      <p class="text-sm text-slate-700">نامی که به این محیط شبیه‌سازی‌شده داده شده: کپی کاملی از وب که کسی بیرون از تیم گوگل به آن راه ندارد و ایجنت‌ها در آن مأموریت انجام می‌دهند و زیر حمله‌های شبیه‌سازی‌شده دفاع می‌کنند.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+      <h3 class="font-bold text-slate-900 mb-1">این خبر چه ربطی به کاربر عادی دارد؟</h3>
+      <p class="text-sm text-slate-700">ایجنتی که به مرورگر شما می‌آید، پیش‌تر هزاران خطا را در محیط تمرین دیده است؛ یعنی احتمال خرابی، اشتباه در خرید یا لو رفتن داده شما کمتر می‌شود.</p>
+    </div>
+  </div>
+
+  <!-- CTA 3 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">آینده ایجنت‌ها را از حالا برای کسب‌وکارتان بسازید</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تخصصی و سفارش پروژه
+    </a>
+  </div>
+
+  <!-- External References -->
+  <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+    <h3 class="font-bold text-slate-900 mb-2">منابع و مطالعه بیشتر:</h3>
+    <ul class="list-disc list-inside text-sm text-slate-700 space-y-1">
+      <li><a href="https://www.digitaltrends.com/computing/google-builds-fake-internet-to-train-and-test-gemini-ai-agents/" target="_blank" rel="noopener noreferrer" class="text-sky-700 underline font-semibold">گزارش کامل Digital Trends درباره اینترنت تقلبی گوگل</a></li>
+      <li><a href="https://blog.google/security/mirror-dimension-for-agents/" target="_blank" rel="noopener noreferrer" class="text-sky-700 underline font-semibold">پست رسمی گوگل: Mirror Dimension for Agents (وبلاگ Chrome/Security)</a></li>
+    </ul>
+  </div>
+
+  <!-- FAQ (HTML) -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">سوالات متداول درباره اینترنت جعلی گوگل و ایجنت‌های کروم</h2>
+
+  <div class="space-y-4">
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+      <h3 class="font-bold text-slate-900 mb-2">اینترنت جعلی گوگل چیست؟</h3>
+      <p class="text-sm text-slate-700">یک نسخه کامل و کنترل‌شده از وب است که فقط تیم گوگل به آن دسترسی دارد؛ در آن شبکه اجتماعی، سایت خرید و داشبورد بانکی با همان فناوری‌های سایت‌های واقعی ساخته شده تا ایجنت‌های Gemini مرورگر Chrome در آن تمرین کنند، خطا کنند و امنیت‌شان زیر حمله‌های شبیه‌سازی‌شده سنجیده شود.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+      <h3 class="font-bold text-slate-900 mb-2">چرا تست ایجنت‌ها روی وب واقعی خطرناک است؟</h3>
+      <p class="text-sm text-slate-700">چون وب پروتکل واحدی ندارد و ایجنت ناچار است با خطا و آزمون یاد بگیرد؛ روی وب واقعی این خطاها یعنی خرید اشتباه، فرم نادرست بانکی یا لو رفتن داده. ضمن اینکه مدل‌ها اگر بفهمند در حال ارزیابی‌اند، رفتار متفاوتی نشان می‌دهند و نتیجه تست اعتبار خود را از دست می‌دهد.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+      <h3 class="font-bold text-slate-900 mb-2">گوگل برای ساخت این محیط چه کرده است؟</h3>
+      <p class="text-sm text-slate-700">طبق گزارش Digital Trends، ساخت محیط «تقلب خلاقانه» می‌خواسته: صدور گواهی‌های جعلی و دور زدن برخی چک‌های امنیتی خود Chrome تا مرورگر ایجنت را مثل یک بازدیدکننده عادی بپذیرد و رفتار ایجنت در تست و در وب واقعی یکسان باشد.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+      <h3 class="font-bold text-slate-900 mb-2">سازمان‌ها از این رویکرد چه درسی می‌گیرند؟</h3>
+      <p class="text-sm text-slate-700">هیچ ایجنتی نباید اولین اجرایش روی سیستم واقعی باشد. سه مؤلفه قابل کپی از الگوی گوگل: محیط شبیه‌سازی‌شده مشابه سیستم واقعی، سناریوهای حمله و خرابی عمدی، و چرخه تکرار آزمون تا پایداری — پایه استاندارد استقرار ایجنت‌های سازمانی.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+      <h3 class="font-bold text-slate-900 mb-2">آیا اینترنت تقلبی ربطی به کاربران عادی دارد؟</h3>
+      <p class="text-sm text-slate-700">بله، به نفع آن‌هاست: ایجنتی که فردا در مرورگر شما خرید می‌کند یا فرم پر می‌کند، هزاران خطای خود را در محیط تمرین دیده است؛ یعنی احتمال اشتباه و آسیب روی اینترنت واقعی شما کمتر می‌شود و اعتماد به ایجنت‌های مرورگر معنای واقعی پیدا می‌کند.</p>
+    </div>
+  </div>
+
+
+  <!-- Author Box -->
+  <div class="p-6 bg-slate-900 text-white rounded-2xl shadow-lg border border-slate-800">
+    <div class="flex flex-col sm:flex-row items-center gap-5">
+      <div class="w-16 h-16 rounded-full bg-emerald-500/20 border-2 border-emerald-400 flex items-center justify-center text-emerald-300 font-bold text-xl shrink-0">
+        DN
+      </div>
+      <div class="text-center sm:text-right space-y-2">
+        <h4 class="text-lg font-bold text-white">درباره نویسنده و مرجعیت محتوا:</h4>
+        <p class="text-sm text-emerald-300 font-semibold">
+          گروه تخصصی دیجی نورون — بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی
+        </p>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          گروه تخصصی دیجی نورون، متشکل از اعضای هیئت‌علمی دانشگاه و مهندسان داده صنعت، با بیش از ۵ سال سابقه اجرای پروژه‌های هوش مصنوعی، این تحلیل را بر پایه گزارش Digital Trends درباره محیط شبیه‌سازی‌شده وب گوگل برای تست ایجنت‌های Gemini مرورگر Chrome (نوامبر ۲۰۲۶) و تجربه اجرایی خود در استقرار ایجنت‌های سازمانی تدوین کرده است.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-xs text-slate-400 text-center">تصویر جلد: تصویر رسمی پست وبلاگ گوگل (Mirror Dimension for Agents)؛ منابع: Digital Trends و وبلاگ رسمی گوگل.</p>
+</div>`,
+    category: "trends",
+    categoryName: "روندها و اخبار AI",
+    author: {
+      name: "گروه تخصصی دیجی نورون",
+      role: "بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی",
+      avatar: "/images/instructors/karimi.jpg"
+    },
+    date: "۲ آذر ۱۴۰۵",
+    readTime: "۱۳ دقیقه",
+    image: "/images/blog/google-fake-internet-chrome-ai-agents.jpg",
+    featured: true,
+    tags: [
+      "هوش مصنوعی",
+      "گوگل",
+      "Google Chrome",
+      "Gemini",
+      "ایجنت‌های هوش مصنوعی",
+      "تست نرم‌افزار",
+      "امنیت سایبری"
+    ],
+    faq: [
+      {
+        question: "اینترنت جعلی گوگل چیست؟",
+        answer: "یک نسخه کامل و کنترل‌شده از وب است که فقط تیم گوگل به آن دسترسی دارد؛ شبکه اجتماعی، سایت خرید و داشبورد بانکی با همان فناوری‌های سایت‌های واقعی در آن ساخته شده تا ایجنت‌های Gemini مرورگر Chrome در آن تمرین کنند و امنیت‌شان زیر حمله‌های شبیه‌سازی‌شده سنجیده شود."
+      },
+      {
+        question: "چرا گوگل ایجنت‌ها را روی وب واقعی تست نمی‌کند؟",
+        answer: "چون وب پروتکل واحدی ندارد و ایجنت باید با خطا و آزمون یاد بگیرد؛ روی وب واقعی این خطاها آسیب واقعی می‌زند. ضمن اینکه مدل‌ها اگر بفهمند زیر ارزیابی‌اند رفتار متفاوتی نشان می‌دهند و نتیجه تست بی‌اعتبار می‌شود."
+      },
+      {
+        question: "Mirror Dimension چیست؟",
+        answer: "نام محیط شبیه‌سازی‌شده گوگل برای ایجنت‌هاست: کپی کاملی از وب که ایجنت‌های Gemini در آن مأموریت انجام می‌دهند و در برابر حمله‌های عمدی تیم گوگل دفاع می‌کنند تا برای وب واقعی آماده شوند."
+      },
+      {
+        question: "گوگل برای ساخت این محیط چه ترفندهایی به کار برد؟",
+        answer: "طبق گزارش Digital Trends، ساخت محیط «تقلب خلاقانه» می‌خواست: صدور گواهی‌های جعلی و دور زدن برخی چک‌های امنیتی خود Chrome تا مرورگر ایجنت را دقیقاً مثل یک بازدیدکننده عادی بپذیرد."
+      },
+      {
+        question: "سازمان‌ها از این خبر چه درسی می‌گیرند؟",
+        answer: "هیچ ایجنتی نباید اولین اجرایش روی سیستم واقعی باشد؛ الگوی قابل کپی گوگل سه مؤلفه دارد: محیط شبیه‌سازی‌شده مشابه سیستم واقعی، سناریوهای حمله و خرابی عمدی، و چرخه تکرار آزمون تا پایداری."
+      }
+    ]
+  },
+  {
     id: "29",
     slug: "meta-muse-charm-300-ai-gadget",
     title: "Muse Charm متا؛ آیا هوش مصنوعی جیبی ۳۰۰ دلاری دستیار جدید شما می‌شود؟",

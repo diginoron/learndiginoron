@@ -29,6 +29,7 @@ import { googleProjectSuncatcherTranslation } from "./blog/googleProjectSuncatch
 import { googleAiGiantKelpTranslation } from "./blog/googleAiGiantKelp";
 import { watchDutyGeminiWildfireTranslation } from "./blog/watchDutyGeminiWildfire";
 import { metaMuseCharmTranslation } from "./blog/metaMuseCharm";
+import { googleFakeInternetTranslation } from "./blog/googleFakeInternet";
 
 export interface BlogTranslation {
   title: string;
@@ -70,6 +71,7 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "google-ai-restore-giant-kelp-forests": googleAiGiantKelpTranslation,
   "watch-duty-gemini-wildfire-alerts": watchDutyGeminiWildfireTranslation,
   "meta-muse-charm-300-ai-gadget": metaMuseCharmTranslation,
+  "google-fake-internet-chrome-ai-agents": googleFakeInternetTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
