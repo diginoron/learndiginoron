@@ -46,7 +46,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       post.slug === "alphagenome-ai-decoding-human-genome" ||
       post.slug === "google-project-suncatcher-ai-in-space" ||
       post.slug === "google-ai-restore-giant-kelp-forests" ||
-      post.slug === "watch-duty-gemini-wildfire-alerts";
+      post.slug === "watch-duty-gemini-wildfire-alerts" ||
+      post.slug === "meta-muse-charm-300-ai-gadget";
     return {
       path: `/blog/${post.slug}`,
       changeFrequency: (isPillar || post.featured) ? ("daily" as const) : ("weekly" as const),

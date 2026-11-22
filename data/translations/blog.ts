@@ -28,6 +28,7 @@ import { alphaGenomeTranslation } from "./blog/alphaGenome";
 import { googleProjectSuncatcherTranslation } from "./blog/googleProjectSuncatcher";
 import { googleAiGiantKelpTranslation } from "./blog/googleAiGiantKelp";
 import { watchDutyGeminiWildfireTranslation } from "./blog/watchDutyGeminiWildfire";
+import { metaMuseCharmTranslation } from "./blog/metaMuseCharm";
 
 export interface BlogTranslation {
   title: string;
@@ -68,9 +69,11 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "google-project-suncatcher-ai-in-space": googleProjectSuncatcherTranslation,
   "google-ai-restore-giant-kelp-forests": googleAiGiantKelpTranslation,
   "watch-duty-gemini-wildfire-alerts": watchDutyGeminiWildfireTranslation,
+  "meta-muse-charm-300-ai-gadget": metaMuseCharmTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
+  "۲ آذر ۱۴۰۵": { en: "November 23, 2026", fa: "۲ آذر ۱۴۰۵", ar: "٢٣ نوفمبر ٢٠٢٦" },
   "۱ آذر ۱۴۰۵": { en: "November 22, 2026", fa: "۱ آذر ۱۴۰۵", ar: "٢٢ نوفمبر ٢٠٢٦" },
   "۳۰ آبان ۱۴۰۵": { en: "November 21, 2026", fa: "۳۰ آبان ۱۴۰۵", ar: "٢١ نوفمبر ٢٠٢٦" },
   "۲۹ آبان ۱۴۰۵": { en: "November 20, 2026", fa: "۲۹ آبان ۱۴۰۵", ar: "٢٠ نوفمبر ٢٠٢٦" },

@@ -21,6 +21,290 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "29",
+    slug: "meta-muse-charm-300-ai-gadget",
+    title: "Muse Charm متا؛ آیا هوش مصنوعی جیبی ۳۰۰ دلاری دستیار جدید شما می‌شود؟",
+    excerpt: "طبق گزارش The Information قیمت Muse Charm متا ۳۰۰ دلار است؛ گجت کلیدبندی با صفحه ۲ اینچی، مودم ۵G و ایجنت صوتی Muse. بررسی مشخصات، کاربردها و شانس موفقیت.",
+    content: `<div class="space-y-8 text-slate-800 leading-relaxed">
+
+  <!-- Hero Answer (50-70 words) -->
+  <div class="p-6 bg-gradient-to-br from-sky-50 to-indigo-50 border border-sky-200 rounded-2xl shadow-sm">
+    <h3 class="text-lg font-bold text-sky-900 mb-2">پاسخ سریع و خلاصه مدیریتی:</h3>
+    <p class="text-sm text-slate-700 leading-relaxed font-medium">
+      <strong>متا می‌خواهد دستیار هوش مصنوعی‌اش را توی جیب شما بگذارد.</strong> طبق گزارش The Information (نوامبر ۲۰۲۶)، قیمت Muse Charm — گجت کلیدبندی متا برای گفت‌وگوی صوتی با ایجنت Muse — قرار است ۳۰۰ دلار باشد و شاید تا یک سال اینترنت ۵G ورایزن هم رایگان بگیرید. مشخصات: صفحه‌نمایش ۲ اینچی، مودم ۵G داخلی بدون نیاز به وای‌فای و فعال‌سازی با لمس حسگر اثر انگشت؛ بدون بازکردن گوشی و بدون بازکردن اپ.
+    </p>
+  </div>
+
+  <!-- Section 1 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">Muse Charm چیست و چرا این‌قدر سر و صدا کرده است؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    Muse Charm یک گجت کلیدبندی از متاست که دسترسی فوری به ایجنت هوش مصنوعی Muse را فراهم می‌کند: حسگر اثر انگشت را لمس می‌کنید و مستقیم با Muse صحبت می‌کنید؛ مارک زاکربرگ آن را در سپتامبر ۲۰۲۶ معرفی کرد و هدف، رسیدن محصول به دست مصرف‌کنندگان تا فصل تعطیلات است.
+  </p>
+
+  <p>
+    چرا این خبر مهم است؟ چون برای یک دهه، «استفاده از دستیار صوتی» یعنی گوشی را دربیاور، اپ را باز کن، صبر کن. چرم هوشمند متا این فرایند را به یک ژست یک‌ثانیه‌ای خلاصه می‌کند و طبق اعلام زاکربرگ، کل تجربه Muse — صدای زنده و آواتار واکنش‌گر — در گجتی جا شده که روی کلید شماست. این نشانه موج بعدی سفر هوش مصنوعی است: ایجنت‌هایی که از پشت صفحه بیرون می‌آیند؛ روندی که پیش‌تر در <a href="/fa/blog/top-10-ai-tools-for-productivity" class="text-sky-700 underline font-semibold">ابزارهای هوش مصنوعی بهره‌وری</a> و <a href="/fa/blog/introducing-gemini-4-neon" class="text-sky-700 underline font-semibold">نسل جدید مدل‌های گوگل</a> دیده بودیم، حالا به سخت‌افزار رسیده است.
+  </p>
+
+  <!-- CTA 1 (Strategic Early Placement) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">آیا کسب‌وکار شما برای «مشتریِ ایجنت‌محور» آماده است؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تخصصی هوش مصنوعی دیجی نورون
+    </a>
+  </div>
+
+
+  <!-- Section 2 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">مشخصات فنی Muse Charm: چه چیزی داخل این کلیدبندی است؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    Muse Charm صفحه‌نمایش ۲ اینچی، مودم ۵G داخلی (بدون نیاز به وای‌فای) و حسگر اثر انگشت برای فعال‌سازی گفت‌وگو دارد؛ اما از خود دستگاه نمی‌توان تماس گرفت — تمرکز آن کاملاً روی تعامل صوتی با Muse است و طبق گزارش‌ها، بسته احتمالی عرضه شامل تا یک سال اینترنت ۵G ورایزن است.
+  </p>
+
+  <p>
+    نکته کلیدی طراحی، مودم ۵G داخلی است: این گجت یک لوازم جانبی بلوتوثی وابسته به گوشی نیست، بلکه یک دستگاه مستقل با اشتراک اینترنتی خودش است — همین استقلال، فعال‌سازی دو‌ثانیه‌ای را ممکن می‌کند. کنارگذاشتن قابلیت تماس هم انتخابی آگاهانه است: متا می‌خواهد این دستگاه «همراهِ» گوشی باشد نه جایگزین آن. مشخصات و امکان ثبت‌نام برای اطلاع‌رسانی در <a href="https://www.meta.com/muse-charm/" target="_blank" rel="noopener noreferrer" class="text-sky-700 underline font-semibold">صفحه رسمی محصول متا</a> در دسترس است.
+  </p>
+
+  <!-- Section 3 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">ایجنت Muse چه کارهایی می‌کند؟ از خرید تا تماس با کسب‌وکارها</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    Muse همان ایجنت هوش مصنوعی متاست که خرید آنلاین، رزرو سفر و حتی تماس تلفنی با کسب‌وکارها را انجام می‌دهد (قابلیت تماس فعلاً برای مشترکان پرداخت‌کننده در آمریکاست)؛ متا ابزارهای لازم برای ساخت گجت‌های Muse شخصی را هم متن‌باز کرده است.
+  </p>
+
+  <p>
+    تفاوت Muse با چت‌بات‌های کلاسیک در همین «اقدام» است: ایجنت به‌جای پیشنهاد دادن، خودش خرید را کامل می‌کند، بلیط رزرو می‌کند یا با رستوران تماس می‌گیرد. وقتی چنین ایجنتی در جیب کاربر و همیشه‌در‌دسترس باشد، مرز میان «اپلیکیشن» و «دستیار شخصی» کم‌رنگ‌تر می‌شود؛ دقیقاً همان تحولی که در <a href="/fa/blog/why-managers-employees-must-learn-ai-beyond-content-creation" class="text-sky-700 underline font-semibold">استفاده حرفه‌ای از هوش مصنوعی فراتر از تولید محتوا</a> توضیح داده‌ایم و حالا به سخت‌افزار مصرفی رسیده است.
+  </p>
+
+
+  <!-- Section 4 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">قیمت Muse Charm چند است و چه زمانی عرضه می‌شود؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    طبق گزارش The Information، قیمت Muse Charm ۳۰۰ دلار است و احتمال دارد بسته آن تا یک سال اینترنت ۵G ورایزن را هم رایگان شامل شود؛ اما متا هنوز هیچ‌کدام را رسماً تأیید نکرده است. هدف اعلام‌شده زاکربرگ در سپتامبر ۲۰۲۶، عرضه محصول در فصل تعطیلات پایانی سال بود و صفحه رسمی فعلاً فقط ثبت‌نام برای اطلاع‌رسانی می‌گیرد.
+  </p>
+
+  <p>
+    ۳۰۰ دلار برای یک گجت کلیدبندی مبلغ کمی نیست؛ اما اگر مقایسه را درست انجام دهیم، از Humane AI Pin که ۶۹۹ دلار قیمت داشت و اشتراک ماهانه هم می‌خواست، ارزان‌تر است. نکته مهم‌تر از قیمت پایه، مدل اقتصادی مودم ۵G داخلی است: این دستگاه به اشتراک اینترنت مستقل نیاز دارد و اگر ورایزن هزینه آن را یک سال یارانه‌ای کند، الگوی فروش دقیقاً شبیه گوشی‌های همراه خواهد شد. سخنگوی متا، تایلر یی، فقط گفته متا «به این علاقه‌مندی خوشحال شده» و به‌زودی خبرهای بیشتری منتشر می‌کند؛ پس فعلاً تمام اعداد این بخش را باید با شرط «طبق گزارش‌ها» خواند. ضمن اینکه طبق همین گزارش‌ها، ساعت هوشمند متا هم تا ۲۰۲۷ به تعویق افتاده است — یعنی متا روی میز سخت‌افزار خودش به Muse Charm به‌عنوان برگ برنده تعطیلات نگاه می‌کند.
+  </p>
+
+
+  <!-- Section 5 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">مقایسه Muse Charm با گجت‌های هوش مصنوعی قبلی</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    تفاوت اصلی Muse Charm با شکست‌خوردگان این حوزه، ترکیب «فرم آشنا + ایجنت واقعاً کاربردی» است: گجت‌های قبلی یا می‌خواستند جای گوشی را بگیرند یا ارزش واقعی نداشتند؛ Muse Charm از همان ابتدا یک دستگاه همراهِ راحت و بی‌ادعا کنار گوشی است.
+  </p>
+
+  <p>جدول زیر تصویر روشنی از جایگاه Muse Charm در میان تلاش‌های قبلی صنعت می‌دهد:</p>
+
+  <table class="w-full text-sm border border-slate-300 rounded-lg overflow-hidden">
+    <thead>
+      <tr class="bg-slate-900 text-white text-right">
+        <th class="p-3 border-b border-slate-700">معیار</th>
+        <th class="p-3 border-b border-slate-700">Muse Charm (متا)</th>
+        <th class="p-3 border-b border-slate-700">Humane AI Pin</th>
+        <th class="p-3 border-b border-slate-700">Rabbit R1</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-white">
+        <td class="p-3 border-b font-bold">قیمت</td>
+        <td class="p-3 border-b">۳۰۰ دلار (طبق گزارش‌ها؛ شاید با ۵G رایگان ورایزن)</td>
+        <td class="p-3 border-b">۶۹۹ دلار + اشتراک ماهانه</td>
+        <td class="p-3 border-b">۱۹۹ دلار</td>
+      </tr>
+      <tr class="bg-slate-50">
+        <td class="p-3 border-b font-bold">اتصال</td>
+        <td class="p-3 border-b">مودم ۵G داخلی؛ بدون نیاز به گوشی یا وای‌فای</td>
+        <td class="p-3 border-b">اطلاعات موبایل با اشتراک ماهانه</td>
+        <td class="p-3 border-b">SIM داخلی؛ ولی به صف رستوران و تاکسی وابسته</td>
+      </tr>
+      <tr class="bg-white">
+        <td class="p-3 border-b font-bold">فرم محصول</td>
+        <td class="p-3 border-b">کلیدبندی آشنا؛ سبک و همیشه همراه</td>
+        <td class="p-3 border-b">سنجاق لباس با پروژکتور</td>
+        <td class="p-3 border-b">جعبه نارنجی با صفحه کوچک</td>
+      </tr>
+      <tr class="bg-slate-50">
+        <td class="p-3 border-b font-bold">ایجنت هوش مصنوعی</td>
+        <td class="p-3 border-b">Muse؛ خرید، رزرو سفر و تماس با کسب‌وکارها</td>
+        <td class="p-3 border-b">پرسش‌وپاسخ و ترجمه؛ اجرای کار محدود</td>
+        <td class="p-3 border-b">انجام کار اعلام‌شده اما کند و خطاخیز</td>
+      </tr>
+      <tr class="bg-white">
+        <td class="p-3 border-b font-bold">سرنوشت</td>
+        <td class="p-3 border-b">فعلاً اعلام‌شده؛ عرضه هدفمند در تعطیلات</td>
+        <td class="p-3 border-b">شکست تجاری؛ فروش به HP</td>
+        <td class="p-3 border-b">استقبال اولیه محدود؛ مرورهای منفی</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="mt-4">درس این جدول ساده است: گجت‌های هوش مصنوعی زمانی زنده می‌مانند که یک کار واقعی را واقعاً انجام دهند، نه اینکه فقط یک وعده نمایشی باشد. عینک Ray-Ban متا دقیقاً به همین دلیل — «یک کار ساده و مفید در فرمی آشنا» — به بهترین موفقیت سخت‌افزاری متا تبدیل شده است و Muse Charm دنبال تکرار همین فرمول روی کلید شماست.</p>
+
+
+  <!-- Section 6 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">۵ چالش بزرگ سر راه Muse Charm</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    اگرچه Muse Charm از نظر فنی به بلوغ رسیده، پنج چالش جدی پیش روی آن است: قیمت ۳۰۰ دلاری، هزینه اشتراک ۵G، اعتماد کاربر به ایجنت‌های خودکار، سابقه شکست گجت‌های مشابه و زیان‌های سنگین Reality Labs که فشار تحقق «سود» به متا را بیشتر می‌کند.
+  </p>
+
+  <ol class="list-decimal list-inside space-y-3 text-slate-800 mr-4">
+    <li><strong>قیمت:</strong> ۳۰۰ دلار برای «گجت دوم» حوصله بازار تعطیلات را می‌خواهد؛ همان بازاری که عینک‌های متا را فقط با موفقیت نسبی همراه بوده است.</li>
+    <li><strong>هزینه پنهان اتصال:</strong> مودم ۵G یعنی اشتراک اینترنت مستقل؛ پس از پایان دوره رایگان ورایزن، هزینه ماهانه می‌تواند دلیل اصلی انصراف شود.</li>
+    <li><strong>اعتماد به ایجنت:</strong> وقتی Muse با دستور شما خرید می‌کند یا با کسب‌وکارها تماس می‌گیرد، اشتباه یعنی پول و زمان واقعی از دست رفته؛ ساخت این اعتماد زمان‌بر است و با هیچ کمپین تبلیغاتی نمی‌توان از آن عبور کرد.</li>
+    <li><strong>پیشینه شکست‌های مشابه:</strong> Humane و Rabbit نشان دادند قانع‌کردن کاربر به «حمل دستگاه دوم» دشوارترین بخش ماجراست؛ چرمِ کلیدبندی این ریسک را کم می‌کند اما حذف نمی‌کند.</li>
+    <li><strong>فشار مالی:</strong> بخش Reality Labs متا فقط در فصل گذشته بیش از ۴ میلیارد دلار زیان داده و زیان امسال تا ۱۹ میلیارد دلار پیش‌بینی می‌شود؛ اگر Muse Charm فروش کند، ممکن است فرصت کافی برای رشد پیدا نکند.</li>
+  </ol>
+
+  <p>
+    در مقابل، یک برگ برنده بزرگ هم دارد: متا ابزارهای ساخت گجت‌های Muse را متن‌باز کرده است؛ یعنی اکوسیستم توسعه‌دهندگان می‌تواند مدت‌ها قبل از موفقیت تجاری رسمی، ارزش این سکو را چند برابر کند — همان الگویی که در <a href="/fa/blog/why-managers-employees-must-learn-ai-beyond-content-creation" class="text-sky-700 underline font-semibold">ایجنت‌های سازمانی</a> دیده‌ایم: سکو برنده می‌شود، نه فقط یک محصول.
+  </p>
+
+
+  <!-- Section 7 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">جمع‌بندی: آیا Muse Charm موفق می‌شود؟</h2>
+
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    Muse Charm دقیقاً هم‌زمان با بلوغ فناوری ایجنت‌ها وارد بازار می‌شود و برخلاف رقبا، فرمی آشنا و قیمتی معقول‌تر دارد؛ اما موفقیت آن به دو شرط بسته است: عرضه واقعی در تعطیلات ۲۰۲۶ و قانع‌کردن کاربران که ۳۰۰ دلار به‌علاوه هزینه اتصال، در برابر یک دستیار همیشه‌در‌جیب می‌ارزد.
+  </p>
+
+  <p>
+    اگر ایجنت Muse بتواند در روز نخستِ استفاده، یک خرید واقعی را کامل کند یا یک رزرو را سر بگذارد، فرمول برد شکست‌خوردگان قبلی پیدا شده است. اگر نه، Muse Charm به فهرست طولانی «گجت‌های هوش مصنوعی جذاب اما بی‌کاربرد» می‌پیوندد — همان فهرستی که این سال‌ها با <a href="/fa/blog/iran-future-of-artificial-intelligence" class="text-sky-700 underline font-semibold">نوسانات صنعت هوش مصنوعی</a> پر شده است.
+  </p>
+
+  <h3 class="text-lg font-bold text-slate-900 mt-6 mb-3">پرسش‌های پرتکرار جست‌وجوی صوتی درباره Muse Charm</h3>
+
+  <div class="bg-sky-50 border border-sky-200 rounded-xl p-5 space-y-4">
+    <div>
+      <p class="font-bold text-sky-900 mb-1">مصرف‌کننده: «میتونی بگم Muse Charm چند دلاره؟»</p>
+      <p class="text-sm text-slate-700">طبق گزارش The Information، ۳۰۰ دلار؛ شاید هم با یک سال ۵G رایگان ورایزن — اما متا هنوز رسماً تأیید نکرده است.</p>
+    </div>
+    <div>
+      <p class="font-bold text-sky-900 mb-1">مصرف‌کننده: «میتونی بگم Muse Charm با گوشی کار می‌کنه یا بی‌گوشی؟»</p>
+      <p class="text-sm text-slate-700">بی‌گوشی؛ مودم ۵G داخلی دارد و با لمس حسگر اثر انگشت فعال می‌شود، اما از خود دستگاه نمی‌توان تماس گرفت.</p>
+    </div>
+    <div>
+      <p class="font-bold text-sky-900 mb-1">مصرف‌کننده: «میتونی بگم Muse Charm کی میاد؟»</p>
+      <p class="text-sm text-slate-700">زاکربرگ گفته امیدوارند در فصل تعطیلات ۲۰۲۶ برسد؛ صفحه رسمی متا فعلاً فقط ثبت‌نام برای اطلاع‌رسانی است.</p>
+    </div>
+    <div>
+      <p class="font-bold text-sky-900 mb-1">مصرف‌کننده: «میتونی بگم Muse Charm ارزش خرید داره؟»</p>
+      <p class="text-sm text-slate-700">به میزان استفاده واقعی از ایجنت Muse بستگی دارد؛ برای خرید، رزرو سفر و تماس با کسب‌وکارها طراحی شده و ارزان‌تر از Humane AI Pin است — ولی هنوز عرضه نشده تا آزمون واقعی را پس بدهد.</p>
+    </div>
+  </div>
+
+  <!-- CTA 2 (Mid-content) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">می‌خواهید یک ایجنت هوش مصنوعی برای فرایندهای کسب‌وکار خودتان بسازید؟</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      مشاوره طراحی ایجنت هوش مصنوعی
+    </a>
+  </div>
+
+
+  <!-- CTA 3 (Final) -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">آینده ایجنت‌ها را از حالا برای کسب‌وکارتان بسازید</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      شروع همکاری با دیجی نورون
+    </a>
+  </div>
+
+  <!-- FAQ (HTML) -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">سوالات متداول درباره Muse Charm و قیمت آن</h2>
+
+  <div class="space-y-4">
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+      <h3 class="font-bold text-slate-900 mb-2">Muse Charm چیست؟</h3>
+      <p class="text-sm text-slate-700">گجت کلیدبندی متا برای دسترسی فوری به ایجنت هوش مصنوعی Muse است: حسگر اثر انگشت را لمس می‌کنید و گفت‌وگو شروع می‌شود. صفحه‌نمایش ۲ اینچی و مودم ۵G داخلی دارد و از خود دستگاه نمی‌توان تماس گرفت؛ یعنی یک دستگاه همراه است، نه جایگزین گوشی.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+      <h3 class="font-bold text-slate-900 mb-2">قیمت Muse Charm چند است و چه زمانی عرضه می‌شود؟</h3>
+      <p class="text-sm text-slate-700">طبق گزارش The Information، ۳۰۰ دلار — احتمالاً با بسته‌ای شامل تا یک سال اینترنت ۵G ورایزن؛ اما متا قیمت و تاریخ را رسماً تأیید نکرده است. هدف اعلام‌شده زاکربرگ در سپتامبر ۲۰۲۶، عرضه در فصل تعطیلات بود.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+      <h3 class="font-bold text-slate-900 mb-2">ایجنت Muse چه کارهایی می‌کند؟</h3>
+      <p class="text-sm text-slate-700">خرید آنلاین، رزرو سفر و تماس تلفنی با کسب‌وکارها (قابلیت تماس فعلاً برای مشترکان پرداخت‌کننده در آمریکا)؛ متا ابزارهای ساخت گجت‌های Muse شخصی را هم متن‌باز کرده است.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+      <h3 class="font-bold text-slate-900 mb-2">آیا گجت‌های هوش مصنوعی جیبی جای گوشی‌ها را می‌گیرند؟</h3>
+      <p class="text-sm text-slate-700">خیر؛ Muse Charm اصلاً نمی‌تواند تماس بگیرد و از همان ابتدا به‌عنوان نقطه دسترسی دو‌ثانیه‌ای به یک ایجنت هوش مصنوعی طراحی شده است. الگوی واقع‌بینانه، دستگاهِ همراه در کنار گوشی است — همان‌طور که عینک Ray-Ban متا در کنار گوشی کار می‌کند.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+      <h3 class="font-bold text-slate-900 mb-2">چرا گجت‌های قبلی مثل Humane AI Pin شکست خوردند؟</h3>
+      <p class="text-sm text-slate-700">قیمت بالا، ارزش مبهم و فرم ناآشنا؛ Humane با AI Pin ۶۹۹ دلاری خود شکست خورد و به HP فروخته شد و Rabbit R1 هم کار سختی داشت. شرط‌بندی متا این است که فرم آشنا (یک کلیدبندی) به‌علاوه یک ایجنت واقعاً کاربردی، این الگو را می‌شکند.</p>
+    </div>
+  </div>
+
+
+  <!-- Author Box -->
+  <div class="p-6 bg-slate-900 text-white rounded-2xl shadow-lg border border-slate-800">
+    <div class="flex flex-col sm:flex-row items-center gap-5">
+      <div class="w-16 h-16 rounded-full bg-sky-500/20 border-2 border-sky-400 flex items-center justify-center text-sky-300 font-bold text-xl shrink-0">
+        DN
+      </div>
+      <div class="text-center sm:text-right space-y-2">
+        <h4 class="text-lg font-bold text-white">درباره نویسنده و مرجعیت محتوا:</h4>
+        <p class="text-sm text-sky-300 font-semibold">
+          گروه تخصصی دیجی نورون — بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی
+        </p>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          گروه تخصصی دیجی نورون، متشکل از اعضای هیئت‌علمی دانشگاه و مهندسان داده صنعت، با بیش از ۵ سال سابقه اجرای پروژه‌های هوش مصنوعی، این تحلیل را بر پایه گزارش The Information درباره قیمت Muse Charm (نوامبر ۲۰۲۶)، اعلامیه معرفی زاکربرگ در سپتامبر ۲۰۲۶ و اطلاعات عمومی منتشرشده درباره ایجنت Muse و عملکرد Reality Labs متا تدوین کرده است.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-xs text-slate-400 text-center">تصویر جلد: تصویر تولیدشده دیجی نورون؛ منبع خبری: گزارش The Information و صفحه رسمی متا.</p>
+</div>`,
+    category: "trends",
+    categoryName: "روندها و اخبار AI",
+    author: {
+      name: "گروه تخصصی دیجی نورون",
+      role: "بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی",
+      avatar: "/images/instructors/karimi.jpg"
+    },
+    date: "۲ آذر ۱۴۰۵",
+    readTime: "۱۳ دقیقه",
+    image: "/images/blog/meta-muse-charm.jpg",
+    featured: true,
+    tags: [
+      "هوش مصنوعی",
+      "متا",
+      "Muse Charm",
+      "ایجنت‌های هوش مصنوعی",
+      "گجت‌های پوشیدنی",
+      "دستیار صوتی",
+      "Meta AI"
+    ],
+    faq: [
+      {
+        question: "Muse Charm چیست؟",
+        answer: "گجت کلیدبندی متا برای دسترسی فوری به ایجنت هوش مصنوعی Muse است: حسگر اثر انگشت را لمس می‌کنید و گفت‌وگو شروع می‌شود. صفحه‌نمایش ۲ اینچی و مودم ۵G داخلی دارد و از خود دستگاه نمی‌توان تماس گرفت؛ یعنی یک دستگاه همراه است، نه جایگزین گوشی."
+      },
+      {
+        question: "قیمت Muse Charm چند است و چه زمانی عرضه می‌شود؟",
+        answer: "طبق گزارش The Information، ۳۰۰ دلار — احتمالاً با بسته‌ای شامل تا یک سال اینترنت ۵G ورایزن؛ اما متا قیمت و تاریخ را رسماً تأیید نکرده است. هدف اعلام‌شده زاکربرگ در سپتامبر ۲۰۲۶، عرضه در فصل تعطیلات بود."
+      },
+      {
+        question: "ایجنت Muse چه کارهایی می‌کند؟",
+        answer: "خرید آنلاین، رزرو سفر و تماس تلفنی با کسب‌وکارها (قابلیت تماس فعلاً برای مشترکان پرداخت‌کننده در آمریکا)؛ متا ابزارهای ساخت گجت‌های Muse شخصی را هم متن‌باز کرده است."
+      },
+      {
+        question: "آیا گجت‌های هوش مصنوعی جیبی جای گوشی‌ها را می‌گیرند؟",
+        answer: "خیر؛ Muse Charm اصلاً نمی‌تواند تماس بگیرد و از همان ابتدا به‌عنوان نقطه دسترسی دو‌ثانیه‌ای به یک ایجنت هوش مصنوعی طراحی شده است. الگوی واقع‌بینانه، دستگاهِ همراه در کنار گوشی است — همان‌طور که عینک Ray-Ban متا در کنار گوشی کار می‌کند."
+      },
+      {
+        question: "چرا گجت‌های قبلی مثل Humane AI Pin شکست خوردند؟",
+        answer: "قیمت بالا، ارزش مبهم و فرم ناآشنا؛ Humane با AI Pin ۶۹۹ دلاری خود شکست خورد و به HP فروخته شد و Rabbit R1 هم کار سختی داشت. شرط‌بندی متا این است که فرم آشنا (یک کلیدبندی) به‌علاوه یک ایجنت واقعاً کاربردی، این الگو را می‌شکند."
+      }
+    ]
+  },
+  {
     id: "28",
     slug: "watch-duty-gemini-wildfire-alerts",
     title: "هوش مصنوعی در میدان آتش؛ چگونه Watch Duty با Gemini هشدار حریق جنگل را به زیر ۳۰ ثانیه رساند؟",
