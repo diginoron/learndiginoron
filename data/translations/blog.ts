@@ -30,6 +30,7 @@ import { googleAiGiantKelpTranslation } from "./blog/googleAiGiantKelp";
 import { watchDutyGeminiWildfireTranslation } from "./blog/watchDutyGeminiWildfire";
 import { metaMuseCharmTranslation } from "./blog/metaMuseCharm";
 import { googleFakeInternetTranslation } from "./blog/googleFakeInternet";
+import { executiveAiTrainingForManagersTranslation } from "./blog/executiveAiTrainingForManagers";
 
 export interface BlogTranslation {
   title: string;
@@ -72,6 +73,7 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "watch-duty-gemini-wildfire-alerts": watchDutyGeminiWildfireTranslation,
   "meta-muse-charm-300-ai-gadget": metaMuseCharmTranslation,
   "google-fake-internet-chrome-ai-agents": googleFakeInternetTranslation,
+  "executive-ai-training-for-managers": executiveAiTrainingForManagersTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
