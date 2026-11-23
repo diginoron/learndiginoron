@@ -21,6 +21,205 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "32",
+    slug: "google-gemini-gif-generation",
+    title: "ساخت GIF با جمنای؛ گوگل چگونه با مدل Omni 1.2 Flash انیمیشن‌سازی را برای همه ساده کرد؟",
+    excerpt: "گوگل به جمنای قابلیت ساخت GIF اضافه کرده است: با مدل ویدیویی Omni 1.2 Flash، از روی متن، عکس یا ویدیو، انیمیشن‌های حلقه‌ای حدود ۳ ثانیه‌ای بسازید. آموزش گام‌به‌گام، شرایط دسترسی رایگان و کاربرد آن برای برندها.",
+    content: `<div class="space-y-8 text-slate-800 leading-relaxed">
+
+  <!-- Hero Answer -->
+  <div class="p-6 bg-gradient-to-br from-sky-50 to-indigo-50 border border-sky-200 rounded-2xl shadow-sm">
+    <h3 class="text-lg font-bold text-sky-900 mb-2">پاسخ سریع:</h3>
+    <p class="text-sm text-slate-700 leading-relaxed font-medium">
+      <strong>دیگر لازم نیست دنبال GIF مناسب بگردید؛ جمنای حالا خودش آن را می‌سازد.</strong> طبق گزارش Digital Trends (نوامبر ۲۰۲۶)، گوگل قابلیت ساخت GIF را با مدل ویدیویی Gemini Omni 1.2 Flash به جمنای اضافه کرده است: کافی است انیمیشن موردنظر را با متن توصیف کنید یا از عکس و ویدیوی خودتان به‌عنوان مرجع استفاده کنید. خروجی، حلقه‌ای حدود ۳ ثانیه‌ای است که به‌صورت فایل استاندارد gif. دانلود می‌شود یا مستقیم در پیام‌ها و ایمیل جاگذاری می‌شود. کاربران اشتراک Google AI به‌صورت سراسری و کاربران رایگان در ۸ کشور به آن دسترسی دارند.
+    </p>
+  </div>
+
+  <!-- CTA 1 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">می‌خواهید ابزارهای جدید هوش مصنوعی را حرفه‌ای و کاربردی یاد بگیرید؟ تیم مشاوره دیجی نورون راهنمای شماست.</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تخصصی و سفارش
+    </a>
+  </div>
+
+  <!-- Section 1 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">جمنای حالا GIF می‌سازد؛ یعنی دقیقاً چه خبر است؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    گوگل به جمنای قابلیت ساخت GIF اضافه کرده است: به‌جای جست‌وجوی طولانی در کتابخانه‌های GIF برای یافتن واکنش مناسب، حالا کافی است انیمیشن دلخواه را با متن توصیف کنید تا در چند ثانیه ساخته شود. این قابلیت با مدل ویدیویی Gemini Omni 1.2 Flash کار می‌کند و از متن، عکس و ویدیو به‌عنوان ورودی پشتیبانی می‌کند.
+  </p>
+  <p>
+    طبق گزارش <a href="https://www.digitaltrends.com/cool-tech/google-gemini-ai-gif-generation/" target="_blank" rel="noopener noreferrer" class="text-sky-700 underline font-semibold">Digital Trends</a>، این قابلیت ۲۰ نوامبر ۲۰۲۶ از طریق حساب رسمی Gemini اعلام شد: «سلام بر GIFها در جمنای؛ خداحافظ جست‌وجوی GIF مناسب.» گوگل با این حرکت به رقبایی مثل ChatGPT می‌پیوندد که پیش‌تر امکان ساخت GIF را در اختیار کاربران گذاشته بودند؛ حالا هر دو غول هوش مصنوعی این قابلیت روزمره را ارائه می‌دهند.
+  </p>
+
+  <!-- Section 2 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">مدل Omni 1.2 Flash زیر هود چه می‌کند؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    موتور این قابلیت، مدل ویدیویی Gemini Omni 1.2 Flash است؛ مدلی که برای حرکت روان و کیفیت یکنواخت در تمام فریم‌ها بهینه شده است. خروجی‌ها حلقه‌های حدوداً ۳ ثانیه‌ای هستند که به‌صورت خودکار تکرار می‌شوند و برای همین در قالب استاندارد GIF بدون افت تجربه پخش می‌شوند.
+  </p>
+  <p>
+    نکته مهم برای کاربران عادی این است که نیازی به دانش فنی نیست؛ مدل به‌طور خودکار تداوم حرکت بین فریم‌ها را حفظ می‌کند تا حلقه هنگام تکرار «پرش» نداشته باشد. این ادامه روندی است که در پوشش‌های <a href="/fa/blog/introducing-gemini-4-neon" class="text-sky-700 underline font-semibold">معرفی Gemini 4 Neon</a> و <a href="/fa/blog/google-fake-internet-chrome-ai-agents" class="text-sky-700 underline font-semibold">ایجنت‌های هوشمند کروم</a> هم دیده‌ایم: مدل‌های ویدیویی از ابزار متخصص به قابلیت روزمره تبدیل می‌شوند.
+  </p>
+
+  <!-- Section 3 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">چگونه در چند ثانیه GIF بسازیم؟ آموزش گام‌به‌گام</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    دو راه دارید: ساده‌ترین راه این است که در چت اصلی جمنای بنویسید چه انیمیشنی می‌خواهید؛ راه دوم این است که ابزار ساخت تصویر و ویدیو را باز کنید، از انتخابگر فرمت گزینه GIF را انتخاب و پرامپت دقیق‌تری وارد کنید. برای نتیجه شخصی‌تر، عکس یا ویدیوی خودتان را به‌عنوان مرجع آپلود کنید.
+  </p>
+  <p>خلاصه مراحل:</p>
+  <ul class="list-disc pr-6 space-y-2 text-slate-700">
+    <li><strong>توصیف با متن:</strong> انیمیشن موردنظر را در چت جمنای بنویسید؛ مثلاً «یک گربه که با قهوه پشت لپ‌تاپ نشسته و به دوربین چشمک می‌زند».</li>
+    <li><strong>انتخاب فرمت GIF:</strong> در ابزار ساخت تصویر و ویدیو، GIF را از انتخابگر فرمت انتخاب کنید.</li>
+    <li><strong>استفاده از قالب‌های آماده:</strong> برای میم‌ها و واکنش‌های پرکاربرد، قالب‌های آماده وجود دارد تا سریع‌تر به نتیجه برسید.</li>
+    <li><strong>مرجع شخصی:</strong> عکس یا ویدیوی خودتان را آپلود کنید تا خروجی با سبک و چهره دلخواه شما ساخته شود.</li>
+    <li><strong>دریافت خروجی:</strong> GIF آماده را کپی و در اپلیکیشن‌های پشتیبانی‌شده جاگذاری کنید، یا فایل استاندارد gif. را دانلود و در پیام، ایمیل و اسناد استفاده کنید.</li>
+  </ul>
+
+  <!-- Section 4 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">چه کسانی الان می‌توانند از ساخت GIF استفاده کنند؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    قابلیت ساخت GIF برای مشترکان Google AI به‌صورت سراسری در حال فعال‌سازی است و کاربران رایگان در ۸ کشور آمریکا، کانادا، بریتانیا، استرالیا، ژاپن، کره جنوبی، آلمان و فرانسه هم به آن دسترسی دارند. انتشار تدریجی است؛ یعنی حتی کاربران واجد شرایط ممکن است قابلیت را با تأخیر ببینند.
+  </p>
+  <p>
+    یک نکته ظریف که Digital Trends اشاره کرده: مستندات راهنمای جمنای در زمان نوشتن گزارش هنوز اشتراک Google AI را شرط دسترسی فهرست می‌کرد، در حالی که اعلامیه گوگل دسترسی رایگان در آن ۸ بازار را تأیید کرده بود. پس اگر قابلیت را ندیدید، چند روز صبر کنید و نسخه اپ را به‌روز نگه دارید؛ وضعیت دسترسی به‌سرعت در حال تغییر است.
+  </p>
+
+  <!-- Section 5 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">مقایسه: کتابخانه‌های GIF در برابر ساخت GIF با هوش مصنوعی</h2>
+  <p>
+    تفاوت رویکرد قدیمی و جدید را در این جدول ببینید:
+  </p>
+  <div class="overflow-x-auto my-4">
+    <table class="w-full text-sm border border-slate-200 rounded-xl">
+      <thead>
+        <tr class="bg-slate-100 text-slate-900">
+          <th class="p-3 text-right font-bold border-b border-slate-200">معیار</th>
+          <th class="p-3 text-right font-bold border-b border-slate-200">جست‌وجو در کتابخانه GIF</th>
+          <th class="p-3 text-right font-bold border-b border-slate-200">ساخت با جمنای (Omni 1.2 Flash)</th>
+        </tr>
+      </thead>
+      <tbody class="text-slate-700">
+        <tr><td class="p-3 border-b border-slate-100 font-medium">زمان</td><td class="p-3 border-b border-slate-100">چند دقیقه جست‌وجو و مرور</td><td class="p-3 border-b border-slate-100">چند ثانیه</td></tr>
+        <tr><td class="p-3 border-b border-slate-100 font-medium">دقت انطباق با منظور</td><td class="p-3 border-b border-slate-100">نزدیک‌ترین گزینه موجود</td><td class="p-3 border-b border-slate-100">دقیقاً همان که توصیف کرده‌اید</td></tr>
+        <tr><td class="p-3 border-b border-slate-100 font-medium">شخصی‌سازی</td><td class="p-3 border-b border-slate-100">تقریباً هیچ</td><td class="p-3 border-b border-slate-100">عکس و ویدیوی شما به‌عنوان مرجع</td></tr>
+        <tr><td class="p-3 border-b border-slate-100 font-medium">اصالت محتوا</td><td class="p-3 border-b border-slate-100">GIF تکراری و همه‌جا منتشرشده</td><td class="p-3 border-b border-slate-100">خروجی یکتا برای شما</td></tr>
+        <tr><td class="p-3 font-medium">هزینه</td><td class="p-3">رایگان</td><td class="p-3">رایگان در ۸ کشور؛ اشتراک در سایر بازارها</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA 2 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">ابزارهای خلاقانه هوش مصنوعی فقط سرگرمی نیستند؛ ابزار کار تیم شما هستند. برای آموزش تیم خود با دیجی نورون در تماس باشید.</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تخصصی و سفارش
+    </a>
+  </div>
+
+  <!-- Section 6 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">۵ اشتباه رایج در ساخت GIF با هوش مصنوعی</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    ساخت GIF با جمنای ساده است، اما کیفیت خروجی مستقیماً به نحوه استفاده از شما بستگی دارد. این پنج اشتباه رایج را بشناسید تا از اولین تلاش به نتیجه برسید: پرامپت مبهم، انتظار ویدیوی طولانی، ندیدن محدودیت جغرافیایی، رها کردن بدون بازبینی و بی‌توجهی به حق استفاده تجاری.
+  </p>
+  <ul class="list-disc pr-6 space-y-2 text-slate-700">
+    <li><strong>پرامپت مبهم:</strong> «یک انیمیشن خفن بساز» نتیجه تصادفی می‌دهد؛ سوژه، حرکت و حال‌وهوا را دقیق توصیف کنید.</li>
+    <li><strong>انتظار ویدیوی بلند:</strong> خروجی GIF حدود ۳ ثانیه است؛ برای روایت طولانی‌تر، این ابزار مناسب نیست.</li>
+    <li><strong>ندیدن محدودیت دسترسی:</strong> دسترسی رایگان فعلاً محدود به ۸ کشور است؛ در سایر بازارها اشتراک Google AI لازم است.</li>
+    <li><strong>استفاده بدون بازبینی:</strong> حرکت روان تضمین شده است، اما منطق صحنه (دست‌ها، متن، چهره) را قبل از انتشار چک کنید.</li>
+    <li><strong>بی‌توجهی به قوانین:</strong> برای استفاده تجاری و برند، شرایط استفاده گوگل و حقوق محتوای مرجع (عکس/ویدیوی آپلودی) را رعایت کنید.</li>
+  </ul>
+
+  <!-- Voice Search -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پاسخ به پرسش‌های جست‌وجوی صوتی</h2>
+  <div class="space-y-4 text-slate-700">
+    <p><strong>جمنای می‌تواند GIF بسازد؟</strong><br>بله؛ از نوامبر ۲۰۲۶ جمنای با مدل ویدیویی Omni 1.2 Flash می‌تواند از روی متن، عکس یا ویدیو، GIF حلقه‌ای حدود ۳ ثانیه‌ای بسازد.</p>
+    <p><strong>ساخت GIF در جمنای چقدر طول می‌کشد؟</strong><br>چند ثانیه؛ خروجی به‌صورت خودکار حلقه می‌شود و قابل کپی یا دانلود به‌صورت فایل استاندارد gif. است.</p>
+    <p><strong>آیا ساخت GIF جمنای رایگان است؟</strong><br>برای مشترکان Google AI سراسری و برای کاربران رایگان در ۸ کشور از جمله آمریکا، بریتانیا، ژاپن و آلمان بله؛ انتشار تدریجی است.</p>
+    <p><strong>بهترین روش ساخت GIF با هوش مصنوعی چیست؟</strong><br>در چت جمنای صحنه را دقیق توصیف کنید یا از قالب‌های آماده و مرجع شخصی (عکس/ویدیو) استفاده کنید؛ سپس خروجی را بازبینی و دانلود کنید.</p>
+  </div>
+
+  <!-- Section 7 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">ساخت GIF با هوش مصنوعی برای برندها چه معنایی دارد؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    وقتی ساخت انیمیشن چندثانیه‌ای رایگان و در چند ثانیه شود، واکنش‌های بصری به دارایی بازاریابی تبدیل می‌شوند: تیم‌های محتوا می‌توانند برای هر کمپین، GIF اختصاصی بسازند به‌جای اینکه مثل همه از همان GIF‌های تکراری استفاده کنند. نکته کلیدی، سرعت است؛ سرعتی که قبلاً فقط با تیم طراحی ممکن بود.
+  </p>
+  <p>
+    در دیجی نورون این را یک تغییر الگو می‌دانیم، نه یک قابلیت تازه: وقتی هزینه تولید محتوای بصری تقریباً صفر شود، مزیت رقابتی به «ایده و انتخاب» منتقل می‌شود؛ یعنی به کسی که می‌داند چه چیزی را برای چه مخاطبی بسازد. همین مهارت است که در دوره‌های آموزش هوش مصنوعی ما به کارآموزان منتقل می‌شود؛ برای دیدن پروژه‌های واقعی ما به <a href="/fa/services/enterprise-ai" class="text-sky-700 underline font-semibold">خدمات هوشمندسازی سازمانی دیجی نورون</a> سر بزنید.
+  </p>
+
+  <!-- CTA 3 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">برای آموزش تیم محتوا و بازاریابی خود با جدیدترین ابزارهای هوش مصنوعی، همین حالا با ما در تماس باشید.</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تخصصی و سفارش
+    </a>
+  </div>
+
+  <!-- FAQ -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">سوالات متداول</h2>
+  <div class="space-y-4 text-slate-700">
+    <p><strong>چگونه با جمنای GIF بسازیم؟</strong><br>در چت اصلی جمنای انیمیشن موردنظر را با متن توصیف کنید، یا ابزار ساخت تصویر و ویدیو را باز کنید، از انتخابگر فرمت گزینه GIF را انتخاب و پرامپت خود را وارد کنید. همچنین می‌توانید عکس یا ویدیوی خودتان را به‌عنوان مرجع آپلود کنید.</p>
+    <p><strong>ساخت GIF در جمنای رایگان است؟</strong><br>این قابلیت برای مشترکان Google AI به‌صورت سراسری فعال است و کاربران رایگان در ۸ کشور آمریکا، کانادا، بریتانیا، استرالیا، ژاپن، کره جنوبی، آلمان و فرانسه به آن دسترسی دارند. انتشار تدریجی است، پس حتی کاربران واجد شرایط ممکن است آن را با تأخیر ببینند.</p>
+    <p><strong>GIF‌های ساخته‌شده با جمنای چند ثانیه هستند؟</strong><br>حدود ۳ ثانیه؛ خروجی به‌صورت خودکار حلقه می‌شود و می‌توانید آن را در اپلیکیشن‌های پشتیبانی‌شده کپی-پیست کنید یا به‌صورت فایل استاندارد gif. دانلود و در پیام، ایمیل و اسناد استفاده کنید.</p>
+    <p><strong>مدل Omni 1.2 Flash چیست؟</strong><br>مدل ویدیویی گوگل برای ساخت GIF در جمنای است که برای حرکت روان و کیفیت یکنواخت در همه فریم‌ها بهینه شده است؛ ورودی آن می‌تواند متن، عکس یا ویدیو باشد.</p>
+    <p><strong>آیا ChatGPT هم GIF می‌سازد؟</strong><br>بله؛ ChatGPT پیش‌تر امکان ساخت GIF را ارائه کرده بود و گوگل حالا با Gemini Omni 1.2 Flash به این میدان پیوسته است. نتیجه این رقابت، دسترسی رایگان‌تر و سریع‌تر کاربران به ابزارهای خلاقانه است.</p>
+  </div>
+
+  <!-- Author Box -->
+  <div class="p-6 bg-gradient-to-br from-sky-50 to-indigo-50 border border-sky-200 rounded-2xl shadow-sm mt-8">
+    <div class="flex items-center gap-4">
+      <img src="/images/instructors/karimi.jpg" alt="گروه تخصصی دیجی نورون" class="w-14 h-14 rounded-full object-cover" />
+      <div>
+        <h3 class="text-base font-bold text-slate-900">گروه تخصصی دیجی نورون</h3>
+        <p class="text-sm text-slate-600">بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی</p>
+      </div>
+    </div>
+    <p class="text-sm text-slate-700 leading-relaxed mt-4">
+      گروه تخصصی دیجی نورون با تجربه اجرای پروژه‌های هوش مصنوعی سازمانی، مقالات و دوره‌هایی را برای رشد دانش دیجیتال مدیران، کارکنان و علاقه‌مندان تهیه می‌کند.
+    </p>
+  </div>
+
+
+
+
+
+</div>`,
+    category: "trends",
+    categoryName: "روندها و اخبار AI",
+    author: {
+      name: "گروه تخصصی دیجی نورون",
+      role: "بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی",
+      avatar: "/images/instructors/karimi.jpg"
+    },
+    date: "۳ آذر ۱۴۰۵",
+    readTime: "۱۳ دقیقه",
+    image: "/images/blog/gemini-gif-generation.jpg",
+    featured: true,
+    tags: ["جمنای", "گوگل", "ساخت GIF با هوش مصنوعی", "Gemini Omni 1.2 Flash", "روندهای هوش مصنوعی", "دیجی نورون"],
+    faq: [
+      {
+        "question": "چگونه با جمنای GIF بسازیم؟",
+        "answer": "در چت اصلی جمنای انیمیشن موردنظر را با متن توصیف کنید، یا ابزار ساخت تصویر و ویدیو را باز کنید، از انتخابگر فرمت گزینه GIF را انتخاب و پرامپت خود را وارد کنید. همچنین می‌توانید عکس یا ویدیوی خودتان را به‌عنوان مرجع آپلود کنید."
+      },
+      {
+        "question": "ساخت GIF در جمنای رایگان است؟",
+        "answer": "این قابلیت برای مشترکان Google AI به‌صورت سراسری فعال است و کاربران رایگان در ۸ کشور آمریکا، کانادا، بریتانیا، استرالیا، ژاپن، کره جنوبی، آلمان و فرانسه به آن دسترسی دارند. انتشار تدریجی است، پس حتی کاربران واجد شرایط ممکن است آن را با تأخیر ببینند."
+      },
+      {
+        "question": "GIF‌های ساخته‌شده با جمنای چند ثانیه هستند؟",
+        "answer": "حدود ۳ ثانیه؛ خروجی به‌صورت خودکار حلقه می‌شود و می‌توانید آن را در اپلیکیشن‌های پشتیبانی‌شده کپی-پیست کنید یا به‌صورت فایل استاندارد gif. دانلود و در پیام، ایمیل و اسناد استفاده کنید."
+      },
+      {
+        "question": "مدل Omni 1.2 Flash چیست؟",
+        "answer": "مدل ویدیویی گوگل برای ساخت GIF در جمنای است که برای حرکت روان و کیفیت یکنواخت در همه فریم‌ها بهینه شده است؛ ورودی آن می‌تواند متن، عکس یا ویدیو باشد."
+      },
+      {
+        "question": "آیا ChatGPT هم GIF می‌سازد؟",
+        "answer": "بله؛ ChatGPT پیش‌تر امکان ساخت GIF را ارائه کرده بود و گوگل حالا با Gemini Omni 1.2 Flash به این میدان پیوسته است. نتیجه این رقابت، دسترسی رایگان‌تر و سریع‌تر کاربران به ابزارهای خلاقانه است."
+      }
+    ]
+  },
+  {
     id: "31",
     slug: "executive-ai-training-for-managers",
     title: "تله هوش مصنوعی؛ چرا رهبران سازمانی باید پیش از شکست پروژه‌ها آموزش هوش مصنوعی ببینند؟",

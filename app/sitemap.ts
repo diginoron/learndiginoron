@@ -37,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       post.slug === "ai-extinction-warnings-and-risks" ||
       post.slug === "smart-organization-ai-2026" ||
       post.slug === "executive-ai-training-for-managers" ||
+      post.slug === "google-gemini-gif-generation" ||
       post.slug === "why-managers-employees-must-learn-ai-beyond-content-creation" ||
       post.slug === "why-teach-kids-ai-entrepreneurship-not-ai-engineering" ||
       post.slug === "enterprise-ai-transformation-diginoron-model" ||
