@@ -32,6 +32,7 @@ import { metaMuseCharmTranslation } from "./blog/metaMuseCharm";
 import { googleFakeInternetTranslation } from "./blog/googleFakeInternet";
 import { executiveAiTrainingForManagersTranslation } from "./blog/executiveAiTrainingForManagers";
 import { geminiGifGenerationTranslation } from "./blog/geminiGifGeneration";
+import { amazonBuysDecartTranslation } from "./blog/amazonBuysDecart";
 
 export interface BlogTranslation {
   title: string;
@@ -76,9 +77,11 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "google-fake-internet-chrome-ai-agents": googleFakeInternetTranslation,
   "executive-ai-training-for-managers": executiveAiTrainingForManagersTranslation,
   "google-gemini-gif-generation": geminiGifGenerationTranslation,
+  "amazon-buys-decart-ai-chip-software": amazonBuysDecartTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
+  "۴ آذر ۱۴۰۵": { en: "November 25, 2026", fa: "۴ آذر ۱۴۰۵", ar: "٢٥ نوفمبر ٢٠٢٦" },
   "۳ آذر ۱۴۰۵": { en: "November 24, 2026", fa: "۳ آذر ۱۴۰۵", ar: "٢٤ نوفمبر ٢٠٢٦" },
   "۲ آذر ۱۴۰۵": { en: "November 23, 2026", fa: "۲ آذر ۱۴۰۵", ar: "٢٣ نوفمبر ٢٠٢٦" },
   "۱ آذر ۱۴۰۵": { en: "November 22, 2026", fa: "۱ آذر ۱۴۰۵", ar: "٢٢ نوفمبر ٢٠٢٦" },
