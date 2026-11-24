@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       post.slug === "google-gemini-gif-generation" ||
       post.slug === "amazon-buys-decart-ai-chip-software" ||
       post.slug === "anthropic-siren-honeypot-ai-agents" ||
+      post.slug === "jensen-huang-nvidia-apology" ||
       post.slug === "why-managers-employees-must-learn-ai-beyond-content-creation" ||
       post.slug === "why-teach-kids-ai-entrepreneurship-not-ai-engineering" ||
       post.slug === "enterprise-ai-transformation-diginoron-model" ||

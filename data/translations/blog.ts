@@ -34,6 +34,7 @@ import { executiveAiTrainingForManagersTranslation } from "./blog/executiveAiTra
 import { geminiGifGenerationTranslation } from "./blog/geminiGifGeneration";
 import { amazonBuysDecartTranslation } from "./blog/amazonBuysDecart";
 import { anthropicSirenHoneypotTranslation } from "./blog/anthropicSirenHoneypot";
+import { jensenHuangNvidiaApologyTranslation } from "./blog/jensenHuangNvidiaApology";
 
 export interface BlogTranslation {
   title: string;
@@ -80,6 +81,7 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "google-gemini-gif-generation": geminiGifGenerationTranslation,
   "amazon-buys-decart-ai-chip-software": amazonBuysDecartTranslation,
   "anthropic-siren-honeypot-ai-agents": anthropicSirenHoneypotTranslation,
+  "jensen-huang-nvidia-apology": jensenHuangNvidiaApologyTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
