@@ -35,6 +35,7 @@ import { geminiGifGenerationTranslation } from "./blog/geminiGifGeneration";
 import { amazonBuysDecartTranslation } from "./blog/amazonBuysDecart";
 import { anthropicSirenHoneypotTranslation } from "./blog/anthropicSirenHoneypot";
 import { jensenHuangNvidiaApologyTranslation } from "./blog/jensenHuangNvidiaApology";
+import { amazonAiToysChildSafetyTranslation } from "./blog/AmazonAiToysChildSafety";
 
 export interface BlogTranslation {
   title: string;
@@ -82,9 +83,11 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "amazon-buys-decart-ai-chip-software": amazonBuysDecartTranslation,
   "anthropic-siren-honeypot-ai-agents": anthropicSirenHoneypotTranslation,
   "jensen-huang-nvidia-apology": jensenHuangNvidiaApologyTranslation,
+  "amazon-ai-toys-child-safety": amazonAiToysChildSafetyTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
+  "۵ آذر ۱۴۰۵": { en: "November 26, 2026", fa: "۵ آذر ۱۴۰۵", ar: "٢٦ نوفمبر ٢٠٢٦" },
   "۴ آذر ۱۴۰۵": { en: "November 25, 2026", fa: "۴ آذر ۱۴۰۵", ar: "٢٥ نوفمبر ٢٠٢٦" },
   "۳ آذر ۱۴۰۵": { en: "November 24, 2026", fa: "۳ آذر ۱۴۰۵", ar: "٢٤ نوفمبر ٢٠٢٦" },
   "۲ آذر ۱۴۰۵": { en: "November 23, 2026", fa: "۲ آذر ۱۴۰۵", ar: "٢٣ نوفمبر ٢٠٢٦" },
