@@ -39,6 +39,7 @@ import { amazonAiToysChildSafetyTranslation } from "./blog/AmazonAiToysChildSafe
 import { geminiAndroidAutoTranslation } from "./blog/GeminiAndroidAuto";
 import { aiMarketingVsBackOfficeTranslation } from "./blog/AiMarketingVsBackOffice";
 import { xpengIronHumanoidRobotTranslation } from "./blog/XpengIronHumanoidRobot";
+import { aiSkillsGapWorkersTranslation } from "./blog/AiSkillsGapWorkers";
 
 export interface BlogTranslation {
   title: string;
@@ -90,9 +91,11 @@ export const BLOG_TRANSLATIONS: Record<string, Record<Locale, Partial<BlogTransl
   "gemini-android-auto-features": geminiAndroidAutoTranslation,
   "ai-marketing-vs-back-office-roi": aiMarketingVsBackOfficeTranslation,
   "xpeng-iron-humanoid-robot-home": xpengIronHumanoidRobotTranslation,
+  "ai-skills-gap-workers": aiSkillsGapWorkersTranslation,
 };
 
 export const BLOG_DATE_TRANSLATIONS: Record<string, Record<Locale, string>> = {
+  "۸ آذر ۱۴۰۵": { en: "November 29, 2026", fa: "۸ آذر ۱۴۰۵", ar: "٢٩ نوفمبر ٢٠٢٦" },
   "۶ آذر ۱۴۰۵": { en: "November 27, 2026", fa: "۶ آذر ۱۴۰۵", ar: "٢٧ نوفمبر ٢٠٢٦" },
   "۷ آذر ۱۴۰۵": { en: "November 28, 2026", fa: "۷ آذر ۱۴۰۵", ar: "٢٨ نوفمبر ٢٠٢٦" },
   "۵ آذر ۱۴۰۵": { en: "November 26, 2026", fa: "۵ آذر ۱۴۰۵", ar: "٢٦ نوفمبر ٢٠٢٦" },

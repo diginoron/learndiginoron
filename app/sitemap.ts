@@ -45,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   post.slug === "gemini-android-auto-features" ||
       post.slug === "ai-marketing-vs-back-office-roi" ||
       post.slug === "xpeng-iron-humanoid-robot-home" ||
+      post.slug === "ai-skills-gap-workers" ||
       post.slug === "why-managers-employees-must-learn-ai-beyond-content-creation" ||
       post.slug === "why-teach-kids-ai-entrepreneurship-not-ai-engineering" ||
       post.slug === "enterprise-ai-transformation-diginoron-model" ||
