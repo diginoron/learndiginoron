@@ -21,6 +21,519 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: "39",
+    slug: "xpeng-iron-humanoid-robot-home",
+    title: "ربات انسان‌نمای XPeng IRON؛ ربات خانگی با قیمت یک خودروی برقی",
+    excerpt: "شرکت چینی XPeng می‌گوید ربات انسان‌نمای IRON با قیمتی در حد یک خودروی برقی معمول از سال ۲۰۲۷ به فروش عمومی می‌رسد؛ اول در فروشگاه‌ها، بعد صنعت و در نهایت خانه‌ها.",
+    content: `<div class="space-y-8 text-slate-800 leading-relaxed">
+
+  <!-- Hero Answer -->
+  <div class="p-6 bg-gradient-to-br from-sky-50 to-indigo-50 border border-sky-200 rounded-2xl shadow-sm">
+    <h3 class="text-lg font-bold text-sky-900 mb-2">پاسخ سریع:</h3>
+    <p class="text-sm text-slate-700 leading-relaxed font-medium">
+      <strong>شرکت چینی XPeng (سازنده خودروهای برقی) می‌گوید ربات انسان‌نمای IRON با قیمتی تقریباً برابر با قیمت میانه یک خودروی برقی، از سال ۲۰۲۷ وارد فروش عمومی می‌شود.</strong> به گزارش <a href="https://www.digitaltrends.com/cool-tech/xpeng-iron-humanoid-robot-ev-price-home/" target="_blank" rel="noopener noreferrer" class="text-sky-700 underline font-semibold">Digital Trends (۲۶ نوامبر ۲۰۲۶)</a>، نایب‌رئیس XPeng برایان گو به Bloomberg گفته است ربات ابتدا از سه‌ماهه اول ۲۰۲۷ به‌عنوان دستیار فروش در فروشگاه‌های XPeng آموزش می‌بیند و در سه‌ماهه دوم عرضه عمومی می‌شود؛ هدف هم فروش «ده‌ها هزار» ربات انسان‌نما در همان سال است. استفاده خانگی اما هنوز دورتر است: یک تا دو سال بعد از موفقیت در محیط‌های تجاری.
+    </p>
+  </div>
+
+  <!-- CTA 1 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">هوش مصنوعی فقط در نرم‌افزار نیست؛ دارد به دنیای فیزیکی هم می‌آید. برای آماده‌سازی سازمان یا فرزندانتان برای این آینده، با متخصصان دیجی نورون مشورت کنید.</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تخصصی و سفارش
+    </a>
+  </div>
+
+  <!-- Section 1 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">ربات انسان‌نمای IRON چیست و چقدر قرار است قیمت داشته باشد؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    IRON ربات انسان‌نمای شرکت XPeng است؛ سازنده‌ای که بیشتر به‌واسطه خودروهای برقی‌اش می‌شناسیم. برایان گو، نایب‌رئیس شرکت، به Bloomberg گفته قیمت IRON هنگام عرضه عمومی تقریباً برابر با «قیمت میانه فروش خودروهای برقی» خواهد بود — رقم دقیق هنوز اعلام نشده، اما پیام روشن است: ربات انسان‌نما می‌خواهد از قفسه کالای لوکس خارج شود.
+  </p>
+  <p>
+    این جمله یک نقطه عطف است، چون تا امروز ربات‌های انسان‌نما یا پروژه‌های آزمایشگاهی بودند یا با قیمت‌های نجومی به شرکت‌ها فروخته می‌شدند. وقتی سازنده‌ای که تجربه تولید انبوه خودرو دارد، «قیمت یک خودرو» را معیار می‌گذارد، یعنی هدفش بازار انبوه است، نه چند صد واحد برای نمایشگاه‌ها. XPeng حتی در رویداد AI Day خود (۲۵ نوامبر ۲۰۲۶) فیلمی کوتاه با عنوان ORIGIN منتشر کرد که مفهوم «هوش مصنوعی فیزیکی» را روایت می‌کند: هوشی که خانه طبیعی‌اش دنیای واقعی انسان‌هاست.
+  </p>
+
+  <!-- Section 2 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">IRON چه توانایی‌هایی دارد؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    طبق مشخصات اعلامی، IRON دارای ۷۶ درجه آزادی حرکتی، بیش از ۱۵۰۰ نقطه حس‌گر لامسی و سه چیپ هوش مصنوعی «Turing» ساخت خودِ XPeng است که مدل‌های onboard و کنترل کل بدن را اجرا می‌کنند. این ربات به‌طور خودکار ناوبری می‌کند، با صدا یا اپ به او کار محول می‌شود، خودش به نقطه شارژ برمی‌گردد و سلامت عملیاتی خودش را پایش می‌کند.
+  </p>
+  <p>
+    این چهار قابلیت اخیر دقیقاً همان چیزی است که یک «ربات کارمند» را از یک عروسک نمایشی جدا می‌کند: ناوبری خودکار یعنی بدون نقشه‌برداری دستی در محیط حرکت می‌کند؛ دریافت کار با صدا یا اپ یعنی کاربر غیرفنی هم می‌تواند با او کار کند؛ شارژ خودکار یعنی برای شیفت کاری کامل آماده است؛ و پایش سلامت یعنی خرابی قبل از آنکه به خط تولید یا سالن فروش آسیب بزند، گزارش می‌شود. در واقع همان منطق اتوماسیون فرآیندها را می‌بینید که این‌بار به دنیای فیزیکی منتقل شده است — همان رویکردی که ما در <a href="/fa/services/enterprise-ai" class="text-sky-700 underline font-semibold">هوشمندسازی سازمانی</a> روی فرآیندهای نرم‌افزاری اجرا می‌کنیم.
+  </p>
+
+  <!-- Section 3 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">در AI Day چه گذشت؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    XPeng در رویداد AI Day (۲۵ نوامبر ۲۰۲۶) آخرین نسخه ربات IRON را به صحنه برد و این ربات به سوالات حاضران به‌صورت زنده پاسخ داد — نه با یک ویدیوی بازپخش‌شده، بلکه با اجرای واقعی روی صحنه. این شرکت می‌گوید IRON قرار است در سال ۲۰۲۷ «ده‌ها هزار» دستگاه به فروش برسد.
+  </p>
+  <p>
+    پاسخ زنده به سوالات، آزمون سختی است؛ چون تأخیر پردازش، درک زبان طبیعی و کنترل حرکتی هم‌زمان روی صحنه سنجیده می‌شود. توییترهای منتشرشده از رویداد نشان می‌دهد شرکت با اعتماد به‌نفس این نمایش را انجام داده و هم‌زمان فیلم ORIGIN را با محوریت «هوش مصنوعی فیزیکی» منتشر کرده است. البته بین یک نمایش موفق روی صحنه و کار روزمره مطمئن در یک فروشگاه شلوغ فاصله هست — و برنامه عرضه XPeng دقیقاً برای عبور از همین فاصله طراحی شده است.
+  </p>
+
+  <!-- Section 4 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">برنامه عرضه: اول فروشگاه‌ها، بعد صنعت، در نهایت خانه‌ها</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    XPeng رویکردی مرحله‌ای دارد: IRON از سه‌ماهه اول ۲۰۲۷ در فروشگاه‌های خود شرکت به‌عنوان دستیار فروش آموزش می‌بیند، در سه‌ماهه دوم عرضه عمومی می‌شود و پس از موفقیت در محیط‌های تجاری و صنعتی، سراغ خانه‌ها می‌رود. استقرار خانگی طبق گفته گو، یک تا دو سال بعد از موفقیت تجاری آغاز می‌شود.
+  </p>
+  <p>
+    چرا این ترتیب منطقی است؟ چون فروشگاه XPeng محیطی کنترل‌شده اما واقعی است: مشتری واقعی، سوال واقعی و خطای واقعی — محیطی امن‌تر از خانه برای یادگیری. چالش‌های مرحله خانگی هم را خود شرکت صریح گفته است: ایمنی در کنار کودکان، سالمندان و حیوانات خانگی. یعنی «ربات هم‌اتاقیِ» شما هنوز چند سال از خانه شما فاصله دارد و وعده‌های رویا پردازانه‌ای که ربات را امسال پشت در خانه‌تان نشان می‌دهند، با برنامه رسمی سازنده هم‌خوان نیست.
+  </p>
+
+  <!-- Section 5 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">مدل درآمدی: فقط پول خرید ربات نیست</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    XPeng صریحاً گفته درآمد فراتر از فروش سخت‌افزار را هم می‌بیند: اشتراک نرم‌افزار، ارتقاها، آموزش و خدمات می‌توانند درآمد تکرارشونده بسازند. یعنی ربات ممکن است مثل خودروهای برقی و گوشی‌ها، «تله اشتراک» خودش را داشته باشد.
+  </p>
+  <p>
+    برای خریدار خانگی و سازمانی این یعنی هزینه مالکیت را باید فراتر از برچسب قیمت محاسبه کرد: ماهانه چه مبلغی برای قابلیت‌های هوشمند پرداخت می‌کنید؟ کدام قابلیت‌ها بدون اشتراک از کار می‌افتند؟ این الگو در خودروهای برقی (پرداخت برای شتاب یا برد بیشتر) و گج‌های هوشمند دیده‌ایم و حالا به ربات‌های انسان‌نما می‌رسد. مشاوره‌ای که ما در دیجی نورون به سازمان‌ها می‌دهیم همین است: قبل از تحسین قیمت پایه، کل چرخه هزینه را حساب کنید — همان کاری که در انتخاب ابزارهای هوش مصنوعی سازمانی هم باید انجام شود.
+  </p>
+
+  <!-- Section 6 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">چرا «قیمت یک خودرو» یک معیار مهم است؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    چون اولین بار نیست که یک شرکت فناوری درباره قیمت ربات انسان‌نما حرف می‌زند، اما یکی از اولین بارهاست که یک سازنده با تجربه تولید انبوه، معیار قیمت را به سبد خرید خانواده‌ها وصل می‌کند: هر کسی که توان خرید یک خودروی برقی معمول را دارد، از نظر XPeng خریدار بالقوه ربات است.
+  </p>
+  <p>
+    این یعنی بازار هدف IRON از «بنگاه‌های بزرگ» به «مکان‌های تجاری و سپس خانوارها» گسترده می‌شود و مقایسه ذهنی مردم از ربات انسان‌نما عوض می‌شود: نه یک جعبه علمی-تخیلی، بلکه یک لوازم‌خانگی بزرگ و گران‌قیمت مثل ماشین. البته فراموش نکنیم این هنوز یک «هدف قیمت» اعلام‌شده است، نه برچسب فروشگاهی؛ تحقق آن به مقیاس تولید، هزینه اجزا و رقابت بستگی دارد. کسانی که تاریخ فناوری را دیده‌اند می‌دانند وعده قیمت، ابزار بازاریابی هم هست — ارزیابی متعادل‌تر را در ادامه ببینید.
+  </p>
+
+  <!-- Comparison Table -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">مسیر IRON تا خانه شما: جدول مقایسه فازها</h2>
+  <div class="overflow-x-auto my-6">
+    <table class="min-w-full border border-slate-300 text-sm">
+      <thead class="bg-slate-100">
+        <tr>
+          <th class="border border-slate-300 px-4 py-2 text-right">فاز</th>
+          <th class="border border-slate-300 px-4 py-2 text-right">زمان تقریبی</th>
+          <th class="border border-slate-300 px-4 py-2 text-right">محل استفاده</th>
+          <th class="border border-slate-300 px-4 py-2 text-right">چالش اصلی</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-300 px-4 py-2 font-semibold">۱. آموزش در فروشگاه</td>
+          <td class="border border-slate-300 px-4 py-2">سه‌ماهه اول ۲۰۲۷</td>
+          <td class="border border-slate-300 px-4 py-2">فروشگاه‌های XPeng</td>
+          <td class="border border-slate-300 px-4 py-2">کار با مشتری واقعی در محیط واقعی</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-300 px-4 py-2 font-semibold">۲. عرضه عمومی</td>
+          <td class="border border-slate-300 px-4 py-2">سه‌ماهه دوم ۲۰۲۷</td>
+          <td class="border border-slate-300 px-4 py-2">محیط‌های تجاری</td>
+          <td class="border border-slate-300 px-4 py-2">رسیدن به «ده‌ها هزار» دستگاه فروش</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-300 px-4 py-2 font-semibold">۳. کاربردهای صنعتی</td>
+          <td class="border border-slate-300 px-4 py-2">پس از موفقیت تجاری</td>
+          <td class="border border-slate-300 px-4 py-2">کارخانه و عملیات</td>
+          <td class="border border-slate-300 px-4 py-2">قابلیت اطمینان در محیط پیچیده</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-300 px-4 py-2 font-semibold">۴. استقرار خانگی</td>
+          <td class="border border-slate-300 px-4 py-2">۱ تا ۲ سال بعد از تجاری</td>
+          <td class="border border-slate-300 px-4 py-2">خانه‌ها</td>
+          <td class="border border-slate-300 px-4 py-2">ایمنی کودکان، سالمندان و حیوانات خانگی</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Section 7 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">این خبر برای خانواده‌ها و کسب‌وکارها چه معنایی دارد؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    برای کسب‌وکارها: نوبت‌گیری برای ربات‌های همکار در نقاط تماس مشتری از ۲۰۲۷ شروع می‌شود و سازمان‌هایی که فرآیندهایشان از قبل هوشمند و مستند است، زودتر این فناوری را جذب می‌کنند. برای خانواده‌ها: نسل کودکان امروز با «هوش مصنوعی فیزیکی» کار خواهد کرد؛ آموختن هوش مصنوعی از سنین پایین دیگر یک مزیت نیست، سواد پایه است.
+  </p>
+  <p>
+    پیام پنهان خبر XPeng برای مخاطب غیرفنی ساده است: موج بعدی هوش مصنوعی بدن دارد. همان‌طور که دستیارهای صوتی در ده سال گذشته به گوشی‌ها آمدند، دوازده سال آینده شاهد ورود فرم‌های فیزیکی هوش مصنوعی به فروشگاه‌ها، کارخانه‌ها و خانه‌ها خواهیم بود. کسی که امروز در <a href="/fa/services/kids-and-teens" class="text-sky-700 underline font-semibold">دوره‌های هوش مصنوعی کودکان و نوجوانان</a> شروع کرده، در آن بازار کارِ جدید طراح و کارفرما خواهد بود، نه کاربر سردرگم. برای یک نمونه مشابه از ورود هوش مصنوعی به زندگی روزمره، مقاله ما درباره <a href="/fa/blog/meta-muse-charm-300-ai-gadget" class="text-sky-700 underline font-semibold">گج هوش مصنوعی Meta Muse Charm</a> را بخوانید.
+  </p>
+
+  <!-- CTA 2 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0fdf4 0%, #e6f7ef 100%); border-radius: 12px; border: 1px solid #c6e9d4;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #14532d;">برنامه هوشمندسازی سازمان شما یا مسیر یادگیری فرزندتان را با متخصصان دیجی نورون طراحی کنید.</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #059669; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(5,150,105,0.25);">
+      دریافت مشاوره تخصصی و سفارش
+    </a>
+  </div>
+
+  <!-- Pitfalls -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">۵ دام رایج در قضاوت درباره ربات‌های انسان‌نما</h2>
+  <div class="space-y-4">
+    <div class="p-4 bg-red-50 border-r-4 border-red-500 rounded-xl">
+      <p class="font-bold text-red-900 mb-1">دام ۱: خرید زمان‌بندی رسانه‌ای به‌جای زمان‌بندی رسمی</p>
+      <p class="text-sm text-slate-700">تیتر «۲۰۲۷» به معنای حضور ربات در خانه شما نیست؛ XPeng خودش گفته خانه‌ها یک تا دو سال بعد از موفقیت تجاری وارد برنامه می‌شوند. همیشه فاز آخر نقشه راه را بخوانید، نه فقط عدد سال را.</p>
+    </div>
+    <div class="p-4 bg-red-50 border-r-4 border-red-500 rounded-xl">
+      <p class="font-bold text-red-900 mb-1">دام ۲: فراموش‌کردن هزینه اشتراک</p>
+      <p class="text-sm text-slate-700">XPeng به درآمد تکرارشونده از اشتراک نرم‌افزار، ارتقا و خدمات صریحاً اشاره کرده است. قیمت پایه فقط بخشی از هزینه مالکیت است؛ ماهانه پرداختنی را هم در محاسبه بیاورید.</p>
+    </div>
+    <div class="p-4 bg-red-50 border-r-4 border-red-500 rounded-xl">
+      <p class="font-bold text-red-900 mb-1">دام ۳: برابر گرفتن دموی صحنه با آمادگی واقعی</p>
+      <p class="text-sm text-slate-700">پاسخ‌دادن زنده به چند سوال روی صحنه با کار روزمره در یک فروشگاه شلوغ یا خانه فاصله زیادی دارد. دموها نمایش قابلیت‌اند، نه تضمین پایداری. معیار را عملکرد در محیط واقعی بگذارید.</p>
+    </div>
+    <div class="p-4 bg-red-50 border-r-4 border-red-500 rounded-xl">
+      <p class="font-bold text-red-900 mb-1">دام ۴: غافل شدن از چالش‌های ایمنی واقعی</p>
+      <p class="text-sm text-slate-700">خود XPeng ایمنی در کنار کودکان، سالمندان و حیوانات خانگی را چالش پیش از استقرار خانگی می‌داند. رباتی که کنار خانواده شما کار می‌کند، استانداردهای ایمنی سخت‌گیرانه‌تری از ربات نمایشگاهی می‌خواهد.</p>
+    </div>
+    <div class="p-4 bg-red-50 border-r-4 border-red-500 rounded-xl">
+      <p class="font-bold text-red-900 mb-1">دام ۵: «قیمت یک خودرو» را برچسب نهایی حساب کردن</p>
+      <p class="text-sm text-slate-700">قیمت اعلام‌شده یک هدف است («قیمت میانه خودروهای برقی»)، نه رقم نهایی؛ رقم دقیق اعلام نشده و به بازار و مقیاس تولید وابسته است. تصمیم خرید را به زمان و قیمت رسمی گره بزنید، نه به تیترها.</p>
+    </div>
+  </div>
+
+  <!-- Voice Search Q&A -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پرسش‌های پرتکرار کاربران (جستجوی صوتی)</h2>
+  <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 space-y-4">
+    <p><strong>ربات XPeng IRON چقدر قیمت دارد؟</strong><br>قیمت قطعی اعلام نشده؛ طبق گفته نایب‌رئیس XPeng به Bloomberg، تقریباً برابر با قیمت میانه فروش خودروهای برقی خواهد بود — یعنی در حد هزینه یک خودروی برقی معمول.</p>
+    <p><strong>ربات انسان‌نمای IRON چه زمانی به فروش می‌رسد؟</strong><br>از سه‌ماهه اول ۲۰۲۷ در فروشگاه‌های XPeng آموزش می‌بیند و از سه‌ماهه دوم ۲۰۲۷ عرضه عمومی می‌شود؛ استقرار خانگی یک تا دو سال پس از موفقیت تجاری.</p>
+    <p><strong>ربات IRON چه کارهایی می‌تواند بکند؟</strong><br>با ۷۶ درجه آزادی حرکتی، ۱۵۰۰+ نقطه حس‌گر لامسی و سه چیپ Turing، خودش ناوبری می‌کند، با صدا یا اپ به او کار می‌دهید، خودش شارژ می‌شود و سلامت عملیاتی‌اش را پایش می‌کند.</p>
+    <p><strong>آیا ربات‌های انسان‌نما برای کودکان امن هستند؟</strong><br>هنوز زود است؛ XPeng ایمنی کنار کودکان، سالمندان و حیوانات خانگی را چالش مرحله خانگی می‌داند که یک تا دو سال بعد از استقرار تجاری بررسی می‌شود.</p>
+  </div>
+
+  <!-- CTA 3 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f5f0ff 0%, #ede6fa 100%); border-radius: 12px; border: 1px solid #d9ccf5;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #3b0764;">دنیای «هوش مصنوعی فیزیکی» در راه است — سازمان و خانواده‌تان را برای آن با دیجی نورون آماده کنید.</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #7c3aed; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(124,58,237,0.25);">
+      دریافت مشاوره تخصصی و سفارش
+    </a>
+  </div>
+
+  <!-- FAQ -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">سوالات متداول</h2>
+  <div class="space-y-4">
+    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+      <h3 class="font-bold text-slate-900 mb-2">ربات XPeng IRON چقدر قیمت دارد؟</h3>
+      <p class="text-sm text-slate-700">قیمت قطعی اعلام نشده است؛ نایب‌رئیس XPeng برایان گو به Bloomberg گفته که قیمت IRON تقریباً برابر با قیمت میانه فروش خودروهای برقی خواهد بود — یعنی در حد هزینه یک خودروی برقی معمول، نه یک کالای لوکس آزمایشگاهی.</p>
+    </div>
+    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+      <h3 class="font-bold text-slate-900 mb-2">ربات انسان‌نمای IRON چه زمانی به فروش می‌رسد؟</h3>
+      <p class="text-sm text-slate-700">IRON از سه‌ماهه اول ۲۰۲۷ به‌عنوان دستیار فروش در فروشگاه‌های XPeng آموزش می‌بیند و از سه‌ماهه دوم ۲۰۲۷ عرضه عمومی می‌شود؛ استفاده خانگی یک تا دو سال بعد از موفقیت در محیط‌های تجاری آغاز خواهد شد.</p>
+    </div>
+    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+      <h3 class="font-bold text-slate-900 mb-2">ربات IRON چه کارهایی می‌تواند بکند؟</h3>
+      <p class="text-sm text-slate-700">XPeng می‌گوید IRON با ۷۶ درجه آزادی حرکتی، بیش از ۱۵۰۰ نقطه حس‌گر لامسی و سه چیپ Turing ساخته خودش، به‌طور خودکار ناوبری می‌کند، با صدا یا اپ به او کار محول می‌شود، خودش شارژ می‌شود و سلامت عملیاتی خودش را پایش می‌کند.</p>
+    </div>
+    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+      <h3 class="font-bold text-slate-900 mb-2">آیا ربات‌های انسان‌نما برای خانه و کودکان امن هستند؟</h3>
+      <p class="text-sm text-slate-700">هنوز زود است. خود XPeng ایمنی در کنار کودکان، سالمندان و حیوانات خانگی را از چالش‌های پیش از استقرار خانگی می‌داند و عرضه خانگی را یک تا دو سال پس از موفقیت تجاری برنامه‌ریزی کرده است.</p>
+    </div>
+    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+      <h3 class="font-bold text-slate-900 mb-2">XPeng چند ربات انسان‌نما می‌خواهد بسازد؟</h3>
+      <p class="text-sm text-slate-700">هدف اعلامی XPeng فروش «ده‌ها هزار» ربات انسان‌نما در سال ۲۰۲۷ است؛ سالی که آزمون جدی بودن بلندپروازی رباتیک این شرکت، فراتر از نمایش‌های پرزرق‌وبرق، به شمار می‌رود.</p>
+    </div>
+  </div>
+
+  <!-- Author Box -->
+  <div class="p-6 bg-gradient-to-br from-sky-50 to-indigo-50 border border-sky-200 rounded-2xl shadow-sm mt-8">
+    <div class="flex items-center gap-4">
+      <img src="/images/instructors/karimi.jpg" alt="گروه تخصصی دیجی نورون" class="w-14 h-14 rounded-full object-cover" />
+      <div>
+        <h3 class="text-base font-bold text-slate-900">گروه تخصصی دیجی نورون</h3>
+        <p class="text-sm text-slate-600">بیش از ۵ سال سابقه در پروژه‌های هوش مصنوعی</p>
+      </div>
+    </div>
+    <p class="text-sm text-slate-700 leading-relaxed mt-4">
+      گروه تخصصی دیجی نورون با تکیه بر پروژه‌های واقعی هوش مصنوعی در صنایع مختلف، مقالات و دوره‌هایی تولید می‌کند که مهارت‌های دیجیتال مدیران، کارکنان و علاقه‌مندان را ارتقا می‌دهد.
+    </p>
+    <div class="mt-5 p-4 bg-white/70 border border-sky-200 rounded-xl">
+      <img src="/images/blog/diginoron-logo.png" alt="لوگوی گروه تخصصی دیجی نورون" class="w-full max-w-md mx-auto rounded-lg" />
+    </div>
+  </div>
+</div>`,
+    faq: [
+      {
+        "question": "ربات XPeng IRON چقدر قیمت دارد؟",
+        "answer": "قیمت قطعی اعلام نشده است؛ نایب‌رئیس XPeng برایان گو به Bloomberg گفته که قیمت IRON تقریباً برابر با قیمت میانه فروش خودروهای برقی خواهد بود — یعنی در حد هزینه یک خودروی برقی معمول، نه یک کالای لوکس آزمایشگاهی."
+      },
+      {
+        "question": "ربات انسان‌نمای IRON چه زمانی به فروش می‌رسد؟",
+        "answer": "IRON از سه‌ماهه اول ۲۰۲۷ به‌عنوان دستیار فروش در فروشگاه‌های XPeng آموزش می‌بیند و از سه‌ماهه دوم ۲۰۲۷ عرضه عمومی می‌شود؛ استفاده خانگی یک تا دو سال بعد از موفقیت در محیط‌های تجاری آغاز خواهد شد."
+      },
+      {
+        "question": "ربات IRON چه کارهایی می‌تواند بکند؟",
+        "answer": "XPeng می‌گوید IRON با ۷۶ درجه آزادی حرکتی، بیش از ۱۵۰۰ نقطه حس‌گر لامسی و سه چیپ Turing ساخته خودش، به‌طور خودکار ناوبری می‌کند، با صدا یا اپ به او کار محول می‌شود، خودش شارژ می‌شود و سلامت عملیاتی خودش را پایش می‌کند."
+      },
+      {
+        "question": "آیا ربات‌های انسان‌نما برای خانه و کودکان امن هستند؟",
+        "answer": "هنوز زود است. خود XPeng ایمنی در کنار کودکان، سالمندان و حیوانات خانگی را از چالش‌های پیش از استقرار خانگی می‌داند و عرضه خانگی را یک تا دو سال پس از موفقیت تجاری برنامه‌ریزی کرده است."
+      },
+      {
+        "question": "XPeng چند ربات انسان‌نما می‌خواهد بسازد؟",
+        "answer": "هدف اعلامی XPeng فروش «ده‌ها هزار» ربات انسان‌نما در سال ۲۰۲۷ است؛ سالی که آزمون جدی بودن بلندپروازی رباتیک این شرکت، فراتر از نمایش‌های پرزرق‌وبرق، به شمار می‌رود."
+      }
+    ]
+    ,
+    category: "trends",
+    categoryName: "روندها و اخبار AI",
+    author: {
+      name: "گروه تخصصی دیجی نورون",
+      role: "بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی",
+      avatar: "/images/instructors/karimi.jpg",
+    },
+    date: "۷ آذر ۱۴۰۵",
+    readTime: "۱۳ دقیقه",
+    image: "/images/blog/xpeng-iron-humanoid-robot.jpg",
+    featured: true,
+    tags: ["ربات انسان‌نما", "XPeng", "هوش مصنوعی فیزیکی", "ربات خانگی", "رباتیک", "روندهای AI", "دیجی نورون"],
+  },
+
+  {
+    id: "38",
+    slug: "ai-marketing-vs-back-office-roi",
+    title: "هوش مصنوعی در بازاریابی یا پشت‌صحنه سازمان؟ چرا مدیران اولویت اشتباه را انتخاب می‌کنند",
+    excerpt: "بیش از نیمی از بودجه هوش مصنوعی سازمان‌ها به بازاریابی و فروش می‌رود؛ اما گزارش MIT می‌گوید بزرگ‌ترین بازگشت سرمایه در اتوماسیون فرآیندهای مالی و اداری پشت‌صحنه است.",
+    content: `<div class="space-y-8 text-slate-800 leading-relaxed">
+
+  <!-- Hero Answer -->
+  <div class="p-6 bg-gradient-to-br from-sky-50 to-indigo-50 border border-sky-200 rounded-2xl shadow-sm">
+    <h3 class="text-lg font-bold text-sky-900 mb-2">پاسخ سریع:</h3>
+    <p class="text-sm text-slate-700 leading-relaxed font-medium">
+      <strong>بیش از نیمی از بودجه هوش مصنوعی سازمان‌ها صرف ابزارهای بازاریابی و فروش می‌شود، اما گزارش MIT («GenAI Divide: State of AI in Business 2025») نشان می‌دهد بزرگ‌ترین بازگشت سرمایه در اتوماسیون فرآیندهای پشت‌صحنه — مالی، اداری و عملیات تکراری — به دست آمده است؛ همان بخشی که برایش هیچ اسلاید جذابی به هیئت‌مدیره ارائه نمی‌شود.</strong> طبق این گزارش (۱۵۰ مصاحبه با مدیران، نظرسنجی از ۳۵۰ کارمند و تحلیل ۳۰۰ پیاده‌سازی عمومی هوش مصنوعی)، حدود ۹۵٪ پروژه‌های هوش مصنوعی مولد سازمان‌ها هیچ تأثیر قابل اندازه‌گیری بر سود و زیان نداشته‌اند. چرا؟ چون گزارشِ بازاریابی «شیرین‌تر» است و هیئت‌مدیره را جلب می‌کند، در حالی که بهینه‌سازی فرآیندهای داخلیِ تکراری خسته‌کننده اما آبراه پولِ سازمان است.
+    </p>
+  </div>
+
+  <!-- CTA 1 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-radius: 12px; border: 1px solid #d0e3f7;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #1a365d;">می‌خواهید بدانید هوش مصنوعی در کدام فرآیند سازمان شما بیشترین بازگشت سرمایه را دارد؟ با متخصصان دیجی نورون مشورت کنید.</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #0066cc; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,102,204,0.25);">
+      دریافت مشاوره تخصصی و سفارش
+    </a>
+  </div>
+
+  <!-- Section 1 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">گزارش MIT سال ۲۰۲۵ چه می‌گوید؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    گزارش «The GenAI Divide: State of AI in Business 2025» از ابتکار NANDA در MIT Media Lab می‌گوید حدود ۹۵٪ سازمان‌ها از سرمایه‌گذاری روی هوش مصنوعی مولد بازده مالیِ قابل اندازه‌گیری نگرفته‌اند و فقط حدود ۵٪ به جهش سریع درآمد رسیده‌اند. ریشه مشکل هم کیفیت مدل‌ها نیست؛ «شکاف یادگیری» سازمان‌ها و تخصیص اشتباه منابع است.
+  </p>
+  <p>
+    طبق گزارش که <a href="https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/" target="_blank" rel="noopener noreferrer" class="text-sky-700 underline font-semibold">Fortune</a> آن را تحلیل کرد، بیش از نیمی از بودجه هوش مصنوعی مولد شرکت‌ها به ابزارهای فروش و بازاریابی اختصاص یافته، در حالی که پژوهشگران MIT بزرگ‌ترین ROI را در اتوماسیون پشت‌صحنه یافتند: حذف برون‌سپاری فرآیندهای کسب‌وکار (BPO)، کاهش هزینه آژانس‌های بیرونی و ساده‌سازی عملیات. یک یافته کاربردی دیگر هم دارد: خرید ابزار از فروشندگان متخصص و شراکت حدود ۶۷٪ اوقات موفق است، در حالی که نرخ موفقیت ساخت داخلی تقریباً یک‌سوم آن است. جزئیات کامل در <a href="https://nanda.media.mit.edu/" target="_blank" rel="noopener noreferrer" class="text-sky-700 underline font-semibold">صفحه پروژه NANDA در MIT</a> منتشر شده است.
+  </p>
+
+  <!-- Section 2 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">چرا بازاریابی همیشه برنده تقسیم بودجه است؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    گزارش‌های بازاریابی «شیرین» است: داشبورد رنگارنگ، تعداد بازدید، درصدهای رشد کمپین و داستان‌های قابل ارائه در جلسه هیئت‌مدیره. فرآیند مالی یا اداری‌ای که دوازده ساعت کار دستی را حذف کرده، اسلاید جذابی ندارد؛ به همین دلیل اولویت دومِ مدیران می‌شود.
+  </p>
+  <p>
+    این یک سوگیری شناختی کلاسیک است: نتایجِ قابل‌نمایش جای نتایجِ قابل‌حساب را می‌گیرند. بازاریابی خروجی زودهنگام و «هیجان‌انگیز» تولید می‌کند — متن تبلیغ، ویدیو، کمپین — اما واحدهای مالی و اداری با فرآیندهای تکراری سروکار دارند که بازده‌شان در قالب ساعت‌های صرفه‌جویی‌شده، خطاهای کاهش‌یافته و چرخه‌های کوتاه‌تر پرداخت ظاهر می‌شود؛ اعدادی که کمتر کسی برایشان اسلاید می‌سازد، اما دقیقاً همان چیزهایی است که صورت سود و زیان را تغییر می‌دهد. مدیرانی که می‌خواهند این توازن را درک کنند، می‌توانند مقاله ما درباره <a href="/fa/blog/why-managers-employees-must-learn-ai-beyond-content-creation" class="text-sky-700 underline font-semibold">یادگیری هوش مصنوعی فراتر از تولید محتوا</a> را بخوانند.
+  </p>
+
+  <!-- Section 3 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پشت‌صحنه سازمان دقیقاً کدام فرآیندهاست؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    پشت‌صحنه یعنی فرآیندهای تکراری و قاعده‌مندِ مالی، اداری و عملیاتی: پردازش فاکتور و مغایرت‌گیری بانکی، جریان‌های مکاتبات و تأییدیه‌ها، گزارش‌سازی دوره‌ای، بایگانی و بازیابی اسناد، و پاسخ به درخواست‌های تکراری داخلی و مشتریان. همین فرآیندهای «کم‌جاه» هستند که پژوهشگران MIT بیشترین بازگشت سرمایه را در آن‌ها دیدند.
+  </p>
+  <p>
+    چرا این فرآیندها «طلایی»اند؟ چون سه ویژگی مشترک دارند: حجم بالا، قاعده‌مندی و خروجی قابل اندازه‌گیری. وقتی یک ایجنت هوش مصنوعی پردازش فاکتورهای ورودی را از یک نفر-روز در هفته به چند دقیقه می‌رساند، صرفه‌جویی مستقیماً در هزینه هر تراکنش دیده می‌شود — نه در یک نمودار بازدید که بعد از کمپین سقوط می‌کند. دو محور اصلی بازدهی در گزارش MIT هم همین بود: حذف برون‌سپاری فرآیندهای کسب‌وکار (BPO) و کاهش هزینه آژانس‌ها و پیمانکارهای بیرونی. سازمانی که این لایه را هوشمند کند، ساختار هزینه‌اش برای همیشه عوض می‌شود؛ همان کاری که ما در <a href="/fa/services/enterprise-ai" class="text-sky-700 underline font-semibold">خدمات هوشمندسازی سازمانی دیجی نورون</a> از فاز نقشه‌برداری فرآیندها شروع می‌کنیم، نه از خرید ابزار.
+  </p>
+
+  <!-- Section 4 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">خرید یا ساخت؟ درس الگوی موفقیت ۶۷ درصدی</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    یکی از کاربردی‌ترین یافته‌های گزارش MIT این است: خرید ابزار از فروشندگان متخصص و شراکت حدود ۶۷٪ اوقات موفق است، در حالی که نرخ موفقیت ساخت داخلی تقریباً یک‌سوم آن است. پیام برای مدیران روشن است: پروژه‌های پشت‌صحنه را با شراکت شروع کنید، نه با تیم داخلیِ تازه‌تأسیس.
+  </p>
+  <p>
+    منطق پشت این عدد ساده است: فروشندگان متخصص صد‌ها پیاده‌سازی مشابه را دیده‌اند و دام‌های رایج — کیفیت داده، یکپارچگی با سیستم‌های قدیمی، مقاومت کارکنان — را از قبل تجربه کرده‌اند؛ تیم داخلی اما این مسیر را از صفر طی می‌کند. این به معنای کنارگذاشتن تیم‌های داخلی نیست؛ به معنای ترتیب درست است: اول با شراکت یک برد سریع و قابل اندازه‌گیری بسازید، بعد دانش را به داخل منتقل کنید. مدیرانی که می‌خواهند نقش رهبری را در این مسیر عمیق‌تر بفهمند، مقاله <a href="/fa/blog/executive-ai-training-for-managers" class="text-sky-700 underline font-semibold">آموزش هوش مصنوعی برای رهبران سازمانی</a> ما را بخوانند.
+  </p>
+
+  <!-- Section 5 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">یعنی بازاریابی را کجا هوشمند کنیم و کجا نه؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    بازاریابی را کنار نگیرید، ترتیبش را عوض کنید: اول فرآیند پشت‌صحنه‌ای را که بیشترین ساعت تکراری را می‌بلعد هوشمند کنید، بعد با پول و داده‌ای که آزاد شده بازاریابی را بازطراحی کنید. هوش مصنوعی در بازاریابی وقتی ارزشمند می‌شود که روی فرآیند واقعی سوار باشد، نه روی شعار کمپین.
+  </p>
+  <p>
+    در بازاریابی، هوش مصنوعی در سه لایه بازدهی واقعی دارد: شخصی‌سازی پیام بر اساس رفتار واقعی مشتری، اتوماسیون پاسخگویی و پیگیری سرنخ‌ها (lead nurturing) و تولید نسخه‌های متعدد تست A/B به‌جای یک خروجی تزئینی. اما هیچ‌کدام بدون داده تمیزِ مشتری و فرآیند تعریف‌شده جواب نمی‌دهد — همان داده‌ای که در فرآیندهای پشت‌صحنه (فروش، مالی، پشتیبانی) تولید می‌شود. به بیان ساده: بازاریابی هوشمند، مصرف‌کننده زیرساخت هوشمندِ پشت‌صحنه است. اگر می‌خواهید بدانید این دو لایه در عمل چطور به هم گره می‌خورند، مقاله <a href="/fa/blog/smart-marketing-department-ai" class="text-sky-700 underline font-semibold">هوشمندسازی دپارتمان بازاریابی</a> ما را بخوانید.
+  </p>
+
+  <!-- Section 6 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">نقشه راه عملی: از کجا شروع کنیم؟</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    یک فرآیند تکراریِ پرحجم پشت‌صحنه انتخاب کنید، KPI مالی صریح تعریف کنید (ساعت حذف‌شده، هزینه هر تراکنش، نرخ خطا) و به‌جای ساخت داخلیِ همه‌چیز با شراکت شروع کنید — الگویی که طبق گزارش MIT حدود ۶۷٪ اوقات موفق است. در گام بعد، بردِ اول را به‌عنوان توجیه بودجه گام بعدی استفاده کنید.
+  </p>
+  <p>
+    یک نقشه ۹۰ روزه ساده: ماه اول، فهرست فرآیندهای تکراری را بر اساس حجم × زمان انسانی مرتب کنید و دو مورد اول را نگه دارید. ماه دوم، با یک شریک متخصص، راه‌حل را روی داده واقعی خودتان پایلوت کنید و KPI را قبل از شروع قفل کنید. ماه سوم، نتیجه را در قالب پول (نه بازدید) گزارش کنید و دامنه را به فرآیند بعدی گسترش دهید. اگر نمودار درآمد این سه ماه حرکت نکرد، مشکل ایده نیست؛ انتخاب فرآیند یا معیار سنجش بوده — قبل از خرید ابزار جدید، بازطراحی کنید.
+  </p>
+
+  <!-- Section 7 -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">نقش مدیر: آموزش قبل از خرید ابزار</h2>
+  <p class="font-semibold text-slate-900 bg-slate-100 p-4 rounded-xl border-r-4 border-sky-600">
+    بزرگ‌ترین عامل شکست پروژه‌های هوش مصنوعی، ضعف فنی نیست؛ ناآگاهی مدیریتی است: حمایت اشتباه، اولویت‌های ناهم‌راستا و نداشتن بینش استراتژیک. مدیری که فرق اتوماسیون فرآیند را با «یک ابزار جدید» نمی‌داند، بودجه را به جذاب‌ترین ارائه می‌سپارد نه به بازده‌ترین نقطه.
+  </p>
+  <p>
+    به همین دلیل ما در دیجی نورون همیشه توصیه می‌کنیم سازمان قبل از خرید ابزار، در <a href="/fa/services/executive-ai-courses" class="text-sky-700 underline font-semibold">دوره‌های خصوصی هوش مصنوعی مدیران</a> سرمایه‌گذاری کند: مدیرانی که بدانند هوش مصنوعی چیست، برای چه کاری ساخته شده و کجای سازمانشان بیشترین بازده را دارد، دیگر اسلایدِ خوش‌رنگ بودجه را با ROI واقعی اشتباه نمی‌گیرند. تیم آگاه، بودجه را به فرآیندِ درست می‌رساند — و این دقیقاً همان جایی است که گزارش MIT می‌گوید پول واقعی آنجاست.
+  </p>
+
+  <!-- Comparison Table -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">جدول مقایسه: «اول بازاریابی» در برابر «اول پشت‌صحنه»</h2>
+  <div class="overflow-x-auto my-6">
+    <table class="min-w-full border border-slate-300 text-sm">
+      <thead class="bg-slate-100">
+        <tr>
+          <th class="border border-slate-300 px-4 py-2 text-right">معیار</th>
+          <th class="border border-slate-300 px-4 py-2 text-right">رویکرد «اول بازاریابی»</th>
+          <th class="border border-slate-300 px-4 py-2 text-right">رویکرد «اول پشت‌صحنه»</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-300 px-4 py-2 font-semibold">جاذبه در جلسه هیئت‌مدیره</td>
+          <td class="border border-slate-300 px-4 py-2">بالا — داشبورد و کمپین قابل‌نمایش</td>
+          <td class="border border-slate-300 px-4 py-2">کم — خروجی «کسل‌کننده» اما پول‌ساز</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-300 px-4 py-2 font-semibold">اثر بر سود و زیان</td>
+          <td class="border border-slate-300 px-4 py-2">غیرمستقیم و دیرهنگام</td>
+          <td class="border border-slate-300 px-4 py-2">مستقیم — کاهش هزینه هر تراکنش</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-300 px-4 py-2 font-semibold">قابلیت اندازه‌گیری</td>
+          <td class="border border-slate-300 px-4 py-2">بازدید و نرخ کلیک؛ اتصال به ROI دشوار</td>
+          <td class="border border-slate-300 px-4 py-2">ساعت حذف‌شده، نرخ خطا، چرخه پرداخت</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-300 px-4 py-2 font-semibold">ریسک اجرا</td>
+          <td class="border border-slate-300 px-4 py-2">وابسته به داده مشتری و فرآیند فروش</td>
+          <td class="border border-slate-300 px-4 py-2">نیازمند یکپارچه‌سازی با سیستم‌های قدیمی</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-300 px-4 py-2 font-semibold">بازده طبق گزارش MIT</td>
+          <td class="border border-slate-300 px-4 py-2">دریافت‌کننده بیش از نیمی از بودجه، کم‌بازده</td>
+          <td class="border border-slate-300 px-4 py-2">بیشترین ROI (حذف BPO و آژانس بیرونی)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- CTA 2 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f0fdf4 0%, #e6f7ef 100%); border-radius: 12px; border: 1px solid #c6e9d4;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #14532d;">می‌خواهید بدانید اولین فرآیند هوشمندِ سازمان شما کدام است؟ تحلیل فرآیندهای سازمان شما را با متخصصان دیجی نورون شروع کنید.</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #059669; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(5,150,105,0.25);">
+      دریافت مشاوره تخصصی و سفارش
+    </a>
+  </div>
+
+  <!-- Pitfalls -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">۵ دام رایج در تخصیص بودجه هوش مصنوعی</h2>
+  <div class="space-y-4">
+    <div class="p-4 bg-red-50 border-r-4 border-red-500 rounded-xl">
+      <p class="font-bold text-red-900 mb-1">دام ۱: تصمیم بر اساس «جذابیت ارائه»</p>
+      <p class="text-sm text-slate-700">واحدی که بهترین اسلاید دارد بیشترین بودجه را می‌گیرد، نه واحدی که بیشترین ساعت تکراری را دارد. معیار تصمیم را قبل از جلسه بودجه، در قالب KPI مالی صریح قفل کنید.</p>
+    </div>
+    <div class="p-4 bg-red-50 border-r-4 border-red-500 rounded-xl">
+      <p class="font-bold text-red-900 mb-1">دام ۲: خرید ابزار بدون نقشه فرآیند</p>
+      <p class="text-sm text-slate-700">ابزارِ هوش مصنوعی روی فرآیندِ تعریف‌نشده فقط هزینه لایسنس می‌سازد. اول فرآیند را نقشه‌برداری و ساده کنید، بعد ابزار را رویش سوار کنید.</p>
+    </div>
+    <div class="p-4 bg-red-50 border-r-4 border-red-500 rounded-xl">
+      <p class="font-bold text-red-900 mb-1">دام ۳: پروژه‌های پراکنده و بی‌ارتباط</p>
+      <p class="text-sm text-slate-700">پنج پایلوت همزمان در پنج دپارتمان یعنی هیچ کدام به مقیاس نمی‌رسد. یک نقطه شروع متمرکز انتخاب کنید و برد اول را به گام بعد گره بزنید.</p>
+    </div>
+    <div class="p-4 bg-red-50 border-r-4 border-red-500 rounded-xl">
+      <p class="font-bold text-red-900 mb-1">دام ۴: نادیده‌گرفتن داده پشت‌صحنه</p>
+      <p class="text-sm text-slate-700">شخصی‌سازی بازاریابی و اتوماسیون فروش، هر دو به داده تمیز مالی و عملیاتی وابسته‌اند. سازمانی که پشت‌صحنه‌اش خام است، بازاریابی هوشمندش هم سطحی می‌ماند.</p>
+    </div>
+    <div class="p-4 bg-red-50 border-r-4 border-red-500 rounded-xl">
+      <p class="font-bold text-red-900 mb-1">دام ۵: ساخت داخلیِ همه‌چیز</p>
+      <p class="text-sm text-slate-700">طبق گزارش MIT نرخ موفقیت ساخت داخلی تقریباً یک‌سوم شراکت با فروشنده متخصص است. همه‌چیز را از صفر نسازید؛ ترتیب درست: شراکت، برد سریع، سپس انتقال دانش به داخل.</p>
+    </div>
+  </div>
+
+  <!-- Voice Search Q&A -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">پرسش‌های پرتکرار کاربران (جستجوی صوتی)</h2>
+  <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 space-y-4">
+    <p><strong>هوش مصنوعی برای کدام بخش سازمان ارزش بیشتری دارد؟</strong><br>طبق گزارش MIT، فرآیندهای پشت‌صحنه: مالی، اداری و عملیات تکراری. بازاریابی بیشترین سهم بودجه را می‌برد اما بزرگ‌ترین بازگشت سرمایه در اتوماسیون فرآیندهای داخلی دیده شده است.</p>
+    <p><strong>۹۵ درصد پروژه‌های هوش مصنوعی شکست می‌خورند؟</strong><br>حدود ۹۵٪ پیاده‌سازی‌های هوش مصنوعی مولد سازمانی اثر قابل اندازه‌گیری بر سود و زیان نداشته‌اند؛ ریشه شکست هم کیفیت مدل‌ها نیست، تخصیص اشتباه منابع و شکاف یادگیری سازمان است.</p>
+    <p><strong>بخریم یا داخل سازمان بسازیم؟</strong><br>خرید از فروشنده متخصص و شراکت حدود ۶۷٪ اوقات موفق است؛ ساخت داخلی تقریباً یک‌سوم آن. با شراکت برد اول را بسازید و بعد دانش را به داخل منتقل کنید.</p>
+    <p><strong>اولین پروژه هوش مصنوعی سازمان باید چه باشد؟</strong><br>یک فرآیند تکراری پرحجم پشت‌صحنه (پردازش فاکتور، مغایرت‌گیری بانکی، جریان مکاتبات) با KPI مالی صریح — ساعت حذف‌شده و هزینه هر تراکنش — نه یک ابزار تولید محتوا برای بازاریابی.</p>
+  </div>
+
+  <!-- CTA 3 -->
+  <div style="text-align: center; margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f5f0ff 0%, #ede6fa 100%); border-radius: 12px; border: 1px solid #d9ccf5;">
+    <p style="font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem; color: #3b0764;">از تحلیل فرآیندها تا آموزش تیم و پیاده‌سازی کامل — مسیر هوشمندسازی سازمان‌تان را با دیجی نورون طی کنید.</p>
+    <a href="/fa/contact" style="padding: 0.9rem 2.5rem; font-size: 1.15rem; display: inline-block; text-decoration: none; background-color: #7c3aed; color: #ffffff; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 12px rgba(124,58,237,0.25);">
+      دریافت مشاوره تخصصی و سفارش
+    </a>
+  </div>
+
+  <!-- FAQ -->
+  <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4">سوالات متداول</h2>
+  <div class="space-y-4">
+    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+      <h3 class="font-bold text-slate-900 mb-2">چرا سازمان‌ها بیشتر روی هوش مصنوعی در بازاریابی سرمایه‌گذاری می‌کنند؟</h3>
+      <p class="text-sm text-slate-700">چون نتایج بازاریابی قابل‌نمایش و «شیرین» است: داشبورد، بازدید و رشد کمپین که جلسه هیئت‌مدیره را جلب می‌کند. بهینه‌سازی فرآیندهای مالی و اداری خروجی کم‌جاهی دارد اما بر سود واقعی اثر مستقیم می‌گذارد و معمولاً اولویت دوم مدیران می‌شود.</p>
+    </div>
+    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+      <h3 class="font-bold text-slate-900 mb-2">گزارش MIT ۲۰۲۵ چه یافته‌ای دارد؟</h3>
+      <p class="text-sm text-slate-700">گزارش «GenAI Divide: State of AI in Business 2025» از NANDA در MIT Media Lab با ۱۵۰ مصاحبه مدیریتی، نظرسنجی از ۳۵۰ کارمند و تحلیل ۳۰۰ پیاده‌سازی، نشان داد حدود ۹۵٪ پروژه‌های هوش مصنوعی مولد سازمان‌ها اثر قابل اندازه‌گیری بر سود و زیان نداشته‌اند؛ بیش از نیمی از بودجه به فروش و بازاریابی رفته اما بزرگ‌ترین ROI در اتوماسیون پشت‌صحنه دیده شده است.</p>
+    </div>
+    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+      <h3 class="font-bold text-slate-900 mb-2">کدام بخش سازمان بیشترین بازگشت سرمایه هوش مصنوعی را دارد؟</h3>
+      <p class="text-sm text-slate-700">طبق گزارش MIT، فرآیندهای پشت‌صحنه: مالی، اداری و عملیات تکراری مثل پردازش فاکتور، مغایرت‌گیری، بایگانی، گزارش‌سازی دوره‌ای و پاسخ به درخواست‌های تکراری. دو محور اصلی بازدهی، حذف برون‌سپاری (BPO) و کاهش هزینه آژانس‌های بیرونی است.</p>
+    </div>
+    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+      <h3 class="font-bold text-slate-900 mb-2">آیا باید پروژه‌های هوش مصنوعی بازاریابی را متوقف کرد؟</h3>
+      <p class="text-sm text-slate-700">خیر؛ مشکل «بودن» آن‌ها نیست، «ترتیب و معیار» است. اگر بودجه بر اساس جذابیت ارائه تخصیص یابد به‌جای KPI مالی صریح، سرمایه به کم‌بازده‌ترین بخش می‌رود. بهترین الگو: ابتدا یک نقطه درد تکراری داخلی را حل کنید، بعد به بازاریابی گسترش دهید.</p>
+    </div>
+    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+      <h3 class="font-bold text-slate-900 mb-2">از کجا شروع کنیم؟</h3>
+      <p class="text-sm text-slate-700">یک فرآیند تکراری با حجم بالا انتخاب کنید (فاکتور، مغایرت‌گیری بانکی، جریان اداری مکاتبات، گزارش‌سازی)، KPI مالی صریح تعریف کنید (ساعت حذف‌شده، هزینه هر تراکنش، نرخ خطا) و به‌جای ساخت داخلیِ همه‌چیز، با فروشندگان متخصص شراکت کنید — الگویی که طبق MIT حدود ۶۷٪ موفقیت دارد.</p>
+    </div>
+  </div>
+
+  <!-- Author Box -->
+  <div class="p-6 bg-gradient-to-br from-sky-50 to-indigo-50 border border-sky-200 rounded-2xl shadow-sm mt-8">
+    <div class="flex items-center gap-4">
+      <img src="/images/instructors/karimi.jpg" alt="گروه تخصصی دیجی نورون" class="w-14 h-14 rounded-full object-cover" />
+      <div>
+        <h3 class="text-base font-bold text-slate-900">گروه تخصصی دیجی نورون</h3>
+        <p class="text-sm text-slate-600">بیش از ۵ سال سابقه در پروژه‌های هوش مصنوعی</p>
+      </div>
+    </div>
+    <p class="text-sm text-slate-700 leading-relaxed mt-4">
+      گروه تخصصی دیجی نورون با تکیه بر پروژه‌های واقعی هوش مصنوعی در صنایع مختلف، مقالات و دوره‌هایی تولید می‌کند که مهارت‌های دیجیتال مدیران، کارکنان و علاقه‌مندان را ارتقا می‌دهد.
+    </p>
+    <div class="mt-5 p-4 bg-white/70 border border-sky-200 rounded-xl">
+      <img src="/images/blog/diginoron-logo.png" alt="لوگوی گروه تخصصی دیجی نورون" class="w-full max-w-md mx-auto rounded-lg" />
+    </div>
+  </div>
+</div>`,
+
+    faq: [
+      {
+        "question": "چرا سازمان‌ها بیشتر روی هوش مصنوعی در بازاریابی سرمایه‌گذاری می‌کنند؟",
+        "answer": "چون نتایج بازاریابی قابل‌نمایش و «شیرین» است: داشبورد، بازدید و رشد کمپین که جلسه هیئت‌مدیره را جلب می‌کند. بهینه‌سازی فرآیندهای مالی و اداری خروجی کم‌جاهی دارد اما بر سود واقعی اثر مستقیم می‌گذارد و معمولاً اولویت دوم مدیران می‌شود."
+      },
+      {
+        "question": "گزارش MIT ۲۰۲۵ چه یافته‌ای دارد؟",
+        "answer": "گزارش «GenAI Divide: State of AI in Business 2025» از NANDA در MIT Media Lab با ۱۵۰ مصاحبه مدیریتی، نظرسنجی از ۳۵۰ کارمند و تحلیل ۳۰۰ پیاده‌سازی، نشان داد حدود ۹۵٪ پروژه‌های هوش مصنوعی مولد سازمان‌ها اثر قابل اندازه‌گیری بر سود و زیان نداشته‌اند؛ بیش از نیمی از بودجه به فروش و بازاریابی رفته اما بزرگ‌ترین ROI در اتوماسیون پشت‌صحنه دیده شده است."
+      },
+      {
+        "question": "کدام بخش سازمان بیشترین بازگشت سرمایه هوش مصنوعی را دارد؟",
+        "answer": "طبق گزارش MIT، فرآیندهای پشت‌صحنه: مالی، اداری و عملیات تکراری مثل پردازش فاکتور، مغایرت‌گیری، بایگانی، گزارش‌سازی دوره‌ای و پاسخ به درخواست‌های تکراری. دو محور اصلی بازدهی، حذف برون‌سپاری (BPO) و کاهش هزینه آژانس‌های بیرونی است."
+      },
+      {
+        "question": "آیا باید پروژه‌های هوش مصنوعی بازاریابی را متوقف کرد؟",
+        "answer": "خیر؛ مشکل «بودن» آن‌ها نیست، «ترتیب و معیار» است. اگر بودجه بر اساس جذابیت ارائه تخصیص یابد به‌جای KPI مالی صریح، سرمایه به کم‌بازده‌ترین بخش می‌رود. بهترین الگو: ابتدا یک نقطه درد تکراری داخلی را حل کنید، بعد به بازاریابی گسترش دهید."
+      },
+      {
+        "question": "از کجا شروع کنیم؟",
+        "answer": "یک فرآیند تکراری با حجم بالا انتخاب کنید (فاکتور، مغایرت‌گیری بانکی، جریان اداری مکاتبات، گزارش‌سازی)، KPI مالی صریح تعریف کنید (ساعت حذف‌شده، هزینه هر تراکنش، نرخ خطا) و به‌جای ساخت داخلیِ همه‌چیز، با فروشندگان متخصص شراکت کنید — الگویی که طبق MIT حدود ۶۷٪ موفقیت دارد."
+      }
+    ]
+    ,
+    category: "corporate-ai",
+    categoryName: "هوش مصنوعی سازمانی",
+    author: {
+      name: "گروه تخصصی دیجی نورون",
+      role: "بیش از ۵ سال سابقه پروژه‌های هوش مصنوعی",
+      avatar: "/images/instructors/karimi.jpg",
+    },
+    date: "۷ آذر ۱۴۰۵",
+    readTime: "۱۳ دقیقه",
+    image: "/images/blog/ai-marketing-vs-back-office-roi.jpg",
+    featured: true,
+    tags: ["هوش مصنوعی سازمانی", "بازگشت سرمایه", "گزارش MIT", "اتوماسیون", "هوش مصنوعی مولد", "مدیران", "دیجی نورون"],
+  },
+
+  {
     id: "37",
     slug: "gemini-android-auto-features",
     title: "جمینای در اندروید اتو؛ گوگل چطور رانندگی را با هوش مصنوعی هوشمندتر کرد؟",

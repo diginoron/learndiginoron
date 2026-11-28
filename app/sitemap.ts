@@ -43,6 +43,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       post.slug === "jensen-huang-nvidia-apology" ||
       post.slug === "amazon-ai-toys-child-safety" ||
   post.slug === "gemini-android-auto-features" ||
+      post.slug === "ai-marketing-vs-back-office-roi" ||
+      post.slug === "xpeng-iron-humanoid-robot-home" ||
       post.slug === "why-managers-employees-must-learn-ai-beyond-content-creation" ||
       post.slug === "why-teach-kids-ai-entrepreneurship-not-ai-engineering" ||
       post.slug === "enterprise-ai-transformation-diginoron-model" ||
